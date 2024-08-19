@@ -64,7 +64,7 @@
         {"name": "Church", "size": 4, "x": 100, "y": -1700},
         {"name": "Morgue", "size": 4, "x": 450, "y": -1700},
         {"name": "Canteen", "size": 4, "x": 800, "y": -1850},
-        {"name": "B-Ball Court", "size": 4, "x": 550, "y": -2000},
+        {"name": "B-Ball Court", "size": 4, "x": 650, "y": -2175},
         {"name": "Security", "size": 6, "x": 1300, "y": -1700},
         {"name": "Power Substation", "size": 6, "x": 1850, "y": -1800},
         {"name": "Aurora Medical Clinic", "size": 6, "x": 2500, "y": -2250}
