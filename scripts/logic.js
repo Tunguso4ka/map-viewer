@@ -86,16 +86,18 @@ function draw()
 {
   canvas.width = window.innerWidth
   canvas.height = window.innerHeight
-    
+
   // Translate to the canvas centre before zooming - so you'll always zoom on what you're looking directly at
+
   ctx.translate( window.innerWidth / 2, window.innerHeight / 2 )
   ctx.scale(cameraZoom, cameraZoom)
   ctx.translate( -window.innerWidth / 2 + cameraOffset.x, -window.innerHeight / 2 + cameraOffset.y )
-  ctx.clearRect(0,0, window.innerWidth, window.innerHeight)
-
+  
   ctx.imageSmoothingEnabled = false;
 
-  ctx.drawImage(image, -image.width / 2, -image.height / 2);
+  var image_x = Math.floor(-image.width / 2);
+  var image_y = Math.floor(-image.height / 2);
+  ctx.drawImage(image, image_x, image_y);
 
   if ( ! is_legend_hidden )
   {
@@ -210,6 +212,8 @@ function adjustZoom(zoomAmount, zoomFactor)
     console.log(zoomFactor)
     cameraZoom = zoomFactor*lastZoom
   }
+
+  cameraZoom = cameraZoom.toFixed(2)
 
   cameraZoom = Math.min( cameraZoom, MAX_ZOOM )
   cameraZoom = Math.max( cameraZoom, MIN_ZOOM )
