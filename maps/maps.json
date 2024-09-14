@@ -136,12 +136,9 @@
     "624":
     {
       "name": "LV-624",
-      "url": "maps/LV624-1.png",
-      "_url": "https://mocha.affectedarc07.co.uk/webmap/cm/lv624/LV624-1.png",
+      "url": "maps/LV624-0.png",
       "labels":
       [
-        {"name": "This render is not from RMC-14! Image source: https://mocha.affectedarc07.co.uk/webmap/cm", "size": 6, "x": -2800, "y": 3600},
-
         {"name": "Undeground Lake", "size": 12, "x": -700, "y": -2900},
         {"name": "Western Caves", "size": 12, "x": -2300, "y": -1600},
         {"name": "Central Caves", "size": 12, "x": -600, "y": -1600},
