@@ -169,8 +169,6 @@
       "url": "maps/Trijent-0.png",
       "labels":
       [
-        {"name": "This map is not yet in the game.", "size": 16, "x": -4000, "y": 4000},
-
         {"name": "LZ1", "size": 12, "x": -2975, "y": -2800},
         {"name": "LZ2", "size": 12, "x": -3400, "y": 3000},
         {"name": "Administration", "size": 8, "x": -2300, "y": -2900},
