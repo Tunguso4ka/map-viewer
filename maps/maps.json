@@ -198,6 +198,11 @@
         {"name": "Dormitories", "size": 6, "x": 1900, "y": 3100},
         {"name": "Workshop", "size": 6, "x": 3000, "y": 2900}
       ]
+    },
+    "Varadero":
+    {
+      "name": "New Varadero",
+      "url": "maps/Varadero-0.png"
     }
   },
   "main": "Solaris"
