@@ -4,9 +4,10 @@
 }
 
 body, html {
-  background-color: #011627;
+  background-color: var(--dark);
   margin: 0;
   padding: 0;
+  overscroll-behavior: contain;
 }
 
 button {

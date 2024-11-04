@@ -2,7 +2,7 @@
 // Original pan and zoom code from https://codepen.io/chengarda/pen/wRxoyB
 //
 
-// TODO rewrite it all, add more comments, add map buttons from json file
+// TODO rewrite it all, add more comments
 
 // get Query parametres
 const params = new Proxy(new URLSearchParams(window.location.search), {
@@ -37,10 +37,13 @@ window.onload = () =>
 
   canvas.addEventListener('mousedown', onPointerDown)
   canvas.addEventListener('touchstart', (e) => handleTouch(e, onPointerDown))
+
   canvas.addEventListener('mouseup', onPointerUp)
   canvas.addEventListener('touchend',  (e) => handleTouch(e, onPointerUp))
+
   canvas.addEventListener('mousemove', onPointerMove)
   canvas.addEventListener('touchmove', (e) => handleTouch(e, onPointerMove))
+
   canvas.addEventListener( 'wheel', (e) => adjustZoom(e.deltaY*SCROLL_SENSITIVITY))
 
   draw()
@@ -111,14 +114,11 @@ function draw()
   requestAnimationFrame( draw )
 }
 
-function drawText(text, x, y, font_size=12, stroke_size=3, font="Arial")
+function drawText(text, x, y, font_size=12, stroke_size=6, font="Arial")
 {
   ctx.fillStyle = "white";
   ctx.strokeStyle = "black";
   ctx.lineWidth = stroke_size;
-
-  ctx.shadowBlur = 5;
-  ctx.shadowColor = "black";
 
   ctx.font = `${font_size}em ${font}`;
   ctx.strokeText(text, x, y);
