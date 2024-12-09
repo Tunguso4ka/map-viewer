@@ -203,6 +203,11 @@
     {
       "name": "New Varadero",
       "url": "maps/Varadero-0.png"
+    },
+    "Chances":
+    {
+      "name": "Chances Claim",
+      "url": "maps/Chances-0.png"
     }
   },
   "main": "Solaris"
