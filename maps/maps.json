@@ -208,6 +208,11 @@
     {
       "name": "Chances Claim",
       "url": "maps/Chances-0.png"
+    },
+    "Kutjevo":
+    {
+      "name": "Kutjevo Refinery",
+      "url": "maps/Kutjevo-0.png"
     }
   },
   "main": "Solaris"
