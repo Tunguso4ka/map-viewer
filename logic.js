@@ -11,11 +11,11 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 
 let is_legend_hidden = false;
 
-load_json("maps/maps.json");
+load_json("maps.json");
 let labels = {};
 
 let image = new Image();
-image.src = "resources/icon.png" // placeholder for when image loading tooks ages
+image.src = "icon.png" // placeholder for when image loading tooks ages
 let canvas;
 let ctx;
 
@@ -23,7 +23,7 @@ let cameraOffset = { x: window.innerWidth/2, y: window.innerHeight/2 };
 let cameraZoom = 0.15;
 let MAX_ZOOM = 5;
 let MIN_ZOOM = 0.1;
-let SCROLL_SENSITIVITY = 0.025;
+let SCROLL_SENSITIVITY = 0.04;
 let initialPinchDistance = null;
 let lastZoom = cameraZoom;
 
@@ -96,7 +96,7 @@ function draw()
   ctx.scale(cameraZoom, cameraZoom)
   ctx.translate( -window.innerWidth / 2 + cameraOffset.x, -window.innerHeight / 2 + cameraOffset.y )
   
-  ctx.imageSmoothingEnabled = false;
+  //ctx.imageSmoothingEnabled = false;
 
   var image_x = Math.floor(-image.width / 2);
   var image_y = Math.floor(-image.height / 2);
