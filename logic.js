@@ -96,7 +96,7 @@ function draw()
   ctx.scale(cameraZoom, cameraZoom)
   ctx.translate( -window.innerWidth / 2 + cameraOffset.x, -window.innerHeight / 2 + cameraOffset.y )
   
-  //ctx.imageSmoothingEnabled = false;
+  ctx.imageSmoothingEnabled = false;
 
   var image_x = Math.floor(-image.width / 2);
   var image_y = Math.floor(-image.height / 2);
