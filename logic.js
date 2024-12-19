@@ -114,7 +114,7 @@ function draw()
   requestAnimationFrame( draw )
 }
 
-function drawText(text, x, y, font_size=12, stroke_size=6, font="Arial")
+function drawText(text, x, y, font_size=12, stroke_size=16, font="Garamond")
 {
   ctx.fillStyle = "white";
   ctx.strokeStyle = "black";

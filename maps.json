@@ -207,7 +207,34 @@
     "Chances":
     {
       "name": "Chances Claim",
-      "url": "maps/Chances-0.png"
+      "url": "maps/Chances-0.png",
+      "labels":
+      [
+        {"name": "LZ1", "size": 12, "x": -2700, "y": 2200},
+        {"name": "LZ2", "size": 12, "x": 1850, "y": 2700},
+        {"name": "West Reactor", "size": 8, "x": -2400, "y": -2500},
+        {"name": "East Reactor", "size": 8, "x": 500, "y": -2500},
+        {"name": "LZ1 Tunnels", "size": 8, "x": -2500, "y": 2950},
+        {"name": "Mining", "size": 8, "x": 200, "y": 2700},
+        {"name": "Engineering", "size": 4, "x": -2450, "y": 1300},
+        {"name": "Grill", "size": 4, "x": -1800, "y": 1300},
+        {"name": "Bar", "size": 6, "x": -1500, "y": 1200},
+        {"name": "Hydro North", "size": 4, "x": -1000, "y": 1300},
+        {"name": "Hydro South", "size": 4, "x": -1000, "y": 2900},
+        {"name": "Cargo", "size": 8, "x": 0, "y": 1400},
+        {"name": "Casino", "size": 4, "x": 850, "y": 1000},
+        {"name": "Garage", "size": 4, "x": 1850, "y": 1000},
+        {"name": "A-Block", "size": 8, "x": -1700, "y": 100},
+        {"name": "Security", "size": 8, "x": -200, "y": -100},
+        {"name": "Corporate Office", "size": 6, "x": -400, "y": -1000},
+        {"name": "Kitchen", "size": 4, "x": 300, "y": 400},
+        {"name": "Administration", "size": 8, "x": 1100, "y": 100},
+        {"name": "Medical", "size": 4, "x": 1400, "y": 400},
+        {"name": "Typhoon Dropship", "size": 4, "x": -2800, "y": -1100},
+        {"name": "Tornado Dropship", "size": 4, "x": 2300, "y": -600},
+        {"name": "Fitness", "size": 4, "x": -1200, "y": -1000},
+        {"name": "", "size": 8, "x": 0, "y": 0}
+      ]
     },
     "Kutjevo":
     {
