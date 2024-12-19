@@ -232,14 +232,36 @@
         {"name": "Medical", "size": 4, "x": 1400, "y": 400},
         {"name": "Typhoon Dropship", "size": 4, "x": -2800, "y": -1100},
         {"name": "Tornado Dropship", "size": 4, "x": 2300, "y": -600},
-        {"name": "Fitness", "size": 4, "x": -1200, "y": -1000},
-        {"name": "", "size": 8, "x": 0, "y": 0}
+        {"name": "Fitness", "size": 4, "x": -1200, "y": -1000}
       ]
     },
     "Kutjevo":
     {
       "name": "Kutjevo Refinery",
-      "url": "maps/Kutjevo-0.png"
+      "url": "maps/Kutjevo-0.png",
+      "labels":
+      [
+        {"name": "LZ Auxilary", "size": 8, "x": -3400, "y": -1600},
+        {"name": "LZ Dunes", "size": 8, "x": -3550, "y": 1500},
+        {"name": "Hydroelectric Dam", "size": 6, "x": -2700, "y": 2200},
+        {"name": "Scrubland", "size": 6, "x": -2000, "y": 0},
+        {"name": "Medical Bay", "size": 6, "x": -1000, "y": -800},
+        {"name": "Medical Stormlocks", "size": 4, "x": -800, "y": -400},
+        {"name": "Botany Stormlocks", "size": 4, "x": -800, "y": 0},
+        {"name": "Botany Bay", "size": 6, "x": -800, "y": 600},
+        {"name": "Botany Bridge", "size": 4, "x": -1500, "y": 750},
+        {"name": "Stony Fields", "size": 6, "x": -1000, "y": 1600},
+        {"name": "Northern Construction", "size": 6, "x": -200, "y": -1400},
+        {"name": "Bar", "size": 6, "x": 300, "y": -1000},
+        {"name": "Construction", "size": 6, "x": 200, "y": -200},
+        {"name": "Powerplant", "size": 6, "x": -100, "y": 300},
+        {"name": "Bioplant Refinery", "size": 6, "x": 600, "y": 400},
+        {"name": "North Caves", "size": 6, "x": 1400, "y": -2000},
+        {"name": "Central Caves", "size": 6, "x": 1300, "y": -200},
+        {"name": "South Caves", "size": 6, "x": 1500, "y": 1200},
+        {"name": "North East Caves", "size": 6, "x": 2500, "y": -1100},
+        {"name": "South East Caves", "size": 6, "x": 2700, "y": 400}
+      ]
     }
   },
   "main": "Solaris"
