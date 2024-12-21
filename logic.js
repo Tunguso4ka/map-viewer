@@ -1,15 +1,9 @@
-//
-// Original pan and zoom code from https://codepen.io/chengarda/pen/wRxoyB
-//
-
-// TODO rewrite it all, add more comments
-
 // get Query parametres
 const params = new Proxy(new URLSearchParams(window.location.search), {
   get: (searchParams, prop) => searchParams.get(prop),
 });
 
-let is_legend_hidden = false;
+let is_labels_hidden = false;
 
 load_json("maps.json");
 let labels = {};
@@ -27,28 +21,31 @@ let SCROLL_SENSITIVITY = 0.04;
 let initialPinchDistance = null;
 let lastZoom = cameraZoom;
 
-let isDragging = false;
+let is_panning = false;
 let dragStart = { x: 0, y: 0 };
+
 
 window.onload = () =>
 {
   canvas = document.getElementById("canvas")
   ctx = canvas.getContext('2d')
 
-  canvas.addEventListener('mousedown', onPointerDown)
-  canvas.addEventListener('touchstart', (e) => handleTouch(e, onPointerDown))
+  canvas.addEventListener('mousedown', on_mouse_down)
+  canvas.addEventListener('touchstart', (e) => handleTouch(e, on_mouse_down))
 
-  canvas.addEventListener('mouseup', onPointerUp)
-  canvas.addEventListener('touchend',  (e) => handleTouch(e, onPointerUp))
+  canvas.addEventListener('mouseup', on_mouse_up)
+  canvas.addEventListener('touchend',  (e) => handleTouch(e, on_mouse_up))
 
-  canvas.addEventListener('mousemove', onPointerMove)
-  canvas.addEventListener('touchmove', (e) => handleTouch(e, onPointerMove))
+  canvas.addEventListener('mousemove', on_mouse_move)
+  canvas.addEventListener('touchmove', (e) => handleTouch(e, on_mouse_move))
 
-  canvas.addEventListener( 'wheel', (e) => adjustZoom(e.deltaY*SCROLL_SENSITIVITY))
+  canvas.addEventListener('wheel', (e) => adjustZoom(e.deltaY*SCROLL_SENSITIVITY))
 
   draw()
 }
 
+
+// load maps.json, update image.src and labels.
 async function load_json(url)
 {
   var response = await fetch(url);
@@ -85,8 +82,10 @@ async function load_json(url)
   console.log(`Loaded map ${map_url} with ${Object.keys(labels).length} labels.`);
 }
 
+
 function draw()
 {
+  requestAnimationFrame( draw )
   canvas.width = window.innerWidth
   canvas.height = window.innerHeight
 
@@ -96,25 +95,26 @@ function draw()
   ctx.scale(cameraZoom, cameraZoom)
   ctx.translate( -window.innerWidth / 2 + cameraOffset.x, -window.innerHeight / 2 + cameraOffset.y )
   
+  // disables blur
   ctx.imageSmoothingEnabled = false;
 
   var image_x = Math.floor(-image.width / 2);
   var image_y = Math.floor(-image.height / 2);
   ctx.drawImage(image, image_x, image_y);
 
-  if ( ! is_legend_hidden )
-  {
-    for (const iter in labels)
-    {
-      value = labels[iter];
-      drawText(value.name, value.x, value.y, value.size);
-    }
-  }
+  // dont draw labels if they are hidden
+  if ( is_labels_hidden )
+    return;
 
-  requestAnimationFrame( draw )
+  for (const iter in labels)
+  {
+    value = labels[iter];
+    draw_text(value.name, value.x, value.y, value.size);
+  }
 }
 
-function drawText(text, x, y, font_size=12, stroke_size=16, font="Garamond")
+
+function draw_text(text, x, y, font_size=12, stroke_size=16, font="Garamond")
 {
   ctx.fillStyle = "white";
   ctx.strokeStyle = "black";
@@ -125,43 +125,45 @@ function drawText(text, x, y, font_size=12, stroke_size=16, font="Garamond")
   ctx.fillText(text, x, y);
 }
 
+
 // Gets the relevant location from a mouse or single touch event
 function getEventLocation(e)
 {
-    if (e.touches && e.touches.length == 1)
-    {
-        return { x:e.touches[0].clientX, y: e.touches[0].clientY }
-    }
-    else if (e.clientX && e.clientY)
-    {
-        return { x: e.clientX, y: e.clientY }        
-    }
+  if (e.touches && e.touches.length == 1)
+    return { x:e.touches[0].clientX,
+             y: e.touches[0].clientY }
+
+  else if (e.clientX && e.clientY)
+    return { x: e.clientX,
+             y: e.clientY }
 }
 
-function onPointerDown(e)
+
+function on_mouse_down(e)
 {
-    isDragging = true
+    is_panning = true
     dragStart.x = getEventLocation(e).x/cameraZoom - cameraOffset.x
     dragStart.y = getEventLocation(e).y/cameraZoom - cameraOffset.y
 }
 
-function onPointerUp(e)
+
+function on_mouse_up(e)
 {
-    isDragging = false
+    is_panning = false
     initialPinchDistance = null
     lastZoom = cameraZoom
 }
 
-function onPointerMove(e)
+
+function on_mouse_move(e)
 {
-  if (!isDragging)
-  {
+  if (!is_panning)
     return;
-  }
 
   cameraOffset.x = getEventLocation(e).x/cameraZoom - dragStart.x;
   cameraOffset.y = getEventLocation(e).y/cameraZoom - dragStart.y;
 }
+
 
 function handleTouch(e, singleTouchHandler)
 {
@@ -171,37 +173,35 @@ function handleTouch(e, singleTouchHandler)
     }
     else if (e.type == "touchmove" && e.touches.length == 2)
     {
-        isDragging = false
+        is_panning = false
         handlePinch(e)
     }
 }
+
 
 function handlePinch(e)
 {
     e.preventDefault()
     
-    let touch1 = { x: e.touches[0].clientX, y: e.touches[0].clientY }
-    let touch2 = { x: e.touches[1].clientX, y: e.touches[1].clientY }
+    let touch1 = { x: e.touches[0].clientX,
+                   y: e.touches[0].clientY }
+    let touch2 = { x: e.touches[1].clientX,
+                   y: e.touches[1].clientY }
     
     // This is distance squared, but no need for an expensive sqrt as it's only used in ratio
     let currentDistance = (touch1.x - touch2.x)**2 + (touch1.y - touch2.y)**2
     
     if (initialPinchDistance == null)
-    {
         initialPinchDistance = currentDistance
-    }
     else
-    {
         adjustZoom( null, currentDistance/initialPinchDistance )
-    }
 }
+
 
 function adjustZoom(zoomAmount, zoomFactor)
 {
-  if (isDragging)
-  {
-    return
-  }
+  if (is_panning)
+    return;
 
   if (zoomAmount)
   {
@@ -219,13 +219,15 @@ function adjustZoom(zoomAmount, zoomFactor)
   cameraZoom = Math.max( cameraZoom, MIN_ZOOM )
 }
 
+
 function toggleMapsHidden()
 {
   button = document.getElementById("mapsbar");
   button.hidden = ! button.hidden;
 }
 
+
 function toggleLegendHidden()
 {
-  is_legend_hidden = ! is_legend_hidden;
+  is_labels_hidden = ! is_labels_hidden;
 }
