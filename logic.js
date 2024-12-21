@@ -32,6 +32,7 @@ window.onload = () =>
   canvas.addEventListener('touchstart', (e) => handleTouch(e, on_mouse_down))
 
   canvas.addEventListener('mouseup', on_mouse_up)
+  canvas.addEventListener('mouseleave', on_mouse_up)
   canvas.addEventListener('touchend',  (e) => handleTouch(e, on_mouse_up))
 
   canvas.addEventListener('mousemove', on_mouse_move)
