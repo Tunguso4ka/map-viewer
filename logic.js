@@ -1,7 +1,5 @@
 // get Query parametres
-const params = new Proxy(new URLSearchParams(window.location.search), {
-  get: (searchParams, prop) => searchParams.get(prop),
-});
+let params = new URLSearchParams(document.location.search);
 
 let is_labels_hidden = false;
 
@@ -53,10 +51,10 @@ async function load_json(url)
 
   let map_name = maps.main;
 
-  if (params.map in maps.maps)
+  if (params.get('map'))
   {
     // use value from Query
-    map_name = params.map;
+    map_name = params.get('map');
   }
 
   let map_url = maps.maps[map_name].url;
@@ -91,9 +89,12 @@ function draw()
 
   // Translate to the canvas centre before zooming - so you'll always zoom on what you're looking directly at
 
-  ctx.translate( window.innerWidth / 2, window.innerHeight / 2 )
-  ctx.scale(cameraZoom, cameraZoom)
-  ctx.translate( -window.innerWidth / 2 + cameraOffset.x, -window.innerHeight / 2 + cameraOffset.y )
+  ctx.translate(window.innerWidth / 2,
+                window.innerHeight / 2 )
+  ctx.scale(cameraZoom,
+            cameraZoom)
+  ctx.translate(-window.innerWidth / 2 + cameraOffset.x,
+                -window.innerHeight / 2 + cameraOffset.y )
   
   // disables blur
   ctx.imageSmoothingEnabled = false;
