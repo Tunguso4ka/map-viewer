@@ -116,7 +116,7 @@ function draw()
 }
 
 
-function draw_text(text, x, y, font_size=12, stroke_size=16, font="Garamond")
+function draw_text(text, x, y, font_size=12, stroke_size=16, font="Verdana")
 {
   ctx.fillStyle = "white";
   ctx.strokeStyle = "black";
