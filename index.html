@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <meta name="viewport" content="user-scalable=no width=device-width, initial-scale=1.0"/> 
 
     <title>Map Viewer</title>
     <meta property="og:title" content="Map Viewer"/>
@@ -18,31 +18,25 @@
     <script type="text/javascript" src="logic.js"></script>
   </head>
   <body>
-    <canvas id="canvas">
-    </canvas>
+    <div id="map_container">
+      <div id="map_zoomable">
+        <!--img id="map_image" src="icon.png"/-->
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
 
     <div class="toolbar">
       <div class="buttons">
         <button
           title="Show/Hide Maps"
-          onclick="toggleMapsHidden()"
+          onclick="toggle_maplist()"
           >#</button>
         <button
-          title="Toggle labels"
-          onclick="toggleLegendHidden()"
+          title="Show/Hide Labels"
+          onclick="toggle_labels()"
           >A</button>
-        <button
-          title="Zoom in"
-          id="zoom_in"
-          onclick="adjustZoom(-5)"
-          >+</button>
-        <button
-          id="zoom_out"
-          title="Zoom out"
-          onclick="adjustZoom(2.5)"
-          >-</button>
       </div>
-      <ul id="mapsbar" hidden>
+      <ul id="maplist" hidden>
       </ul>
     </div>
   <body/>

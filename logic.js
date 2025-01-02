@@ -1,68 +1,57 @@
-// get Query parametres
 let params = new URLSearchParams(document.location.search);
-
-let is_labels_hidden = false;
+let maps;
+let map_current;
 
 load_json("maps.json");
-let labels = {};
+var labels = {};
+var show_labels = true;
 
-let image = new Image();
-image.src = "icon.png" // placeholder for when image loading tooks ages
-let canvas;
-let ctx;
+var position = { x: 0, y: 0};
+var start = { x: 0, y: 0 };
+var zoom = 1;
+var zoom_last = zoom;
+var zoom_limit = { min: 0.3, max: 15 };
+var initial_pinch_distance = null;
+var is_panning;
+var target;
+var image = new Image();
+image.src = 'icon.png';
 
-let cameraOffset = { x: window.innerWidth/2, y: window.innerHeight/2 };
-let cameraZoom = 0.15;
-let MAX_ZOOM = 5;
-let MIN_ZOOM = 0.1;
-let SCROLL_SENSITIVITY = 0.04;
-let initialPinchDistance = null;
-let lastZoom = cameraZoom;
-
-let is_panning = false;
-let dragStart = { x: 0, y: 0 };
-
+var canvas;
+var ctx;
 
 window.onload = () =>
 {
-  canvas = document.getElementById("canvas")
-  ctx = canvas.getContext('2d')
+  target = document.getElementById("map_zoomable");
+  //image = document.getElementById("map_image");
+  canvas = document.getElementById("canvas");
+  ctx = canvas.getContext('2d');
 
-  canvas.addEventListener('mousedown', on_mouse_down)
-  canvas.addEventListener('touchstart', (e) => handleTouch(e, on_mouse_down))
+  target.addEventListener('mousedown', on_mousedown);
+  target.addEventListener('touchstart', (e) => handle_touch(e, on_mousedown))
 
-  canvas.addEventListener('mouseup', on_mouse_up)
-  canvas.addEventListener('mouseleave', on_mouse_up)
-  canvas.addEventListener('touchend',  (e) => handleTouch(e, on_mouse_up))
+  target.addEventListener('mouseup', on_mouseup);
+  target.addEventListener('mouseleave', on_mouseup);
+  target.addEventListener('touchend',  (e) => handle_touch(e, on_mouseup))
 
-  canvas.addEventListener('mousemove', on_mouse_move)
-  canvas.addEventListener('touchmove', (e) => handleTouch(e, on_mouse_move))
+  target.addEventListener('mousemove', on_mousemove);
+  target.addEventListener('touchmove', (e) => handle_touch(e, on_mousemove))
 
-  canvas.addEventListener('wheel', (e) => adjustZoom(e.deltaY*SCROLL_SENSITIVITY))
+  target.addEventListener('wheel', on_mousescroll);
 
-  draw()
+  target.addEventListener('dblclick', on_doubleclick);
+
+  update_transform();
+  draw();
 }
 
-
-// load maps.json, update image.src and labels.
 async function load_json(url)
 {
   var response = await fetch(url);
-  let maps = await response.json();
+  maps = await response.json();
 
-  let map_name = maps.main;
-
-  if (params.get('map'))
-  {
-    // use value from Query
-    map_name = params.get('map');
-  }
-
-  let map_url = maps.maps[map_name].url;
-  if ("labels" in maps.maps[map_name])
-  {
-    labels = maps.maps[map_name].labels;
-  }
+  if (!map_current)
+    map_current = maps.main;
 
   for (const [key, value] of Object.entries(maps.maps))
   {
@@ -70,42 +59,71 @@ async function load_json(url)
 
     new_button.innerText = value.name;
     new_button.onclick = function () {
-        location.href = `?map=${key}`;
+      const url = new URL(window.location)
+      url.searchParams.set("foo", "bar")
+
+      params.set('map', key);
+      update_params();
+      load_map();
     };
 
-    mapsbar.appendChild(new_button);
+    maplist.appendChild(new_button);
+  }
+  load_map();
+}
+
+function update_params()
+{
+  history.pushState('', '', '?' + params.toString());
+}
+
+function load_map()
+{
+  if (params.has('map'))
+    map_current = params.get('map');
+
+  image.src = maps.maps[map_current].url;
+
+  if ("labels" in maps.maps[map_current])
+  {
+    labels = maps.maps[map_current].labels;
+  }
+  else
+  {
+    labels = []
   }
 
-  image.src = map_url;
+  console.log(`Loaded map ${map_current} with ${Object.keys(labels).length} labels.`);
 
-  console.log(`Loaded map ${map_url} with ${Object.keys(labels).length} labels.`);
+  if (params.has('pos'))
+  {
+    var new_position = params.get('pos').split(',');
+    position.x = parseInt(new_position[0]);
+    position.y = parseInt(new_position[1]);
+  }
+
+  update_transform();
+  image.onload = async function () {
+    draw();
+  }
+}
+
+function toggle_maplist()
+{
+  button = document.getElementById("maplist");
+  button.hidden = ! button.hidden;
 }
 
 
 function draw()
 {
-  requestAnimationFrame( draw )
-  canvas.width = window.innerWidth
-  canvas.height = window.innerHeight
+  canvas.width = image.naturalWidth;
+  canvas.height = image.naturalHeight;
 
-  // Translate to the canvas centre before zooming - so you'll always zoom on what you're looking directly at
-
-  ctx.translate(window.innerWidth / 2,
-                window.innerHeight / 2 )
-  ctx.scale(cameraZoom,
-            cameraZoom)
-  ctx.translate(-window.innerWidth / 2 + cameraOffset.x,
-                -window.innerHeight / 2 + cameraOffset.y )
-  
-  // disables blur
   ctx.imageSmoothingEnabled = false;
-
-  var image_x = Math.floor(-image.width / 2);
-  var image_y = Math.floor(-image.height / 2);
-  ctx.drawImage(image, image_x, image_y);
-
+  ctx.drawImage(image, 0, 0);
   // dont draw labels if they are hidden
-  if ( is_labels_hidden )
+  if ( !show_labels )
     return;
 
   for (const iter in labels)
@@ -113,123 +131,138 @@ function draw()
     value = labels[iter];
     draw_text(value.name, value.x, value.y, value.size);
   }
+
 }
 
 
-function draw_text(text, x, y, font_size=12, stroke_size=16, font="Verdana")
+function draw_text(text, x, y, font_size=12, font="Sans-serif")
 {
-  ctx.fillStyle = "white";
-  ctx.strokeStyle = "black";
-  ctx.lineWidth = stroke_size;
-
   ctx.font = `${font_size}em ${font}`;
+  ctx.strokeStyle = "black";
+  ctx.lineWidth = 12;
   ctx.strokeText(text, x, y);
+  ctx.shadowColor = "black";
+  ctx.shadowOffsetX = 5;
+  ctx.shadowOffsetY = 5;
+  ctx.shadowBlur = 5;
+  ctx.fillStyle = "white";
   ctx.fillText(text, x, y);
 }
 
-
-// Gets the relevant location from a mouse or single touch event
-function getEventLocation(e)
+function update_transform()
 {
-  if (e.touches && e.touches.length == 1)
+  target.style.transform = `translate(${position.x}px, ${position.y}px) scale(${zoom})`;
+}
+
+function get_event_location(e)
+{
+  if (e.touches)
     return { x:e.touches[0].clientX,
              y: e.touches[0].clientY }
-
   else if (e.clientX && e.clientY)
     return { x: e.clientX,
              y: e.clientY }
 }
 
-
-function on_mouse_down(e)
+function handle_touch(e, touch_handler)
 {
-    is_panning = true
-    dragStart.x = getEventLocation(e).x/cameraZoom - cameraOffset.x
-    dragStart.y = getEventLocation(e).y/cameraZoom - cameraOffset.y
+  if (e.touches.length == 1)
+  {
+    touch_handler(e);
+  }
+  else if (e.type == "touchmove" && e.touches.length == 2)
+  {
+    is_panning = false;
+    handle_pinch(e);
+  }
 }
 
-
-function on_mouse_up(e)
+function handle_pinch(e)
 {
-    is_panning = false
-    initialPinchDistance = null
-    lastZoom = cameraZoom
+  e.preventDefault();
+  let touch1 = { x: e.touches[0].clientX,
+                 y: e.touches[0].clientY }
+  let touch2 = { x: e.touches[1].clientX,
+                 y: e.touches[1].clientY }
+
+  let currentDistance = (touch1.x - touch2.x)**2 + (touch1.y - touch2.y)**2
+
+  if (initial_pinch_distance == null)
+    initial_pinch_distance = currentDistance
+  else
+    on_mousescroll( e, currentDistance/initial_pinch_distance )
+
 }
 
-
-function on_mouse_move(e)
+function on_mousedown(e)
 {
+  e.preventDefault();
+  event_location = get_event_location(e);
+  start = { x: event_location.x - position.x,
+            y: event_location.y - position.y};
+  is_panning = true;
+}
+
+function on_mouseup(e)
+{
+  is_panning = false;
+  initialPinchDistance = null;
+  zoom_last = zoom;
+}
+
+function on_mousemove(e)
+{
+  e.preventDefault();
   if (!is_panning)
     return;
-
-  cameraOffset.x = getEventLocation(e).x/cameraZoom - dragStart.x;
-  cameraOffset.y = getEventLocation(e).y/cameraZoom - dragStart.y;
+  event_location = get_event_location(e);
+  position = { x: event_location.x - start.x,
+               y: event_location.y - start.y};
+  update_transform();
 }
 
-
-function handleTouch(e, singleTouchHandler)
+function on_mousescroll(e, pinch)
 {
-    if ( e.touches.length == 1 )
-    {
-        singleTouchHandler(e)
-    }
-    else if (e.type == "touchmove" && e.touches.length == 2)
-    {
-        is_panning = false
-        handlePinch(e)
-    }
-}
+  e.preventDefault();
+  event_location = get_event_location(e);
+  var zoom_position = { x: Math.round((event_location.x - position.x) / zoom),
+                        y: Math.round((event_location.y - position.y) / zoom)};
 
-
-function handlePinch(e)
-{
-    e.preventDefault()
-    
-    let touch1 = { x: e.touches[0].clientX,
-                   y: e.touches[0].clientY }
-    let touch2 = { x: e.touches[1].clientX,
-                   y: e.touches[1].clientY }
-    
-    // This is distance squared, but no need for an expensive sqrt as it's only used in ratio
-    let currentDistance = (touch1.x - touch2.x)**2 + (touch1.y - touch2.y)**2
-    
-    if (initialPinchDistance == null)
-        initialPinchDistance = currentDistance
-    else
-        adjustZoom( null, currentDistance/initialPinchDistance )
-}
-
-
-function adjustZoom(zoomAmount, zoomFactor)
-{
-  if (is_panning)
-    return;
-
-  if (zoomAmount)
+  if (pinch)
   {
-    cameraZoom -= (cameraZoom * 0.1) * zoomAmount;
+    zoom = pinch * zoom_last;
   }
-  else if (zoomFactor)
+  else
   {
-    console.log(zoomFactor)
-    cameraZoom = zoomFactor*lastZoom
+    var delta = (e.wheelDelta ? e.wheelDelta : -e.deltaY);
+    (delta > 0) ? (zoom *= 1.2) : (zoom /= 1.2);
   }
 
-  cameraZoom = cameraZoom.toFixed(2)
+  zoom = zoom.toFixed(2);
 
-  cameraZoom = Math.min( cameraZoom, MAX_ZOOM )
-  cameraZoom = Math.max( cameraZoom, MIN_ZOOM )
+  if (zoom > zoom_limit.max)
+    zoom = zoom_limit.max;
+
+  if (zoom < zoom_limit.min)
+    zoom = zoom_limit.min;
+
+  position = { x: Math.round(event_location.x - zoom_position.x * zoom),
+               y: Math.round(event_location.y - zoom_position.y * zoom)};
+
+  update_transform();
+}
+
+function on_doubleclick(e)
+{
+  /*
+  params.set("pos", `${},${}`)
+  update_params();
+  */
 }
 
 
-function toggleMapsHidden()
+function toggle_labels()
 {
-  button = document.getElementById("mapsbar");
-  button.hidden = ! button.hidden;
-}
-
-
-function toggleLegendHidden()
-{
-  is_labels_hidden = ! is_labels_hidden;
+  show_labels = !show_labels;
+  draw();
 }

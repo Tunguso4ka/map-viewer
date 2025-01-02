@@ -3,11 +3,12 @@
   --light: #D8D8F6;
 }
 
-body, html {
-  background-color: var(--dark);
-  margin: 0;
-  padding: 0;
+* {
   overscroll-behavior: contain;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  overflow: hidden;
 }
 
 button {
@@ -15,8 +16,8 @@ button {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 
-  background-color: var(--dark);
-  color: var(--light);
+  background-color: var(--light);
+  color: var(--dark);
   border: 0.1em solid var(--light);
   border-radius: 0.25em;
   font-size: 1.3em;
@@ -24,18 +25,19 @@ button {
 
   cursor: pointer;
 
-  min-width: 2em;
+  min-width: 1.5em;
   min-height: 2em;
-  padding: 0;
+  padding: 0.2em 0.5em;
 }
 
 button:hover {
-  background-color: var(--light);
-  color: var(--dark);
+  background-color: var(--dark);
+  color: var(--light);
 }
 
 ul {
   padding: 0;
+  margin: 0.5em 0 0 0;
   display: grid;
 }
 
@@ -44,8 +46,8 @@ ul {
 }
 
 .toolbar {
-  top: 2%;
-  left: 1%;
+  top: 1em;
+  left: 1em;
   position: absolute;
   display: grid;
 }
@@ -54,12 +56,39 @@ ul {
   display: flex;
 }
 
-#canvas {
-  position: absolute;
-  overflow: hidden;
-  height: 100vh;
-  width: 100vw;
+html, body {
+  background-color: var(--dark);
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#map_container {
+  width: 100%;
+  height: 100%;
+}
+
+#map_zoomable {
+  transform-origin: 0px 0px;
+  transform: scale(1) translate(0px, 0px);
+  cursor: grab;
+}
+
+div#map_zoomable > img, canvas{
+  width: 100%;
+  height: auto;
+}
+
+#map_image {
   image-rendering: pixelated;
+  pointer-events: none;
+  user-select: none;
+}
+
+#canvas {
+  image-rendering: pixelated;
+  width: 100%;
+  height: 100%;
 }
