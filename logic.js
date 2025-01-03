@@ -59,9 +59,6 @@ async function load_json(url)
 
     new_button.innerText = value.name;
     new_button.onclick = function () {
-      const url = new URL(window.location)
-      url.searchParams.set("foo", "bar")
-
       params.set('map', key);
       params.delete('pos');
       update_params();
@@ -86,27 +83,16 @@ function load_map()
   image.src = maps.maps[map_current].url;
 
   if ("labels" in maps.maps[map_current])
-  {
     labels = maps.maps[map_current].labels;
-  }
   else
-  {
     labels = []
-  }
 
   console.log(`Loaded map ${map_current} ${image.naturalWidth}:${image.naturalHeight} with ${Object.keys(labels).length} labels.`);
 
-  if (params.has('pos'))
-  {
-    var new_position = params.get('pos').split(',');
-
-    position.x = parseInt(new_position[0]);
-    position.y = parseInt(new_position[1]);
-  }
-
   update_transform();
-  image.onload = async function () {
+  image.onload = function() {
     draw();
+    get_param_position();
   }
 }
 
@@ -116,6 +102,20 @@ function toggle_maplist()
   button.hidden = ! button.hidden;
 }
 
+function get_param_position()
+{
+  if (!params.has('pos'))
+    return;
+
+  // Get position from query
+  var new_position = {x: parseInt(params.get('pos').split(',')[0]),
+                      y: parseInt(params.get('pos').split(',')[1])}
+
+  // Convert tile position into real position.
+  var delta = canvas.width / canvas.clientWidth;
+
+  update_transform();
+}
 
 function draw()
 {
@@ -263,10 +263,14 @@ function on_mousescroll(e, pinch)
 
 function on_doubleclick(e)
 {
-  return;
   event_location = get_event_location(e);
 
-  console.log(share_position);
+  // Get tile position.
+  var delta = canvas.width / canvas.clientWidth;
+  var share_position = {x: Math.floor((event_location.x - position.x) / zoom * delta / 32),
+                    y: Math.floor((event_location.y - position.y) / zoom * delta / 32)};
+
+  console.log(share_position)
   //params.set("pos", `${share_position.x},${share_position.y}`)
   //update_params();
 }
