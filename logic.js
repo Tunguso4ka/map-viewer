@@ -63,6 +63,7 @@ async function load_json(url)
       url.searchParams.set("foo", "bar")
 
       params.set('map', key);
+      params.delete('pos');
       update_params();
       load_map();
     };
@@ -93,11 +94,12 @@ function load_map()
     labels = []
   }
 
-  console.log(`Loaded map ${map_current} with ${Object.keys(labels).length} labels.`);
+  console.log(`Loaded map ${map_current} ${image.naturalWidth}:${image.naturalHeight} with ${Object.keys(labels).length} labels.`);
 
   if (params.has('pos'))
   {
     var new_position = params.get('pos').split(',');
+
     position.x = parseInt(new_position[0]);
     position.y = parseInt(new_position[1]);
   }
@@ -117,12 +119,14 @@ function toggle_maplist()
 
 function draw()
 {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
   canvas.width = image.naturalWidth;
   canvas.height = image.naturalHeight;
 
   ctx.imageSmoothingEnabled = false;
   ctx.drawImage(image, 0, 0);
-  // dont draw labels if they are hidden
+
   if ( !show_labels )
     return;
 
@@ -138,19 +142,24 @@ function draw()
 function draw_text(text, x, y, font_size=12, font="Sans-serif")
 {
   ctx.font = `${font_size}em ${font}`;
+
   ctx.strokeStyle = "black";
   ctx.lineWidth = 12;
   ctx.strokeText(text, x, y);
+
   ctx.shadowColor = "black";
   ctx.shadowOffsetX = 5;
   ctx.shadowOffsetY = 5;
   ctx.shadowBlur = 5;
+
   ctx.fillStyle = "white";
   ctx.fillText(text, x, y);
 }
 
 function update_transform()
 {
+  if (!target)
+    return;
   target.style.transform = `translate(${position.x}px, ${position.y}px) scale(${zoom})`;
 }
 
@@ -254,10 +263,12 @@ function on_mousescroll(e, pinch)
 
 function on_doubleclick(e)
 {
-  /*
-  params.set("pos", `${},${}`)
-  update_params();
-  */
+  return;
+  event_location = get_event_location(e);
+
+  console.log(share_position);
+  //params.set("pos", `${share_position.x},${share_position.y}`)
+  //update_params();
 }
 
 
