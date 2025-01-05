@@ -27,6 +27,8 @@ window.onload = () =>
   canvas = document.getElementById("canvas");
   ctx = canvas.getContext('2d');
 
+  canvas.image = document.createElement("canvas");
+
   target.addEventListener('mousedown', on_mousedown);
   target.addEventListener('touchstart', (e) => handle_touch(e, on_mousedown))
 
@@ -45,6 +47,8 @@ window.onload = () =>
   draw();
 }
 
+
+// Loads map.json
 async function load_json(url)
 {
   var response = await fetch(url);
@@ -70,11 +74,8 @@ async function load_json(url)
   load_map();
 }
 
-function update_params()
-{
-  history.pushState('', '', '?' + params.toString());
-}
 
+// Updates map image and labels.
 function load_map()
 {
   if (params.has('map'))
@@ -87,21 +88,30 @@ function load_map()
   else
     labels = []
 
-  console.log(`Loaded map ${map_current} ${image.naturalWidth}:${image.naturalHeight} with ${Object.keys(labels).length} labels.`);
+  toggle_hidden('labels_button', !labels.length)
 
+  console.log(`Loaded map ${map_current} ${image.naturalWidth}:${image.naturalHeight} with ${Object.keys(labels).length} labels.`);
   update_transform();
+
   image.onload = function() {
+    canvas.image.width = image.naturalWidth;
+    canvas.image.height = image.naturalHeight;
+    canvas.image.getContext("2d").drawImage(image, 0, 0)
+
     draw();
     get_param_position();
   }
 }
 
-function toggle_maplist()
+
+// Updates url
+function update_params()
 {
-  button = document.getElementById("maplist");
-  button.hidden = ! button.hidden;
+  history.pushState('', '', '?' + params.toString());
 }
 
+
+// Gets shared position from params and then updates map position.
 function get_param_position()
 {
   if (!params.has('pos'))
@@ -117,6 +127,8 @@ function get_param_position()
   update_transform();
 }
 
+
+// Draws map and labels.
 function draw()
 {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -125,7 +137,7 @@ function draw()
   canvas.height = image.naturalHeight;
 
   ctx.imageSmoothingEnabled = false;
-  ctx.drawImage(image, 0, 0);
+  ctx.drawImage(canvas.image, 0, 0);
 
   if ( !show_labels )
     return;
@@ -133,29 +145,30 @@ function draw()
   for (const iter in labels)
   {
     value = labels[iter];
-    draw_text(value.name, value.x, value.y, value.size);
+    draw_text(ctx, value.name, value.x, value.y, value.size);
   }
-
 }
 
 
-function draw_text(text, x, y, font_size=12, font="Sans-serif")
+function draw_text(context, text, x, y, font_size=12, font="Sans-serif")
 {
-  ctx.font = `${font_size}em ${font}`;
+  context.font = `${font_size}em ${font}`;
 
-  ctx.strokeStyle = "black";
-  ctx.lineWidth = 12;
-  ctx.strokeText(text, x, y);
+  context.strokeStyle = "black";
+  context.lineWidth = 12;
+  context.strokeText(text, x, y);
 
-  ctx.shadowColor = "black";
-  ctx.shadowOffsetX = 5;
-  ctx.shadowOffsetY = 5;
-  ctx.shadowBlur = 5;
+  context.shadowColor = "black";
+  context.shadowOffsetX = 5;
+  context.shadowOffsetY = 5;
+  context.shadowBlur = 5;
 
-  ctx.fillStyle = "white";
-  ctx.fillText(text, x, y);
+  context.fillStyle = "white";
+  context.fillText(text, x, y);
 }
 
+
+// Updates map position and zoom.
 function update_transform()
 {
   if (!target)
@@ -163,6 +176,8 @@ function update_transform()
   target.style.transform = `translate(${position.x}px, ${position.y}px) scale(${zoom})`;
 }
 
+
+// Returns clicked/touched position.
 function get_event_location(e)
 {
   if (e.touches)
@@ -173,6 +188,8 @@ function get_event_location(e)
              y: e.clientY }
 }
 
+
+// Handles touches.
 function handle_touch(e, touch_handler)
 {
   if (e.touches.length == 1)
@@ -186,6 +203,8 @@ function handle_touch(e, touch_handler)
   }
 }
 
+
+// Zooms in or out on phones.
 function handle_pinch(e)
 {
   e.preventDefault();
@@ -203,6 +222,8 @@ function handle_pinch(e)
 
 }
 
+
+// Starts panning.
 function on_mousedown(e)
 {
   e.preventDefault();
@@ -212,6 +233,8 @@ function on_mousedown(e)
   is_panning = true;
 }
 
+
+// Stops panning.
 function on_mouseup(e)
 {
   is_panning = false;
@@ -219,6 +242,8 @@ function on_mouseup(e)
   zoom_last = zoom;
 }
 
+
+// Panning.
 function on_mousemove(e)
 {
   e.preventDefault();
@@ -230,6 +255,8 @@ function on_mousemove(e)
   update_transform();
 }
 
+
+// Zooms in or out.
 function on_mousescroll(e, pinch)
 {
   e.preventDefault();
@@ -261,6 +288,8 @@ function on_mousescroll(e, pinch)
   update_transform();
 }
 
+
+// Updates Query params with clicked location.
 function on_doubleclick(e)
 {
   event_location = get_event_location(e);
@@ -276,8 +305,18 @@ function on_doubleclick(e)
 }
 
 
+// Button logic
 function toggle_labels()
 {
   show_labels = !show_labels;
   draw();
+}
+
+function toggle_hidden(eid, bool)
+{
+  button = document.getElementById(eid);
+  if (bool != null)
+    button.hidden = bool;
+  else
+    button.hidden = ! button.hidden;
 }
