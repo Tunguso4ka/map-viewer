@@ -2,7 +2,6 @@ let params = new URLSearchParams(document.location.search);
 let maps;
 let map_current;
 
-load_json("maps.json");
 var labels = {};
 var show_labels = true;
 
@@ -18,7 +17,6 @@ var image = new Image();
 image.src = 'icon.png';
 
 var canvas;
-var canvas_image = document.createElement("canvas");
 var ctx;
 
 window.onload = () =>
@@ -27,6 +25,8 @@ window.onload = () =>
   //image = document.getElementById("map_image");
   canvas = document.getElementById("canvas");
   ctx = canvas.getContext('2d');
+  
+  canvas.image = document.createElement("canvas");
 
   target.addEventListener('mousedown', on_mousedown);
   target.addEventListener('touchstart', (e) => handle_touch(e, on_mousedown))
@@ -41,6 +41,8 @@ window.onload = () =>
   target.addEventListener('wheel', on_mousescroll);
 
   target.addEventListener('dblclick', on_doubleclick);
+
+  load_json("maps.json");
 }
 
 
@@ -90,9 +92,9 @@ function load_map()
   update_transform();
 
   image.onload = function() {
-    canvas_image.width = image.naturalWidth;
-    canvas_image.height = image.naturalHeight;
-    canvas_image.getContext("2d").drawImage(image, 0, 0)
+    canvas.image.width = image.naturalWidth;
+    canvas.image.height = image.naturalHeight;
+    canvas.image.getContext("2d").drawImage(image, 0, 0)
 
     draw();
     get_param_position();
@@ -133,7 +135,7 @@ function draw()
   canvas.height = image.naturalHeight;
 
   ctx.imageSmoothingEnabled = false;
-  ctx.drawImage(canvas_image, 0, 0);
+  ctx.drawImage(canvas.image, 0, 0);
 
   if ( !show_labels )
     return;
