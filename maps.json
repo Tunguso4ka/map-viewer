@@ -182,7 +182,33 @@
     },
     "Varadero": {
       "name": "New Varadero",
-      "url": "maps/Varadero-0.png"
+      "url": "maps/Varadero-0.png",
+      "labels": [
+        { "name": "LZ1", "size": 12, "x": 2100, "y": 1250 },
+        { "name": "LZ2", "size": 12, "x": 4450, "y": 1075 },
+        { "name": "Bar", "size": 4, "x": 3250, "y": 1000 },
+        { "name": "Rockability Beach", "size": 4, "x": 2950, "y": 1600 },
+        { "name": "East Beach", "size": 6, "x": 4100, "y": 1900 },
+        { "name": "Cargo", "size": 6, "x": 1200, "y": 1550 },
+        { "name": "Northern Maint", "size": 4, "x": 1600, "y": 2000 },
+        { "name": "Engineering", "size": 6, "x": 3625, "y": 2450 },
+        { "name": "Security Offices", "size": 4, "x": 3350, "y": 3300 },
+        { "name": "Sec. Maint", "size": 4, "x": 4000, "y": 3300 },
+        { "name": "Dorms", "size": 4, "x": 2900, "y": 3400 },
+        { "name": "Bathroom", "size": 4, "x": 3800, "y": 4500 },
+        { "name": "Admin", "size": 4, "x": 2050, "y": 3350 },
+        { "name": "Medical", "size": 4, "x": 1800, "y": 2700 },
+        { "name": "Library", "size": 4, "x": 2775, "y": 2250 },
+        { "name": "B-Ball", "size": 4, "x": 2850, "y": 2700 },
+        { "name": "Research", "size": 6, "x": 475, "y": 3400 },
+        { "name": "North Research Caves", "size": 4, "x": 600, "y": 2500 },
+        { "name": "South Research Caves", "size": 4, "x": 1150, "y": 4150 },
+        { "name": "Southern Maintenance", "size": 4, "x": 2300, "y": 4500 },
+        { "name": "South West Caves", "size": 6, "x": 250, "y": 5250 },
+        { "name": "Monsoon", "size": 6, "x": 4900, "y": 3500 },
+        { "name": "Grass Caves", "size": 6, "x": 2850, "y": 5200 },
+        { "name": "Unknown Vessel", "size": 8, "x": 5350, "y": 5100 }
+      ]
     },
     "Chances": {
       "name": "Chances Claim",

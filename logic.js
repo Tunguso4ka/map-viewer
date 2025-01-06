@@ -12,6 +12,7 @@ var zoom_last = zoom;
 var zoom_limit = { min: 0.3, max: 15 };
 var initial_pinch_distance = null;
 var is_panning;
+
 var target;
 var image = new Image();
 image.src = 'icon.png';
@@ -22,7 +23,6 @@ var ctx;
 window.onload = () =>
 {
   target = document.getElementById("map_zoomable");
-  //image = document.getElementById("map_image");
   canvas = document.getElementById("canvas");
   ctx = canvas.getContext('2d');
   
@@ -44,7 +44,6 @@ window.onload = () =>
 
   load_json("maps.json");
 }
-
 
 // Loads map.json
 async function load_json(url)
