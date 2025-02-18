@@ -31,7 +31,7 @@
       ]
     },
     "Savannah": {
-      "name": "Savannah",
+      "name": "UNS Savannah",
       "url": "maps/Savannah-0.png"
     },
     "Shiva": {
@@ -95,7 +95,7 @@
       ]
     },
     "Almayer": {
-      "name": "Almayer",
+      "name": "UNS Almayer",
       "url": "https://mocha.affectedarc07.co.uk/webmap/cm/almayer/USS_Almayer-1.png",
       "labels": [
         { "name": "This render is not from RMC-14! Image source: https://mocha.affectedarc07.co.uk/webmap/cm", "size": 6, "x": -225, "y": 6600 },
@@ -263,6 +263,48 @@
         { "name": "South Caves", "size": 6, "x": 5325, "y": 3850 },
         { "name": "North East Caves", "size": 6, "x": 6325, "y": 1550 },
         { "name": "South East Caves", "size": 6, "x": 6525, "y": 3050 }
+      ]
+    },
+    "Hybrisa": {
+      "name": "Hybrisa Prospera",
+      "url": "maps/Hybrisa-0.png",
+      "labels": [
+        { "name": "LZ1", "size": 12, "x": 6625, "y": 625 },
+        { "name": "LZ2", "size": 12, "x": 6500, "y": 4800 },
+
+        {"name": "WeYa Waste", "size": 6, "x": 6500, "y": 1770 },
+        { "name": "KMCC Freight Hub", "size": 8, "x": 6000, "y": 3550 },
+        { "name": "KMCC Departures", "size": 6, "x": 5700, "y": 5200 },
+        { "name": "KMCC Mining South", "size": 6, "x": 6100, "y": 5800 },
+        { "name": "KMCC Mining SE", "size": 6, "x": 6400, "y": 6675 },
+
+        { "name": "Derelict Ship", "size": 12, "x": 4000, "y": 7000 },
+
+        { "name": "Caverns South", "size": 6, "x": 4950, "y": 7600 },
+        { "name": "Caverns Southeast", "size": 6, "x": 5600, "y": 7000 },
+        { "name": "Caverns East", "size": 6, "x": 4950, "y": 5500 },
+        { "name": "Caverns Plateau", "size": 6, "x": 3400, "y": 6200 },
+        { "name": "Caverns Central", "size": 6, "x": 2750, "y": 4750 },
+        { "name": "Caverns West", "size": 6, "x": 1600, "y": 6200 },
+        { "name": "Caverns Southwest", "size": 6, "x": 450, "y": 7200 },
+        { "name": "Caverns Northwest", "size": 6, "x": 400, "y": 3450 },
+        { "name": "Caverns North", "size": 6, "x": 3100, "y": 200 }, 
+
+        { "name": "WeYa Bio-Genomic Lab", "size": 8, "x": 150, "y": 5700 },
+
+        { "name": "Sentinel Outpost", "size": 6, "x": 4500, "y": 3950 },
+        { "name": "Meridian", "size": 6, "x": 3400, "y": 3250 },
+        { "name": "WeYaMart", "size": 6, "x": 2100, "y": 3300 },
+        { "name": "Casino", "size": 6, "x": 1450, "y": 2450 },
+        { "name": "Westhaven Apartments", "size": 8, "x": 2050, "y": 2250 },
+        { "name": "WeYa Offices", "size": 6, "x": 2200, "y": 1500 },
+        { "name": "Pizza", "size": 6, "x": 3100, "y": 1200 },
+        { "name": "Garage", "size": 6, "x": 2200, "y": 550 },
+        { "name": "WeYa Celestia Gateway", "size": 8, "x": 50, "y": 1200 },
+        { "name": "Dynagrid", "size": 6, "x": 4200, "y": 2600 },
+        { "name": "TComms", "size": 4, "x": 5250, "y": 2400 },
+        { "name": "Bar", "size": 6, "x": 3850, "y": 1300 },
+        { "name": "Nova Medica", "size": 8, "x": 5200, "y": 1300 }
       ]
     }
   },
