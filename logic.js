@@ -261,6 +261,9 @@ function on_mousemove(e)
 // Zooms in or out.
 function on_mousescroll(e, pinch)
 {
+  if (is_panning)
+    return;
+
   e.preventDefault();
   event_location = get_event_location(e);
   var zoom_position = { x: Math.round((event_location.x - position.x) / zoom),
