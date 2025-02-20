@@ -92,9 +92,9 @@
     },
     "Almayer": {
       "name": "UNS Almayer",
-      "url": "https://mocha.affectedarc07.co.uk/webmap/cm/almayer/USS_Almayer-1.png",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/master/Almayer.png",
       "labels": [
-        { "name": "This render is not from RMC-14! Image source: https://mocha.affectedarc07.co.uk/webmap/cm", "size": 6, "x": -225, "y": 6600 },
+        { "name": "This is render of cm-ss13 Almayer.", "size": 6, "x": 0, "y": 6400 },
         { "name": "AI Core", "size": 8, "x": 8875, "y": 3250 },
         { "name": "Lower Deck", "size": 12, "x": -25, "y": 4850 },
         { "name": "Astronavigation", "size": 4, "x": 1575, "y": 4825 },
