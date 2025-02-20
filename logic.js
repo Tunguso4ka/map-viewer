@@ -51,11 +51,11 @@ async function load_json(url)
   var response = await fetch(url);
   maps = await response.json();
 
-  if (!map_current)
-    map_current = maps.main;
-
   for (const [key, value] of Object.entries(maps.maps))
   {
+    if (value.hidden)
+      continue
+
     var new_button = document.createElement("button");
 
     new_button.innerText = value.name;
@@ -77,6 +77,11 @@ function load_map()
 {
   if (params.has('map'))
     map_current = params.get('map');
+
+  if (!map_current)
+    map_current = maps.main;
+
+  console.log(map_current, map_current in maps.maps)
 
   image.src = maps.maps[map_current].url;
 

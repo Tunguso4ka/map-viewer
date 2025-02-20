@@ -18,6 +18,7 @@ or
     {
       "name": "map name",
       "url": "map url", // internal or external
+      "hidden": true, // not required, dont create button if true
       "labels": // not required
       [
         {"name": "name", "size": 12, "x": 0, "y": 0}

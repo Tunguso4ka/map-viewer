@@ -306,6 +306,11 @@
         { "name": "Bar", "size": 6, "x": 3850, "y": 1300 },
         { "name": "Nova Medica", "size": 8, "x": 5200, "y": 1300 }
       ]
+    },
+    "Rouny": {
+      "name": "ITS ROUNY!!",
+      "url": "icon.png",
+      "hidden": true
     }
   },
   "main": "Solaris"
