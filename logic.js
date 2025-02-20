@@ -98,7 +98,7 @@ function load_map()
     canvas.image.height = image.naturalHeight;
     canvas.image.getContext("2d").drawImage(image, 0, 0)
 
-    draw();
+    requestAnimationFrame(draw);
     get_param_position();
   }
 }
@@ -312,7 +312,7 @@ function on_doubleclick(e)
 function toggle_labels()
 {
   show_labels = !show_labels;
-  draw();
+  requestAnimationFrame(draw);
 }
 
 function toggle_hidden(eid, bool)
