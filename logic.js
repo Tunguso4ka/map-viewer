@@ -81,8 +81,6 @@ function load_map()
   if (!map_current)
     map_current = maps.main;
 
-  console.log(map_current, map_current in maps.maps)
-
   image.src = maps.maps[map_current].url;
 
   if ("labels" in maps.maps[map_current])
@@ -92,7 +90,7 @@ function load_map()
 
   toggle_hidden('labels_button', !labels.length)
 
-  console.log(`Loaded map ${map_current} ${image.naturalWidth}:${image.naturalHeight} with ${Object.keys(labels).length} labels.`);
+  console.log(`Loaded map ${maps.maps[map_current].name} from ${maps.maps[map_current].url} x:${image.naturalWidth} y:${image.naturalHeight} with ${Object.keys(labels).length} labels.`);
   update_transform();
 
   image.onload = function() {
