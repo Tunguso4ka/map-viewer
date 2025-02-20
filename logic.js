@@ -20,7 +20,7 @@ image.src = 'icon.png';
 var canvas;
 var ctx;
 
-window.onload = () =>
+document.addEventListener('DOMContentLoaded', function()
 {
   target = document.getElementById("map_zoomable");
   canvas = document.getElementById("canvas");
@@ -43,7 +43,7 @@ window.onload = () =>
   target.addEventListener('dblclick', on_doubleclick);
 
   load_json("maps.json");
-}
+}, false);
 
 // Loads map.json
 async function load_json(url)
