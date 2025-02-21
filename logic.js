@@ -58,7 +58,10 @@ async function load_json(url)
 
     var new_button = document.createElement("button");
 
-    new_button.innerText = value.name;
+    if (value.name)
+      new_button.innerText = value.name;
+    else
+      new_button.innerText = key
     new_button.onclick = function () {
       params.set('map', key);
       params.delete('pos');
@@ -90,7 +93,7 @@ function load_map()
 
   toggle_hidden('labels_button', !labels.length)
 
-  console.log(`Loaded map ${maps.maps[map_current].name} from ${maps.maps[map_current].url} x:${image.naturalWidth} y:${image.naturalHeight} with ${Object.keys(labels).length} labels.`);
+  console.log(`Loaded map ${map_current} from ${maps.maps[map_current].url} x:${image.naturalWidth} y:${image.naturalHeight} with ${Object.keys(labels).length} labels.`);
   update_transform();
 
   image.onload = function() {

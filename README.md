@@ -10,21 +10,21 @@ Nope. Pure html, css, js and json.
 or
 `npx http-server`
 
-## maps/maps.json
+## maps.json
 ```
 {
   "maps": {
-    "map id": // used in Query param "?map={map id}"
+    "map id": // required, used in Query param "?map={map id}"
     {
-      "name": "map name",
-      "url": "map url", // internal or external
+      "name": "map name", // not required, name for the button
+      "url": "map url", // required, internal or external
       "hidden": true, // not required, dont create button if true
-      "labels": // not required
+      "labels": // not required, adds labels
       [
-        {"name": "name", "size": 12, "x": 0, "y": 0}
+        {"name": "name", "size": 12, "x": 0, "y": 0} //creates label with text "name", font size 12, on pos 0,0
       ]
     }
   }
-  "main": "id of main map" // will be used if Query param map is undefined
+  "main": "id of main map" // required, will be used if Query param map is undefined
 }
 ```
