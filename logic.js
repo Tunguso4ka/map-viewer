@@ -13,6 +13,8 @@ var zoom_limit = { min: 0.3, max: 15 };
 var initial_pinch_distance = null;
 var is_panning;
 
+// test
+
 var target;
 var image = new Image();
 image.src = 'icon.png';
@@ -78,6 +80,7 @@ async function load_json(url)
 // Updates map image and labels.
 function load_map()
 {
+  target.style.cursor='wait';
   if (params.has('map'))
     map_current = params.get('map');
 
@@ -103,6 +106,7 @@ function load_map()
 
     requestAnimationFrame(draw);
     get_param_position();
+    target.style.cursor='default';
   }
 }
 
