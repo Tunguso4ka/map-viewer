@@ -241,7 +241,7 @@
         { "name": "LZ1", "size": 12, "x": 6625, "y": 625 },
         { "name": "LZ2", "size": 12, "x": 6500, "y": 4800 },
 
-        {"name": "WeYa Waste", "size": 6, "x": 6500, "y": 1770 },
+        { "name": "Waste Disposals", "size": 6, "x": 6000, "y": 2400 },
         { "name": "KMCC Freight Hub", "size": 8, "x": 6000, "y": 3550 },
         { "name": "KMCC Departures", "size": 6, "x": 5700, "y": 5200 },
         { "name": "KMCC Mining South", "size": 6, "x": 6100, "y": 5800 },

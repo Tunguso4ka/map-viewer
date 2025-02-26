@@ -145,6 +145,15 @@ function draw()
   if ( !show_labels )
     return;
 
+  ctx.fillStyle = "white";
+  ctx.strokeStyle = "black";
+  ctx.lineWidth = 10;
+
+  ctx.shadowColor = "black";
+  ctx.shadowOffsetX = 5;
+  ctx.shadowOffsetY = 5;
+  ctx.shadowBlur = 10;
+
   for (const iter in labels)
   {
     value = labels[iter];
@@ -156,17 +165,7 @@ function draw()
 function draw_text(context, text, x, y, font_size=12, font="Sans-serif")
 {
   context.font = `${font_size}em ${font}`;
-
-  context.strokeStyle = "black";
-  context.lineWidth = 12;
   context.strokeText(text, x, y);
-
-  context.shadowColor = "black";
-  context.shadowOffsetX = 5;
-  context.shadowOffsetY = 5;
-  context.shadowBlur = 5;
-
-  context.fillStyle = "white";
   context.fillText(text, x, y);
 }
 
