@@ -9,13 +9,11 @@ var position = { x: 0, y: 0};
 var start = { x: 0, y: 0 };
 var zoom = 1;
 var zoom_last = zoom;
-var zoom_limit = { min: 0.3, max: 15 };
+var zoom_limit = { min: 0.1, max: 5 };
 var initial_pinch_distance = null;
 var is_panning;
 
-var target;
 var image = new Image();
-image.src = 'icon.png';
 
 var canvas;
 var ctx;
@@ -23,25 +21,22 @@ var ctx;
 // assign elements, events and load json
 document.addEventListener('DOMContentLoaded', function()
 {
-    target = document.getElementById("map_zoomable");
-    canvas = document.getElementById("canvas");
+    canvas = document.getElementById("map_zoomable");
     ctx = canvas.getContext('2d');
 
-    canvas.image = document.createElement("canvas");
+    canvas.addEventListener('mousedown', on_mousedown);
+    canvas.addEventListener('touchstart', (e) => handle_touch(e, on_mousedown))
 
-    target.addEventListener('mousedown', on_mousedown);
-    target.addEventListener('touchstart', (e) => handle_touch(e, on_mousedown))
+    canvas.addEventListener('mouseup', on_mouseup);
+    canvas.addEventListener('mouseleave', on_mouseup);
+    canvas.addEventListener('touchend',  (e) => handle_touch(e, on_mouseup))
 
-    target.addEventListener('mouseup', on_mouseup);
-    target.addEventListener('mouseleave', on_mouseup);
-    target.addEventListener('touchend',  (e) => handle_touch(e, on_mouseup))
+    canvas.addEventListener('mousemove', on_mousemove);
+    canvas.addEventListener('touchmove', (e) => handle_touch(e, on_mousemove))
 
-    target.addEventListener('mousemove', on_mousemove);
-    target.addEventListener('touchmove', (e) => handle_touch(e, on_mousemove))
+    canvas.addEventListener('wheel', on_mousescroll);
 
-    target.addEventListener('wheel', on_mousescroll);
-
-    target.addEventListener('dblclick', on_doubleclick);
+    canvas.addEventListener('dblclick', on_doubleclick);
 
     load_json("maps.json");
 }, false);
@@ -85,7 +80,7 @@ function load_map()
 {
     update_transform(true); // restore position and zoom
 
-    target.style.cursor='wait';
+    canvas.style.cursor='wait';
 
     if (params.has('map'))
         map_current = params.get('map');
@@ -93,26 +88,23 @@ function load_map()
     if (!map_current)
         map_current = maps.main;
 
-    image.src = maps.maps[map_current].url;
-
     if ("labels" in maps.maps[map_current])
         labels = maps.maps[map_current].labels;
     else
         labels = []
 
+    image.src = maps.maps[map_current].url;
+
     toggle_hidden('labels_button', !labels.length)
 
-    console.log(`Loaded map ${map_current} from ${maps.maps[map_current].url} x:${image.naturalWidth} y:${image.naturalHeight} with ${Object.keys(labels).length} labels.`);
+    console.log(`Loaded map ${map_current} from ${maps.maps[map_current].url} with ${Object.keys(labels).length} labels.`);
     update_transform();
 
-    image.onload = function() {
-        canvas.image.width = image.naturalWidth;
-        canvas.image.height = image.naturalHeight;
-        canvas.image.getContext("2d").drawImage(image, 0, 0)
-
+    image.onload = function()
+    {
         requestAnimationFrame(draw);
         get_param_position();
-        target.style.cursor='default';
+        canvas.style.cursor='default';
     }
 }
 
@@ -131,11 +123,8 @@ function get_param_position()
         return;
 
     // Get position from query
-    var new_position = {x: parseInt(params.get('pos').split(',')[0]),
-                        y: parseInt(params.get('pos').split(',')[1])}
-
-    // Convert tile position into real position.
-    var delta = canvas.width / canvas.clientWidth;
+    position = {x: -(parseInt(params.get('pos').split('x')[0]) * 32) + window.innerWidth / 2,
+                y: -(parseInt(params.get('pos').split('x')[1]) * 32) + window.innerHeight / 2}
 
     update_transform();
 }
@@ -150,7 +139,7 @@ function draw()
     canvas.height = image.naturalHeight;
 
     ctx.imageSmoothingEnabled = false;
-    ctx.drawImage(canvas.image, 0, 0);
+    ctx.drawImage(image, 0, 0);
 
     if ( !show_labels )
         return;
@@ -183,7 +172,7 @@ function draw_text(context, text, x, y, font_size=12, font="Sans-serif")
 // Updates map position and zoom.
 function update_transform(restore=false)
 {
-    if (!target)
+    if (!canvas)
         return;
 
     if (restore)
@@ -193,7 +182,7 @@ function update_transform(restore=false)
         zoom = 1;
     }
 
-    target.style.transform = `translate(${position.x}px, ${position.y}px) scale(${zoom})`;
+    canvas.style.transform = `translate(${position.x}px, ${position.y}px) scale(${zoom})`;
 }
 
 
@@ -323,13 +312,12 @@ function on_doubleclick(e)
     event_location = get_event_location(e);
 
     // Get tile position.
-    var delta = canvas.width / canvas.clientWidth;
-    var share_position = {x: Math.floor((event_location.x - position.x) / zoom * delta / 32),
-                      y: Math.floor((event_location.y - position.y) / zoom * delta / 32)};
+    var share_position = {x: Math.floor((event_location.x - position.x) / zoom / 32),
+                      y: Math.floor((event_location.y - position.y) / zoom / 32)};
 
     console.log(share_position)
-    //params.set("pos", `${share_position.x},${share_position.y}`)
-    //update_params();
+    params.set("pos", `${share_position.x}x${share_position.y}`)
+    update_params();
 }
 
 

@@ -32,7 +32,7 @@
      },
     "Shiva": {
       "name": "Shivas Snowball",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Shiva-0.png?raw=true",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Shiva-0.avif?raw=true",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 600, "y": 4200 },
         { "name": "LZ2", "size": 12, "x": 550, "y": 800 },
@@ -63,7 +63,7 @@
     },
     "Fiorina": {
       "name": "Fiorina Science Annex",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Prison-0.png?raw=true",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Prison-0.avif?raw=true",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 7400, "y": 3000 },
         { "name": "LZ2", "size": 12, "x": 5000, "y": 5700 },
@@ -119,7 +119,7 @@
     },
     "Trijent": {
       "name": "Trijent Dam",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Trijent-0.png?raw=true",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Trijent-0.avif?raw=true",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 950, "y": 900 },
         { "name": "LZ2", "size": 12, "x": 525, "y": 6700 },
@@ -181,7 +181,7 @@
     },
     "Chances": {
       "name": "Chances Claim",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Chances-0.png?raw=true",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Chances-0.avif?raw=true",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 400, "y": 5475 },
         { "name": "LZ2", "size": 12, "x": 4950, "y": 5975 },
@@ -210,7 +210,7 @@
     },
     "Kutjevo": {
       "name": "Kutjevo Refinery",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Kutjevo-0.png?raw=true",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Kutjevo-0.avif?raw=true",
       "labels": [
         { "name": "LZ Auxilary", "size": 8, "x": 425, "y": 1050 },
         { "name": "LZ Dunes", "size": 8, "x": 275, "y": 4150 },
@@ -236,7 +236,7 @@
     },
     "Hybrisa": {
       "name": "Hybrisa Prospera",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Hybrisa-0.png?raw=true",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Hybrisa-0.avif?raw=true",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 6625, "y": 625 },
         { "name": "LZ2", "size": 12, "x": 6500, "y": 4800 },
@@ -278,7 +278,7 @@
     },
     "Whiskey": {
       "name": "Whiskey Outpost",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Whiskey-0.png?raw=true"
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Whiskey-0.avif?raw=true"
     },
     "Almayer": {
       "name": "UNS Almayer",
@@ -309,11 +309,12 @@
     },
     "Savannah": {
       "name": "UNS Savannah",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Savannah-0.png?raw=true"
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Savannah-0.png?raw=true",
+      "hidden": true
     },
     "Rouny": {
       "name": "ITS ROUNY!!",
-      "url": "icon.png?raw=true",
+      "url": "icon.png",
       "hidden": true
     }
   },
