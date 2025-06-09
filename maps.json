@@ -34,6 +34,7 @@
     "Shiva": {
       "name": "Shivas Snowball",
       "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Shiva-0.avif?raw=true",
+      "areas": "Areas/shiva.json",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 600, "y": 4200 },
         { "name": "LZ2", "size": 12, "x": 550, "y": 800 },
@@ -65,6 +66,7 @@
     "Fiorina": {
       "name": "Fiorina Science Annex",
       "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Prison-0.avif?raw=true",
+      "areas": "Areas/fiorina.json",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 7400, "y": 3000 },
         { "name": "LZ2", "size": 12, "x": 5000, "y": 5700 },
@@ -94,6 +96,7 @@
     "624": {
       "name": "LV-624",
       "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/LV624-0.png?raw=true",
+      "areas": "Areas/624.json",
       "labels": [
         { "name": "Undeground Lake", "size": 12, "x": 2125, "y": 700 },
         { "name": "Western Caves", "size": 12, "x": 525, "y": 2000 },
@@ -121,6 +124,7 @@
     "Trijent": {
       "name": "Trijent Dam",
       "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Trijent-0.avif?raw=true",
+      "areas": "Areas/trijent.json",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 950, "y": 900 },
         { "name": "LZ2", "size": 12, "x": 525, "y": 6700 },
@@ -153,6 +157,7 @@
     "Varadero": {
       "name": "New Varadero",
       "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Varadero-0.png?raw=true",
+      "areas": "Areas/varadero.json",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 2100, "y": 1250 },
         { "name": "LZ2", "size": 12, "x": 4450, "y": 1075 },
@@ -183,6 +188,7 @@
     "Chances": {
       "name": "Chances Claim",
       "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Chances-0.avif?raw=true",
+      "areas": "Areas/chances.json",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 400, "y": 5475 },
         { "name": "LZ2", "size": 12, "x": 4950, "y": 5975 },
@@ -212,6 +218,7 @@
     "Kutjevo": {
       "name": "Kutjevo Refinery",
       "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Kutjevo-0.avif?raw=true",
+      "areas": "Areas/kutjevo.json",
       "labels": [
         { "name": "LZ Auxilary", "size": 8, "x": 425, "y": 1050 },
         { "name": "LZ Dunes", "size": 8, "x": 275, "y": 4150 },
@@ -238,6 +245,7 @@
     "Hybrisa": {
       "name": "Hybrisa Prospera",
       "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Hybrisa-0.avif?raw=true",
+      "areas": "Areas/hybrisa.json",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 6625, "y": 625 },
         { "name": "LZ2", "size": 12, "x": 6500, "y": 4800 },

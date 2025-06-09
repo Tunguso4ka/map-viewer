@@ -119,7 +119,7 @@ async function load_map()
     var response = await fetch(maps.maps[map_current].areas);
 
     area_info = await response.json();
-    toggle_hidden("button_areas");
+    toggle_hidden("button_areas", "areas" in area_info);
 }
 
 

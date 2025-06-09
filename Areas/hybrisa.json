@@ -1,0 +1,1180 @@
+{
+    "points": {
+        "01": {
+            "name": "Out Of Bounds",
+            "protections": "00000000"
+        },
+        "02": {
+            "name": "Nova Medica Hospital Complex - Emergency Response - Landing Zone One",
+            "protections": "11111111"
+        },
+        "03": {
+            "name": "Colony Streets - Northeast",
+            "protections": "11111111"
+        },
+        "04": {
+            "name": "Checkpoint & Hidden Bunker - Entrance",
+            "protections": "00000000"
+        },
+        "05": {
+            "name": "Caverns - Northeast",
+            "protections": "00000010"
+        },
+        "06": {
+            "name": "KMCC Interstellar Freight Hub - Cargo Processing Center - Maintenance",
+            "protections": "11001011"
+        },
+        "07": {
+            "name": "KMCC Interstellar Freight Hub - Fuel Storage & Maintenance - North",
+            "protections": "11001011"
+        },
+        "08": {
+            "name": "KMCC Interstellar Freight Hub - Landing Zone Two",
+            "protections": "11111111"
+        },
+        "09": {
+            "name": "KMCC - Mining Outpost - South - Vehicle Deployment Entrance",
+            "protections": "11111111"
+        },
+        "0a": {
+            "name": "KMCC - Mining Outpost - Southeast",
+            "protections": "11001011"
+        },
+        "0b": {
+            "name": "NMHC - Emergency Response - Landing Zone One - Caverns - Northeast - Subspace-Communications",
+            "protections": "00000010"
+        },
+        "0c": {
+            "name": "Gonzo's hide-out",
+            "protections": "00000000"
+        },
+        "0d": {
+            "name": "KMCC - Mining Outpost - East - Command Center",
+            "protections": "11001011"
+        },
+        "0e": {
+            "name": "KMCC Interstellar Freight Hub - Cargo Processing Center",
+            "protections": "11001011"
+        },
+        "0f": {
+            "name": "Electrical Systems - Substation Two",
+            "protections": "11001011"
+        },
+        "10": {
+            "name": "Caverns - Southeast",
+            "protections": "00000010"
+        },
+        "11": {
+            "name": "Electrical Systems - Substation Three",
+            "protections": "11001011"
+        },
+        "12": {
+            "name": "KMCC - Mining Outpost - East",
+            "protections": "11001011"
+        },
+        "13": {
+            "name": "Caverns - Northeast",
+            "protections": "00000010"
+        },
+        "14": {
+            "name": "KMCC Interstellar Freight Hub - Cargo Processing Center - Main Entrance & South Unloading Platform",
+            "protections": "11111111"
+        },
+        "15": {
+            "name": "Synthetic Storage",
+            "protections": "11001011"
+        },
+        "16": {
+            "name": "KMCC - Mining Outpost - South - Vehicle Deployment",
+            "protections": "11001011"
+        },
+        "17": {
+            "name": "KMCC - Mining Outpost - East - Deployment Bay",
+            "protections": "11001011"
+        },
+        "18": {
+            "name": "Caverns - East",
+            "protections": "00000010"
+        },
+        "19": {
+            "name": "Colony Streets - Northeast",
+            "protections": "11111111"
+        },
+        "1a": {
+            "name": "Weston-Yamada Security Checkpoint - North East",
+            "protections": "11001011"
+        },
+        "1b": {
+            "name": "Caverns - South",
+            "protections": "00000010"
+        },
+        "1c": {
+            "name": "Weston-Yamada - Resource Recovery Facility - Garage",
+            "protections": "11001011"
+        },
+        "1d": {
+            "name": "Weston-Yamada - Resource Recovery Facility - Office",
+            "protections": "11001011"
+        },
+        "1e": {
+            "name": "KMCC - Mining Outpost - South - Processing & Storage",
+            "protections": "11001011"
+        },
+        "1f": {
+            "name": "Nova Medica Hospital Complex - Emergency Response - Landing Zone One - Flight Control Room",
+            "protections": "11001011"
+        },
+        "20": {
+            "name": "KMCC - Mining Outpost - Northeast",
+            "protections": "11001011"
+        },
+        "21": {
+            "name": "Weston-Yamada - Resource Recovery Facility",
+            "protections": "11001011"
+        },
+        "22": {
+            "name": "Weston-Yamada - Resource Recovery Facility - Waste Disposal Incinerating Room",
+            "protections": "11001011"
+        },
+        "23": {
+            "name": "KMCC - Mining Outpost - East - Subspace-Communications",
+            "protections": "11111111"
+        },
+        "24": {
+            "name": "Nova Medica Hospital Complex - Breakroom",
+            "protections": "11001011"
+        },
+        "25": {
+            "name": "Nova Medica Hospital Complex - Virology",
+            "protections": "11001011"
+        },
+        "26": {
+            "name": "KMCC - Mining Outpost - East - Dorms",
+            "protections": "11001011"
+        },
+        "27": {
+            "name": "Nova Medica Hospital Complex - Emergency Response - Landing Zone One - Dropship Alamo Console",
+            "protections": "11001011"
+        },
+        "28": {
+            "name": "KMCC Interstellar Freight Hub - Passenger Departures - South Office",
+            "protections": "11001011"
+        },
+        "29": {
+            "name": "Colony Streets - Southeast",
+            "protections": "11111111"
+        },
+        "2a": {
+            "name": "KMCC Interstellar Freight Hub - Security Checkpoint Office",
+            "protections": "11001011"
+        },
+        "2b": {
+            "name": "KMCC Interstellar Freight Hub - Flight Control Room",
+            "protections": "11001011"
+        },
+        "2c": {
+            "name": "KMCC Interstellar Freight Hub - Passenger Departures - Hallway",
+            "protections": "11001011"
+        },
+        "2d": {
+            "name": "KMCC Interstellar Freight Hub - Passenger Departures - Maintenance",
+            "protections": "11001011"
+        },
+        "2e": {
+            "name": "KMCC Interstellar Freight Hub - Dropship Normandy Console",
+            "protections": "11001011"
+        },
+        "2f": {
+            "name": "Nova Medica Hospital Complex - East Hallway",
+            "protections": "11001011"
+        },
+        "30": {
+            "name": "Central Street - East",
+            "protections": "11111111"
+        },
+        "31": {
+            "name": "Weston-Yamada Security Checkpoint - East",
+            "protections": "11001011"
+        },
+        "32": {
+            "name": "Nova Medica Hospital Complex - Janitors Closet",
+            "protections": "11001011"
+        },
+        "33": {
+            "name": "KMCC Interstellar Freight Hub - Passenger Departures - Lounge North",
+            "protections": "11001011"
+        },
+        "34": {
+            "name": "KMCC Interstellar Freight Hub - Passenger Departures - Lounge South",
+            "protections": "11001011"
+        },
+        "35": {
+            "name": "Nova Medica Hospital Complex - Office",
+            "protections": "11001011"
+        },
+        "36": {
+            "name": "Nova Medica Hospital Complex - Unisex-Restroom",
+            "protections": "11001011"
+        },
+        "37": {
+            "name": "Nova Medica Hospital Complex - Patient Ward",
+            "protections": "11001011"
+        },
+        "38": {
+            "name": "Nova Medica Hospital Complex - Operation Theatres & Observation",
+            "protections": "11001011"
+        },
+        "39": {
+            "name": "Nova Medica Hospital Complex - Morgue",
+            "protections": "11001011"
+        },
+        "3a": {
+            "name": "Public Restroom - South",
+            "protections": "11001011"
+        },
+        "3b": {
+            "name": "Nova Medica Hospital Complex - Medical Storage",
+            "protections": "11001011"
+        },
+        "3c": {
+            "name": "Electrical Fence - East Caves",
+            "protections": "00000010"
+        },
+        "3d": {
+            "name": "NSPA - Ironbridge Precinct - Court Room",
+            "protections": "11001011"
+        },
+        "3e": {
+            "name": "Colony Streets - Southeast - Subspace-Communications",
+            "protections": "11111111"
+        },
+        "3f": {
+            "name": "NSPA - Ironbridge Precinct - Forensics Office",
+            "protections": "11001011"
+        },
+        "40": {
+            "name": "Nova Medica Hospital Complex - Central Hallway",
+            "protections": "11001011"
+        },
+        "41": {
+            "name": "Caverns - North",
+            "protections": "00000010"
+        },
+        "42": {
+            "name": "Weston-Yamada DynaGrid Nexus - Telecommunications",
+            "protections": "11001011"
+        },
+        "43": {
+            "name": "Weston-Yamada DynaGrid Nexus - East Hallway",
+            "protections": "11001011"
+        },
+        "44": {
+            "name": "Weston-Yamada DynaGrid Nexus - Worker's Canteen",
+            "protections": "11001011"
+        },
+        "45": {
+            "name": "Weston-Yamada DynaGrid Nexus - Worker's Canteen - Kitchen",
+            "protections": "11001011"
+        },
+        "46": {
+            "name": "Hidden Hobo Haven",
+            "protections": "00000000"
+        },
+        "47": {
+            "name": "NSPA - Ironbridge Precinct - North Hallway",
+            "protections": "11001011"
+        },
+        "48": {
+            "name": "NSPA - Ironbridge Precinct - Central Hallway",
+            "protections": "11001011"
+        },
+        "49": {
+            "name": "Caverns - East",
+            "protections": "00000010"
+        },
+        "4a": {
+            "name": "NSPA - Ironbridge Precinct - North Office",
+            "protections": "11001011"
+        },
+        "4b": {
+            "name": "Nova Medica Hospital Complex - Intensive Care Ward",
+            "protections": "11001011"
+        },
+        "4c": {
+            "name": "Nova Medica Hospital Complex - Chief Medical Officer's Office",
+            "protections": "11001011"
+        },
+        "4d": {
+            "name": "Nova Medica Hospital Complex - Reception",
+            "protections": "11001011"
+        },
+        "4e": {
+            "name": "Nova Medica Hospital Complex - Outgoing Ward",
+            "protections": "11001011"
+        },
+        "4f": {
+            "name": "NSPA - Ironbridge Precinct - Holding Cells",
+            "protections": "11001011"
+        },
+        "50": {
+            "name": "Jack's Military Surplus",
+            "protections": "11001011"
+        },
+        "51": {
+            "name": "Derelict Ship",
+            "protections": "00000000"
+        },
+        "52": {
+            "name": "NSPA - Ironbridge Precinct - Reception Office",
+            "protections": "11001011"
+        },
+        "53": {
+            "name": "Nova Medica Hospital Complex - Maintenance North",
+            "protections": "11001011"
+        },
+        "54": {
+            "name": "Nova Medica Hospital Complex - Emergency Room",
+            "protections": "11001011"
+        },
+        "55": {
+            "name": "Nova Medica Hospital Complex - Cryo Ward",
+            "protections": "11001011"
+        },
+        "56": {
+            "name": "Weston-Yamada DynaGrid Nexus - Transformers - North",
+            "protections": "11111111"
+        },
+        "57": {
+            "name": "Weston-Yamada DynaGrid Nexus - Central Hallway",
+            "protections": "11001011"
+        },
+        "58": {
+            "name": "Weston-Yamada DynaGrid Nexus - Transformers - South",
+            "protections": "11111111"
+        },
+        "59": {
+            "name": "Nova Medica Hospital Complex - Pharmacy & Outgoing Foyer",
+            "protections": "11001011"
+        },
+        "5a": {
+            "name": "NSPA - Ironbridge Precinct - Reception Hallway",
+            "protections": "11001011"
+        },
+        "5b": {
+            "name": "NSPA - Ironbridge Precinct - Maintenance - South",
+            "protections": "11001011"
+        },
+        "5c": {
+            "name": "Weston-Yamada DynaGrid Nexus - Geothermal Generators Room",
+            "protections": "11001011"
+        },
+        "5d": {
+            "name": "Weston-Yamada DynaGrid Nexus - Equipment Storage Room - East",
+            "protections": "11001011"
+        },
+        "5e": {
+            "name": "NSPA - Ironbridge Precinct - Vehicle Deployment & Maintenace",
+            "protections": "11001011"
+        },
+        "5f": {
+            "name": "Caverns - South",
+            "protections": "00000010"
+        },
+        "60": {
+            "name": "Weston-Yamada DynaGrid Nexus - Gas Mixing & Storage",
+            "protections": "11001011"
+        },
+        "61": {
+            "name": "Public Restroom - Southwest",
+            "protections": "11001011"
+        },
+        "62": {
+            "name": "Prospera Grand Hotel - Room",
+            "protections": "11001011"
+        },
+        "63": {
+            "name": "Nova Medica Hospital Complex - Paramedic's Garage",
+            "protections": "11001011"
+        },
+        "64": {
+            "name": "Prospera Grand Hotel - Hallway",
+            "protections": "11001011"
+        },
+        "65": {
+            "name": "Weston-Yamada DynaGrid Nexus - South Hallway",
+            "protections": "11001011"
+        },
+        "66": {
+            "name": "NSPA - Ironbridge Precinct - South Hallway",
+            "protections": "11001011"
+        },
+        "67": {
+            "name": "NSPA - Ironbridge Precinct - Changing Room",
+            "protections": "11001011"
+        },
+        "68": {
+            "name": "Caverns - North",
+            "protections": "00000010"
+        },
+        "69": {
+            "name": "Meridian - Factory Floor",
+            "protections": "11001011"
+        },
+        "6a": {
+            "name": "Meridian - Factory Floor - Maintenance",
+            "protections": "11001011"
+        },
+        "6b": {
+            "name": "NSPA - Ironbridge Precinct - Restroom & Showers",
+            "protections": "11001011"
+        },
+        "6c": {
+            "name": "NSPA - Ironbridge Precinct - North Hallway - Locker Room",
+            "protections": "11001011"
+        },
+        "6d": {
+            "name": "Colony Streets - North",
+            "protections": "11111111"
+        },
+        "6e": {
+            "name": "Central Street - East",
+            "protections": "11111111"
+        },
+        "6f": {
+            "name": "NSPA - Ironbridge Precinct - Interrogation",
+            "protections": "11001011"
+        },
+        "70": {
+            "name": "NSPA - Ironbridge Precinct - Maximum Security Ward - Foyer",
+            "protections": "11001011"
+        },
+        "71": {
+            "name": "NSPA - Ironbridge Precinct - Wardens Office",
+            "protections": "11001011"
+        },
+        "72": {
+            "name": "NSPA - Ironbridge Precinct - Firing Range",
+            "protections": "11001011"
+        },
+        "73": {
+            "name": "NSPA - Ironbridge Precinct - Armory Foyer",
+            "protections": "11001011"
+        },
+        "74": {
+            "name": "NSPA - Ironbridge Precinct - Office",
+            "protections": "11001011"
+        },
+        "75": {
+            "name": "Caverns - Plateau",
+            "protections": "11111111"
+        },
+        "76": {
+            "name": "Bar - Kitchen",
+            "protections": "11001011"
+        },
+        "77": {
+            "name": "Bar",
+            "protections": "11001011"
+        },
+        "78": {
+            "name": "NSPA - Ironbridge Precinct - Maximum Security Ward - Cells",
+            "protections": "11001011"
+        },
+        "79": {
+            "name": "Bar - Restrooms",
+            "protections": "11001011"
+        },
+        "7a": {
+            "name": "NSPA - Ironbridge Precinct - Maintenance - Southwest",
+            "protections": "11001011"
+        },
+        "7b": {
+            "name": "Bar - Entertainment Subsection",
+            "protections": "11001011"
+        },
+        "7c": {
+            "name": "Weston-Yamada DynaGrid Nexus - Control Center",
+            "protections": "11001011"
+        },
+        "7d": {
+            "name": "NSPA - Ironbridge Precinct - Armory",
+            "protections": "11001011"
+        },
+        "7e": {
+            "name": "Weston-Yamada DynaGrid Nexus - Equipment Storage Room - West",
+            "protections": "11001011"
+        },
+        "7f": {
+            "name": "Caverns - Central",
+            "protections": "00000010"
+        },
+        "80": {
+            "name": "Central Street - West",
+            "protections": "11111111"
+        },
+        "81": {
+            "name": "Weston-Yamada Security Checkpoint - Central",
+            "protections": "11001011"
+        },
+        "82": {
+            "name": "NSPA - Ironbridge Precinct - Evidence Room",
+            "protections": "11001011"
+        },
+        "83": {
+            "name": "NSPA - Ironbridge Precinct - Maximum Security Ward - Recreation Area & Shower Room",
+            "protections": "11001011"
+        },
+        "84": {
+            "name": "Sensory Tower - Plateau Caves",
+            "protections": "00000010"
+        },
+        "85": {
+            "name": "Meridian - Foyer",
+            "protections": "11001011"
+        },
+        "86": {
+            "name": "KMCC - Mining Outpost - North - Maintenance",
+            "protections": "11001011"
+        },
+        "87": {
+            "name": "Electrical Fence - Central Caves",
+            "protections": "00000010"
+        },
+        "88": {
+            "name": "Meridian - Offices",
+            "protections": "11001011"
+        },
+        "89": {
+            "name": "Meridian - Maintenance",
+            "protections": "11001011"
+        },
+        "8a": {
+            "name": "Westhaven Apartment Complex - East - Entrance Room",
+            "protections": "11001011"
+        },
+        "8b": {
+            "name": "Meridian - Restroom",
+            "protections": "11001011"
+        },
+        "8c": {
+            "name": "Caverns - Central",
+            "protections": "00000010"
+        },
+        "8d": {
+            "name": "KMCC - Mining Outpost - North",
+            "protections": "11001011"
+        },
+        "8e": {
+            "name": "Westhaven Apartment Complex - East - Bedrooms - Storage Room",
+            "protections": "11001011"
+        },
+        "8f": {
+            "name": "Westhaven Apartment Complex - East - Bedrooms",
+            "protections": "11001011"
+        },
+        "90": {
+            "name": "Meridian - Manager's Office",
+            "protections": "11001011"
+        },
+        "91": {
+            "name": "Pizza Galaxy - Outpost Zeta",
+            "protections": "11001011"
+        },
+        "92": {
+            "name": "Westhaven Apartment Complex - East - Restrooms & Showers",
+            "protections": "11001011"
+        },
+        "93": {
+            "name": "Westhaven Apartment Complex - North - Apartments",
+            "protections": "11001011"
+        },
+        "94": {
+            "name": "Westhaven Apartment Complex - North - Foyer",
+            "protections": "11001011"
+        },
+        "95": {
+            "name": "Westhaven Apartment Complex - East - Foyer",
+            "protections": "11001011"
+        },
+        "96": {
+            "name": "Comms Tower - Central Caves",
+            "protections": "00000010"
+        },
+        "97": {
+            "name": "Meridian - Showroom",
+            "protections": "11001011"
+        },
+        "98": {
+            "name": "Westhaven Apartment Complex - North - Hallway",
+            "protections": "11001011"
+        },
+        "99": {
+            "name": "Garage - Managers Office",
+            "protections": "11001011"
+        },
+        "9a": {
+            "name": "Weston-Yamada Offices - Breakroom",
+            "protections": "11001011"
+        },
+        "9b": {
+            "name": "Weston-Yamada Offices - Reception Hallway",
+            "protections": "11001011"
+        },
+        "9c": {
+            "name": "Westhaven Apartment Complex - West - Apartments",
+            "protections": "11001011"
+        },
+        "9d": {
+            "name": "Westhaven Apartment Complex - West - Foyer",
+            "protections": "11001011"
+        },
+        "9e": {
+            "name": "Garage - Reception",
+            "protections": "11001011"
+        },
+        "9f": {
+            "name": "Weymart",
+            "protections": "11001011"
+        },
+        "a0": {
+            "name": "Weymart - Backrooms",
+            "protections": "11001011"
+        },
+        "a1": {
+            "name": "Garage - Restroom",
+            "protections": "11001011"
+        },
+        "a2": {
+            "name": "Caverns - Southwest",
+            "protections": "00000010"
+        },
+        "a3": {
+            "name": "Weston-Yamada Offices - Conference Room",
+            "protections": "11001011"
+        },
+        "a4": {
+            "name": "Weston-Yamada Offices - Colony Supervisors Office",
+            "protections": "11001011"
+        },
+        "a5": {
+            "name": "Westhaven Apartment Complex - West - Hallway",
+            "protections": "11001011"
+        },
+        "a6": {
+            "name": "Weston-Yamada Offices - Main Office Floor",
+            "protections": "11001011"
+        },
+        "a7": {
+            "name": "Westhaven Apartment Complex - West - Recreation Hub",
+            "protections": "11001011"
+        },
+        "a8": {
+            "name": "Garage - Workshop",
+            "protections": "11001011"
+        },
+        "a9": {
+            "name": "Caverns - West",
+            "protections": "00000010"
+        },
+        "aa": {
+            "name": "Colony Streets - Northwest",
+            "protections": "11111111"
+        },
+        "ab": {
+            "name": "Garage - Workshop - Storage Room",
+            "protections": "11001011"
+        },
+        "ac": {
+            "name": "Weston-Yamada Offices - Assembly Hall",
+            "protections": "11001011"
+        },
+        "ad": {
+            "name": "Weston-Yamada Offices - West Foyer",
+            "protections": "11001011"
+        },
+        "ae": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - North Hallway - Personnel Exit East",
+            "protections": "00000010"
+        },
+        "af": {
+            "name": "Weston-Yamada Celestia Gateway Space-Port - Cargo - Maintenance",
+            "protections": "11001011"
+        },
+        "b0": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Vehicle Deployment & Maintenance Bay",
+            "protections": "00000010"
+        },
+        "b1": {
+            "name": "Weston-Yamada Celestia Gateway Space-Port - Cargo Bay",
+            "protections": "11001011"
+        },
+        "b2": {
+            "name": "Night Gold Casino",
+            "protections": "11001011"
+        },
+        "b3": {
+            "name": "Weston-Yamada Security Checkpoint - West",
+            "protections": "11001011"
+        },
+        "b4": {
+            "name": "Electrical Fence - West Caves",
+            "protections": "00000010"
+        },
+        "b5": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Janitorial Supplies Storage",
+            "protections": "00000010"
+        },
+        "b6": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Locker Room",
+            "protections": "00000010"
+        },
+        "b7": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Hallway East",
+            "protections": "00000010"
+        },
+        "b8": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - North Hallway",
+            "protections": "00000010"
+        },
+        "b9": {
+            "name": "Weston-Yamada Celestia Gateway Space-Port - Kitchen",
+            "protections": "11001011"
+        },
+        "ba": {
+            "name": "Weston-Yamada Celestia Gateway Space-Port - Maintenance - East",
+            "protections": "11001011"
+        },
+        "bb": {
+            "name": "Weston-Yamada Celestia Gateway Space-Port - Cuppa Joe's",
+            "protections": "11001011"
+        },
+        "bc": {
+            "name": "Weston-Yamada Celestia Gateway Space-Port - Docking Bay: 2 - Refueling and Maintenance",
+            "protections": "11001011"
+        },
+        "bd": {
+            "name": "Weston-Yamada Celestia Gateway Space-Port - Hallway - East",
+            "protections": "11001011"
+        },
+        "be": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Dorms",
+            "protections": "00000010"
+        },
+        "bf": {
+            "name": "Night Gold Casino - Restroom",
+            "protections": "11001011"
+        },
+        "c0": {
+            "name": "Night Gold Casino - Managers Office",
+            "protections": "11001011"
+        },
+        "c1": {
+            "name": "Night Gold Casino - Vault",
+            "protections": "11001011"
+        },
+        "c2": {
+            "name": "Colony Streets - Southwest - WY Checkpoint Passthrough",
+            "protections": "11111111"
+        },
+        "c3": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Requisitions & Cargo",
+            "protections": "00000010"
+        },
+        "c4": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Advanced Xenobiology Lab",
+            "protections": "00000010"
+        },
+        "c5": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - South East Maintenace & Emergency Exit",
+            "protections": "00000010"
+        },
+        "c6": {
+            "name": "Weston-Yamada Celestia Gateway Space-Port - Communications & Administration Office",
+            "protections": "11001011"
+        },
+        "c7": {
+            "name": "Weston-Yamada Celestia Gateway Space-Port - Baggage Storage & Handling",
+            "protections": "11001011"
+        },
+        "c8": {
+            "name": "Caverns - Northwest",
+            "protections": "11111111"
+        },
+        "c9": {
+            "name": "Caverns - Northwest",
+            "protections": "00000010"
+        },
+        "ca": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Head of Research's Office",
+            "protections": "00000010"
+        },
+        "cb": {
+            "name": "WY-LWI Horizon Runner HR-150",
+            "protections": "11001011"
+        },
+        "cc": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Dorms Foyer",
+            "protections": "00000010"
+        },
+        "cd": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Cafeteria",
+            "protections": "00000010"
+        },
+        "ce": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Cafeteria - Kitchen",
+            "protections": "00000010"
+        },
+        "cf": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - North Main Entrance",
+            "protections": "00000010"
+        },
+        "d0": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - South East Hallway",
+            "protections": "00000010"
+        },
+        "d1": {
+            "name": "Weston-Yamada Celestia Gateway Space-Port - Docking Bay: 1",
+            "protections": "11001011"
+        },
+        "d2": {
+            "name": "Weston-Yamada Security Checkpoint - North West",
+            "protections": "11001011"
+        },
+        "d3": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Hangar Bay",
+            "protections": "00000010"
+        },
+        "d4": {
+            "name": "Weston-Yamada Celestia Gateway Space-Port - Security- Observation & Office",
+            "protections": "11001011"
+        },
+        "d5": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Reception & Administration",
+            "protections": "00000010"
+        },
+        "d6": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Central Hallway",
+            "protections": "00000010"
+        },
+        "d7": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - South West Hallway",
+            "protections": "00000010"
+        },
+        "d8": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Xenoarcheology Research Lab",
+            "protections": "00000010"
+        },
+        "d9": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Security Command Center & Deployment",
+            "protections": "00000010"
+        },
+        "da": {
+            "name": "Weston-Yamada Celestia Gateway Space-Port - Fuel Storage & Processing",
+            "protections": "11001011"
+        },
+        "db": {
+            "name": "WY-LWI StarGlider SG-200",
+            "protections": "11001011"
+        },
+        "dc": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Advanced Chemical Testing & Research Lab",
+            "protections": "00000010"
+        },
+        "dd": {
+            "name": "Weston-Yamada Celestia Gateway Space-Port - Office",
+            "protections": "11001011"
+        },
+        "de": {
+            "name": "Electrical Systems - Substation One - Control Room",
+            "protections": "11001011"
+        },
+        "df": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Hangar Bay - Weston-Yamada PMC ERT Shuttle",
+            "protections": "00000010"
+        },
+        "e0": {
+            "name": "Weston-Yamada Celestia Gateway Space-Port - Janitorial Storage Room",
+            "protections": "11001011"
+        },
+        "e1": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Technology Research & Development Lab",
+            "protections": "00000010"
+        },
+        "e2": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Armory",
+            "protections": "00000010"
+        },
+        "e3": {
+            "name": "Weston-Yamada Celestia Gateway Space-Port - Heavy Equipment Storage",
+            "protections": "11001011"
+        },
+        "e4": {
+            "name": "Weston-Yamada Celestia Gateway Space-Port - Flight Control Room",
+            "protections": "11001011"
+        },
+        "e5": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Advanced Weapon Research Lab",
+            "protections": "00000010"
+        },
+        "e6": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Advanced Weapon Research Lab - Weapons Testing Range",
+            "protections": "00000010"
+        },
+        "e7": {
+            "name": "Weston-Yamada - Advanced Bio-Genomic Research Complex - Medical Annex Building",
+            "protections": "00000010"
+        }
+    },
+    "map": [
+        "0101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010000",
+        "0101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010000",
+        "0101e3e3e3e3e3e3e0e0e0e0e0dadadadadadadadadadadadadabcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb1b1b1b1b1b1b1b1b1b1b1b1af01010101010101010168010101010101010101010101010101010101010101010168010101010101010101010101010101686868686868010101010101010101010101010101010101010101010101010101010101010101010101010101010101014141410101010101010101010101010101010120202020202020202020202020202020202020202020200102020202020202020202020202020202020202020201010000",
+        "0101e3e3e3e3e3e3e0e0e0e0e0dadadadadadadadadadadadadabcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb1b1b1b1b1b1b1b1b1b1b1b1af01010101010101686868016801010101016868010101016868010101010101686868686801010101010101010101010101016868686868680101010101686868680101010101010101016868686868686868680101010101010101010101014141414141414101010101010101010101010101010120202020202020202020202020202020202020202020200102020202020202020202020202020202020202020201010000",
+        "0101e3e3e3e3e3e3e0e0e0e0e0dadadadadadadadadadadadadabcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb1b1b1b1b1b1b1b1b1b1b1b1afafafaf68680101686868686868680168686868686868686868686868010168686868686868680101016868016868680101686868686868680101010168686868686801010101010101016868686868686868684101010101010101010101414141414141414141410141010141010101010101010120202020202020202020202020202020202020202020200102020202020202020202020202020202020202020201010000",
+        "0101e3e3e3e3e3e3e0e0e0e0e0dadadadadadadadadadadadadabcbcbcbcbcbcbcbcbcbcbccbcbcbcbbcbcbcbcbcbcbcb1b1b1b1b1b1b1b1b1b1b1b1afafafaf68686868686868686868686868686868686868686868686868686868686868686868686868686868686868680101016868686868686868010168686868686868010101010168686868686868686868684101010141010101014141414141414141414141414141414141410101010101010120202020202020202020202020202020202020202020200102020202020202020202020202020202020202020201010000",
+        "0101e3e3e3e3e3e3e3e3d1d1dadadada0101010101dadadadadad4d40101bcbcbcbcbcbcbccbcbcbcbbcbcbcbcbcbcbcb1b1b1b1b1b1b1b1b1b1b1b1afafafaf6868686868686868686868686868686868686868686868686868686868686801686868686868686868686868680168686868686868686868686868686868686868010101016868686868686868686868414141414141010101414141414141410141414141414141414141410101010101012020202020202020202020202020202020201f1f1f1f1f1f02020202020202020202020202020202020202020201010000",
+        "0101e3e3e3e3e3e3e3e3d1d10101010101010101010101010101d4d40101bcbcbcbcbcbcbccbcbcbcbbcbcbcbcbcbcbcb1b1b1b1b1b1b1b1b1b1b1b1afafafaf68686868686868686868686868686868686868686868686868686868686868010168686868686868686868686868686868686868686868686868686868686868010168680168686868686868686868684141414141414101414141414141410101414141414141414141414141410101010120202020202020202020200303030303031f1f1f1f1f1f1f02020202020202020202020202020202020202020201010000",
+        "0101e3e3e3e3e3e3e3e3d1d1dddddd010101010101d4d4d4d4d4d4d4d4bcbcbcbcbcbcbccbcbcbcbcbcbbcbcbcbcbcbcb1b1b1b1b1b1b1b1b1b1b1b1af68686868686868686868686868686868686868686868686868686868686868686801010168686868686868686868686868686868686868686868686868686868686868686868686868686868686868686868684141414141414141414141414141010101414141414141414141414141414120202020202020202020202020200303030303031f1f1f1f1f1f1f02020202020202020202020202020202020202020201010000",
+        "0101e3e3e3e3e3e3e3e3d1d1dddddddd01d1d1d101d4d4d4d4d4d4d4d4bcbcbcbcbcbcbccbcbcbcbcbcbbcbcbcbcbcbcb1b1b1b1b1b1b1b1b1b1b1b1af686868686868010101ababababab01010101a1a1a1a1a101016868686868686868680101686868686868686868686868686868686868680168686868686868686868686868686868686868686868686868686841414141414141414141414141414101414141414141414141414141414141412020202020200303030303030303030303031f1f1f1f1f1f1f1f02020202020202020202020202020202020202020201010000",
+        "01010101010101010101d1d1ddddddddddd1d1d1d4d4d4d4d4d4d4d4d4bcbcbcbcbcbccbcbcbcbcbcbcbcbbcbcbcbcbcb1b1b1b1b1b1b1b1b1b1b1b1af686868686801010101ababababab01010101a1a1a1a1a101010168686868686868680168686868686868686868686868686868686868010101686868686868686868686868686868686868686868686868686841414141414141414141414141414141414141414141414141414141414141412020202020200303030303030303030303031f1f1f1f1f1f1f1f02020202020202020202020202020202020202020201010000",
+        "01010101010101010101d1d1ddddddddddd1d1d1d4d4d4d4d4d4d4d4d4bcbcbcbcbcbccbcbcbcbcbcbcbcbbcbcbcbcbcb1b1b1b1b1b1b1b1b1b1b1b1af010101010101010101ababababab01010101a1a1a1a1a101010101010168686868686868686868686868686868686868686868686868680101016868686868686868686868686868686868686801010168016841414141414141414141414141414141414141414141414141414141414141412020202020200303030303030303030303031f271f1f1f1f1f1f02020202020202020202020202020202020202020201010000",
+        "0101e4e4e4e4e4e4e4e4d1d1ddddddddddd1d1d1d4d4d4d4d4d4d4d4d4bcbcbcbcbcbccbcbcbcbcbcbcbcbbcbcbcbcbcafafafafafafafafafafafafaf010101010101010101ababababab01010101a1a1a1a1a101010101010101016868686868686868686868686868686868686868680168010101686868686868686868686868686868686868680101010101010141414141414141414141414141414141414141414141414141414141414141412020202020200303030303030303030303031f1f1f1f1f1f1f1f02020202020202020202020202020202020202020201010000",
+        "0101e4e4e4e4e4e4e4e4d1d1ddddddddddd1d1d1d4d4d4d4d4d4d40101bcbcbcbcbcbcbccbcbcbcbcbcbbcbcbcbcbcbcafafafafafafafafafafafafaf010101010101010101ababababab01010101a1a1a1a1a101010101010101019999686868686868686868686868686868686868680101010101016868686868686868686868686262626262626262626262626241414141414141414141014141014141414139393939393939393939393941412020202020200303030303030303030303031f1f1f1f1f1f1f1f03030202020202020202020202020202020202020201010000",
+        "0101e4e4e4e4e4e4e4e4d1d1ddddddddddd1d1d1d4d4d4d4d4d4d40101bcbcbcbcbcbcbccbcbcbcbcbcbbcbcbcbcbcbcafafafafafafafafafafafafafa8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a89e9e9e9e9e9e9e9e9e9e9999999999996868686868688d8d8d8d8d8d8d8d8d8d8d8686868686867777777777776262626262686868626262626262626262626262624141414141414141410101010101414141413939393939393939393939393939393939393939030303030303030303030303030303030303030303030202020202020202020202020202020202020201010000",
+        "0101e4e4e4e4e4e4e4e4d1d1ddd1d1d1ddd1d1d1d4d1d1d1d4d1d1d4d4bcbcbcbcbcbccbcbcbcbcbcbcbcbbcbcbcbcbcafafafafafafafafafafafafafa8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a89e9e9e9e9e9e9e9e9e9e999999999901010168686801018d8d8d8d8d8d8d8d8d8d8686868686867777777777776262626262626464626262626262626262626262624141414162535353010101010141414141413939393939393939393939393939393939393939030303030303030303030303030303030303030303030202020202020202020202020202020202020201010000",
+        "0101e4e4e4e4e4e4e4e4d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1bcbcbcbcbcbccbcbcbcbcbcbcbcbbcbcbcbcbcbcaaaaaa0101aaaaaaaaaaaaafa8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a89e9e9e9e9e9e9e9e9e9e999999999901010101010101018d8d8d8d8d8d8d8d8d8d8686868686867777777777776262626262626464626262626262626262626262624141414162535353010101014141414141413939393939393939393939393939393939393939030303030303030303030303030303030303030303030202020202020202020202020202020202020201010000",
+        "0101e4e4e4e4e4e4e4e4d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1bcbcbcbcbcbccbcbcbcbcbcbcbcbbcbcbcbcbcbcaaaaaa0101aaaaaaaaaaaaafa8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a89e9e9e9e9e9e9e9e9e9e999999999901010101010101018d8d8d8d8d8d8d8d8d8d8686868686867777777777776262626262626464626262626262626262626262626262626262535353535353534141414101013939393939393939393939393939393939393939030303030303030303030303030303030303030303030202020202020202020202020202020202020201010000",
+        "0101e4e4e4e4e4e4e4e4d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1bcbcbcbcbcbccbcbcbcbcbcbcbcbbcbcbcbcbcbcaaaaaaaaaaaaaaaaaaaaaaaaa8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a89e9e9e9e9e9e9e9e9e9e999999990101010101010101018d8d8d8d8d8d8d8d8d8d868686868686777777777777626262626262646464646464646464646464646464646464646253535353535353535353534b4b4b4b4b4b4b4b3939393939393939393939393939030303030303030303030303030303030303030303030202020202020202020202020202020202020201010000",
+        "0101e4e4e4e4e4e4e4e4d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1bcbcbcbcbcbccbcbbcbcbcbccbcbbcbcbcbcbcbcaaaaaaaaaaaaaaaaaaaaaaaaa8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a89e9e9e9e9e9e9e9e9e9e999999990101010101018d8d8d8d8d8d8d8d8d8d8d8d8d868686868686777777777777626262626276767676766464646464646464646464646464645353535353535353535353534b4b4b4b4b4b4b4b3939393939393939393939393939030303030303030303030303030303030303030303030202020202020202020202020202020202020201010000",
+        "0101d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1bcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcaaaaaaaaaaaaaaaaaaaaaaaaa8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a86d6d6d6d9e9e9e9e6d6d6d6d6d6d6d6d01016d016d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d7777777776767676767676767676646464646464646262626262626262625353535353535353535353534b4b4b4b4b4b4b3939393939393939393939393939030303030303030303030303030303030303030303030202020202020202020202020202020202020201010000",
+        "0101d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1bcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6d6d6d6d6d6d9e9e9e9e6d6d6d6d6d6d6d6d6d016d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d77777777767676767676767676767664646464646262626262626262626255535555555555555553554b4b4b4b4b4b4b4b39393939393939393939393939393735353535352f2f2f2f2f03030303030303030303030202020202020202020202020202020202020201010000",
+        "0101d1d1d1d1d1d1d1d1d1d1d1d1d1d1dbdbdbdbdbd1d1d1d1d1d1d1d1bcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6d6d6d6d6d6d9e9e9e9e6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d77777777767676767676767676767664646464646462626262626262626255555555555555555555554b4b4b4b4b4b4b4b39393939373737373737373737373735353535352f2f2f2f2f03030303030303030303030202020202020202020202020202020202020201010000",
+        "0101d101d1d1d1d1d1d1d1d1d1d1d1d1dbdbdbdbdbd1d1d1d1d1d1d1d1bcbcbcbcbcc6c6c6c6c6c6c6c6c6c6c6b9b9b9b9aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d77777777767676767676767676767664646464646462626262626262626255555555555555555555554b4b4b4b4b4b4b4b40404037373737373737373737373735353535352f2f2f2f2f03030303030303030303030202020202020202020202020202020202020201010000",
+        "0101d1d1d1d1d1d1d1d1d1d1d1d1d1d1dbdbdbdbdbd1d1d1d1d1d1d1d1d1d1d1d1d1c6c6c6c6c6c6c6c6c6c6c6b9b9b9b9aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d77777777777777777776767676767664646464646462626262626262626255555555555555555555554b4b4b4b4b4b4b4b40404037373737373737373737373735353535352f2f2f2f2f03030303030303030303030202020202020202020202020202020202020201010000",
+        "0101d1d1d1d1d1d1d1d1d1d1d1d1d1dbdbdbdbdbdbdbd1d1d1d1d1d1d1d1d1d1d1d1c6c6c6c6c6c6c6c6c6c6c6b9b9b9b9b9aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d777777777777777777777777777777646464646d6d63636363636363636355555555555555555555554b4b4b4b4b4b4b4b40404037373737373737373737373735353535352f2f2f2f2424242424240303030303030202020202020202020202020202020202020201010000",
+        "0101d101d1d1d1d1d1d1d1d1d1dbdbdbdbdbdbdbdbdbdbdbd1d1d1d1d1d1d1d1d1d1c6c6c6c6c6c6c6c6c6c6c6b9b9b9b9b9aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d777777777777777777777777777777646464646d6d63636363636363636355555555555555555555554b4b4b4b4b4b4b4b4040404040404040402f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2424242424240303030303030202020202020202020202020202020202020201010000",
+        "0101d101d1d1d1d1d101d1d1d1dbdbdbdbdbdbdbdbdbdbdbd1d1d101d1d1d1d1d1d1c6c6c6c6c6c6c6c6c6c6c6b9b9b9b9b9aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d7777777777777777777777777777776d6d6d6d6d6d63636363636363636355555555555555555555554c4c4c4c4c4c4c4c4040404040404040402f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2424242424240303030303030202020202020202020202020202020202020201010000",
+        "0101d1d1d1d1d1d1d1d1d1d1d1dbdbdbdbdbdbdbdbdbdbdbd1d1d1d1d1d1d1d1d1d1c6c6c6c6c6c6c6c6c6c6c6b9b9b9b9b9aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d7777777777777777777777777777776d6d6d6d6d6d63636363636363636355555555555555555555554c4c4c4c4c4c4c4c4040404040404040402f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2424242424240303030303030202020202020202020202020202020202020201010000",
+        "0101d1d1d1d1d1d1d1d1d1d1d1d1d1dbdbdbdbdbdbdbd1d1d1d1d1d1d1d1d1d1d1d1c6c6c6c6c6c6c6c6c6c6c6b9b9b9b9b9aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d7777777777777777777777777777776d6d6d6d6d6d63636363636363635555555555555555555555554c4c4c4c4c4c4c4c4040404038383838383838383838382f2f2f2f2f2f2f2f2f2424242424240303030303030202020202020202020202020202020202020201010000",
+        "0101d1d1d1d1d1d1d1d1d1d1d1d1d1dbdbdbdbdbdbdbd1d1d1d1d1d1d1d1d1d1d1d1c6c6c6c6c6c6c6c6c6c6c6b9b9b9b9aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d7777777777777777777777777777776d6d6d6d6d6d6363636363636363555555555454545454545454544c4c4c4c4c4c4c4040404038383838383838383838382f2f2f2f2f2f2f2f242424242424240303030303030202020202020202020202020202020202020201010000",
+        "0101d101d1d1d1d1d1d1d1d1d1d1dbdbdbdbdbdbdbdbdbd1d1d1d1d1d1d1d1d1d1d1d1bdbdbdbdbdbdbdbdbdbdbdbdbdbdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d77777777777777777777776d6d6d6d6d6d6d6d6d6d636363636363636355555555545454545454545454404040404040404040404038383838383838383838382f2f2f2525252525252525252525240303030303030303030303030303030303030303030303010101010000",
+        "0101d101d1d1d1d1d101d1d1d1d1dbdbdbdbdbdbdbdbdbd1d1d1d101d1d1d1d1d1d1d1bdbdbdbdbdbdbdbdbdbdbdbdbdbdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6a6a6a6a6a6aaa6a6a6a6a6a66d9a9a9a9a9a9a6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d77777777777777777777776d6d6d6d6d6d6d6d6d6d636363636363636355555555545454545454545454404040404040404040404038383838383838383838382f2f2f2525252525252525252525030303030303030303030303030303030303030303030303010101010000",
+        "0101d1d1d1d1d1d1d1d1d1d1d1d1dbdbdbdbdbdbdbdbdbd1d1d1d1d1d1d1d1d1d1d1d1bdbdbdbdbdbdbdbdbdbdbdbdbdbdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6a6a6a6a6a6a6a6a6a6a6a6a6a69a9a9a9a9a9a9a9a9a9a9a6d6d6d6d919191919191919191919191916d6d6d6d6d6d6d6d6d6d6d6d6d77777777777777777777776d6d6d6d6d6d6d6d6d6d303030303030303055555555545454545454545454404040404040404040404038383838383838383838382f2f2f2525252525252525252525030303030303030303030303030303030303030303030303030101010000",
+        "0101d1d1d1d1d1d1d1d1d1d1d1d1d1dbdbdbdbdbdbdbd1d1d1d1d1d1d1d1d1d1d1d1d1bdbdbdbdbdbdbdbdbdbdbdbdbdbdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6a6a6a6a6a6a6a6a6a6a6a6a6a69a9a9a9a9a9a9a9a9a9a9a6d6d6d6d919191919191919191919191916d6d6d6d6d6d6d6d6d6d6d6d6d77777777777777777777776d6d6d6d6d6d6d6d6d6d303030303030303055555555545454545454545454404040404040404040404038383838383838383838382f2f2f2525252525252525252525030303030303030303030303030303030303030303030303010101010000",
+        "0101d1d1d1d1d1d1d1d1d1d1d1d1d1dbdbdbdbdbdbdbd1d1d1d1d1d1d1d1d1d1d1d1c7c7c7c7c7c7c7c7c7c7c7babababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6a6a6a6a6a6a6a6a6a6a6a6a6a69a9a9a9a9a9a9a9a9a9a9a6d6d6d6d919191919191919191919191916d6d6d6d6d6d6d6d6d6d6d6d6d77777777777777777777776d6d6d6d6d6d6d6d6d6d303030303030303030303055545454545454545454404040404040404040404038383838383838383838382f2f2f2525252525252525252525030303030303030303030303030303030301010303030303010101010000",
+        "0101d101d1d1d1d1d1d1d1d1d1d1d1dbdbdbdbdbdbdbd1d1d1d1d1d1d1d1d1d1d1d1d1c7c7c7c7c7c7c7c7c7c7bababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6a6a6a6a6a6a6a6a6a6a6a6a6a69a9a9a9a9a9a9a9a9a9a9a6d6d6d6d919191919191919191919191916d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d777777776d6d6d6d6d6d6d6d6d6d6d6d6d6d303030303030303030303030545454545454544d4d4d4d4d4d4d4d4d4040404038383838383838383838382f2f2f2525252525252525252525030303030303030303030303030303030301010303030303030101010000",
+        "0101d101d1d1d1d1d101d1d1d1dbdbdbdbdbdbdbdbdbdbdbd1d1d101d1d1d1d1d1d1d1c7c7c7c7c7c7c7c7c7c7bababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6a6a6a6a6a6a6a6a6a6a6a6a6a69a9a9a9a9a9a9a9a9a9a9a6d6d6d6d919191919191919191919191916d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d777777776d6d6d6d6d6d6d6d6d6d6d6d6d6d303030303030303030303030545454545454544d4d4d4d4d4d4d4d4d4040404038383838383838383838382f2f2f25252525252525252525251a1a1a1a1a1a1a1a1a1a1a1a010303030101010303030303030301010000",
+        "0101d1d1d1d1d1d1d1d1d1d1d1dbdbdbdbdbdbdbdbdbdbdbd1d1d1d1d1d1d1d1d1d1d1c7c7c7c7c7c7c7c7c7c7bababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6a6a6a6a6a6a6a6a6a6a6a6a6a69a9a9a9a9a9a9a9a9a9a9a6d6d6d6d919191919191919191919191916d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d777777776d6d6d6d6d6d6d6d6d6d6d6d6d6d3030303030303030303030303030303030304d4d4d4d4d4d4d4d4d4d4040404038383838383838383838382f2f2f32323232252525252525251a1a1a1a1a1a1a1a1a1a1a1a010101010101010103030303030301010000",
+        "0101d1d1d1d1d1d1d1d1d1d1d1dbdbdbdbdbdbdbdbdbdbdbd1d1d1d1d1d1d1d1d1d1d1c7c7c7c7c7c7c7c7c7c7bababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6a6a6a6a6a6a6a6a6a6a6a6a6a69a9a9a9a9a9a9a9a9a9a9a6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d777777776d6d6d6d6d6d6d6d6d6d6d6d6d6d3030303030303030303030303030303030304d4d4d4d4d4d4d4d4d4d4040404038383838383838383838382f2f2f3232323225252525252525251a1a1a1a1a1a1a1a1a1a1a010101010101010105050505050101010000",
+        "0101d1d1d1d1d1d1d1d1d1d1d1d1d1d1dbdbdbdbdbd1d1d1d1d1d1d1d1d1d1d1d1d1d1c7c7c7c7c7c7c7c7c7c7bababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadadadadada6a6a6a6a6a6a6a6a6a69b9b9b9b9b9b9b9b9b6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d7b7b7b7b7b7b7b7b7b7b7b6d6d6d6d6d6d6d6d6d6d3030303030303030303030303030303030304d4d4d4d4d4d4d4d4d4d4040404040404040402f2f2f2f2f2f2f2f2f3232323225252525252525251a1a1a1a1a1a1a1a1a1a1a010101010105050105050505050101010000",
+        "0101d101d1d1d1d1d1d1d1d1d1d1d1d1dbd1d1d1dbd1d1d1d1d1d1d1d1d1d1d1d1d1c7c7c7c7c7c7c7c7c7c7c7bababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadadadadada6a6a6a6a6a6a6a6a6a69b9b9b9b9b9b9b9b9b6d6d6d6d6d6d6d6d9393939393936d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d7b7b7b7b7b7b7b7b7b7b7b6d6d6d6d6d6d6d6d6d6d3030303030303030303030303030303030304d4d4d4d4d4d4d4d4d4d4040404040404040402f2f2f2f2f2f2f2f2f3232323225252525252525251a1a1a1a1a1a1a1a1a1a1a010101010505050505050505050101010000",
+        "0101d101d1d1d1d1d10101d1d1d1dbdbdbd1d1d1dbdbdbd1d1d10101d1d1d1d1d1d1d1c7c7c7c7c7c7c7c7c7c7bababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadadadadada6a6a6a6a6a6a6a6a6a69b9b9b9b9b9b9b9b9b9b6d6d6d989898989393939393936d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d7b7b7b7b7b7b7b7b7b7b7b6d6d6d6d6d6d6d6d6d6d3030303030303030303030303030303030304d4d4d4d4d4d4d4d4d4d4040404040404040402f2f2f2f2f2f2f2f2f3232323225252525252525251919191919191919191919050505050505050505050505010101010000",
+        "0101d1d1d1d1d1d1d10101d1d1d1d1d1d1d1d1d1d1d1d1d1d1d10101d1d1d1d1d1d1d1c7c7c7c7c7c7c7c7c7c7bababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadadadadada6a6a6a6a6a6a6a6a6a69b9b9b9b9b9b9b9b9b9b6d6d6d989898989393939393936d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d7b7b7b7b7b7b7b7b7b7b7b6d6d6d6d6d6d6d6d6d6d3030303030303030303030303030303030304d4d4d4d4d4d4d4d4d4d404040403b3b3b3b3b3b3b3b3b3636363636252525252525252525252525191919191919191919191905050505050b0b0b0b0b0b05050101010000",
+        "0101d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1c7c7c7c7c7c7c7c7c7c7bababababaaaaaaaaaaaaaaaaaacacacacacacacacacacacacacaca3a3a3a3a3a3a3a3a3a3a39b9b9b9b9b9b6d6d6d98989898939393939393936d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d7b7b7b7b7b7b7b7b7b7b7b6d6d6d6d6d6d6d6d6d6d3030303030303030303030303030303030304d4d4d4d4d4d4d4d4d4d404040403b3b3b3b3b3b3b3b3b3636363636252525252525252525252525191919191919191919191905050505050b0b0b0b0b0b05050101010000",
+        "0101d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1c7c7c7c7c7c7c7c7c7c7bababababaaaaaaaaaaaaaaaaaacacacacacacacacacacacacacaca3a3a3a3a3a3a3a3a3a3a39b9b9b9b9b9b6d6d6d98989898939393939393936d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d7b7b7b7b7b7b7b7b7b7b7b6d6d6d6d6d6d6d6d6d6d303030303030303030303059595959595959594d4d4d4d4d4d4d4d4d404040403b3b3b3b3b3b3b3b3b3636363636252525252525252525252525191919191919191919191905050505050b0b0b0b0b0b05010101010000",
+        "0101d101d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1c7c7c7c7c7c7c7c7c7c7bababababaaaaaaaaaaaaaaaaaacacacacacacacacacacacacacaca3a3a3a3a3a3a3a3a3a3a39b9b9b9b9b6d6d6d6d6d989898939393939393936d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d7b7b7b7b7b7b7b7b7b7b7b6d6d6d6d6d6d6d6d6d6d303030303030303030303059595959595959594d4d4d4d4d4d4d4d4d404040403b3b3b3b3b3b3b3b3b3636363636252525252525252525252525191919191919191919191905050505050b0b0b0b0b0b05010101010000",
+        "0101d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1c7c7c7c7bbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaacacacacacacacacacacacacacaca3a3a3a3a3a3a3a3a3a3a39b9b9b9b9b6d6d6d6d6d989898939393939393936d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d7b7b7b7b7b7b7b7b7b6d6d6d6d6d6d6d6d6d6d6d303030303030303030303059595959595959594e4e4e4e4e4e4e4e4e404040403b3b3b3b3b3b3b3b3b3636363636252525252525252525252525191919191919191919191905050505050b0b0b0b0b0b05050101010000",
+        "0101d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaaaacacacacacacacacacacacacacaca3a3a3a3a3a3a3a3a3a3a39b9b9b9b9b6d6d6d6d6d989898939393939393936d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d7b7b7b7b7b7b7b7b7b6d6d6d6d6d6d6d6d6d6d6d303030303030303030303059595959595959594e4e4e4e4e4e4e4e4e404040403b3b3b3b3b3b3b3b3b3636363630303030252525252525252525191919191919191515151515151515050b0b0b0b0b0b05050101010000",
+        "0101d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaacacacacacacacacacacacacacaca3a3a3a3a3a3a3a3a3a3a39b9b9b9b9b6d6d6d6d6d989898939393939393936d6d6d6d6d6d6d6d6d6d6d6d6d6d6d797979797979797979797979796d6d6d6d6d6d6d6d6d3030303030303030595959595959594e4e4e4e4e4e4e4e4e4e4e4e4e4040404040303030303030303030303030303030302525252525252525251919191919191915151515151515150105050505050505010101010000",
+        "0101d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaacacacacacacacacacacacacacaca4a4a4a4a4a4a4a4a49b9b9b9b9b9b9b9b6d6d6d98989898939393939393936d6d6d6d6d6d6d6d6d6d6d6d6d6d6d797979797979797979797979796d6d6d6d6d6d6d6d6d3030303030303030595959595959594e4e4e4e4e4e4e4e4e4e4e4e4e4040404040303030303030303030303030303030302525252525252525251919191919191915151515151515150105050505050505050101010000",
+        "0101d10101d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d10101bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaacacacacacacacacacacacacacaca4a4a4a4a4a4a4a4a49b9b9b9b9b9b9b9b6d6d6d98989898939393939393936d6d6d6d6d6d6d6d6d6d6d6d6d6d6d797979797979797979797979796d6d6d6d6d6d6d6d6d3030303030303030595959595959594e4e4e4e4e4e4e4e4e4e4e4e4e4040404040303030303030303030303030303030302525252525252525251919191919191915151515151515150105050505050505050101010000",
+        "0101d10101d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d10101bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaacacacacacacacacacacacacacaca4a4a4a4a4a4a4a4a49b9b9b9b9b9b9b6d6d6d6d6d989898939393939393936d6d6d6d6d6d6d6d6d6d6d6d6d6d6d797979797979797979797979796d6d6d6d6d6d6d6d6d3030303030303030595959595959594e4e4e4e4e4e4e4e4e4e4e4e4e4040404040303030303030303030303030303030302525252525010101011919191919191915151515151515150101010505050505050101010000",
+        "0101d1d1d1aaaad1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1aaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaacacacacacacacacacacacacacaca4a4a4a4a4a4a4a4a49b9b9b9b9b9b9b6d6d6d6d6d989898939393939393936d6d6d6d6d6d6d6d6d6d6d6d6d6d6d79797979796e6e6e79797979796d6d6d6d6d6d6d6d6d3030303030303030595959595959594e4e4e4e4e4e4e4e4e4e4e4e4e4040404040303030303030303030303030303030303030303001010101011919191919191915151515151511111111110505050505050101010000",
+        "010101aaaaaaaad1d1d1d1d1d1d1d1aaaaaaaaaaaaaad1d1d1d1d1d1d1d1aaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaacacacacacacacacacacacacacaca4a4a4a4a4a4a4a4a49b9b9b9b9b9b9b8080808080989898939393939393938080808080808080808080808080808080806e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e3030303030303030595959595959594e4e4e4e4e4e4e4e4e4e4e4e4e4040404040303030303030303030303030303030303030303019191919191919191919191915151515151511111111110505050505010101010000",
+        "010101aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacacacacacacaca4a4a4a4a4a4a4a4a49b9b9b9b9b9b9b9b80808080989898939393939393938080808080808080808080808080808080806e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e3030303030303030595959595959594e4e4e4e4e4e4e4e4e4e4e4e303030303030303030303030303030303030303030303030303019191919191919191919191915151515151511111111110505050505050101010000",
+        "01010101aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacacacacacacacac808080808080809b9b9b9b9b9b9b9b9b80808080989898939393939393938080808080808080808080808080808080806e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303019191919191919191919191915151515151511111111110505050505050101010000",
+        "0101aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacac808080acacacacacac808080808080809b8080808080809b9b80808080989898939393939393938080808080808080808080808080808080806e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303019191919191919191919191915151515151511111111110505050505010101010000",
+        "0101aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa8080808080808080808080808080808080808080808080808080808080808080808080989898939393939393938080808080808080808080808080808080806e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303019191919191919191919191915151515151111111111110505050505050101010000",
+        "0101aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa8080808080808080808080808080808080808080808080808080808080808080808080989898939393939393938080808080808080808080808080808080806e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303019191919191919191919191919191919191111111111110505050505050101010000",
+        "0101aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa8080808080808080808080808080808080808080808080808080808080808080808080989898939393939393938080808080808080808080808080808080806e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303019191919191919191919191919191919191111111105050505050505010101010000",
+        "0101aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa808080808080808080808080808080808080808080809c9c9c9c9c9c9c9c9c80808080989898939393939393938080808080808080808080808080808080806e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303019191919191919191919191919191919191111111105050505050501010101010000",
+        "0101aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa8080808080a5a5a5a5a5a59c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c80808080989898939393939393938080808080808080808080808080808080806e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303019191919191919191919191919191919191111111105050505050101010101010000",
+        "01010101aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaad2aaaaaaaaaaaad2aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa8080808080a5a5a5a5a5a59c9c9c9c9c9c9c010101019c9c9c9c9c9c9c9c9c80808080949494949494949494808080808080808080808080808080808080806e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303019191919191919191919191919191919191111111105050505050505010101010000",
+        "010101010101010101c8c8c8c8c8c8c8c801010101d2d2d2d2d2d2d2d2d2d2d2d201c8c8c8c8c8c8c8c8c80101010101aab2b2b2b2b2b2b2b2808080808080a5a5a5a5a5a59c9c9c9c9c9c9c010101019c9c9c9c9c9c9c9c9c80808080949494949494949494808080808080808080808080808080808080807c7c7c7c7c7c7c7c7c6e6e6e6e6e6e6e6e6e6e30606060606060606060606030303056565656563030303030303030303030303030303030303030303030303030303030303030301c1c1c1c1c1c1c1c1c1c1c1c1c1c1111111111111105050505050505050101010000",
+        "010101010101010101c8c8c8c8c8c8c8c801010101d2d2d2d2d2d2d2d2d2d2d2d201c8c8c8c8c8c8c8c8c801010101aaaab2b2b2b2b2b2b2b280808080809c9c9c9c9ca5a59c9c9c9c9c9c9c010101019c9c9c9c9c9c9c9c9c80808080949494949494949494808080808080808080808080808080808080807c7c7c7c7c7c7c7c7c0101010101010101010101016060606060606060606030303056565656563030303030303030303030303030303030303030303030303030303030303030301c1c1c1c1c1c1c1c1c1c1c1c1c1c0101010101050505050505050505050101010000",
+        "010101010101010101c8c8c8c8c8c8c8c801010101d2d2d2d2d2d2d2d2d2d2d2d201c8c8c8c8c8c8c8c8c801010101aaaab2b2b2b2b2b2b2b280808080809c9c9c9c9ca5a59c9c9c9c9c9c9c010101019c9c9c9c9c9c9c9c9c80808080949494949494949494808080808080808080808080808080808080807c7c7c7c7c7c7c7c7c0101010101010101010101016060606060606060606057575756565656563030303030303030303030303030303030303030303030303030303030303030301c1c1c1c1c1c1c1c1c1c1c1c1c1c0105050505050505050505050505010101010000",
+        "0101010101010101c8c8c8c8c8c8c8c8c801010101d2d2d2d2d2d2d2d2d2d2d2d201c8c8c8c8c8c8c8c8c8c8010101aaaab2b2b2b2b2b2b2b280808080809c9c9c9c9ca5a5a5a5a5a5a5a59ca5a5a5a59c9c9c9c9c9c9c9c8080808080949494949494949494808080808080808080808080808080808080807c7c7c7c7c7c7c7c7c0101010101010101010101016060606060606060606057575756565656563030303030303030303030303030303030303030303030303030303030303030301c1c1c1c1c1c1c1c1c1c1c1c1c1c0105050505050505050501050501010101010000",
+        "010101010101c8c8c8c8c8c8c8c8c8c8c801010101d2d2d2d2d2d2d2d2d2d2d2d20101c8c8c8c8c8c8c8c8c8c80101b2b2b2b2b2b2b2b2b2b280808080809c9c9c9c9ca5a5a5a5a5a5a5a5a5a5a5a5a5a59d9d9d9d9c9d9d80808080809494949494949494948e8e8e8e8e8e8e8e8e808080808080808080807c7c7c7c7c7c7c7c7c01010101010101010101010160606060606060606060575757565656565630303042424242424242424242424242303030303030303030303030303030303021212121212121211c1c1c1c1c1c0105050505050505050501010101010101010000",
+        "010101010101c8c8c8c8c8c8c8c8c8c8c8c8010101d2d2d2d2d2d2d2d2d2d2d2d2010101c8c8c8c8c8c8c8c8c80101b2b2b2b2b2b2b2b2b2b280808080809c9c9c9c9ca5a5a5a5a5a5a5a5a5a5a5a5a5a59d9d9d9d9d9d9d80808080808095959595959595958e8e8e8e8e8e8e8e8e808080808080808080807c7c7c7c7c7c7c7c7c01010101010101010101010160606060606060606060575757565656565630303042424242424242424242424242303030303030303030303030303030303021212121212121211c1c1c1c1c1c0105050505050505050505010101010101010000",
+        "01010101010101c8c8c8c8c8c8c8c8c8c801010101d2d2d2d2d2d2d2d2d2d2d2d2010101c8c8c8c8c8c8c8c8c80101b2b2b2b2b2b2b2b2b28080808080809c9c9c9c9ca5a5a7a7a7a7a7a7a7a7a7a79d9d9d9d9d9d9d9d9d80808080808095959595959595958e8e8e8e8e8e8e8e8e808080808080808080807c7c7c7c7c7c7c7c7c010101010101010101606060606060606060606060605757575656565656303030424242424242424242424242423030303030303030303030303030303030212121212121211d1d1d1d1d1d1d0505050505050505050501010101010101010000",
+        "0101010101010101c8c8c8c8c8c8c8c8c801010101d2d2d2d2d2d2d2d2d2d2010101010101c8c8c8c8c8c8c8010101b2b2b2b2b2b2b2b2b28080808080809c9c9c9c9ca5a5a7a7a7a7a7a7a7a7a7a79d9d9d9d9d9d9d9d9d9d808080959595959595959595958e8e8e8e8e8e8e8e8e808080808080808080807c7c7c7c7c7c7c7c7c010101010101010101606060606060606060606060605757575656565656303030424242424242424242424242423030303030303030303030303030303030212121212121211d1d1d1d1d1d050505050501010505050505010101010101010000",
+        "010101010101010101c8c8c8c8c8c8c8c8c80101c2d2c2c2c2c2c2c2d2c2c20101010101c8c8c8c8c8c8c801010101b2b2b2b2b2b2b2b2b28080808080809c9c9c9c9ca5a5a7a7a7a7a7a7a7a7a7a79d9d9d9d9d9d9d9d9d9d8080809595959595959595958f8f8f8e8f8f8f8f8f8f808080808080808080807c7c7c7c7c7c7c7c7c010101010101010101606060606060606060606060605757575656565656303030424242424242424242424242423030303030303030303030303030303030212121212121211d1d1d1d1d1d050505050101050505050505050101010101010000",
+        "010101010101010101c8c8c8c8c8c8c8c8010101c2c2c2c2c2c2c2c2c2c2c20101010101c8c8c8c8c8c8c8bfbfbfbfbfb2b2b2b2b2b280808080808080809c9c9c9c9ca5a5a7a7a7a7a7a7a7a7a7a79d9d9d9d9d9d9d9d9d9d8080809595959595959595958f8f8f8f8f8f8f8f8f8f80808080808080808080808080808057575757010101010101010101606060606060606060606060605757575656565656303030424242424242424242424242423030303030303030303030303030303030212121212121211d1d1d1d1d05050505050101050505050505050101010101010000",
+        "010101010101010101c8c8c8c8c8c8c801010101c8c2c2c2c2c2c2c2c2c8010101010101c8c8c8c8c8c8c8bfbfbfbfbfb2b2b2b2b2b280808080808080809c9c9c9c9ca5a5a7a7a7a7a7a7a7a7a79c9c9c9c9c9d9d9d9c9d9d8080809595959595959595958f8f8f8f8f8f8f8f8f8f80808080808080808080808080808057575757010101010101010101606060606060606060606060605757575656565656303030424242424242424242424242423030303030303030303030303030303030212121212121211d1d1d1d1d05050505050101010105050505010101010101010000",
+        "010101010101010101c8c8c8c8c80101010101c8c8c2c2c2c2c2c2c2c2c80101010101c8c8c8c8c8c8c8c8bfbfbfbfbfb2b2b2b2b2b2b2b2b280808080809c9c9c9c9ca5a5a7a7a7a7a7a7a7a7a79c9c9c9c9c9c9c9c9c80808080808080959595959595958f8f8f8f8f8f8f8f8f8f80808080808080808080808080808057575757575757575757575757606060606060606060606060605757575656565656303030424242424242424242424242423030303030303030303030303030303030212121212121211d1d1d1d1d05050505010101010105050505010101010101010000",
+        "010101010101010101c8c8c8c8c801010101c8c8c8c2c2c2c2c2c2c2c2c8c801c8c8c8c8c8c8c8c8c8c8c8bfbfbfbfbfb2b2b2b2b2b2b2b2b280808080809c9c9c9c9ca5a5a7a7a7a7a7a7a7a7a79c9c9c9c9c9c9c9c9c8080808080808095959595959595958f8f8f8f8f8f8f8f8f80808080808080808080808080808057575757575757575757575757575757575757575757575757575757575757575757303030434343434343434343434343433030303030303030303030303030303030212121212121211d1d1d1d0505050505010101010505050505050101010101010000",
+        "01010101010101010101c8c8c8c8c8010101c8c8c8c2c2c2c2c2c2c2c2c8c8c8c8c8c8c8c8c8c8c8c8c8c8bfbfbfbfbfb2b2b2b2b2b2b2b2b280808080809c9c9c9c9ca5a5a7a7a7a7a7a7a7a7a79c9c9c9c9c9c9c9c9c9c80808080809292929292959595958f8f8f8f8f8f8f8f8f80808080808080808080808080808057575757575757575757575757575757575757575757575757575757575757575757303030434343434343434343434343433030303030303030303030303030303030212121212121211d1d1d1d0505050505050501010505050505010101010101010000",
+        "01010101010101010101c8c8c8c8c8c8c8c8c8c8c8c2c2c2c2c2c2c2c2c8c8c8c8c8c8c8c8c8c8c8c8c8c8c0c0c0c0c0b2b2b2b2b2b2b2b2b2808080808080808080a5a5a5a7a7a7a7a7a7a7a7a79c9c9c9c9c9c9c9c9c9c80808080809292929292959595958f8f8f8f8f8f8f8f8f8080808080808080808080808080805757575757575757575757575757575757575757575757575757575757575757575730303043434343434343434343434343303030303030303030303030303030303022222222222222221d1d1d0505050505010101010105050505050101010101010000",
+        "01010101010101010101c8c8c8c8c8c8c8c8c8c8c8c2c2c2c2c2c2c2c2c8c8c8c8c8c8c8c8c8c8c8c8c8c8c0c0c0c0c0b2b2b2b2b2b2b2b2b2808080808080808080a5a5a5a7a7a7a7a7a7a7a7a79c9c9c9c9c9c9c9c9c808080808080809292929292929292928f8f8f8f8f8f8f8f808080808080808080808080808080575757575c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c585858585830303044444444444444444444444444303030303030303030303030303030303022222222222222010101010505050501010101010505050505050101010101010000",
+        "0101010101010101010101c8c8c8c8c8c8c8c8c8c8c2c2c2c2c2c2c2c2c8c8c8c8c8c8c8c8c8c8c8c8c8c8c0c0c0c0c0b2b2b2b2b2b2b2b2b2808080808080808080a5a5a5a7a7a7a7a7a7a7a7a79c9c9c9c9c9c9c9c9c9c808080808092929292929292929292928f8f8f8f8f8f8f808080808080808080808080808080575757575c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c585858585830303030444444444444444444444444303030303030303030303030303030303022222222222222010101050505050501010101010105050505010101010101010000",
+        "0101010101010101010101c8c8c8c8c8c8c8c8c8c8c2c2c2c2c2c2c2c2c8c2c2c2c2c8c8c8c8c8c8010101c0c0c0c0c0b2b2b2b2b2b2b2b2b28080808080808080808080808080808080808080a79c80809c9c9c80809c9c808080808080929292929292929292928f8f8f8f8f8f8f8a8a80808080808080808080808080575757575c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c585858585830303044444444444444444444444444303030303130303030303031303030303022222222222222010105050505050505010101010505050501010101010101010000",
+        "01010101010101010101c8c8c8c8c8c8c8c8c8c8c8c2c2c2c2c2c2c2c2c2c2c2c2c2c8c8c8c8c801010101c1c1c1c1c1b2b2b2b2b2b2b2b2b2b2b28080808080808080808080808080808080808080808080808080808080808080808092929292929292929292928f8f8f8f8f8f8f8a8a80808080808080807e7e7e7e7e7e6565655c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c585858585830303044444444444444444444444444313131313131313131313131313131313122222222222222010105050505050505050505010505050505010101010101010000",
+        "0101010101010101010101c8c8c8c8c8c8c8c8c8c8c2c2c2c2c2c2c2c2c2c2c2c2c2c8c8c8c80101010101c1c1c1c1c1b2b2b2b2b2b2b2b2b2b2b28080808080808080808080808080808080808080808080808080808080808080808092929292929292929292928f8f8a8a8a8a8a8a8a80808080808080807e7e7e7e7e7e6565655c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c585858585830303030444444444444444444444444313131313131313131313131313131313122222222222222010101010505050505050505050505050501010101010101010000",
+        "0101010101010101010101c8c8c8c8c8c8c8c801c8c2c2c2c2c2c2c2c2c2c2c2c2c2c8c8c8c8c801010101c1c1c1c1c1b2b2b2b2b2b2b2b2b2b2b280808080808080808080808080808080808080808080808080808080808080808080929292929292929292929280808a8a8a8a8a8a8a80808080808080807e7e7e7e7e7e6565655c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c585858585830303030444444444444444444444444313131313131313131313131313131313122222222222222010101010105050505050505050505050101010101010101010000",
+        "010101010101010101010101c8c8c8c8c8c8010101c2c2c2c2c2c2c2c2c2c2c2c2c8c8c8c8c8c8c8010101c1c1c1c1c1b2b2b2b2b2b2b2b2b2b2b280808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808a8a8a8a8a8a8a80808080808080807e7e7e7e7e7e6565655c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c585858585830303044444444444444444444444444313131313131313131313131313131313122222222220101010101010101050505050505050505050101010101010101010000",
+        "0101010101010101010101010101c8c8c8c2c20101c2c2c2c2c2c2c2c2c2c2c2c2c8c8c8c8c8c8c8c8c801c1c1c1c1c1b2b2b2b2b2b2b2b2b2808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808a8a8a80808a8a80808080808080807e7e7e7e7e7e6565655c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c585858585830303044444444444444444444444444313131313131313131313131313131313122222222222201010101010101010505050505050505010101010101010101010000",
+        "01010101010101010101010101c8c8c8c8c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2b3b3b3b3b3b3b3b3b3b3b38080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080807e7e7e7e7e7e6565655c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c585858585830303030444444444444444444444444313131313131313131313131313131313122222222222201010101010101121212121212121212120101010101010101010000",
+        "010101010101010101010101c8c8c8c8c8c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2b3b3b3b3b3b3b3b3b3808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080807e7e7e7e7e7e6565656565656565656565656565656565656565655d5d5d5d5d5d5d585858585830303030444444444444444444444444313131313131313131313131313131313122222222222201010101010101121212121212121212120101010101010101010000",
+        "01010101010101010101010101c8c8c8c8c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2b3b3b3b3b3b3b3b3b3808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080806565656565656565656565656565656565656565656565656565655d5d5d5d5d5d5d585858585830303044444444444444444444444444313131313131313131313131313131313122222222222201010101010101121212121212121212120101010101010101010000",
+        "010101010101010101010101c8c8c8c8c8c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2b3b3b3b3b3b3b3b3b3808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080806565656565656565656565656565656565656565656565656565655d5d5d5d5d5d5d585858585830303045454545454545454545454545292929293129292929292931292929313122222222220101010101010101121212121212121212120101010101010101010000",
+        "010101010101010101010101c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2b3b3b3b3b3b3b3b3b3808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080806565656565656565656565656565656565656565656565656565655d5d5d5d5d5d5d585858585830303030454545454545454545454529292929292929292929292929292929292929292323232323231313010101121212121212121212120101010101010101010000",
+        "010101010101010101010101dedec2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2b3b3b3b3b3b3b3b3b3808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080806565656565656565656565656565656565656565656565656565655d5d5d5d5d5d5d585858585830303030454545454545454545454529292929292929292929292929292929292929292323232323231313130101121212121212121212120101010101010101010000",
+        "010101010101010101010101dedec2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2b3b3b3b3b3b3b3b3b38080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808081818181816e6e6e6e6e656e6e6e65656e6e3030303030303030305d5d5d5d5d5d5d585858585830303045454545454545454545454545292929292929292929292929292929292929292323232323231313131313131313131313131313130606060606060101010000",
+        "010101010101dedededededededec2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2b3b3b3b3b3b3b3b3b3b3b380808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808081818181816e6e6e6e6e6e6e6e6e6e6e6e6e30303030303030303030303030303030303030303030303045454545454545454545454545292929292929292929292929292929292929292323232323231313131313131313131313131313130606060606060101010000",
+        "0101010101dededededededededec2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2b3b3b3b3b3b3b3b3b3808080808080808080808080808080809f9f9f9f9f9f9f9f9f9f808080808080808080808080808080808080888888888888888885858585858585858581818181818181816e6e6e6e6e6e6e6e6e6e6e6e6e30303030303030303030303030303030303030303030303045454545454545454545454529292929292929292929292929292929292929292323232323231313131313131313131313131313060606060606060101010000",
+        "0101010101dededededededede010101c9c9c9c9c9c9c9010101c2c2c2c201c9c9c9c9c9c9c9c9c9c9c9c9c901c2c2c2b3b3b3b3b3b3b3b3b3808080808080809f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f8080808080808080808080808080808080888888888888888885858585858585858581818181818181816e6e6e6e6e6e6e6e6e6e6e6e6e30303030303030303030303030303030303030303030303045292945452929294545292929292929292929292929292929292929292929292323232323231313131313131313131313131313060606060606060101010000",
+        "0101010101dededededededede010101c9c9c9c9c9c9c901010101c9c9c90101c9c9c9c9c9c9c9c9c9c9c9010101c2c2b3b3b3b3b3b3b3b3b3808080808080809f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f8080808080808080808080808080808080888888888888888885858585858585858581818181818181816e6e696969696969696969696969696969692929292929292929292929292929292929292929292929292929292929292929292929292929292929292929292929171717171717171713131313131313131313131313010101060606060606060101010000",
+        "0101010101dededededededede010101c9c9c9c9c9c9c90101010101c9c9010101c9c9c9c9c9c9c9c9c9c90101010101b3b3b3b3b3b3b3b3b3808080808080809f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f80808097979797979797979797979788888888888888888888858585858585858585818181818181818169696969696969696969696969696969696929292929292929292929292929292929292929292929292929292929292929292929292929292929292929292929291717171717171717131313131313131313131313010d0d0d0d0d0d060606060101010000",
+        "0101010101dedededededec9c9c9c9c9c9c9c9c9c9c9c9c901010101010101010101c9c9c9c9c9c9c9c9010101010101b3b3b3b3b3b3b3b3b3808080808080809f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f80809797979797979797979797979788888888888888888888858585858585858585856969696969696969696969696969696969696969696969696929292929292929292929292929292929292929292929292929292929292929292929292929292929292929292929291717171717171717131313131313131313131313010d0d0d0d0d0d060606060101010000",
+        "0101010101dedededededec9c9c9c9c9c9c9c9c9c9c9c9c901010101010101010101c9c9c9c9c9c9c901010101010101010101010101010101808080808080809f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f80809797979797979797979797979788888888888888888888858585858585858585856969696969696969696969696969696969696969696969696929292929292929292929292929292929292929292929292929292929292929292929292929292929292929292929291717171717171717171717171717171313131301010d0d0d0d0d0d060606060101010000",
+        "0101010101dedededededec9c9c9c9c9c9c9c9c9c9c9c9c90101010101c9c9010101c9c9c9c9c9c9c901010101010101010101010101010101808080808080809f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f80809797979797979797979797979788888888888888888888858585858585858585856969696969696969696969696969696969696969696969696929292929292929292929292929292929292929292929292929292929292929292929292929292929292929292929291717171717171717171717171717171313130101010d0d0d0d0d0d060606060101010000",
+        "0101010101dedededededec9c9c9c9c9c9c9c9c9c9c9c90101010101c9c9c9c9010101c9c9c9c9c90101010101a90101010101010101010101010101010101019f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f80809797979797979797979797979788888888888888888888888888888885858585856969696969696969696969696969696969696969696969696929292929292929292929292929292929292929292929292929292929292929292929292929292929292929292929291717171717171717171717171717171717171717170d0d0d0d0d0d060606060101010000",
+        "0101010101dededede0101c9c9c9c9c9c9c9c9c9c9c9c9c9c9c901c9c9c9c9c9c9010101c9c9c9c9c9c9c9c9c9a9a90101a901a9a901010101010101010101019f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f80809797979797979797979797979788888888888888888888888888888885858585856969696969696969696969696969696969696969696969696929292929292929292929292929292929292929292929292929292929292929292929292929292929292929292929291717171717171717171717171717171717171717170d0d0d0d0d0d060606060101010000",
+        "0101010101dededede0101c9c9c9c9c9c9c9c9c9c9c9010101c9c9c9c9c9c9c9c9010101c9c9c9c9c9c9c9c9c9a9a9a9a9a9a9a9a9a9a90101010101010101019f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f80809797979797979797979797979788888888888888888888888888888885858585856969696969696969696969696969696969696969696969696929292929292929292929292929292929292929292929292929292929292929292929292929292929292929292929292626262626262617171717171717171717171717170d0d0d0d0d0d060606060101010000",
+        "010101010101010101010101c9c9c901c9c9c9c9c90101010101c9c9c9c9c9c9c9c901c9c9c9c9c9c9c9c9c9c9a9a9a9a9a9a9a9a9a9a9a901a90101010101019f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f8080809797979797979788888888888888888888888888888888888888888885858585856969696969696969696969696969696969696969696969696929292929292929292929292929292929292929292929292929293d3d3d3d3d3d3d29292929292929292929292929262626262626262617171717171717171717171717170e0e0e0e0e0e060606060101010000",
+        "01010101010101010101010101c9010101c9c9c9c9010101c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9a9a9a9a9a9a9a9a9a9a9a9a9a9a901010101019f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f8080809797979797979788888888888888888888888888888888888888888888696969696969696969696969696969696969696969696969696a6a6a6a2929292929292929292929292929292929292929292929293d3d3d3d3d3d3d3d3d3d3d292929292929292929292926262626262626260e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e060606060101010000",
+        "01010101010101010101010101c90101c9c9c9c9c9c9c901c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9010101019f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9fa09f9797979797979788888888888888888888888888888888888888888888696969696969696969696969696969696969696969696969696a6a6a6a2929292929292929292929292929292929292929292929293d3d3d3d3d3d3d3d3d3d3d292929292929292929292926262626262626260e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e060606060101010000",
+        "0101010101010101c901c901c9c901c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9a9a901a9a9a9a9a9a9a9a9a9a9a9a9a99f01019f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9fa0a0a0a09797979797978988888888888888899090909090908b8b8b8b8b898988696969696969696969696969696969696969696969696969696a6a6a6a2929292929292929292929292929292929292929292929293d3d3d3d3d3d3d3d3d3d3d292929292929292929292926262626262626260e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e060606060101010000",
+        "01010101010101c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c90101010101a9010101a9a9a9a9a9a9a9a9a9a9a9a99f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9fa09fa0a0a0a09789898989898988888888888889899090909090908b8b8b8b8b898988696969696969696969696969696969696969696969696969696a6a6a6a5e2929292929295e292929292929522929294a292929294a3d3d3d3d3d3d3d3d3d3d3d292929292929292929292926262626262626260e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e060606060101010000",
+        "01010101010101c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9010101010101010101a9a9a9a9a9a9a9a9a9a9a9a99f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9fa0a0a0a0a0a08989898989898989888888888889899090909090908b8b8b8b8b89898883838383838383787878787878787878786f6f6f6f6f6f6f6c6c6c6c5e5e5e5e5e5e5e5e5e292929292929522929294a292929294a3d3d3d3d3d3d3d3d3d3d3d292929292929292929292926262626262626260e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e060606060101010000",
+        "010101010101c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c901010101010101010101a901a9a9a9a9a9a9a9a99f0101019f9f9f9f9f9f9f9f9f9f9f9f9f9f9fa0a0a0a0a0a08989898989898989888888888889899090909090908b8b8b8b8b89898883838383838383787878787878787878786f6f6f6f6f6f6f6c6c6c6c5e5e5e5e5e5e5e5e5e5e5a5a5a5a52525252524a4a4a4a4a4a3d3d3d3d3d3d3d3d3d3d3d2929292929292929292929290e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e060606060101010000",
+        "010101010101c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c90101010101010101010101a9a9a9a9a9a9a9a9010101019f9f9f9f9f9f9f9f9f9f9f9f9f9fa0a0a0a0a0a0898989898989898988888888888989898989898989898989898989898383838383838383787878787878787878786f6f6f6f6f6f6f6c6c6c6c5e5e5e5e5e5e5e5e5e5e5a5a5a5a52525252524a4a4a4a4a4a3d3d3d3d3d3d3d3d3d3d3d2929292929292929292929290e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e060606060101010000",
+        "010101010101c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9010101010101010101010101a9a9a901a9a9a9a9a901010101019f9f9f9f9fa0a09f9f9f9f9fa0a0a0a0a0a0898989898989898989898989898989898989898989898989898989898383838383838383787878787878787878786f6f6f6f6f6f6f6c6c6c6c5e5e5e5e5e5e5e5e5e5e5a5a5a5a52525252524a4a4a4a4a4a3d3d3d3d3d3d3d3d3d3d3d2929292929292929292929290e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e060606060101010000",
+        "010101010101c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9a9a901010101010101a901a9a9a9a90101a9a9a9a9a90101010101a0a0a0a0a0a0a0a0a0a09fa0a0a0a0a0a0898989898989898989898989898989898989898989898989898989898383838383838383837070707070707070706f6f6f6f6f6f6f6c6c6c6c5e5e5e5e5e5e5e5e5e5e5a5a5a5a52525252524a4a4a4a4a4a3d3d3d3d3d3d3d3d3d3d3d2929292929292929292929290e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e060606060101010000",
+        "01010101010101c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9a9a9a9a9a901a90101a9a9a9a9a9a9a90101a9a9a9a9a9a9a9a9a001a0a0a0a0a0a0a0a0a0a09fa0a0a089898989898989898989898989898989898989898989898989898989898989838383838383838383707070707070707070707070707070706c6c6c6c5e5e5e5e5e5e5e5e5e5e5a5a5a5a52525252524a4a4a4a4a4a4a47474747473e3e3e3e3e2929292929292929292929290e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e060606060101010000",
+        "01010101010101c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9010101a9a9a9a9a9a9a9a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0898989898989898989898989898c8c8c8c8c8c8c8c8c8c8c8c898989898989838383838383838383707070707070707070707070707070706c6c6c6c5e5e5e5e5e5e5e5e5e5e5a5a5a5a4a4a4a4a4a4a4a4a4a4a4a4a47474747473e3e3e3e3e2929292929292929292929290e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e060606060101010000",
+        "010101010101010101c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c901c901c9c9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a90101a901a9a9a9a9a9a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a08989898989898c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c898989898989838383838383838383707070707070707070717171717171716c6c6c6c5e5e5e5e5e5e5e5e5e5e5a5a5a5a4a4a4a4a4a4a4a4a4a4a4a4a47474747473e3e3e3e3e292929292929292929292914140e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e060606060101010000",
+        "0101010101010101c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c901010101a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9010101010101a9a9a9a9a901010101010101a0a001a0a0a0a0a0a089898989898c8c8c8c8c8c8c8c8c8c8c8c8c8c8c018c018c8c8c8c89898989838383838383838383707070707070707070717171717171716c6c6c6c5e5e5e5e5e5e5e5e5e5e5a5a5a5a4a4a4a4a4a4a4a4a4a4a4a4a47474747473e3e3e3e3e29292929292929292929291414141414140e0e0e0e14140e0e0e0e0e1414141414141414010101060606060101010000",
+        "010101010101010101c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c901010101010101a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9010101010101a9a9a9a90101a0a0a0a0a0a0a001a0a0a0a0a0a0898989898c8c8c018c018c8c8c8c8c8c8c8c8c01010101018c8c8c8c898989838383838383838378787878787878787878717171717171716c6c6c6c5e5e5e5e5e5e5e5e5e5e5a5a5a5a4a4a4a4a4a4a4a4a4a4a4a4a47474747473e3e3e3e3e29292929292929292929291414141414140e0e0e0e141414141414141414141414141414070707070707070101010000",
+        "0101010101010101c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c901c90101010101010101a9a9a9a9a9a901a9a9a9a9a9a9a9a9a9a9a9a9a901010101a9a9a9a9a0a0a0a0a0a0a0a001a0a0a0a0a0a08989898c8c8c010101018c8c8c8c8c8c8c8c8c8c018c8c8c8c8c8c8c898989838383838383838378787878787878787878717171717171716c6c6c6c5e5e5e5e5e5e5e5e5e5e5a5a5a5a4a4a4a4a4a4a4a4a4a4a4a4a47474747473e3e3e3e3e292929292929292929292914141414141414141414141414141414141414141414141414070707070707070101010000",
+        "010101010101010101c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9010101010101010101010101a90101a90101a9a9a9a9a9a9a9a9a9a9a9a9a901a901a9a9a9a9a9a9a0a0a9a9a0a0010101010101010101898c8c8c8c01018c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8901010183838383837d78787878787878787878717171717171716c6c6c6c5e5e4848484848485e5e5a5a5a5a4a4a4a4a4a4a4a4a4a4a4a4a47474747473e3e3e3e3e292929292929292929292914141414141414141414141414141414141414141414141414070707070707070101010000",
+        "01010101010101010101c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9010101010101010101010101010101010101a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a90101010101010101018c8c8c8c018c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c0101010183838383837d7d7d7d7d7d7d737373727272727272727266666666484848484848484848484848484848484848484848484848484848484848483e3e3e3e3e2929292929292929292a2a2a2a2a2a141414141414141414141414141414141414141414070707070707070101010000",
+        "01010101010101010101cfcfcfcfcfcfcfc9c9c9c9c9c9cfcfcfcfcfcfcf0101010101010101010101010101010101a9a9a9a9a9a9a9a9a901a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9010101010101010101018c8c8c8c8c8c8c8c8c018c8c8c8c8c8c8c8c8c8c8c01018c010101010183838383837d7d7d7d7d7d7d737373727272727272727266666666484848484848484848484848484848484848484848484848484848484848483e3e3e3e3e2929292929292929292a2a2a2a2a2a2a1414141414141414141414141414141414141407070707070707070101010000",
+        "01010101010101010101cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf010101010101010101010101010101010101b4b4b4b4b4b4b4b401a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a90101010101010101010101018c8c8c8c8c8c8c8c0101018c8c8c8c8c8c018c0101010101010101010101017d7d7d7d7d7d7d7d7d737373727272727272727266666666484848484848484848484848484848484848484848484848484848484848483e3e3e3e3e2929292929292929292a2a2a2a2a2a2a1414140814141408141414081414140814141407070707070707070101010000",
+        "01010101010101cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf0101010101010101010101010101b4b4b4b4b4b4b4b4b4b401a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a90101010101010101010101018c8c8c8c8c8c8c0101018c8c8c8c8c8c0101010101010101010101010101017d7d7d7d7d7d7d7d7d7373737272727272727272666666664848484848484848484848484848484848484848484848484848484848483f3f3f3f3f3f2929292929292929292a2a2a2a2a2a2a0808080808080808080808080808080808080807070707070707070101010000",
+        "01010101010101cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf010101010101010101010101010101b4b4b4b4b4b4b4b40101a9a9a901a9a9a9a9a9a9a9a9a9a9a9a90101010101010101010101017f017f7f7f7f7f7f7f0101017f7f7f7f7f7f0101010101010101010101010101017d7d7d7d7d7d7d7d7d7373737272727272727272666666664f4f4f4f4f4f4f4f4f4f4f4848484f4f4f4f4f4f4f4f4f4f4f3f3f3f3f3f3f3f3f3f3f3f2929292929292929292a2a2a2a2a2a2a0808080808080808080808080808080808080807070707070707070101010000",
+        "01010101010101cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf0101010101010101010101010101b4b4b4b4b4b4b4b4b4b401a9a90101a9a9a9a9a9a9a9a9a9a9a9a9a9010101010101010101017f7f7f7f7f7f7f7f7f7f7f017f7f7f7f7f7f010101010101010101010101010101017d7d7d7d7d7d7d7d7d7373737272727272727272666666664f4f4f4f4f4f4f4f4f4f4f5b5b5b4f4f4f4f4f4f4f4f4f4f4f3f3f3f3f3f3f3f3f3f3f3f2929292929292929292a2a2a2a2a2a2a0808080808080808080808080808080808080808070707070707070101010000",
+        "01010101010101cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf010101010101010101010101010101b4b4b4b4b4b4b4b401010101010101a9a9a9a9a9a9a9a9a9a9a9a9a90101010101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f0101010101010101010101010101017d7d7d7d7d7d7d7d7d7373737373737373737373666666664f4f4f4f4f4f4f4f4f4f4f5b5b5b4f4f4f4f4f4f4f4f4f4f4f3f3f3f3f3f3f3f3f3f3f3f29292929292929292929292a2a2a08080808080808080808080808080808080808080808080808080808080101010000",
+        "01010101010101cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf0101010101010101010101010101b4b4b4b4b4b4b4b4b4b4010101010101a9a901a9a9a9a9a9a9a9a9a9a9a9a901010101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f0101010101010101017f7f01010101017d7d7d7d7d7d7d7d7d7373737373737373737373666666664f4f4f4f4f4f4f4f4f4f4f5b5b5b4f4f4f4f4f4f4f4f4f4f4f3f3f3f3f3f3f3f3f3f3f3f29292929292929292929292a2a2a08080808080808080808080808080808080808080808080808080808080101010000",
+        "0101cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf01010101010101010101b4b4b4b4b4b4b4b4b401010101010101010101a9a9a9a9a9a9a9a9a9a9a9010101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f01010101010101017f7f7f010101018282828282737373737373737373737373737373666666664f4f4f4f4f4f4f4f4f4f4f5b5b5b4f4f4f4f4f4f4f4f4f4f4f3f3f3f3f3f3f3f3f3f3f3f292929292929292929292929290808080808080808080808080808080808080808080808080808080808080101010000",
+        "0101cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf01010101010101010101a9a9a9a9a9a9a9a90101010101010101010101a9a9a9a9a9a9a9a9a9a9010101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f017f01010101017f7f7f7f0101018282828282737373737373737373737373737373666666664f4f4f4f4f4f4f4f4f4f4f5b5b5b4f4f4f4f4f4f4f4f4f4f4f3f3f3f3f3f3f3f3f3f3f3f292929292929292929292929290808080808080808080808080808080808080808080808080808080808080101010000",
+        "0101cfe7e7e7e7e7e7cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf0101010101010101010101a9a9a9a9a9a901010101010101010101010101a9a9a9a9a9a9a9a9a9a90101017f7f7f7f7f7f7f7f01017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f0101017f7f7f7f7f0101018282828282737373737374747474737373737373666666664f4f4f4f4f4f4f4f4f4f4f5b5b5b4f4f4f4f4f4f4f4f4f4f4f29293f3f3f3f3f3f3f2929292929292929292929292929290808080808080808080808080808080808080808080808080808080808080101010000",
+        "0101cfe7e7e7e7e7e7cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf01010101010101010101a9a9a9a9a9a9a9a9010101a9010101010101010101a9a9a9a9a9a9a9a90101017f7f7f7f7f7f7f7f01010101017f7f7f01017f7f7f7f7f7f7f7f7f7f7f017f7f7f7f7f7f0101010101010101017a7a7a7a74747474747474747474666666664f29294f2929294f2929292929292929294f2929294f2929292929292929292929292929292929292929292929292929290808080808080808080808080808080808080808080808080808080808080101010000",
+        "0101cfe7e7e7e7e7e7cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf010101010101010101a9a9a9a9a9a9a9a9a901a9a9a9a9010101010101010101a9a9a9a9a9a9a9a97f7f7f7f7f7f7f7f7f0101010101010196960101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f01010101010101017a7a7a7a747474747474747474746666666666292929292929292929292929292929292929292929292929292929292929292929292929292929292929292929292b2b2b08080808080808080808080808080808080808080808080808080808080101010000",
+        "0101cfe7e7e7e7e7e7cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf01010101010101010101a9a9a9a9a9a9a9a901a9a9a9a9a901010101010101a9a9a9a9a9a9a9a9a97f7f7f7f7f7f7f0101010101010101019696010101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f017f01010101017a7a7a7a747474747474747474746666666666292929292929292929292929292929292929292929292929292929292929292929292929292929292929292929292b2b2b08080808080808080808080808080808080808080808080808080808080101010000",
+        "0101cfe7e7e7e7e7e7cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf01010101010101010101a9a9a9a9a9a9a9a9a9a9a9a9a9a9a901010101010101a9a9a9a901010101017f7f7f7f7f7f7f01010101010196969696960101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f010101017a7a7a7a74747474747474747474666666666666292929292929292929292929292929292929292929292929292929292929292929292929292929292929292b2b2b2b2b2b2b0808080808080808080808080808080808080808080808080808080101010000",
+        "0101cfe7e7e7e7e7e7cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf0101010101010101010101a9a9a9a9a9a9a9a9a9a9a9a9a9a9a901010101a9a9a9a9a9a9a90101017f7f7f7f7f7f7f0101010101019696960101969601967f7f7f7f7f7f7f7f7f7f7f7f017f7f7f7f7f7f7f7f7f7f7f017a7a7a7a74747474747474747474666666666629292929292929292929292929292929292929292929292929292929292929292929292929292929292929292b2b2b2b2b2b2b0808080808080808080808080808080808080808080808080808080101010000",
+        "0101cfe7e7e7e7e7e7cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf010101010101010101010101a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a901a9a9a9a9a9a9a901010101017f7f7f7f7f01017f019696969696969601969696967f7f7f7f7f7f7f7f0101010101017f017f7f7f7f7f7f7f7f017a7a7a7a74747474747474747474666666666629292929292929292929292929292929292929292929292929292929292929292929292929292929292929292b2b2b2b2b2b2b0808080808080808080808080808080808080808080808080808080101010000",
+        "0101cfe7e7e7e7e7e7cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf0101010101010101010101010101a901a9a901a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9010101010101017f7f7f7f7f7f7f019696969696969601969696967f7f7f7f7f7f01010101010101010101017f7f7f7f7f7f7f017a7a017a74747474747474747467676767676767292929292929292929292929292929292929292929292929292929292929292929292929292929292929292b2b2b2b2b2e2b0808080808080808080808080808080808080808080808080808010101010000",
+        "0101cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf0101010101010101010101010101010101010101a9a9a9a9a9a9a9a9a9a9a9a9a9a9a90101010101017f7f7f7f7f7f7f7f969696969696969601960101967f7f7f7f010101010101878787878787877f7f7f7f7f7f7f7f7f7f017a7a7a7474747474747467676767676729292929292929292929292929292929292929292929292929292929292929292929292929292929292929292b2b2b2b2b2b2b0808080808080808080808080808080808080808080808080808010101010000",
+        "0101cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf0101010101010101010101010101010101010101a9a9a9a9a9a9a9a9a9a9a9a9a9a901010101010101017f7f7f7f7f7f7f969696969696969696960101017f7f7f0101010101017f878787878787877f7f7f7f7f7f7f7f7f7f7a7a7a7a7474747474747467676767676729292929292929292929292929292929292929292929292929292929292929292929292929292929292929292b2b2b2b2b2b080808080808080808080808080808080808080808080808080808080101010000",
+        "0101e1e1e1e1e1e1e1e1e1e1d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3b6b6b6b6b601010101010101a9a9a9a9a9a9a9a9a9a9a901010101010101017f7f7f7f7f7f7f7f9696969696969696019696010101010101010101017f7f878787878787877f7f7f7f7f7f7f7f7f7f7a7a7a7a74747474747474676767676767292929292929292929292929292929292929292929292929292929292929292929292929292933333333333333332c2c2c2c080808080808080808080808080808080808080808080808080808080101010000",
+        "0101e1e1e1e1e1e1e1e1e1e1d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3b6b6b6b6b6010101010101010101a9a9a9a9a9a9a9a9a9010101010101017f7f7f7f7f7f7f7f7f01969696969696960196010101010101010101017f7f7f878787878787877f7f7f7f7f7f7f7f7f7f01010101747474747474746b6b6b6b6b6b612929616129292950505050505050505050505050292929292929292929292929292929293333333333333333332c2c2c2c080808080808080808080808080808080808080808080808080808080101010000",
+        "0101e1e1e1e1e1e1e1e1e1e1d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3b6b6b6b6b60101010101010101a9a9a9a9a9a9a9a9a9a9a9017f0101017f7f7f7f7f7f7f017f01019696969696969601960196960101010101017f7f7f7f878787878787877f7f7f7f7f7f7f7f7f01010101010101010101016b6b6b6b6b6b6b616161616161616150505050505050505050505050292929292929292929292929292929293333333333333333332c2c2c2c080808080808080808080808080808080808080808080808080808010101010000",
+        "0101e1e1e1e1e1e1e1e1e1e1d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3b6b6b6b6b60101010101010101017f7f7f7f7f7f7f7f7f7f7f7f7f017f7f7f7f7f7f7f7f0101010101010101019696019696969601010101017f7f7f7f7f878787878787877f7f7f7f7f7f7f7f7f01010101010101010101016b6b6b6b6b6b6b616161616161616150505050505050505050505050292929292929292929292929292929293333333333333333332c2c2c2c2c0808080808080808080808080808080808080808080808080808010101010000",
+        "0101e1e1e1e1e1e1e1e1e1e1d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3b6b6b6b6b6010101010101010101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f010101010101010101969696969696969601010101017f7f7f7f7f87878787878787017f7f7f7f7f7f7f0101010101010101010101016b6b6b6b6b6b6b616161616161616150505050505050505050505050292929292929292929292929292929293333333333333333332c2c2c2c2c0808080808080808080808080808080808080808080808080808080101010000",
+        "0101e1e1e1e1e1e1e1e1e1e1d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3b6b6b6b6b601010101010101010101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f010101010101010101010196010196969696010101017f7f7f7f7f7f8787878787870101010149494949010101010101010101010101016b6b6b6b6b6b6b616161616161616150505050505050505050505050292929292929292929292929292929293333333333333333332c2c2c2c080808080808080808080808080808080808080808080808080808080101010000",
+        "0101e1e1e1e1e1e1e1e1e1e1d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3b6b6b6b6b601010101010101010101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f01010101010101010101010101010101019696010101017f7f7f7f7f7f7f010101010101010101494949494949010149490101010101010101010101010101010101010101010150505050505050505050505050292929292929292929292929292929293333333333333333332c2c2c2c080808080808080808080808080808080808080808080808080808080101010000",
+        "0101e1e1e1e1e1e1e1e1e1b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8aeaeaeaeaeaeaeaeaeaeaeaeaeaeae7f7f7f7f7f7f7f7f7f7f7f7f7f7f010101010101010101010101010101010196010101017f7f7f7f7f7f7f7f7f0101010101010101014949494949494949494901490101010101010101010101010101010101010101505050505050505050505050292929292929292929292929292929293333333333333333332c2c2c2c080808080808080808080808080808080808080808080808080808010101010000",
+        "0101e1e1e1e1e1e1e1e1e1b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8aeaeaeaeaeaeaeaeaeaeaeaeaeaeae7f7f7f7f7f7f7f7f7f7f7f7f7f0101010101010101010101010101010101017f7f01017f7f7f7f7f7f7f7f7f7f7f010101010101010149494949494949494949494949010101010101010101010101010101010101010150505050505050505050505029292929292929292929292929292929292929292c2c2c2c2c2c2c2c080808080808080808080808080808080808080808080808080808010101010000",
+        "0101e1e1e1e1e1e1e1e1e1b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8aeaeaeaeaeaeaeaeaeaeaeaeaeaeae7f7f7f7f7f7f7f7f7f7f7f7f7f7f0101010101010101010101017f7f017f017f7f017f7f7f7f7f7f7f7f7f7f7f7f7f0101010101010101494949494949494949494901010101010101010101010101010101010101010150505050505050505050505029292929292901292929292929292929292929292c2c2c2c2c2c2c2c2c0808080808080808080808080808080808080808080808080808080101010000",
+        "0101e1e1e1e1e1e1e1e1e1b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8aeaeaeaeaeaeaeaeaeaeaeaeaeaeae7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f010101010101010101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f01010101010101014949494949494949494949010149010101010149010101010101010101010150505050505050505050505029292929290101012929292929292929292929292c2c2c2c2c2c2c2c2c0808080808080808080808080808080808080808080808080808080101010000",
+        "0101e1e1e1e1e1e1e1e1e1b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8aeaeaeaeaeaeaeaeaeaeaeaeaeaeae7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f017f01010101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f01010101010101010149494949494949494949494949490101014949490101010101010101010150505050505050505050505029012901010101010129013a3a3a3a3a292929292c2c2c2c2c2c2c2c2c0808080808080808080808080808080808080808080808080808080101010000",
+        "0101dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd6d6d6d6d6d6c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4b7b7b7b7b7aeaeaeaeaeaeaeaeaeaeaeaeaeaeae7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f017f01017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f017f017f7f7f0101010101010101010149494949494949494949494949494901014949494901010101010101010150500101010101010101010101014601010101010146013a3a3a3a3a292929292c2c2c2c2c2c2c2c2c0808080808080808080808080808080808080808080808080808010101010000",
+        "0101dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd6d6d6d6d6d6c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4b7b7b7b7b7b701010101010101010101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f01017f010101017f010101010101010101010149494949494949494949494949494901494949494949010101010101010150500101010101010101010101014646464646010146013a3a3a3a3a292929292c2c2c2c2c2c2c2c2c0808080808080808080808080808080808080808080808080808010101010000",
+        "0101dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd6d6d6d6d6d6c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4b7b7b7b7b7b701010101010101010101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f01010101010101010101010101010101010101010101494949494949494949494949494949494949494949490101010101014949494901010101010101010101014646464646464646013a3a3a3a3a292929292c2c2c2c2c2c2c2c2c0808080808080808080808080808080808080808080808080808080101010000",
+        "0101dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd6d6d6d6d6d6c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4b7b7b7b7b7b7010101010101010101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f0101010101010101010101010101010101010101010101010101010101014901014949494949494949494949494949494949494901010149494949494901010101010101010101014646464646464646010101010101292929292c2c2c2c2c2c2c2c080808080808080808080808080808080808080808080808080808080101010000",
+        "0101dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd6d6d6d6d6d6c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4b7b7b7b7b7b7010101010101010101017f7f7f7f7f7f7f7f7f7f01017f7f7f7f7f7f7f7f7f017f7f7f7f7f7f7f7f7f7f7f010101010101010101010101010101010101010101010101010101010101010101490149494949494949494949494949494949494901494949494949494901010101010101010101010101010101010101010101010134343434343434342c2c2c2c080808080808080808080808080808080808080808080808080808080101010000",
+        "0101dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd6d6d6d6d6d6c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4b7b7b7b7b7b701010101010101017f7f7f7f7f7f7f7f7f7f7f0101017f7f7f7f7f7f7f7f0101017f7f7f7f7f7f7f7f7f7f010101010101010101010101010101010101010101010101010101010101010101010149490149014949490149494949494949494949494949494949494949490101010101010101010101010101010101010101010134343434343434342c2c2c2c080808080808080808080808080808080808080808080808080808080101010000",
+        "0101dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd6d6d6d6d6d6c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4b7b7b7b7b7b70101010101010101017f7f7f7f7f7f7f7f010101017f7f7f7f7f7f7f7f7f0101017f7f7f7f7f7f7f7f7f7f7f0101010101010101010101010101010151515151010101010101010101010101010149010101014901010101494949494949494949494949494949494949494901010101010101010101010101010101010101010134343434343434342c2c2c2c080808080808080808080808080808080808080808080808080808080101010000",
+        "0101dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd6d6d6d6d6d6c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4b7b7b7b7b7b70101010101010101017f7f7f01017f7f7f01010101017f7f7f7f7f7f7f7f01017f7f7f7f7f7f7f7f7f7f7f7f0101010101010101010101010101515151515151515101010101010101010101010101010101010101010101014949494949494949494949494949494949494949494901014901494901010101010101010101010134343434343434342c2c2c2c2c0808080808080808080808080808080808080808080808080808080101010000",
+        "0101dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd6d6d6d6d6d6c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4b7b7b7b7b7b5b5b5b50101017f7f7f7f7f7f7f010101010101010101017f7f7f7f7f7f010101017f7f7f7f7f7f7f7f7f7f7f7f01010101010101010101010101515151515151515101010101010101010101010101010101010101010101010149014949494949494949494949494949494949494949494949494901010101010101010101010134343434343434342c2c2c2c2c0808080808080808080808080808080808080808080808080808080101010000",
+        "0101dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd6d6d6d6d6d6c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4b7b7b7b7b7b5b5b5b501017f7f7f7f7f7f7f01010101010101010101017f7f7f7f7f010101017f7f7f7f7f7f7f7f7f7f7f7f7f7f010101010101010101015151515151515151515151515151510101010101010101010101010101010101010101010149494901494949494949494949494949494949494949494949010101010101010101010134343434343434342c2c2c2c080808080808080808080808080808080808080808080808080808080101010000",
+        "0101dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd6d6d6d6d6d6c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4b7b7b7b7b7b5b5b5b50101017f7f7f7f7f7f7f0101010101017f010101017f7f7f01017f01017f7f7f7f7f7f7f01010101017f7f7f7f01010101010101015151515151515151515151515151515151010101010101010101010101010101010101010101010101014949494949494949494949494949494949494949490101010101010101010134343434343434342c2c2c2c080808080808080808080808080808080808080808080808080808080101010000",
+        "0101dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd6d6d6d6d6d6c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4b7b7b7b7b7b5b5b5b50101017f7f7f7f7f7f010101017f7f7f7f7f017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f0101010101010101010101010101010151515151515151515151515151515151515151510101010101010101010101010101010101010101010101010101494949494949494949494949494949494949010101010101010101012d2d2d2d2d2d2d2d2c2c2c2c090909090909090909090909090909090909090909090909090909090101010000",
+        "0101dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd6d6d6d6d6d6c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4b7b7b7b7b7b5b5b5b501017f7f7f7f7f7f7f7f017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f01010101010101010101010101010151515151515151515151515151515151515151515151010101010101010101010101010101010101010101010101014901014949494949494949494949494949010101010101010101012d2d2d2d2d2d2d2828282828090909090909090909090909090909090909090909090909090909090101010000",
+        "0101dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd6d6d6d6d6d6c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4b7b7b7b7b7b5b5b5b50101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f0101010101010101010101010151515151515151515151515151515151515151515151515151010101010101010101010101010101010101010101010101014949494949494949494949494901010101010101010101012d2d2d2d2d28282828282828282809090909090909090909090909090909090909090909090101010101010000",
+        "0101dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd6d6d6d6d6d6c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4b7b7b7b7b7b5b5b5b5010101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f017f7f7f7f7f7f7f7f7f7f7f7f010101010101010101010101515151515151515151515151515151515151515151515151515101010101010101010101010101010101010101010101010149494901494949494949490101010101010101181801012d2d2d2d2d28282828282828282809090909090909090909090909090909090909090909090101010101010000",
+        "0101dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd6d6d6d6d6d6c4c4c4c4c4c4c4c4c4c4c4b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b001010101b0b07f7f7f7f7f7f7f7f7f7f7f7f7f7f017f7f7f7f7f7f0101017f7f7f7f7f7f7f7f7f7f7f7f7f0101010101010101010151515151515151515151515101015151515151515151515151510101010101010101010101010101010101010101010101010149010101494949494949010101010101181818182d2d2d2d2d2d2d28282828282828282809090909090909090909090909090909090909090909010101010101010000",
+        "0101dcdcdcdcdcdcdcdcdcdcdcdcdcd7d7d7d7d7d7d7d7d7d7d7d7d7d7cdcdcdcdcdcdcdcdcdcdcdb0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b07f7f7f7f7f7f7f7f7f7f7f7f7f0101017f017f017f0101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f010101010101010101015151515151515151010101010151515151515151515151515151010101010101010101010101010101010101010101010101010118181818181818181801011818181818182d2d2d2d2d2d2d2d282828282828282801090909090909090909090909090909090909090901010101010101010000",
+        "0101e5e5e5e5e5e5e5e5d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7cdcdcdcdcdcdcdcdcdcdcdb0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b07f7f7f7f7f7f7f7f7f7f7f7f0101010101010101010101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f0101010101010101010151515151515151510101010101015151515151515151515151510101010101010101010101010101010101010101010101010101011818181818181818181818181818181801010101012d2d28282828282828282801010109090909090909090909090909090909010101010101010101010000",
+        "0101e5e5e5e5e5e5e5e5d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7cdcdcdcdcdcdcdcdcdcdcdb0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b07f7f7f7f7f7f7f7f7f7f7f7f7f7f01010101010101010101017f017f7f7f7f7f7f7f7f7f7f7f7f0101010101010101010101015151515101010101010101010101515151515151515151515151010101010101010101010101010101010101010101010101010118181818181818181818181818180101010101012d2d282828282d2828282801010101090909090909090909090909090901010101010101010101010000",
+        "0101e5e5e5e5e5e5e5e5d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7cdcdcdcdcdcdcdcdcdcdcdb0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b07f7f7f7f7f7f7f7f7f7f7f7f7f7f7f01017f017f7f7f0101010101017f7f7f7f7f7f7f7f7f7f010101010101010101010101015151515101010101010101010101015151515151515151515151010101010101010101010101010101010101010101010101010118181818181818181818181818180101010101012d2d2d2d2d2d2d2d2d2d1e1e1e1e1e1e1e1e09090909090909090f0f0f0f0f0f0f010101010101010000",
+        "0101e5e5e5e5e5e5e5e5d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7cdcdcdcdcdcdcdcdcdcdcdb0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b07f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f017f01017f7f7f7f7f7f7f7f7f7f7f7f0101010101010101010101017575757501010101010101010101015151515151515151515151515101010101010101010101010101010101010101010101010118181818181818181818181818180101010101012d2d2d2d2d2d2d2d2d2d1e1e1e1e1e1e1e1e1e0909090909090f0f0f0f0f0f0f0f010101010101010000",
+        "0101e5e5e5e5e5e5e5e5d7d7d7d7d7d7d7d7d7d7d8d8d8d8d8d8d7d7d8cdcdcdcdcdcdcdcdcdcdcdb0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b07f7f7f7f7f7f7f017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f01010101010101010101010101017575757501010101010101010101010101515151515151515151515101010101010101010101010101010101010101010101011818181818181818181818180101180101010101012d2d2d2d2d2d2d2d2d2d1e1e1e1e1e1e1e1e1e0909090909090f0f0f0f0f0f0f0f010101010101010000",
+        "0101e5e5e5e5e5e5e5e5d7d7d7d7d7d8d8d8d8d8d8d8d8d8d8d8d8d8d8cdcdcdcdcdcdcdcdcdcdcdb0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b07f7f7f7f7f7f0101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f750101010101010101010101017575757575010101010101010101010101015151515151515151515151515101010101010101010101010101010101010101010118181801181818181818181801010101010101010101010101012d2d2d2d2d1e1e1e1e1e1e1e1e1e0909090909090f0f0f0f0f0f0f0f010101010101010000",
+        "0101e5e5e5e5e5e5e5e5d7d7d7d7d7d8d8d8d8d8d8d8d8d8d8d8d8d8d8cdcdcdcdcdcdcdcdcdcdcdb0b0b0b0b0b0b0b0b0b0b0b0b0b0b00101010101b0b0a2a2a2a2a20101010101017f017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f75757501010101010101010101017575757575010101010101010101010101015151515151515151515151515101010101010101010101010101010101010101010101180101011818181818181818010101010101010101010101010101010101011e1e1e1e1e1e1e161616161616160f0f0f0f0f0f0f0f010101010101010000",
+        "0101e6e6e6e6e6e6e6e6d7d7d7d7d7d8d8d8d8d8d8d8d8d8d8d8d8d8d8cdcdcdcdcececececececeb0b0b0b0b0b0b0b0b0b0b0b0b0b0b00101010101a2a2a2a2a2a2a20101010101010101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f757575757575010101010101750101757575757575750101750101010101010101015151515151515151515151515151510101010101010101010101010101010101010101010101010118011818181818181801010101010101010101010101010101011e1e1e1e1e1e1e16161616161616160f0f0f0f0f0f0f010101010101010000",
+        "0101e6e6e6e6e6e6e6e6d7d7d7d7d7d8d8d8d8d8d8d8d8d8d8d8d8d8d8cdcdcdcdcececececececeb0b0b0b0b0b0b0b0b0b0b0b0b0b0b0010101010101a2a2a2a201010101010101010101017f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f017f75757575757575750101010175757501757575757575750175757501010101010101755151515151515151515151515151510101010101010101010101010101010101010101010101010101013c3c3c3c3c3c3c3c010101010101010101010101010101010101010101010116161616161616160f0f0f0f0f0f0f010101010101010000",
+        "0101e6e6e6e6e6e6e6e6d7d7d7d7d7d7d8d8d8d8d8d8d8d8d8d8d8d8d8cdcdcdcdcececececececeb0b0b0b0b0b0b0b0b0b0b0b0b0b0b00101010101a2a2a2a2a2a20101010101010101010101017f7f7f7f7f7f7f7f7f7f7f7f7f7f0101757575757575757575750101757575757575757575757575017575750101010101757575755151515151515151515151515151515101010101010101010101010101010101010101010101013c3c3c3c3c3c3c3c3c3c0101010101010101010101010101010101010101010116161616161616161616010101010101010101010101010000",
+        "0101e6e6e6e6e6e6e6e6d7d7d7d7d7d7d8d8d8d8d8d8d8d8d8d8d8d8d0d0d0d0d0d0cecececececeb0b0b0b0b0b0b0b0b0b0b0b0b0b0b001010101a2a2a2a2a2a2a2a2a201010101010101010101010101010101017f7f7f7f7f7f01010101757575757575757575010175757575757575757575757575757575750175757575757575755151515151515151515151515151510101010101010101010101010101010101010101010101013c3c3c3c3c3c3c3c01010101010101010101010101010101010101181801011616161616161616161601010c0c010c010101010101010000",
+        "0101e6e6e6e6e6e6e6e6d7d7d7d7d7d8d8d8d8d8d8d8d8d8d8d8d8d8d0d0d0d0d0d0cecececececeb0b0b0b0b0b0b0b0b0b0b0b0b0b0b001010101a2a2a2a2a2a2a2a201010101010101010101010101010101010101017f7f0101010101017575757575757575757575757575757575757575757575757575757575757575757575757575515151515151515151515151515151510101010101010101010101010101010101010101013c3c3c3c3c3c3c3c3c3c0101010101010101010101010101010118181818161616161616161616161616160c0c0c0c0c010101010101010000",
+        "0101e6e6e6e6e6e6e6e6d7d7d7d7d7d9d8d8d8d8d8d8d8d8d8d8d8d8d0d0d0d0d0d0cecececececeb0b0b0b0b0b0b0b0b0b0b0b0b0b0b001010101a2a2a2a2a2a2a2a2a2010101010101010101010101010101010101010101010101010101017575757575757575757575757575757575757575757575757575757575757575757575757575515151515151515151515151515151010101010101010101010101010101010101010101013c3c3c3c3c3c3c3c0101010101180101010101010101010118181818181616161616161616161616160101010c0101010101010101010000",
+        "0101e2e2e2e2e2e2e2e2e2d7d7d7d7d9d8d8d8d8d8d8d8d8d8d8d8d8d0d0d0d0d0d0cecececececeb0b0b0b0b0b0b0b0b0b0b0b0b0b0b001010101a2a2a2a2a2a2a201a20101010101010101010101010101010101010101010101010101010101757575757575757575757575757575757575757575757575757575757575757575757575757551515151515151515151515151515151010101010101010101010101010101010101013c3c3c3c3c3c3c3c3c3c01181818181801011818011801011818181818181616161616161616161616160101010c0101010101010101010000",
+        "0101e2e2e2e2e2e2e2e2e2d7d7d7d7d9d9d9d9d9d9d9d9d9d9d9d9d9d9d0d0d0d0d0cecececececeb0b0b0b0b0b0b0b0b0b0b0b0b0b0b0010101a2a2a2a2a2a2a2a20101010101010101010101010101010101010101010101010101010101017575757575757575757575757575757575010175757575757575757575757575757575757575757501010101515151515151515151515101010101010101010101010101010101010101013c3c3c3c3c3c3c3c3c181818181818181818181818181818181818181816161616161616161616161601010c0c0c01010101010101010000",
+        "0101e2e2e2e2e2e2e2e2e2d7d7d7d7d9d9d9d9d9d9d9d9d9d9d9d9d9d9d0d0d0d0d0d0d0ccccccccccccbebebebebebebe01010101010101010101a2a2a2a2a2a2a2a20101010101010101010101010101010101010101010101010101010101010175757575757575757575017501010101010101757575757575757575757575757575757575010101010151515151515151515151515151010101010101010101010101010101010101011818181818181818181818181818181818181818181818181818181801161616161616161616161601010c0c0c01010101010101010000",
+        "0101e2e2e2e2e2e2e2e2e2d7d7d7d7d9d9d9d9d9d9d9d9d9d9d9d9d9d9d0d0d0d0d0d0d0ccccccccccccbebebebebebebe010101010101010101a2a2a2a2a2a2a201010101010101010101010101010101010101010101010101010101010101010175757575757575757501010101010101010101017575757575757575757575757575757501010101010101015151515151515151515151010101010101010101010101010101010101010118181818181818181818181818181818181818181818181818010101161616161616161616161601010c0c0c01010101010101010000",
+        "0101e2e2e2e2e2e2d7d7d7d7d7d7d7d9d9d9d9d9d9d9d9d9d9d9d9d9d9d0d0d0d0d0d0d0ccccccccccccbebebebebebebe010101010101010101a2a2a2a2a2a20101010101010101010101010101010101010101010101010101010101010101017575757575757575757575010101018484840101757575757575757575757575757575750101010101010101015151515151515151515151515101010101010101010101010101010101010101181818181818181818181818181818181818181818181818010116161616161616161616161601010c0c0c01010101010101010000",
+        "0101e2e2e2e2e2e2d7d7d7d7d7d7d7d9d9d9d9d9d9d9d9d9d9d9d9d9d9d0d0d0d0d0d0d0ccccccccccccbebebebebebebe010101010101010101a2a2a2a20101010101010101010101010101010101515151010101010101010101010101010101757575757575757575757575017575758475017575757575757575757575757575757575010101010101010101010151515151515151515151515101010101010101010101010101010101011818181818181818181818181818181818181818181818180101011616161616161616161616160101010c0101010101010101010000",
+        "0101d3d3d3d3d3d3d3d3d3d3d3d3d3d9d9d9d9d9d9d9d9d9d9d9d9d9d9d0d0d0d0d0d0d0ccccccccccbebebebebebebebe0101010101010101a2a2a2a2a2a2a2010101010101010101010101015151515151515101010101010101010101010175757575757575757575757575757575757575757575757575757575757575757575757501010101010101010101010151515151515151515151515101010101010101010101010101010101010118181818181818181818181818181818181818180118180101010101010116161616010101010101010c010c0c0101010101010000",
+        "0101d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d9d9d9d9d3d3d9d9d9d9d3d3d3d3d0d0d0ccccccccccbebebebebebebebe0101010101010101a2a2a2a2a2a201010101010101010101010101015151515151515101010101010101010101010101757575757575017575757575757584848484848484757575757575757575757575757501010101010101010101010101015151515151515151515101010101010101010101010101010101010101181818181818181818181818181818181818180101010101010101181818181818181818010101010c0c0c0c0c01010101010000",
+        "0101d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d0d0d0ccccccccccbebebebebebebebe01010101010101a2a2a2a2a2a20101010101010101010101010151515151515151515151510101010101010101010175757575757501010175757575758484848484848484847575750175757575757575757575757501010101010101010101015151515151515151515101010101010101010101010101010101010101181818181818181818181818181818181818181818180118181818181818181818181801010101010c0c0c0c0c01010101010000",
+        "0101d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d0d0d0ccccccccccbebebebebebebebe01010101010101a2a2a2a2a2a2a201010101010101010101010151515151515151515151510101010101010101017575757575757575010101757575848484848484848484848475750101757575757575757575757575757501010101010101010101515151515151515101010101010101010101010101010101010101181818181818181818181818181818181818181818181818181818181818181818181818010101010c0c0c0c0c01010101010000",
+        "0101d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d0d0d0ccccccccccbebebebebebebebe010101010101a2a2a2a2a2a2a2a2a201010101010101010101515151515151515151515151515175757575010101757575757575010101017575757584848484848484848484847575010101757575757575757575757575750101010101010101010151515151515151510101010101010101010101011818181818181818181818181818181818181818181801181818181818181818181818181818181818181801010101010101010101010101010000",
+        "0101d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d0d0d0ccccccccccbebebebebebebebe01010101a2a2a2a2a2a2a2a2a2a20101010101010101010101515151515151515151515151515175757575757575757575757575010101010175757584848484848484848484847575750101017575757575757575757575750101010101010101015151515151515151510101010101010101010101010118011818181818181818181818181818181801010101011818181818181818181818181818181818010101010101010101010101010101010000",
+        "0101d3d3d3d3d3d3dfdfdfdfdfd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d0d0d0ccccccccccbebebebebebebebe0101a2a2a2a2a2a2a2a2a2a2a2a20101010101010101010101515151515151515151515151515175757575757575757575757575750101017575757584848484848484848484847575010101017575757575757575757575010101010101010101515151515151515151510101010101010101010101010101010118180118181818181818181818181801010101010101011010101001181818181818011818010101010101010101010101010101010000",
+        "0101d3d3d3d3d3dfdfdfdfdfdfdfd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d0d0d0ccccccccccbebebec5c5c5bebe010101a2a2a2a2a2a2a2a2a2a2a2a201010101010101010101015151515151515151515151515175757575757575757575757575757501010175757584848484848484848484847575750101010175757575757575010101010101010101010101015151515151515151010101010101010101010101010101010101010110101010100118180110101010100101010101101010101001011818181801010101010101010101010101010101010101010000",
+        "0101d3d3d3d3d3dfdfdfdfdfdfdfd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d0d0d0ccccccccccbebebec5c5c5010101010101a2a2a2a2a2a2a2a2a2a2a201010101010101010101015151515151515151515151010101017575757575757575757575757501010101757575848484848484848484757575010101017575757575757575010101010101010101010101015151515151515151010151010101010101010101010101010101010110101010100101010110101010101010010101101010100101010101010101010101010101010101010101010101010101010000",
+        "0101d3d3d3d3d3dfdfdfdfdfdfdfd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d0d0d0cacacacacacacacac5c5c50101010101a2a2a2a2a2a2a2a2a2a2a20101010101010101010101010101515151515151510101010101010175757575757575757575757575750101017575758484848484848475757575750175757575757575757575750101010101010101010151515151515151515151515151510101010101010101010101010101010110101010101001010110101010101010100101011010100101010101010101010101010101010101010101010101010101010000",
+        "0101d3d3d3d3d3dfdfdfdfdfdfdfd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d0d0d0d0d0cacacacacacacac5c5c501010101a2a2a2a2a2a2a2a2a2a2a2010101010101010101010101010101515151515151510101010101010101757575757575757575757575757575757575757575757575757575757575757575757575757575757575757575010101010101015151515151515151515151515151515101010101010101010101010101010101101010101001010110101010101010101001101010100101010101010101010101010101010101010101010101010101010000",
+        "0101d3d3d3d3d3dfdfdfdfdfdfdfd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d0d0d0d0d0cacacacacacacac5c5c5010101a2a2a2a2a2a2a2a2a2a2a201010101010101010101010101010101015151515151510101010101010101750175757575757575757575757575757575757575757575757575757575757575757575757575757575757575757501010101010151515151515151515151515151515151010101010101010101010101010101101010100101010110101010101010101010101010010101010101010101010a0a0a0a0a0a0a0a0a0a0a0a0a01010101010000",
+        "0101d3d3d3d3d3dfdfdfdfdfdfdfd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d0d0d0d0cacacacacacacacac5c5c50101a2a2a2a2a2a2a2a2a2a2a201010101010101010101010101010101010101515151515151010101010101010101017501757575757575757575757575757501017575757575757575757575757575757575757575757575757501010101010151515151515151515151515151515151515101010101010101010101010101011010101001010101101010101010101010101010100101010101010101010a0a0a0a0a0a0a0a0a0a0a0a0a0a0a010101010000",
+        "0101d3d3d3d3d3dfdfdfdfdfdfdfd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d0d0d0d0cacacacacacacacac5c5c5010101a2a2a2a2a2a2a2a2a2010101010101010101010101010101010101010151515151515151010101010101010101010101757575757575757575757575750101010101017501757575757575757575757575757575757501010101010101015151515151515151515151515151515151510101010101010101010101010110101010100101010101101010101010101010101001010101010a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a010101010000",
+        "0101d3d3d3d3d3dfdfdfdfdfdfdfd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d0d0d0d0cacacacacacacacac5c5c50101a2a2a2a2a2a2a2a2a2a2a2a201010101010101010101010101010101010101515151515151510101010101010101010101757575757575757575757575757501010101010101757575757575757575757575757575750101010101010101015151515151515151515151515151515151510101010101010101010101010110101010100101010110101010101010101010100101010101010a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a010101010000",
+        "0101d3d3d3d3d3dfdfdfdfdfdfdfd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d0d0d0d0cacacacacacacacac5c5c5010101a2a2a2a2a2a2a2a2a2a2a201a2a201010101010101010101010101010101515151515151515101010101010101010101757575757575757575757575757575010101010175757575757575757575757575757575750101010101010101010151515151515151515151515151515151510101010101010101010101010101101010010101010110101010101010101010100101010101010a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a010101010000",
+        "0101d3d3d3d3d3dfdfdfdfdfdfdfd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d0d0d0d0cacacacacacacacac5c5c501010101a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a201010101010101010101010101015151515151515151010101010101010175757575757575757575757575757575750101017575757575757575017575757575757575750101010101010101015151515151515151515151515151515151515151010101010101010101010101101010010101010101011010101010101010010101010101010a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a010101010000",
+        "0101d3d3d3d3d3dfdfdfdfdfdfdfd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3c5c5c5c5c5c5c5c5c5c5c5c5c5c5c501010101a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a201010101010101010101010101015151515151515151010101010101757575757575757575757575757575757575757575757575757575750101010175757575750101010101010101010101015151515151515151515151515151515151515101010101010101010101011010101001010101010101011010101010101010010101010110101010100a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a010101010000",
+        "0101d3d3d3d3d3dfdfdfdfdfdfdfd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3c5c5c5c5c5c5c5c5c5c5c5c5c5c5c501010101a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a201a201a201010101515151515151515151510101010101757575757575757575757575757575757575757575757575757575750101010101010101010101010101010101010101010101515151515151515101015151515151515101010101010101010101011010101010010110010101010101011010101001010101101010101010100a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a010101010000",
+        "0101d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5010101a2a2a2a2a2a2a2a201a201a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2515151515151515151510101010175757575757575757575757575757575757575757575757575757575010101010101010101010101010101010101010101010101515151515151515101015151515151510101010101010101010101010110101010100110010101010110101010101010010101101010101010100a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a010101010000",
+        "0101d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3c5c5c5010101010101010101010101010101a2a2a2a2a2a2a201010101a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a25151515151515151515151515151757575757575757575757575757575757575757575757575757575010101010101010101010101010101010101010101010101515151515151515151515151515151010101010101010101010101010110101010101010010110010110101010101010100101011010101010100a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a010101010000",
+        "0101d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3c5c5c5010101c5a2a2a2a2a20101010101a2a2a2a2a2a2a2a201010101a2a20101a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a251515151515151515151515151517575757575757575757575017575757575757575757575757575010101010101010101010101010101010101010101010101515151515151515151515151515101010101010101010101010101011010101010101010101010101010101010101010100101101010101010010a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a010101010000",
+        "0101d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3c5c5c5c5c5c5c5a2a2a2a2a2010101010101a2a2a2a2a2a2010101010101a2a20101a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2515151515151515151515151515175757575757575757501017575757575757575757575757575750101010101010101010101010101010101010101010151515151515151515151515151510101010101010101010101010101011010101010101010101010101010101010101001010101011010100101010a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a010101010000",
+        "0101d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3c5c5c5c5c5c5c5a2a2a2a2a201010101010101a2a2a2a2010101010101a2a2a2010101a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2515151515151515151515151515151517575757575757501010101757575757575757575757575757575750101010101010101010101010101010101010151515151515151515151515151510101010101010101010101010101010110101010101010101010101010101010101010101010101010101001010101101010101010101010100a0a0a0a0a010101010000",
+        "010101010101d3d3d3d3d3d3d3d3d3d30101d3d3d3d3d3d3d3d3d3d301010101010101010101c5a2a2a2a2a2010101a2a201a2a2a2a2a2a20101010101a2a2010101010101a2a2a2a2a2a2a2a2010101a2a2a25151515151515151515151515151515151757575010101010101757575757575757575757575757575757501010101010101010101515101515101515151515151515151515151515151510101010101010101010101010101010101101010100110101001101010101010010110101010101010101010101001011010101010101010100a0a0a0a0a0a010101010000",
+        "01010101010101d3d3d3d3d3d3d3d301010101d3d3d3d3d3d3d3d301010101010101010101a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a201010101010101a20101010101a2a2a2a2a2a2a2a20101010101a2a25101015151515151515151515151515151517501010101010175757575750101757575757501757575757501010101010101010101515151515151515151515151515151515101010101010101010101010101010101010101010110101010100101101001100110101010100101100110101010011010101001010110101010101010100a0a0a0a0a0a010101010000",
+        "010101010101d3d3d3d3d3d3d3d3d3d30101d3d3d3d3d3d3d3d3d3d3010101010101010101a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2010101a201a2a20101a2a2a2a2a2a2a2a2a2a2010101010101a25101015151515151515151515151515151510101010101010101757575750101757575750101010175750101010101010101010151515151515151515151515151515151510101010101010101010101010101010101010101010110101010010101101001010110101010100101010110101001011010101010101010101010101010100a0a0a0a0a01010101010000",
+        "0101010101d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d301010101010101a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a201a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2010101010101010101010101010101515151515151515151515151510101010101010101757575010101757575750101010175750101010101010101015151515151515151515151515151515151010101010101010101010101010101010101010101010101101010100101010101010110101010010101010110101001010110101010101010101010101010100a0a0a0a0a01010101010000",
+        "0101010101a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a201a2010101a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2010101010101010101010101010101515151515151515151515151510101010101010101017501010101757575757501010101010101010101010101515151515151515151515151515151515101010101010101010101010101010101010101010101010110101010010101010101010101101010100101101010101010010101101010101010101010101010100a0a0a0a0a01010101010000",
+        "010101010101a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a201a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a201010101010101010101010101010101010151515151515151515151510101010101010101010101010101017575757501010101010101010101015151515151515151515151515151515151510101010101010101010101010101010101010101010101011010101010100101010101101010101010100110101010101010010101101010101010101010101010100a0a0a0a0a01010101010000",
+        "010101010101a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2010101a2a2a2a2a2a2a2a2a2a2a2a2a2010101a2010101010101010101010101010101010101015151515151515151515151515101010101010101010101010101010175750101010101010101010101515151515151515151515151515151515151010101010101010101010101010101010101010101010110101010101010100101010101101010101010101010101010101010010110101010101010101010101010010101010101010101010000",
+        "01010101a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a201010101a2a2a2a201a20101a201a2a20101010101010101010101010101010101010101010101010101515151515151515151515101010101010101010101010101010101750101010101010101010101015151515151515151515151515151515101010101010101010101010101010101010101010101010101101010101010101001010110101010101010101010101010101010101010101010101010101010101010101004040404040401010000",
+        "010101010101a2a2a2a2a20101a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2010101010101a2010101010101010101a2010101010101010101010101010101010101010101010101010151515151515151515151515151010101010101010101010101010101010101010101010101010151515151515151515151515151515151515101010101010101010101010101010101010101010101010110101b1b1b1b1b1b011b1b10101010101010101010101010101010101010101010101010101010101010101004040404040401010000",
+        "0101010101a2a2a2a2a2010101a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a20101a201a2a2a2a2a20101010101010101010101010101010101010101010101010101010101010101010101010101010101010101015151515151515151515151010101010101010101010101010101010101010101010101010101515151515151515151515151515151510101010101010101010101010101010101010101010101011b1b1b1b1b1b1b1b1b1b1b1b10101010101010101010101010101010101010101010101010101010101010101004040404040401010000",
+        "0101010101a2a2a2a2a2a201a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a20101a2a2a2a2a2a2a20101a2a2010101a2a2a2a2a2010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101515151515151515151515151510101010101010101010101010101010101010101010101015151515151515151515151515151515151510101010101010101010101010101010101011b1b0101011b1b1b1b1b1b1b1b1b1b1b1b1b101010101010101010101010101010101010101010101010101010101010101004040404040401010000",
+        "0101010101a2a2a2a2a2a2a2a2a2a2a2a201a2a2a20101a2a2a201010101a2a2a2a2a2a2a20101010101010101a2a20101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010151515151515151515151510101010101010101010101010101010101010101010101015151515151515151515151515151515151510101010101010101010101010101010101011b1b1b011b1b1b1b1b1b1b1b1b1b1b1b1b1b101010101010101010101010101010101010101010101010101010101010010101010404040401010000",
+        "0101010101a2a2a2a2a2a2a2a2a2a2a2010101a201010101a2010101010101a2a2a2a2a2a2a2010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101015151515151515151515151515101010101010101010101010101010101010101010101515151515151515151515151515151510101010101010101010101010101010101010101011b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b101010101010101010101010101010101010011010010110100101010101010101010404040401010000",
+        "01010101a2a2a2a2a2a2a2a2a2a2a2a20101010101010101010101010101a2a2a2a2a2a2010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010151515151515151515151510101010101010101010101010101010101010101015151515151515151515151515151515101010101010101010101010101010101010101011b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b100110100101100110101010101010101001010101010101010101010101010101010404040401010000",
+        "0101010101a2a2a2a2a2a2a2a2a201a2010101010101010101010101a2a2a2a2a2a2a2a20101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101515151515151515151515151510101010101015151515101010101010101015151515151515151515151515151515101010101010101010101010101010101011b0101011b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b010101010110100110101010101010101001010101010101010101010101010101010404040401010000",
+        "0101010101a2a2a2a2a2a2a2a20101010101010101010101010101a2a2a2a2a2a2a2a2a20101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010151515151515151515151510101010151515151515151510101010101515151515151515151515151515151510101010101010101010101010101010101011b1b011b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b01010101011001010101011b1b1b1b1b0101010101010101010104040404010101010404040401010000",
+        "01010101a2a20101a2a2a2a20101010101a20101a2a201010101a2a2a2a2a2a2a2a2a2a201010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101515151515151515151515151010101515151515151515101010151515151515151515151515101515101515101010101010101010101010101010101011b1b1b1b1b1b1b1b1b1b1b1b0101011b1b1b1b1b1b1b0101010101011010100101011b1b1b1b1b1b1b01010101010101010104040404010101010404040401010000",
+        "01010101a2010101a2a2a2a2a201a201a2a2a2a2a2a2a2a201a2a2a2a2a2a2a2a2a2a201010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101515151515151515151515151515151515151515151515151515151515151515151010101010101010101010101010101010101010101010101011b1b1b1b1b1b1b1b1b1b1b1b01010101011b1b1b1b1b1b1b01010101011010100101011b1b1b1b1b1b1b01010101010101010104040404010401010404040401010000",
+        "01010101010101a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a201010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101515151515151515151515151515151515151515151515151515151515151515101010101010101010101010101010101010101010101010101011b1b1b1b1b1b1b1b1b1b1b0101010101011b1b1b1b1b1b1b1b1b010101011001010101011b1b1b1b1b0101010101010101010104040404010401010404040401010000",
+        "010101010101a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a20101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101015151515151515151515151515151515151515151515151515151515151510101010101010101010101010101010101010101010101010101011b1b1b1b1b1b1b1b1b1b0101010101011b1b1b1b1b1b1b1b010101010101010101011b1b1b1b1b1b1b01010101010101010101040401010401010404040401010000",
+        "0101010101a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a201010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101015151515151515151515151515151515151515151515151515151515151510101010101010101010101010101010101010101010101011b1b1b1b1b1b1b1b1b1b01010101010101010101011b1b1b1b1b1b0101010101010101011b1b1b1b1b1b1b1b1b1b011b010101010104040404040404040404040401010000",
+        "0101010101a2a201a201a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a20101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101015151515151515151515151515151515151515151515151515151515151510101010101010101010101015f5f5f0101010101011b1b1b1b1b1b1b1b1b1b1b0101010101010101010101011b1b1b1b1b1b1b1b01010101010101011b1b1b1b1b1b1b1b1b1b1b1b1b0101010104040404040404040404040401010000",
+        "01010101010101010101a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101015151515151515151515151515151515151515151515151515151515151010101010101010101015f5f5f5f5f5f5f010101011b1b1b1b1b1b1b1b1b1b01010101010101010101010101011b1b1b1b1b1b1b1b01011b1b01011b1b1b1b1b1b1b1b1b1b1b1b1b1b1b01010104040404040404040404040401010000",
+        "01010101010101010101a201a2a2a2a2a2a2a2a2a2a20101a2a2a2010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101015151515151515151515151515151515151515151515151515151515101010101010101015f5f5f5f5f5f5f5f5f5f01011b1b1b1b1b1b1b1b1b1b0101010101010101010101011b1b011b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b01010104040404040404040404040401010000",
+        "01010101010101010101a20101a2a201a2a2a2a2010101010101a201010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010151515151515151515151515151515151515151515151515151510101010101015f5f5f5f5f5f5f5f5f5f5f5f5f1b1b1b1b1b1b1b1b1b1b1b1b011b1b0101011b01011b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b0101010104040404040404040404040401010000",
+        "01010101010101010101010101a2a20101a2a2a2a2010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010151515151515151515151515151515151515151515151515151010101015f5f5f5f5f5f5f5f5f5f5f5f5f5f1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b0101011b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b01010101010104040404040404040404040401010000",
+        "01010101010101010101010101a201010101a2a20101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101515151515151515151515151515151515151515151515f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b01011b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b01011b1b1b1b011b1b01010101010104040404040404040404040401010000",
+        "01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101515151515151515151515151515151515151515151515f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f011b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b01011b1b1b1b1b011b1b011b1b01010101011b1b0101010101010404040404040404040404040404040401010000",
+        "01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101015151515151515151515151515151515151515151515f5f5f5f5f5f5f5f5f5f5f5f5f5f5f01011b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b010101010101011b01010101011b1b1b0101010104040101010101010404040404040404040404040404040401010000",
+        "01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101015151515151515151515151515151515151515151515f5f5f5f5f5f5f5f5f010101015f010101011b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b0101010101010101010101010101011b1b1b1b1b01010104040101010101010404040404040404040404040404040401010000",
+        "010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101515151515151515151515151515151515151010101015f5f5f5f5f5f5f5f0101010101010101011b1b1b1b1b1b01011b1b1b1b1b01010101011b1b010101010101010101010101010101011b1b1b1b01010104040404040404040404040404040404040404040404040401010000",
+        "010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010151515151515101010101010101010101010101010101010101010101011b1b1b1b01010101011b01010101010101010101010101010101010101010101010101011b1b1b01010104040404040404040404040404040404040404040404040401010000",
+        "01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101011b1b01010104040404040404040404040404040404040404040404040401010000",
+        "0101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010104040404040404040404040404040404040404040404040401010000",
+        "0101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010000",
+        "0101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010000"
+    ]
+}
