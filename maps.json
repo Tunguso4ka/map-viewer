@@ -3,7 +3,7 @@
     "Solaris": {
       "name": "Solaris Ridge",
       "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Solaris-0.png?raw=true",
-      "areas": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Overlays/solaris.json?raw=true",
+      "areas": "Areas/solaris.json",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 700, "y": 750 },
         { "name": "LZ2", "size": 12, "x": 875, "y": 3950 },

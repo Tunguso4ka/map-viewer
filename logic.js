@@ -112,15 +112,14 @@ async function load_map()
         canvas.style.cursor='default';
     }
     
-    if (!"areas" in maps.maps[map_current])
+    area_info = {}
+    if (!("areas" in maps.maps[map_current]))
         return;
 
-    var response = await fetch(maps.maps[map_current].areas,
-        {
-            method: 'GET',
-        },);
+    var response = await fetch(maps.maps[map_current].areas);
 
     area_info = await response.json();
+    toggle_hidden("button_areas");
 }
 
 
@@ -272,7 +271,7 @@ function on_mouseup(e)
 function updateAreaInfo(event_location)
 {
     //Check if we have areas
-    if (!area_info)
+    if (!("points" in area_info))
         return;
     
     area_info_label.style.left = `${event_location.x+32}px`;
@@ -280,10 +279,22 @@ function updateAreaInfo(event_location)
 
     share_position = getSS14Position(event_location);
 
-    area_info_label.textContent = `Назва ${share_position.x},${share_position.y}\n`;
-    area_info_label.textContent += `CAS: ❌| Fulton: ✔️ | Lasing: ✔️\n`;
-    area_info_label.textContent += `MortarPlace: ✔️ | MortarFire: ✔️\n`;
-    area_info_label.textContent += `Medevac: ✔️ | SupplyDrop: ✔️ | OB: ✔️`;
+    var _id = area_info.map[share_position.y].slice(share_position.x*2, share_position.x*2+2);
+    var _name = "";
+    if (_id in area_info.points)
+        _name = area_info.points[_id].name;
+    var _prot = "";
+    if (_id in area_info.points)
+        _prot = area_info.points[_id].protections;
+
+    area_info_label.textContent = `"${_name}" - ${share_position.x},${share_position.y}\n`;
+
+    if (!_prot)
+        return;
+
+    area_info_label.textContent += `CAS: ${ (_prot[0] == 1) ? "✔️" : "❌"} | Fulton: ${ (_prot[1] == 1) ? "✔️" : "❌"} | Lasing: ${ (_prot[2] == 1) ? "✔" : "❌"}\n`;
+    area_info_label.textContent += `MortarPlace: ${ (_prot[3] == 1) ? "✔" : "❌"} | MortarFire: ${ (_prot[4] == 1) ? "✔" : "❌"}\n`;
+    area_info_label.textContent += `Medevac: ${ (_prot[5] == 1) ? "✔" : "❌"} | OB: ${ (_prot[6] == 1) ? "✔" : "❌"} | SupplyDrop: ${ (_prot[7] == 1) ? "✔" : "❌"}`;
 }
 
 

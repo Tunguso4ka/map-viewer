@@ -83,7 +83,7 @@ html, body {
     color: var(--dark);
     max-width: 25%;
     max-height: 15%;
-    border: 2px solid var(--light);
+    border: 5px solid var(--light);
     border-radius: 2px;
     position: absolute;
     top: 0;
