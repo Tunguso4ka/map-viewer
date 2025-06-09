@@ -81,13 +81,9 @@ html, body {
 #area_info_label {
     background-color: var(--light);
     color: var(--dark);
-    max-width: 40%;
-    max-height: 20%;
     border: 5px solid var(--light);
     border-radius: 2px;
     position: absolute;
-    top: 0;
-    left: 0;
     pointer-events: none;
     white-space: pre;
 }
