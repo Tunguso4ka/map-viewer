@@ -2,7 +2,7 @@ let params = new URLSearchParams(document.location.search);
 let maps;
 let map_current;
 
-var labels = {};
+var labels = [];
 var show_labels = true;
 
 var position = { x: 0, y: 0};
@@ -18,11 +18,16 @@ var image = new Image();
 var canvas;
 var ctx;
 
+var area_info_label;
+var area_info = {};
+
 // assign elements, events and load json
 document.addEventListener('DOMContentLoaded', function()
 {
     canvas = document.getElementById("map_zoomable");
     ctx = canvas.getContext('2d');
+
+    area_info_label = document.getElementById("area_info_label");
 
     canvas.addEventListener('mousedown', on_mousedown);
     canvas.addEventListener('touchstart', (e) => handle_touch(e, on_mousedown))
@@ -38,11 +43,11 @@ document.addEventListener('DOMContentLoaded', function()
 
     canvas.addEventListener('dblclick', on_doubleclick);
 
-    load_json("maps.json");
+    load_maps_json("maps.json");
 }, false);
 
 // Loads map.json
-async function load_json(url)
+async function load_maps_json(url)
 {
     var response = await fetch(url);
     maps = await response.json();
@@ -76,7 +81,7 @@ async function load_json(url)
 
 
 // Updates map image and labels.
-function load_map()
+async function load_map()
 {
     update_transform(true); // restore position and zoom
 
@@ -95,7 +100,7 @@ function load_map()
 
     image.src = maps.maps[map_current].url;
 
-    toggle_hidden('labels_button', !labels.length)
+    toggle_hidden('button_labels', !labels.length)
 
     console.log(`Loaded map ${map_current} from ${maps.maps[map_current].url} with ${Object.keys(labels).length} labels.`);
     update_transform();
@@ -106,6 +111,16 @@ function load_map()
         get_param_position();
         canvas.style.cursor='default';
     }
+    
+    if (!"areas" in maps.maps[map_current])
+        return;
+
+    var response = await fetch(maps.maps[map_current].areas,
+        {
+            method: 'GET',
+        },);
+
+    area_info = await response.json();
 }
 
 
@@ -151,7 +166,7 @@ function draw()
     ctx.shadowColor = "black";
     ctx.shadowOffsetX = 5;
     ctx.shadowOffsetY = 5;
-    ctx.shadowBlur = 10;
+    //ctx.shadowBlur = 10;
 
     for (const iter in labels)
     {
@@ -253,15 +268,38 @@ function on_mouseup(e)
 }
 
 
+// Updates Area Info label with new information.
+function updateAreaInfo(event_location)
+{
+    //Check if we have areas
+    if (!area_info)
+        return;
+    
+    area_info_label.style.left = `${event_location.x+32}px`;
+    area_info_label.style.top = `${event_location.y+32}px`;
+
+    share_position = getSS14Position(event_location);
+
+    area_info_label.textContent = `Назва ${share_position.x},${share_position.y}\n`;
+    area_info_label.textContent += `CAS: ❌| Fulton: ✔️ | Lasing: ✔️\n`;
+    area_info_label.textContent += `MortarPlace: ✔️ | MortarFire: ✔️\n`;
+    area_info_label.textContent += `Medevac: ✔️ | SupplyDrop: ✔️ | OB: ✔️`;
+}
+
+
 // Panning.
 function on_mousemove(e)
 {
-    if (!is_panning)
-        return;
-
     e.preventDefault();
 
     event_location = get_event_location(e);
+
+    if (area_info_label && !area_info_label.hidden)
+        updateAreaInfo(event_location);
+
+    if (!is_panning)
+        return;
+
     position = { x: event_location.x - start.x,
                  y: event_location.y - start.y};
 
@@ -306,14 +344,19 @@ function on_mousescroll(e, pinch)
 }
 
 
+function getSS14Position(event_location)
+{
+    return {x: Math.floor((event_location.x - position.x) / zoom / 32),
+            y: Math.floor((event_location.y - position.y) / zoom / 32)};
+}
+
 // Updates Query params with clicked location.
 function on_doubleclick(e)
 {
     event_location = get_event_location(e);
 
     // Get tile position.
-    var share_position = {x: Math.floor((event_location.x - position.x) / zoom / 32),
-                      y: Math.floor((event_location.y - position.y) / zoom / 32)};
+    var share_position = getSS14Position(event_location);
 
     console.log(share_position)
     params.set("pos", `${share_position.x}x${share_position.y}`)
@@ -330,9 +373,13 @@ function toggle_labels()
 
 function toggle_hidden(eid, bool)
 {
-    button = document.getElementById(eid);
+    element = document.getElementById(eid);
+
+    if (!element)
+        return;
+
     if (bool != null)
-        button.hidden = bool;
+        element.hidden = bool;
     else
-        button.hidden = ! button.hidden;
+        element.hidden = ! element.hidden;
 }

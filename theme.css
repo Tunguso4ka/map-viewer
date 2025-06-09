@@ -77,3 +77,17 @@ html, body {
   overflow: scroll;
   max-height: 85vh
 }
+
+#area_info_label {
+    background-color: var(--light);
+    color: var(--dark);
+    max-width: 25%;
+    max-height: 15%;
+    border: 2px solid var(--light);
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    white-space: pre;
+}
