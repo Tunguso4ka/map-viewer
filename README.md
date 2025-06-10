@@ -18,6 +18,8 @@ or
     {
       "name": "map name", // not required, name for the button
       "url": "map url", // required, internal or external
+
+      "areas": "areas json url", // not required, internal or external
       "hidden": true, // not required, dont create button if true
       "labels": // not required, adds labels
       [

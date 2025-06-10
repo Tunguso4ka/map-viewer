@@ -252,6 +252,8 @@ function on_mousedown(e)
 {
     e.preventDefault();
     event_location = get_event_location(e);
+    updateAreaInfo(event_location);
+
     start = { x: event_location.x - position.x,
               y: event_location.y - position.y};
     is_panning = true;
