@@ -288,6 +288,7 @@
     "Sorokyne": {
       "name": "Sorokyne Strata",
       "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Sorokyne-0.avif?raw=true",
+      "areas": "Areas/strata.json",
       "labels": [
           { "name": "LZ1", "size": 12, "x": 150, "y": 2100 },
           { "name": "LZ2", "size": 12, "x": 1300, "y": 5000 },
