@@ -217,7 +217,7 @@
     },
     "Kutjevo": {
       "name": "Kutjevo Refinery",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Kutjevo-0.avif?raw=true",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Kutjevo-0.png?raw=true",
       "areas": "Areas/kutjevo.json",
       "labels": [
         { "name": "LZ Auxilary", "size": 8, "x": 425, "y": 1050 },
