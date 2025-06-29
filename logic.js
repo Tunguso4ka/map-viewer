@@ -133,12 +133,23 @@ function update_params()
 // Gets shared position from params and then updates map position.
 function get_param_position()
 {
-    if (!params.has('pos'))
-        return;
+    if (params.has('pos'))
+    {
+        // Get position from query
+        position.x = -(parseInt(params.get('pos').split('x')[0]) * 32);
+        position.y = -(parseInt(params.get('pos').split('x')[1]) * 32);
+        zoom = 4;
+    }
+    else
+    {
+        // Center image.
+        position.x = -(image.naturalWidth / 2);
+        position.y = -(image.naturalHeight / 2);
+        zoom = 0.2;
+    }
 
-    // Get position from query
-    position = {x: -(parseInt(params.get('pos').split('x')[0]) * 32) + window.innerWidth / 2,
-                y: -(parseInt(params.get('pos').split('x')[1]) * 32) + window.innerHeight / 2}
+    position.x = position.x * zoom + window.innerWidth / 2 - 16;
+    position.y = position.y * zoom + window.innerHeight / 2 - 16;
 
     update_transform();
 }
@@ -276,8 +287,8 @@ function updateAreaInfo(event_location)
     if (!("points" in area_info))
         return;
     
-    area_info_label.style.left = `${event_location.x+32}px`;
-    area_info_label.style.top = `${event_location.y+32}px`;
+    area_info_label.style.left = `${event_location.x+24}px`;
+    area_info_label.style.top = `${event_location.y+24}px`;
 
     share_position = getSS14Position(event_location);
 

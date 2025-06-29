@@ -369,11 +369,6 @@
       "name": "UNS Savannah",
       "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Savannah-0.png?raw=true",
       "areas": "Areas/savannah.json"
-    },
-    "Rouny": {
-      "name": "ITS ROUNY!!",
-      "url": "icon.png",
-      "hidden": true
     }
   },
   "main": "Solaris"
