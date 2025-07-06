@@ -15,7 +15,7 @@ or
 {
   "maps": {
     "map id": // required, used in Query param "?map={map id}"
-    {
+    { // remove this section to render map id as label
       "name": "map name", // not required, name for the button
       "url": "map url", // required, internal or external
 

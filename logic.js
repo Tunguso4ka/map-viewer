@@ -54,6 +54,14 @@ async function load_maps_json(url)
 
     for (const [key, value] of Object.entries(maps.maps))
     {
+        if (!value)
+        {
+            var new_label = document.createElement("p");
+            new_label.textContent = key;
+            maplist.appendChild(new_label);
+            continue;
+        }
+
         if (value.hidden)
             continue;
 

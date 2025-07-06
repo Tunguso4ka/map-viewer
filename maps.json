@@ -1,5 +1,6 @@
 {
   "maps": {
+    "Distress Signal": "",
     "Solaris": {
       "name": "Solaris Ridge",
       "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Solaris-0.webp?raw=true",
@@ -93,10 +94,10 @@
         { "name": "Garden", "size": 8, "x": 4475, "y": 3250 }
       ]
     },
-    "624": {
+    "LV624": {
       "name": "LV-624",
       "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/LV624-0.webp?raw=true",
-      "areas": "Areas/624.json",
+      "areas": "Areas/LV624.json",
       "labels": [
         { "name": "Undeground Lake", "size": 12, "x": 2125, "y": 700 },
         { "name": "Western Caves", "size": 12, "x": 525, "y": 2000 },
@@ -332,6 +333,7 @@
           { "name": "Deep Security", "size": 6, "x": 7000, "y": 1300 }
       ]
     },
+    "PVE": "",
     "Corsat": {
       "name": "Corsat",
       "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Corsat-0.webp?raw=true"
@@ -340,6 +342,7 @@
       "name": "Whiskey Outpost",
       "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Whiskey-0.avif?raw=true"
     },
+    "Ships": "",
     "Almayer": {
       "name": "UNS Almayer",
       "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Almayer.webp?raw=true",
