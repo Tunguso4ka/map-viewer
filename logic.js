@@ -216,10 +216,10 @@ function get_event_location(e)
 {
     if (e.touches)
         return { x:e.touches[0].clientX,
-                 y: e.touches[0].clientY }
+                 y: e.touches[0].clientY };
     else if (e.clientX && e.clientY)
         return { x: e.clientX,
-                 y: e.clientY }
+                 y: e.clientY };
 }
 
 

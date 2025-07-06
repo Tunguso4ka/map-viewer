@@ -329,9 +329,7 @@
           { "name": "Carp Lake", "size": 6, "x": 6000, "y": 3100 },
           { "name": "Core Monitoring", "size": 6, "x": 6300, "y": 4000 },
           { "name": "Thermal Springs", "size": 4, "x": 7500, "y": 2700 },
-          { "name": "Deep Security", "size": 6, "x": 7000, "y": 1300 },
-
-          { "name": "THIS MAP IS NOT OUT YET", "size": 14, "x": 50, "y": 250 }
+          { "name": "Deep Security", "size": 6, "x": 7000, "y": 1300 }
       ]
     },
     "Whiskey": {
