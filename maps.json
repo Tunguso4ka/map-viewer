@@ -2,7 +2,7 @@
   "maps": {
     "Solaris": {
       "name": "Solaris Ridge",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Solaris-0.png?raw=true",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Solaris-0.webp?raw=true",
       "areas": "Areas/solaris.json",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 700, "y": 750 },
@@ -65,7 +65,7 @@
     },
     "Fiorina": {
       "name": "Fiorina Science Annex",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Prison-0.avif?raw=true",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Prison-0.webp?raw=true",
       "areas": "Areas/fiorina.json",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 7400, "y": 3000 },
@@ -95,7 +95,7 @@
     },
     "624": {
       "name": "LV-624",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/LV624-0.png?raw=true",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/LV624-0.webp?raw=true",
       "areas": "Areas/624.json",
       "labels": [
         { "name": "Undeground Lake", "size": 12, "x": 2125, "y": 700 },
@@ -156,7 +156,7 @@
     },
     "Varadero": {
       "name": "New Varadero",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Varadero-0.png?raw=true",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Varadero-0.webp?raw=true",
       "areas": "Areas/varadero.json",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 2100, "y": 1250 },
@@ -187,7 +187,7 @@
     },
     "Chances": {
       "name": "Chances Claim",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Chances-0.avif?raw=true",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Chances-0.webp?raw=true",
       "areas": "Areas/chances.json",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 400, "y": 5475 },
@@ -217,7 +217,7 @@
     },
     "Kutjevo": {
       "name": "Kutjevo Refinery",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Kutjevo-0.png?raw=true",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Kutjevo-0.webp?raw=true",
       "areas": "Areas/kutjevo.json",
       "labels": [
         { "name": "LZ Auxilary", "size": 8, "x": 425, "y": 1050 },
@@ -287,7 +287,7 @@
     },
     "Sorokyne": {
       "name": "Sorokyne Strata",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Sorokyne-0.avif?raw=true",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Sorokyne-0.webp?raw=true",
       "areas": "Areas/strata.json",
       "labels": [
           { "name": "LZ1", "size": 12, "x": 150, "y": 2100 },
@@ -332,13 +332,17 @@
           { "name": "Deep Security", "size": 6, "x": 7000, "y": 1300 }
       ]
     },
+    "Corsat": {
+      "name": "Corsat",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Corsat-0.webp?raw=true"
+    },
     "Whiskey": {
       "name": "Whiskey Outpost",
       "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Whiskey-0.avif?raw=true"
     },
     "Almayer": {
       "name": "UNS Almayer",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Almayer.png?raw=true",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Almayer.webp?raw=true",
       "labels": [
         { "name": "This is render of cm-ss13 Almayer.", "size": 6, "x": 0, "y": 6400 },
         { "name": "AI Core", "size": 8, "x": 8875, "y": 3250 },
@@ -365,7 +369,7 @@
     },
     "Savannah": {
       "name": "UNS Savannah",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Savannah-0.png?raw=true",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Savannah-0.webp?raw=true",
       "areas": "Areas/savannah.json"
     }
   },
