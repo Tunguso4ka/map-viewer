@@ -117,7 +117,7 @@ async function load_map()
     {
         requestAnimationFrame(draw);
         get_param_position();
-        canvas.style.cursor='default';
+        canvas.style.cursor='auto';
     }
     
     area_info = {}
@@ -276,6 +276,7 @@ function on_mousedown(e)
     start = { x: event_location.x - position.x,
               y: event_location.y - position.y};
     is_panning = true;
+    canvas.style.cursor='move';
 }
 
 
@@ -285,6 +286,7 @@ function on_mouseup(e)
     is_panning = false;
     initialPinchDistance = null;
     zoom_last = zoom;
+    canvas.style.cursor='auto';
 }
 
 
