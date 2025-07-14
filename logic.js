@@ -92,14 +92,20 @@ async function load_maps_json(url)
 async function load_map()
 {
     update_transform(true); // restore position and zoom
-
-    canvas.style.cursor='wait';
+    document.body.style.cursor = "wait";
 
     if (params.has('map'))
         map_current = params.get('map');
 
     if (!map_current)
         map_current = maps.main;
+
+    if (!(map_current in maps.maps))
+    {
+        console.log(`Map with ID ${map_current} does not exist.`)
+        document.body.style.cursor = "not-allowed";
+        return;
+    }
 
     if ("labels" in maps.maps[map_current])
         labels = maps.maps[map_current].labels;
@@ -117,7 +123,7 @@ async function load_map()
     {
         requestAnimationFrame(draw);
         get_param_position();
-        canvas.style.cursor='auto';
+        document.body.style.cursor = "auto";
     }
     
     area_info = {}
@@ -276,7 +282,6 @@ function on_mousedown(e)
     start = { x: event_location.x - position.x,
               y: event_location.y - position.y};
     is_panning = true;
-    canvas.style.cursor='move';
 }
 
 
@@ -324,6 +329,7 @@ function updateAreaInfo(event_location)
 // Panning.
 function on_mousemove(e)
 {
+    canvas.style.cursor='auto';
     e.preventDefault();
 
     event_location = get_event_location(e);
@@ -333,6 +339,8 @@ function on_mousemove(e)
 
     if (!is_panning)
         return;
+
+    canvas.style.cursor='move';
 
     position = { x: event_location.x - start.x,
                  y: event_location.y - start.y};
@@ -361,6 +369,10 @@ function on_mousescroll(e, pinch)
     {
         var delta = (e.wheelDelta ? e.wheelDelta : -e.deltaY);
         (delta > 0) ? (zoom *= 1.2) : (zoom /= 1.2);
+        if (delta > 0)
+            canvas.style.cursor='zoom-in';
+        else
+            canvas.style.cursor='zoom-out';
     }
 
     zoom = zoom.toFixed(2);
