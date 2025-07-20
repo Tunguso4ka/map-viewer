@@ -34,7 +34,7 @@
      },
     "Shiva": {
       "name": "Shivas Snowball",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Shiva-0.avif?raw=true",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Shiva-0.webp?raw=true",
       "areas": "Areas/shiva.json",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 600, "y": 4200 },
@@ -96,7 +96,7 @@
     },
     "LV624": {
       "name": "LV-624",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/LV624-0.webp?raw=true",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Lv624-0.webp?raw=true",
       "areas": "Areas/LV624.json",
       "labels": [
         { "name": "Undeground Lake", "size": 12, "x": 2125, "y": 700 },
@@ -124,7 +124,7 @@
     },
     "Trijent": {
       "name": "Trijent Dam",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Trijent-0.avif?raw=true",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Trijent-0.webp?raw=true",
       "areas": "Areas/trijent.json",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 950, "y": 900 },
@@ -245,7 +245,7 @@
     },
     "Hybrisa": {
       "name": "Hybrisa Prospera",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Hybrisa-0.avif?raw=true",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Hybrisa-0.webp?raw=true",
       "areas": "Areas/hybrisa.json",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 6625, "y": 625 },
@@ -341,6 +341,10 @@
     "Whiskey": {
       "name": "Whiskey Outpost",
       "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Whiskey-0.avif?raw=true"
+    },
+    "GoldenArrow": {
+      "name": "Golden Arrow",
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Golden_Arrow_Large-0.webp?raw=true"
     },
     "Ships": "",
     "Almayer": {
