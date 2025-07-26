@@ -133,7 +133,6 @@ async function load_map()
     var response = await fetch(maps.maps[map_current].areas);
 
     area_info = await response.json();
-    toggle_hidden("button_areas", "areas" in area_info);
 }
 
 
@@ -152,7 +151,7 @@ function get_param_position()
         // Get position from query
         position.x = -(parseInt(params.get('pos').split('x')[0]) * 32);
         position.y = -(parseInt(params.get('pos').split('x')[1]) * 32);
-        zoom = 4;
+        zoom = 2.5;
     }
     else
     {
@@ -298,14 +297,17 @@ function on_mouseup(e)
 // Updates Area Info label with new information.
 function updateAreaInfo(event_location)
 {
-    //Check if we have areas
-    if (!("points" in area_info))
-        return;
-    
     area_info_label.style.left = `${event_location.x+24}px`;
     area_info_label.style.top = `${event_location.y+24}px`;
 
     share_position = getSS14Position(event_location);
+
+    //Check if we have areas
+    if (!("points" in area_info))
+    {
+        area_info_label.textContent = `${share_position.x},${share_position.y}\n`;
+        return;
+    }
 
     var _id = area_info.map[share_position.y].slice(share_position.x*2, share_position.x*2+2);
     var _name = "";
