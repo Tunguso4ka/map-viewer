@@ -316,15 +316,22 @@ function updateAreaInfo(event_location)
     var _prot = "";
     if (_id in area_info.points)
         _prot = area_info.points[_id].protections;
+    var _weed = "";
+    if (_id in area_info.points && "weedkiller" in area_info.points[_id])
+        _weed = area_info.points[_id].weedkiller;
 
     area_info_label.textContent = `"${_name}" - ${share_position.x},${share_position.y}\n`;
 
     if (!_prot)
         return;
 
-    area_info_label.textContent += `CAS: ${ (_prot[0] == 1) ? "✔️" : "❌"} | Fulton: ${ (_prot[1] == 1) ? "✔️" : "❌"} | Lasing: ${ (_prot[2] == 1) ? "✔" : "❌"}\n`;
-    area_info_label.textContent += `MortarPlace: ${ (_prot[3] == 1) ? "✔" : "❌"} | MortarFire: ${ (_prot[4] == 1) ? "✔" : "❌"}\n`;
-    area_info_label.textContent += `Medevac: ${ (_prot[5] == 1) ? "✔" : "❌"} | OB: ${ (_prot[6] == 1) ? "✔" : "❌"} | SupplyDrop: ${ (_prot[7] == 1) ? "✔" : "❌"}`;
+    area_info_label.textContent += ` CAS: ${ (_prot[0] == 1) ? "✔️" : "❌"} | Fulton: ${ (_prot[1] == 1) ? "✔️" : "❌"} | Lasing: ${ (_prot[2] == 1) ? "✔️" : "❌"}\n`;
+    area_info_label.textContent += ` MortarPlace: ${ (_prot[3] == 1) ? "✔️" : "❌"} | MortarFire: ${ (_prot[4] == 1) ? "✔️" : "❌"}\n`;
+    area_info_label.textContent += ` Medevac: ${ (_prot[5] == 1) ? "✔️" : "❌"} | OB: ${ (_prot[6] == 1) ? "✔️" : "❌"} | SupplyDrop: ${ (_prot[7] == 1) ? "✔️" : "❌"}`;
+
+    if (!_weed)
+        return;
+    area_info_label.textContent += `\n Weedkiller: ${_weed}`
 }
 
 

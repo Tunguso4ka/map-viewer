@@ -22,7 +22,8 @@
         },
         "06": {
             "name": "Fiorina - Backup Communications Relay",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "07": {
             "name": "Fiorina - LZ1 Aux Port Communications Relay",
@@ -38,7 +39,8 @@
         },
         "0a": {
             "name": "Fiorina - Security Hub",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "0b": {
             "name": "Fiorina - Research Cellblock",
@@ -46,7 +48,8 @@
         },
         "0c": {
             "name": "Fiorina - Engineering Ring",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2, LZ1"
         },
         "0d": {
             "name": "Fiorina - Park",
@@ -62,7 +65,8 @@
         },
         "10": {
             "name": "Fiorina - Flight Deck",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "11": {
             "name": "Fiorina - West Disco Storage",
@@ -98,11 +102,13 @@
         },
         "19": {
             "name": "Fiorina - LZ2 Prison Port",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "1a": {
             "name": "Fiorina - LZ1 Aux Port",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "1b": {
             "name": "Fiorina - LZ2 Control Console",

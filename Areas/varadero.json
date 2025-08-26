@@ -6,15 +6,18 @@
         },
         "02": {
             "name": "New Varadero - Walkway Extension",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "03": {
             "name": "New Varadero - East Beach",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "04": {
             "name": "New Varadero - East Ocean",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "05": {
             "name": "New Varadero - Far Ocean",
@@ -30,11 +33,13 @@
         },
         "08": {
             "name": "New Varadero - Pontoon Airfield",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "09": {
             "name": "New Varadero - Palm Airfield",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "0a": {
             "name": "New Varadero - Monsoon",
@@ -42,11 +47,13 @@
         },
         "0b": {
             "name": "New Varadero - Rockabilly Beach",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1, LZ2"
         },
         "0c": {
             "name": "New Varadero - Rockabilly Beach",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "0d": {
             "name": "New Varadero - Interior Pool",
@@ -58,7 +65,8 @@
         },
         "0f": {
             "name": "New Varadero - Beach Bar",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1, LZ2"
         },
         "10": {
             "name": "New Varadero - Level 1 Quarters",
@@ -66,7 +74,8 @@
         },
         "11": {
             "name": "New Varadero - Cargo",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "12": {
             "name": "New Varadero - Beach Caves",
@@ -78,19 +87,23 @@
         },
         "14": {
             "name": "New Vardero - Chapel",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "15": {
             "name": "New Varadero - Cargo Generator",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "16": {
             "name": "New Varadero - Communications Project Site",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "17": {
             "name": "New Varadero - Engineering Communications",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "18": {
             "name": "New Varadero - Basketball Court",
@@ -102,15 +115,18 @@
         },
         "1a": {
             "name": "New Varadero - Dock Control",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "1b": {
             "name": "New Varadero - Electrical Annex",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "1c": {
             "name": "New Varadero - Hallway N",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "1d": {
             "name": "New Varadero - Hallway NW",
@@ -126,7 +142,8 @@
         },
         "20": {
             "name": "New Varadero - Library",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "21": {
             "name": "New Varadero - Central Maintenance",
@@ -134,7 +151,8 @@
         },
         "22": {
             "name": "New Varadero - Northern Maintenance",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "23": {
             "name": "New Varadero - Research Maintenance",
@@ -142,7 +160,8 @@
         },
         "24": {
             "name": "New Varadero - North Sec. Maintenance",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "25": {
             "name": "New Varadero - South Sec. Maintenance",
@@ -158,7 +177,8 @@
         },
         "28": {
             "name": "New Varadero - Morgue",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "29": {
             "name": "New Varadero - Out Of Bounds",

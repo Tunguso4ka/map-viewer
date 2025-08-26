@@ -14,11 +14,13 @@
         },
         "04": {
             "name": "Shiva's Snowball - Southwest Valley",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "05": {
             "name": "Shiva's Snowball - Blue Warehouse",
-            "protections": "10000010"
+            "protections": "10000010",
+            "weedkiller": "LZ1"
         },
         "06": {
             "name": "Shiva's Snowball - Valley Bunker 2",
@@ -42,7 +44,8 @@
         },
         "0b": {
             "name": "Shiva's Snowball - Argentinian Research Headquarters",
-            "protections": "10000010"
+            "protections": "10000010",
+            "weedkiller": "LZ2"
         },
         "0c": {
             "name": "Shiva's Snowball - Cargo Tug Repair Station",
@@ -74,7 +77,8 @@
         },
         "13": {
             "name": "Shiva's Snowball - South LZ2 Caves",
-            "protections": "00000010"
+            "protections": "00000010",
+            "weedkiller": "LZ2"
         },
         "14": {
             "name": "Shiva's Snowball - Forgotten Passage",
@@ -90,7 +94,8 @@
         },
         "17": {
             "name": "Shiva's Snowball - Cave Camp",
-            "protections": "00000010"
+            "protections": "00000010",
+            "weedkiller": "LZ1, LZ2"
         },
         "18": {
             "name": "Shiva's Snowball - Anti-Freeze Bar",
@@ -106,27 +111,33 @@
         },
         "1b": {
             "name": "Shiva's Snowball - Aerodrome",
-            "protections": "10000010"
+            "protections": "10000010",
+            "weedkiller": "LZ1"
         },
         "1c": {
             "name": "Shiva's Snowball - South-East LZ2 Communications Relay",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "1d": {
             "name": "Shiva's Snowball - North-East LZ2 Communications Relay",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "1e": {
             "name": "Shiva's Snowball - North LZ1 Communications Relay",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "1f": {
             "name": "Shiva's Snowball - Landing Bulwark",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "20": {
             "name": "Shiva's Snowball - Landing Valley",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "21": {
             "name": "Shiva's Snowball - Dropship Normandy Console",
@@ -146,7 +157,8 @@
         },
         "25": {
             "name": "Shiva's Snowball - North Colony Grounds",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "26": {
             "name": "Shiva's Snowball - Colony Grounds",

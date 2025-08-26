@@ -6,11 +6,13 @@
         },
         "02": {
             "name": "Nova Medica Hospital Complex - Emergency Response - Landing Zone One",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "03": {
             "name": "Colony Streets - Northeast",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "04": {
             "name": "Checkpoint & Hidden Bunker - Entrance",
@@ -18,23 +20,28 @@
         },
         "05": {
             "name": "Caverns - Northeast",
-            "protections": "00000010"
+            "protections": "00000010",
+            "weedkiller": "LZ1"
         },
         "06": {
             "name": "KMCC Interstellar Freight Hub - Cargo Processing Center - Maintenance",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "07": {
             "name": "KMCC Interstellar Freight Hub - Fuel Storage & Maintenance - North",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "08": {
             "name": "KMCC Interstellar Freight Hub - Landing Zone Two",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "09": {
             "name": "KMCC - Mining Outpost - South - Vehicle Deployment Entrance",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "0a": {
             "name": "KMCC - Mining Outpost - Southeast",
@@ -42,7 +49,8 @@
         },
         "0b": {
             "name": "NMHC - Emergency Response - Landing Zone One - Caverns - Northeast - Subspace-Communications",
-            "protections": "00000010"
+            "protections": "00000010",
+            "weedkiller": "LZ1"
         },
         "0c": {
             "name": "Gonzo's hide-out",
@@ -50,15 +58,18 @@
         },
         "0d": {
             "name": "KMCC - Mining Outpost - East - Command Center",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "0e": {
             "name": "KMCC Interstellar Freight Hub - Cargo Processing Center",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "0f": {
             "name": "Electrical Systems - Substation Two",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "10": {
             "name": "Caverns - Southeast",
@@ -66,31 +77,38 @@
         },
         "11": {
             "name": "Electrical Systems - Substation Three",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ1"
         },
         "12": {
             "name": "KMCC - Mining Outpost - East",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ1, LZ2"
         },
         "13": {
             "name": "Caverns - Northeast",
-            "protections": "00000010"
+            "protections": "00000010",
+            "weedkiller": "LZ1, LZ2"
         },
         "14": {
             "name": "KMCC Interstellar Freight Hub - Cargo Processing Center - Main Entrance & South Unloading Platform",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "15": {
             "name": "Synthetic Storage",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ1"
         },
         "16": {
             "name": "KMCC - Mining Outpost - South - Vehicle Deployment",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "17": {
             "name": "KMCC - Mining Outpost - East - Deployment Bay",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "18": {
             "name": "Caverns - East",
@@ -98,11 +116,13 @@
         },
         "19": {
             "name": "Colony Streets - Northeast",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "1a": {
             "name": "Weston-Yamada Security Checkpoint - North East",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ1"
         },
         "1b": {
             "name": "Caverns - South",
@@ -110,35 +130,43 @@
         },
         "1c": {
             "name": "Weston-Yamada - Resource Recovery Facility - Garage",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ1"
         },
         "1d": {
             "name": "Weston-Yamada - Resource Recovery Facility - Office",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ1"
         },
         "1e": {
             "name": "KMCC - Mining Outpost - South - Processing & Storage",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "1f": {
             "name": "Nova Medica Hospital Complex - Emergency Response - Landing Zone One - Flight Control Room",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ1"
         },
         "20": {
             "name": "KMCC - Mining Outpost - Northeast",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ1"
         },
         "21": {
             "name": "Weston-Yamada - Resource Recovery Facility",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ1"
         },
         "22": {
             "name": "Weston-Yamada - Resource Recovery Facility - Waste Disposal Incinerating Room",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ1"
         },
         "23": {
             "name": "KMCC - Mining Outpost - East - Subspace-Communications",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1, LZ2"
         },
         "24": {
             "name": "Nova Medica Hospital Complex - Breakroom",
@@ -150,39 +178,48 @@
         },
         "26": {
             "name": "KMCC - Mining Outpost - East - Dorms",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "27": {
             "name": "Nova Medica Hospital Complex - Emergency Response - Landing Zone One - Dropship Alamo Console",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ1"
         },
         "28": {
             "name": "KMCC Interstellar Freight Hub - Passenger Departures - South Office",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "29": {
             "name": "Colony Streets - Southeast",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "2a": {
             "name": "KMCC Interstellar Freight Hub - Security Checkpoint Office",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "2b": {
             "name": "KMCC Interstellar Freight Hub - Flight Control Room",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "2c": {
             "name": "KMCC Interstellar Freight Hub - Passenger Departures - Hallway",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "2d": {
             "name": "KMCC Interstellar Freight Hub - Passenger Departures - Maintenance",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "2e": {
             "name": "KMCC Interstellar Freight Hub - Dropship Normandy Console",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "2f": {
             "name": "Nova Medica Hospital Complex - East Hallway",
@@ -190,11 +227,13 @@
         },
         "30": {
             "name": "Central Street - East",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "31": {
             "name": "Weston-Yamada Security Checkpoint - East",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ1, LZ2"
         },
         "32": {
             "name": "Nova Medica Hospital Complex - Janitors Closet",
@@ -202,11 +241,13 @@
         },
         "33": {
             "name": "KMCC Interstellar Freight Hub - Passenger Departures - Lounge North",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "34": {
             "name": "KMCC Interstellar Freight Hub - Passenger Departures - Lounge South",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "35": {
             "name": "Nova Medica Hospital Complex - Office",
@@ -230,7 +271,8 @@
         },
         "3a": {
             "name": "Public Restroom - South",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "3b": {
             "name": "Nova Medica Hospital Complex - Medical Storage",
@@ -242,15 +284,18 @@
         },
         "3d": {
             "name": "NSPA - Ironbridge Precinct - Court Room",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "3e": {
             "name": "Colony Streets - Southeast - Subspace-Communications",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "3f": {
             "name": "NSPA - Ironbridge Precinct - Forensics Office",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "40": {
             "name": "Nova Medica Hospital Complex - Central Hallway",
@@ -258,35 +303,43 @@
         },
         "41": {
             "name": "Caverns - North",
-            "protections": "00000010"
+            "protections": "00000010",
+            "weedkiller": "LZ1"
         },
         "42": {
             "name": "Weston-Yamada DynaGrid Nexus - Telecommunications",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ1"
         },
         "43": {
             "name": "Weston-Yamada DynaGrid Nexus - East Hallway",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ1"
         },
         "44": {
             "name": "Weston-Yamada DynaGrid Nexus - Worker's Canteen",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ1"
         },
         "45": {
             "name": "Weston-Yamada DynaGrid Nexus - Worker's Canteen - Kitchen",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "46": {
             "name": "Hidden Hobo Haven",
-            "protections": "00000000"
+            "protections": "00000000",
+            "weedkiller": "LZ2"
         },
         "47": {
             "name": "NSPA - Ironbridge Precinct - North Hallway",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "48": {
             "name": "NSPA - Ironbridge Precinct - Central Hallway",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "49": {
             "name": "Caverns - East",
@@ -294,7 +347,8 @@
         },
         "4a": {
             "name": "NSPA - Ironbridge Precinct - North Office",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "4b": {
             "name": "Nova Medica Hospital Complex - Intensive Care Ward",
@@ -314,11 +368,13 @@
         },
         "4f": {
             "name": "NSPA - Ironbridge Precinct - Holding Cells",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "50": {
             "name": "Jack's Military Surplus",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "51": {
             "name": "Derelict Ship",
@@ -326,7 +382,8 @@
         },
         "52": {
             "name": "NSPA - Ironbridge Precinct - Reception Office",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "53": {
             "name": "Nova Medica Hospital Complex - Maintenance North",
@@ -342,7 +399,8 @@
         },
         "56": {
             "name": "Weston-Yamada DynaGrid Nexus - Transformers - North",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "57": {
             "name": "Weston-Yamada DynaGrid Nexus - Central Hallway",
@@ -350,7 +408,8 @@
         },
         "58": {
             "name": "Weston-Yamada DynaGrid Nexus - Transformers - South",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "59": {
             "name": "Nova Medica Hospital Complex - Pharmacy & Outgoing Foyer",
@@ -358,11 +417,13 @@
         },
         "5a": {
             "name": "NSPA - Ironbridge Precinct - Reception Hallway",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "5b": {
             "name": "NSPA - Ironbridge Precinct - Maintenance - South",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "5c": {
             "name": "Weston-Yamada DynaGrid Nexus - Geothermal Generators Room",
@@ -374,7 +435,8 @@
         },
         "5e": {
             "name": "NSPA - Ironbridge Precinct - Vehicle Deployment & Maintenace",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "5f": {
             "name": "Caverns - South",
@@ -386,7 +448,8 @@
         },
         "61": {
             "name": "Public Restroom - Southwest",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "62": {
             "name": "Prospera Grand Hotel - Room",

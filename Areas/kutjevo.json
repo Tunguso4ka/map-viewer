@@ -2,7 +2,8 @@
     "points": {
         "01": {
             "name": "Kutjevo - Northwest Colony Grounds",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "02": {
             "name": "Kutjevo Complex - Botany - Medical Cave",
@@ -22,15 +23,18 @@
         },
         "06": {
             "name": "Kutjevo - Landing Zone Dunes",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "07": {
             "name": "Kutjevo Auxilliary Landing Zone",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "08": {
             "name": "Kutjevo - Power Station River",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "09": {
             "name": "Kutjevo - Runoff Bridge",
@@ -38,7 +42,8 @@
         },
         "0a": {
             "name": "Kutjevo - Runoff Dunes",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "0b": {
             "name": "Kutjevo - Runoff River",
@@ -46,11 +51,13 @@
         },
         "0c": {
             "name": "Kutjevo - North Scrubland",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "0d": {
             "name": "Kutjevo - South Scrubland",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1, LZ2"
         },
         "0e": {
             "name": "Kutjevo - Southern Spring",
@@ -58,19 +65,23 @@
         },
         "0f": {
             "name": "Kutjevo - Stony Fields",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "10": {
             "name": "Kutjevo - South LZ1 Communications Relay",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "11": {
             "name": "Kutjevo - North LZ2 Communications Relay",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "12": {
             "name": "Kutjevo - South LZ2 Communications Relay",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "13": {
             "name": "Kutjevo - Northeast Colony Caves",
@@ -102,15 +113,18 @@
         },
         "1a": {
             "name": "Kutjevo Complex - Northwest Colony Dorms",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "1b": {
             "name": "Kutjevo Complex - Northwest Flight Control Room",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "1c": {
             "name": "Kutjevo Complex - Northwest Security Checkpoint",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "1d": {
             "name": "Kutjevo Complex - Botany Bay",
@@ -170,7 +184,8 @@
         },
         "2b": {
             "name": "Kutjevo - Hydroelectric Dam Substation",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ1"
         },
         "2c": {
             "name": "Kutjevo - Hydroelectric Dam Comms Relay",
@@ -182,11 +197,13 @@
         },
         "2e": {
             "name": "Kutjevo - Dropship Alamo Landing Zone",
-            "protections": "00000000"
+            "protections": "00000000",
+            "weedkiller": "LZ1"
         },
         "2f": {
             "name": "Kutjevo - Dropship Normandy Landing Zone",
-            "protections": "00000000"
+            "protections": "00000000",
+            "weedkiller": "LZ2"
         }
     },
     "map": [

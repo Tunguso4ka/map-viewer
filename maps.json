@@ -336,7 +336,8 @@
     "PVE": "",
     "Corsat": {
       "name": "Corsat",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Corsat-0.webp?raw=true"
+      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Corsat-0.webp?raw=true",
+      "areas": "Areas/corsat.json"
     },
     "Whiskey": {
       "name": "Whiskey Outpost",

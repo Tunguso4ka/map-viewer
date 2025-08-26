@@ -2,7 +2,8 @@
     "points": {
         "01": {
             "name": "Garage Workshop",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ1"
         },
         "02": {
             "name": "Unknown Area",
@@ -26,7 +27,8 @@
         },
         "07": {
             "name": "North Cave Communications Relay",
-            "protections": "10000010"
+            "protections": "10000010",
+            "weedkiller": "LZ1"
         },
         "08": {
             "name": "Eastern Caves",
@@ -74,7 +76,8 @@
         },
         "13": {
             "name": "Marshal Offices",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ1"
         },
         "14": {
             "name": "We-Ya Research Lab Caves",
@@ -90,7 +93,8 @@
         },
         "17": {
             "name": "ETA Lockdown Caves Entrance",
-            "protections": "10000010"
+            "protections": "10000010",
+            "weedkiller": "LZ2"
         },
         "18": {
             "name": "Virology Caves",
@@ -98,7 +102,8 @@
         },
         "19": {
             "name": "Virology Caves Entrance",
-            "protections": "10000010"
+            "protections": "10000010",
+            "weedkiller": "LZ1"
         },
         "1a": {
             "name": "LZ1 'Telecomms'",
@@ -130,7 +135,8 @@
         },
         "21": {
             "name": "Cargo",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "22": {
             "name": "Chapel",
@@ -146,11 +152,13 @@
         },
         "25": {
             "name": "Engineering Complex",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "26": {
             "name": "Main Reactor",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "null"
         },
         "27": {
             "name": "Eta Labs Compound",
@@ -170,7 +178,8 @@
         },
         "2b": {
             "name": "General Store",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ2"
         },
         "2c": {
             "name": "Hydroponics",
@@ -186,19 +195,23 @@
         },
         "2f": {
             "name": "Northern Caves Entrance",
-            "protections": "10000010"
+            "protections": "10000010",
+            "weedkiller": "LZ1"
         },
         "30": {
             "name": "Southwestern Caves Entrance",
-            "protections": "10000010"
+            "protections": "10000010",
+            "weedkiller": "LZ2"
         },
         "31": {
             "name": "Hospital",
-            "protections": "11001011"
+            "protections": "11001011",
+            "weedkiller": "LZ1"
         },
         "32": {
             "name": "Northwest Colony Grounds",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "33": {
             "name": "Northwest Colony Grounds",
@@ -218,23 +231,28 @@
         },
         "37": {
             "name": "Space Port",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ1"
         },
         "38": {
             "name": "Cargo Landing Pad",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "39": {
             "name": "Southwest Colony Grounds",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "3a": {
             "name": "LZ1 Communications Relay",
-            "protections": "10000010"
+            "protections": "10000010",
+            "weedkiller": "LZ1"
         },
         "3b": {
             "name": "Central Grounds Communications Relay",
-            "protections": "10000010"
+            "protections": "10000010",
+            "weedkiller": "LZ2"
         },
         "3c": {
             "name": "Warehouse Communications Relay",
@@ -242,11 +260,13 @@
         },
         "3d": {
             "name": "Virology Lab",
-            "protections": "10000010"
+            "protections": "10000010",
+            "weedkiller": "LZ1"
         },
         "3e": {
             "name": "Western Colony Grounds",
-            "protections": "11111111"
+            "protections": "11111111",
+            "weedkiller": "LZ2"
         },
         "3f": {
             "name": "Space",
