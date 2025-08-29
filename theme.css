@@ -86,6 +86,7 @@ html, body {
 #maplist {
   overflow: scroll;
   max-height: 90vh;
+  overflow-x: hidden;
 }
 
 #area_info_label {
