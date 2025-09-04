@@ -184,11 +184,11 @@ function draw()
 
     ctx.fillStyle = "white";
     ctx.strokeStyle = "black";
-    ctx.lineWidth = 10;
+    ctx.lineWidth = 8;
 
     ctx.shadowColor = "black";
-    ctx.shadowOffsetX = 5;
-    ctx.shadowOffsetY = 5;
+    ctx.shadowOffsetX = 2;
+    ctx.shadowOffsetY = 2;
     //ctx.shadowBlur = 10;
 
     for (const iter in labels)

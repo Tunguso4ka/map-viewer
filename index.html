@@ -20,31 +20,34 @@
     <script type="text/javascript" src="logic.js"></script>
   </head>
   <body>
+    <!-- Full Screen Map Container -->
     <div id="map_container">
       <canvas id="map_zoomable">Your browser doesnt support Canvas (Or you toggled it off).</canvas>
     </div>
-    <div class="toolbar">
-      <div class="buttons">
-        <button
-          title="Other Maps"
-          onclick="toggle_hidden('maplist')"
-          >#</button>
-        <button
-          id="button_labels"
-          title="Labels"
-          onclick="toggle_labels()"
-          hidden=""
-          >A</button>
-        <button
-          id="button_areas"
-          title="Area Info"
-          onclick="toggle_hidden('area_info_label')"
-          >?</button>
-      </div>
-      <ul id="maplist" hidden>
+    <!-- Toolbar (Z-Levels, Maps, other) -->
+    <div id="toolbar" hidden>
+      <ul id="maplist">
       </ul>
     </div>
-
+    <!-- Button list -->
+    <div id="buttons">
+      <button
+        title="Show/Hide Maps"
+        onclick="toggle_hidden('toolbar')"
+        >#M</button>
+      <button
+        id="button_labels"
+        title="Labels"
+        onclick="toggle_labels()"
+        hidden=""
+        >_A</button>
+      <button
+        id="button_areas"
+        title="Area Info"
+        onclick="toggle_hidden('area_info_label')"
+        >i?</button>
+    </div>
+    <!-- Info box -->
     <p id="area_info_label" hidden="" ></p>
   <body/>
 </html>
