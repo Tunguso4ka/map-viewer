@@ -261,12 +261,12 @@ function handle_pinch(e)
     let touch2 = { x: e.touches[1].clientX,
                    y: e.touches[1].clientY }
 
-    let currentDistance = (touch1.x - touch2.x)**2 + (touch1.y - touch2.y)**2
+    let current_distance = (touch1.x - touch2.x)**2 + (touch1.y - touch2.y)**2
 
     if (initial_pinch_distance == null)
-      initial_pinch_distance = currentDistance
+      initial_pinch_distance = current_distance
     else
-      on_mousescroll( e, currentDistance/initial_pinch_distance )
+      on_mousescroll( e, current_distance/initial_pinch_distance )
 
 }
 
@@ -288,7 +288,7 @@ function on_mousedown(e)
 function on_mouseup(e)
 {
     is_panning = false;
-    initialPinchDistance = null;
+    initial_pinch_distance = null;
     zoom_last = zoom;
     canvas.style.cursor='auto';
 }
@@ -372,7 +372,7 @@ function on_mousescroll(e, pinch)
 
     if (pinch)
     {
-        zoom = pinch * zoom_last;
+        zoom = zoom_last * pinch;
     }
     else
     {
@@ -385,12 +385,8 @@ function on_mousescroll(e, pinch)
     }
 
     zoom = zoom.toFixed(2);
-
-    if (zoom > zoom_limit.max)
-        zoom = zoom_limit.max;
-
-    if (zoom < zoom_limit.min)
-        zoom = zoom_limit.min;
+    zoom = zoom > zoom_limit.max ? zoom_limit.max : zoom; // Zoom In
+    zoom = zoom < zoom_limit.min ? zoom_limit.min : zoom; // Zoom Out
 
     position = { x: Math.round(event_location.x - zoom_position.x * zoom),
                  y: Math.round(event_location.y - zoom_position.y * zoom)};

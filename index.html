@@ -25,28 +25,27 @@
       <canvas id="map_zoomable">Your browser doesnt support Canvas (Or you toggled it off).</canvas>
     </div>
     <!-- Toolbar (Z-Levels, Maps, other) -->
-    <div id="toolbar" hidden>
-      <ul id="maplist">
-      </ul>
+    <div id="toolbar">
+      <div id="buttons">
+        <button
+          title="Show/Hide Maps"
+          onclick="toggle_hidden('maplist')"
+          >#M</button>
+        <button
+          id="button_labels"
+          title="Labels"
+          onclick="toggle_labels()"
+          hidden=""
+          >_A</button>
+        <button
+          id="button_areas"
+          title="Area Info"
+          onclick="toggle_hidden('area_info_label')"
+          >i?</button>
+      </div>
+      <ul id="maplist" hidden></ul>
     </div>
     <!-- Button list -->
-    <div id="buttons">
-      <button
-        title="Show/Hide Maps"
-        onclick="toggle_hidden('toolbar')"
-        >#M</button>
-      <button
-        id="button_labels"
-        title="Labels"
-        onclick="toggle_labels()"
-        hidden=""
-        >_A</button>
-      <button
-        id="button_areas"
-        title="Area Info"
-        onclick="toggle_hidden('area_info_label')"
-        >i?</button>
-    </div>
     <!-- Info box -->
     <p id="area_info_label" hidden="" ></p>
   <body/>
