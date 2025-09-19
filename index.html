@@ -22,7 +22,12 @@
   <body>
     <!-- Full Screen Map Container -->
     <div id="map_container">
-      <canvas id="map_zoomable">Your browser doesnt support Canvas (Or you toggled it off).</canvas>
+      <div id="map_zoomable">
+        <div id="map_insert_buttons">
+            <button style="transform: translate(256px, 1604px)"></button>
+        </div>
+        <canvas id="map_canvas">Your browser doesnt support Canvas (Or you toggled it off).</canvas>
+      </div>
     </div>
     <!-- Toolbar (Z-Levels, Maps, other) -->
     <div id="toolbar">
@@ -42,6 +47,12 @@
           title="Area Info"
           onclick="toggle_hidden('area_info_label')"
           >i?</button>
+        <button
+          id="button_inserts"
+          title="Show Insert Buttons"
+          onclick="toggle_hidden('map_insert_buttons')"
+          hidden=""
+          >N!</button>
       </div>
       <ul id="maplist" hidden></ul>
     </div>

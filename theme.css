@@ -10,7 +10,7 @@
   outline: 0;
 }
 
-button {
+#buttons button, #maplist button {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
@@ -29,9 +29,23 @@ button {
   margin: 1px;
 }
 
-button:hover {
+#buttons button:hover, #maplist button:hover {
   background-color: var(--dark);
   color: var(--light);
+}
+
+#map_insert_buttons button {
+  background-image: url("res/insert.png");
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0 3px 3px 3px;
+  position: absolute;
+}
+
+#map_insert_buttons button:hover {
+  background-color: var(--light);
 }
 
 ul {
@@ -75,7 +89,10 @@ html, body {
 #map_zoomable {
   transform-origin: 0px 0px;
   transform: scale(1) translate(0px, 0px);
-  cursor: grab;
+  image-rendering: pixelated;
+}
+
+#map_canvas {
   image-rendering: pixelated;
 }
 
@@ -108,4 +125,9 @@ html, body {
     position: absolute;
     pointer-events: none;
     white-space: pre;
+}
+
+#map_insert_buttons {
+  height: 0px;
+  width: 0px;
 }

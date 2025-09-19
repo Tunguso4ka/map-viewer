@@ -4,6 +4,7 @@ let map_current;
 
 var labels = [];
 var show_labels = true;
+var inserts = [];
 
 var position = { x: 0, y: 0};
 var start = { x: 0, y: 0 };
@@ -15,8 +16,11 @@ var is_panning;
 
 var image = new Image();
 
+var zoomable;
 var canvas;
 var ctx;
+var insert_button_list;
+
 
 var area_info_label;
 var area_info = {};
@@ -24,24 +28,28 @@ var area_info = {};
 // assign elements, events and load json
 document.addEventListener('DOMContentLoaded', function()
 {
-    canvas = document.getElementById("map_zoomable");
-    ctx = canvas.getContext('2d');
+    zoomable = document.getElementById("map_zoomable");
+
+    zoomable.addEventListener('mousedown', on_mousedown);
+    zoomable.addEventListener('touchstart', (e) => handle_touch(e, on_mousedown))
+
+    zoomable.addEventListener('mouseup', on_mouseup);
+    zoomable.addEventListener('mouseleave', on_mouseup);
+    zoomable.addEventListener('touchend',  (e) => handle_touch(e, on_mouseup))
+
+    zoomable.addEventListener('mousemove', on_mousemove);
+    zoomable.addEventListener('touchmove', (e) => handle_touch(e, on_mousemove))
+
+    zoomable.addEventListener('wheel', on_mousescroll);
+
+    zoomable.addEventListener('dblclick', on_doubleclick);
 
     area_info_label = document.getElementById("area_info_label");
 
-    canvas.addEventListener('mousedown', on_mousedown);
-    canvas.addEventListener('touchstart', (e) => handle_touch(e, on_mousedown))
+    insert_button_list = document.getElementById("map_insert_buttons");
 
-    canvas.addEventListener('mouseup', on_mouseup);
-    canvas.addEventListener('mouseleave', on_mouseup);
-    canvas.addEventListener('touchend',  (e) => handle_touch(e, on_mouseup))
-
-    canvas.addEventListener('mousemove', on_mousemove);
-    canvas.addEventListener('touchmove', (e) => handle_touch(e, on_mousemove))
-
-    canvas.addEventListener('wheel', on_mousescroll);
-
-    canvas.addEventListener('dblclick', on_doubleclick);
+    canvas = document.getElementById("map_canvas");
+    ctx = canvas.getContext('2d');
 
     load_maps_json("maps.json");
 }, false);
@@ -108,20 +116,35 @@ async function load_map()
     }
 
     if ("labels" in maps.maps[map_current])
+    {
         labels = maps.maps[map_current].labels;
+        console.log(`Loaded ${labels.length} labels.`)
+    }
     else
         labels = []
 
-    image.src = maps.maps[map_current].url;
-
     toggle_hidden('button_labels', !labels.length)
 
-    console.log(`Loaded map ${map_current} from ${maps.maps[map_current].url} with ${Object.keys(labels).length} labels.`);
+    insert_button_list.innerHTML = "";
+    if ("inserts" in maps.maps[map_current])
+    {
+        inserts = maps.maps[map_current].inserts;
+        console.log(`Loaded ${inserts.length} nightmare inserts.`)
+    }
+    else
+        inserts = []
+
+    toggle_hidden('button_inserts', !inserts.length)
+
+    image.src = maps.maps[map_current].url;
+
+    console.log(`Loaded map ${map_current} from ${maps.maps[map_current].url}.`);
     update_transform();
 
     image.onload = function()
     {
         requestAnimationFrame(draw);
+        load_insert_buttons();
         get_param_position();
         document.body.style.cursor = "auto";
     }
@@ -133,6 +156,38 @@ async function load_map()
     var response = await fetch(maps.maps[map_current].areas);
 
     area_info = await response.json();
+}
+
+
+function load_insert_buttons()
+{
+    if (!inserts)
+        return;
+
+    for (const iter in inserts)
+    {
+        value = inserts[iter];
+
+        var new_button = document.createElement("button");
+
+        if (value.name)
+            new_button.title = value.name;
+
+        if (value.position)
+            new_button.style = `left: ${value.position.x * 32}px; top: ${value.position.y * 32}px;`;
+        else
+            console.error("No position in Nightmare Insert button!");
+
+        inserts[iter].show = false;
+
+        new_button.onclick = function ()
+        {
+            inserts[iter].show = ! inserts[iter].show;
+            requestAnimationFrame(draw);
+        };
+
+        insert_button_list.appendChild(new_button);
+    }
 }
 
 
@@ -179,6 +234,13 @@ function draw()
     ctx.imageSmoothingEnabled = false;
     ctx.drawImage(image, 0, 0);
 
+    draw_inserts();
+    draw_labels();
+}
+
+
+function draw_labels()
+{
     if ( !show_labels )
         return;
 
@@ -196,6 +258,9 @@ function draw()
         value = labels[iter];
         draw_text(ctx, value.name, value.x, value.y, value.size);
     }
+
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
 }
 
 
@@ -207,10 +272,52 @@ function draw_text(context, text, x, y, font_size=12, font="Sans-serif")
 }
 
 
+function draw_inserts()
+{
+    if (!inserts)
+        return;
+
+    for (const iter in inserts)
+    {
+        value = inserts[iter];
+
+        if (!("show" in value))
+            continue;
+
+        if (!value.show)
+            continue;
+
+        // shitcode!!
+        if ("image" in value)
+        {
+            draw_insert(value.image, value.position);
+        }
+        else
+        {
+            inserts[iter].image = new Image();
+            inserts[iter].image.src = value.url;
+
+            inserts[iter].image.onload = function()
+            {
+                console.log(`Loaded Nightmare Insert ${inserts[iter].name} from ${inserts[iter].url}`);
+                draw_insert(inserts[iter].image, inserts[iter].position);
+            }
+        }
+    }
+}
+
+function draw_insert(_image, _position)
+{
+    ctx.drawImage(
+        _image,
+        _position.x * 32,
+        (_position.y + 1) * 32 - _image.height);
+}
+
 // Updates map position and zoom.
 function update_transform(restore=false)
 {
-    if (!canvas)
+    if (!zoomable)
         return;
 
     if (restore)
@@ -220,7 +327,7 @@ function update_transform(restore=false)
         zoom = 1;
     }
 
-    canvas.style.transform = `translate(${position.x}px, ${position.y}px) scale(${zoom})`;
+    zoomable.style.transform = `translate(${position.x}px, ${position.y}px) scale(${zoom})`;
 }
 
 
@@ -290,7 +397,7 @@ function on_mouseup(e)
     is_panning = false;
     initial_pinch_distance = null;
     zoom_last = zoom;
-    canvas.style.cursor='auto';
+    zoomable.style.cursor='auto';
 }
 
 
@@ -338,7 +445,7 @@ function updateAreaInfo(event_location)
 // Panning.
 function on_mousemove(e)
 {
-    canvas.style.cursor='auto';
+    zoomable.style.cursor='auto';
     e.preventDefault();
 
     event_location = get_event_location(e);
@@ -349,7 +456,7 @@ function on_mousemove(e)
     if (!is_panning)
         return;
 
-    canvas.style.cursor='move';
+    zoomable.style.cursor='move';
 
     position = { x: event_location.x - start.x,
                  y: event_location.y - start.y};
@@ -379,9 +486,9 @@ function on_mousescroll(e, pinch)
         var delta = (e.wheelDelta ? e.wheelDelta : -e.deltaY);
         (delta > 0) ? (zoom *= 1.2) : (zoom /= 1.2);
         if (delta > 0)
-            canvas.style.cursor='zoom-in';
+            zoomable.style.cursor='zoom-in';
         else
-            canvas.style.cursor='zoom-out';
+            zoomable.style.cursor='zoom-out';
     }
 
     zoom = zoom.toFixed(2);
