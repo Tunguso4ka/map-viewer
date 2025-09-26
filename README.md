@@ -14,19 +14,27 @@ or
 ```
 {
   "maps": {
-    "map id": // required, used in Query param "?map={map id}"
-    { // remove this section to render map id as label
-      "name": "map name", // not required, name for the button
-      "url": "map url", // required, internal or external
+    "map id": "map id for url query",
+    {
+      "name": "map name",
+      "url": "map image url",
 
-      "areas": "areas json url", // not required, internal or external
-      "hidden": true, // not required, dont create button if true
-      "labels": // not required, adds labels
+      "areas": "areas json url",
+      "hidden": false,
+      "labels":
       [
-        {"name": "name", "size": 12, "x": 0, "y": 0} //creates label with text "name", font size 12, on pos 0,0
+        {"name": "label name", "size": 12, "x": 0, "y": 0}
+      ],
+      "inserts":
+      [
+        {
+          "name": "Insert name",
+          "url": "Insert image url",
+          "position": {"x": 0, "y": 0},
+        }
       ]
     }
   }
-  "main": "id of main map" // required, will be used if Query param map is undefined
+  "main": "id of main map"
 }
 ```

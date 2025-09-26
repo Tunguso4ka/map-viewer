@@ -327,6 +327,12 @@ function update_transform(restore=false)
         zoom = 1;
     }
 
+    if (zoom >= 1)
+        zoomable.style.imageRendering = "pixelated";
+    else
+        zoomable.style.imageRendering = "auto";
+    // https://developer.mozilla.org/en-US/docs/Web/CSS/image-rendering says that webkit doesn't support `smooth`. Sadly, but I have to use auto for compatibility.
+
     zoomable.style.transform = `translate(${position.x}px, ${position.y}px) scale(${zoom})`;
 }
 
@@ -397,7 +403,7 @@ function on_mouseup(e)
     is_panning = false;
     initial_pinch_distance = null;
     zoom_last = zoom;
-    zoomable.style.cursor='auto';
+    document.body.style.cursor='auto';
 }
 
 
@@ -445,7 +451,9 @@ function updateAreaInfo(event_location)
 // Panning.
 function on_mousemove(e)
 {
-    zoomable.style.cursor='auto';
+    if (document.body.style.cursor != "wait")
+        document.body.style.cursor='auto';
+
     e.preventDefault();
 
     event_location = get_event_location(e);
@@ -456,7 +464,7 @@ function on_mousemove(e)
     if (!is_panning)
         return;
 
-    zoomable.style.cursor='move';
+    document.body.style.cursor='move';
 
     position = { x: event_location.x - start.x,
                  y: event_location.y - start.y};
@@ -486,9 +494,9 @@ function on_mousescroll(e, pinch)
         var delta = (e.wheelDelta ? e.wheelDelta : -e.deltaY);
         (delta > 0) ? (zoom *= 1.2) : (zoom /= 1.2);
         if (delta > 0)
-            zoomable.style.cursor='zoom-in';
+            document.body.style.cursor='zoom-in';
         else
-            zoomable.style.cursor='zoom-out';
+            document.body.style.cursor='zoom-out';
     }
 
     zoom = zoom.toFixed(2);
