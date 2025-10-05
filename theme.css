@@ -70,7 +70,7 @@ ul p:after {
   content: ">";
 }
 
-[hidden]{
+p[hidden], button[hidden]{
   display:none;
 }
 
@@ -111,6 +111,12 @@ html, body {
 #maplist {
   overflow: auto;
   overflow-x: hidden;
+  transition-duration: 0.4s;
+  height: 100vh;
+}
+
+#maplist[hidden] {
+  height: 0px;
 }
 
 #area_info_label {

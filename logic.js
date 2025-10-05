@@ -3,8 +3,13 @@ let maps;
 let map_current;
 
 var labels = [];
-var show_labels = true;
 var inserts = [];
+
+var settings = { // cookies in future
+    "show_labels": true,
+    "show_inserts": true,
+    "show_area_borders": false,
+}
 
 var position = { x: 0, y: 0};
 var start = { x: 0, y: 0 };
@@ -20,7 +25,6 @@ var zoomable;
 var canvas;
 var ctx;
 var insert_button_list;
-
 
 var area_info_label;
 var area_info = {};
@@ -95,13 +99,13 @@ async function load_maps_json(url)
     load_map();
 }
 
-
 // Updates map image and labels.
 async function load_map()
 {
     update_transform(true); // restore position and zoom
     document.body.style.cursor = "wait";
 
+    // grab a map name from url
     if (params.has('map'))
         map_current = params.get('map');
 
@@ -134,8 +138,6 @@ async function load_map()
     else
         inserts = []
 
-    toggle_hidden('button_inserts', !inserts.length)
-
     image.src = maps.maps[map_current].url;
 
     console.log(`Loaded map ${map_current} from ${maps.maps[map_current].url}.`);
@@ -150,6 +152,7 @@ async function load_map()
     }
     
     area_info = {}
+    toggle_hidden('button_borders', !("areas" in maps.maps[map_current]))
     if (!("areas" in maps.maps[map_current]))
         return;
 
@@ -234,6 +237,7 @@ function draw()
     ctx.imageSmoothingEnabled = false;
     ctx.drawImage(image, 0, 0);
 
+    draw_area_borders();
     draw_inserts();
     draw_labels();
 }
@@ -241,7 +245,7 @@ function draw()
 
 function draw_labels()
 {
-    if ( !show_labels )
+    if ( !settings.show_labels || !labels)
         return;
 
     ctx.fillStyle = "white";
@@ -274,7 +278,7 @@ function draw_text(context, text, x, y, font_size=12, font="Sans-serif")
 
 function draw_inserts()
 {
-    if (!inserts)
+    if (!settings.show_inserts || !inserts)
         return;
 
     for (const iter in inserts)
@@ -314,6 +318,49 @@ function draw_insert(_image, _position)
         (_position.y + 1) * 32 - _image.height);
 }
 
+function draw_area_borders()
+{
+    if (!settings.show_area_borders || !("map" in area_info))
+        return;
+
+    ctx.beginPath();
+    ctx.strokeStyle = "#FFFFFF99";
+    ctx.lineWidth = 2;
+
+    for (let y = 0; y < area_info.map.length; y++)
+    {
+        for (var x = 0; x*2 < area_info.map[y].length; x++)
+        {
+            // Current tile
+            var cur = area_info.map[y].slice(x*2, x*2+2);
+            // Next tile
+            if (x*2 + 2 < area_info.map[y].length)
+                var next = area_info.map[y].slice(x*2+2, x*2+4)
+            else
+                continue
+            // Tile below
+            var below = null;
+            if (y + 1 < area_info.map.length)
+                below = area_info.map[y+1].slice(x*2, x*2+2)
+
+            // Draw line on the right side
+            if (cur != next)
+            {
+                ctx.moveTo(32 * (x+1), 32 * (y));
+                ctx.lineTo(32 * (x+1), 32 * (y + 1));
+            }
+
+            // Draw line on bottom side
+            if (below && cur != below)
+            {
+                ctx.moveTo(32 * (x), 32 * (y + 1));
+                ctx.lineTo(32 * (x + 1), 32 * (y + 1))
+            }
+        }
+    }
+    ctx.stroke();
+}
+
 // Updates map position and zoom.
 function update_transform(restore=false)
 {
@@ -336,7 +383,6 @@ function update_transform(restore=false)
     zoomable.style.transform = `translate(${position.x}px, ${position.y}px) scale(${zoom})`;
 }
 
-
 // Returns clicked/touched position.
 function get_event_location(e)
 {
@@ -347,65 +393,6 @@ function get_event_location(e)
         return { x: e.clientX,
                  y: e.clientY };
 }
-
-
-// Handles touches.
-function handle_touch(e, touch_handler)
-{
-    if (e.touches.length == 1)
-    {
-      touch_handler(e);
-    }
-    else if (e.type == "touchmove" && e.touches.length == 2)
-    {
-      is_panning = false;
-      handle_pinch(e);
-    }
-}
-
-
-// Zooms in or out on phones.
-function handle_pinch(e)
-{
-    e.preventDefault();
-
-    let touch1 = { x: e.touches[0].clientX,
-                   y: e.touches[0].clientY }
-    let touch2 = { x: e.touches[1].clientX,
-                   y: e.touches[1].clientY }
-
-    let current_distance = (touch1.x - touch2.x)**2 + (touch1.y - touch2.y)**2
-
-    if (initial_pinch_distance == null)
-      initial_pinch_distance = current_distance
-    else
-      on_mousescroll( e, current_distance/initial_pinch_distance )
-
-}
-
-
-// Starts panning.
-function on_mousedown(e)
-{
-    e.preventDefault();
-    event_location = get_event_location(e);
-    updateAreaInfo(event_location);
-
-    start = { x: event_location.x - position.x,
-              y: event_location.y - position.y};
-    is_panning = true;
-}
-
-
-// Stops panning.
-function on_mouseup(e)
-{
-    is_panning = false;
-    initial_pinch_distance = null;
-    zoom_last = zoom;
-    document.body.style.cursor='auto';
-}
-
 
 // Updates Area Info label with new information.
 function updateAreaInfo(event_location)
@@ -447,6 +434,69 @@ function updateAreaInfo(event_location)
     area_info_label.textContent += `\n Weedkiller: ${_weed}`
 }
 
+function getSS14Position(event_location)
+{
+    return {x: Math.floor((event_location.x - position.x) / zoom / 32),
+            y: Math.floor((event_location.y - position.y) / zoom / 32)};
+}
+
+//
+// Events
+//
+
+// Handles touches.
+function handle_touch(e, touch_handler)
+{
+    if (e.touches.length == 1)
+    {
+      touch_handler(e);
+    }
+    else if (e.type == "touchmove" && e.touches.length == 2)
+    {
+      is_panning = false;
+      handle_pinch(e);
+    }
+}
+
+// Zooms in or out on phones.
+function handle_pinch(e)
+{
+    e.preventDefault();
+
+    let touch1 = { x: e.touches[0].clientX,
+                   y: e.touches[0].clientY }
+    let touch2 = { x: e.touches[1].clientX,
+                   y: e.touches[1].clientY }
+
+    let current_distance = (touch1.x - touch2.x)**2 + (touch1.y - touch2.y)**2
+
+    if (initial_pinch_distance == null)
+      initial_pinch_distance = current_distance
+    else
+      on_mousescroll( e, current_distance/initial_pinch_distance )
+
+}
+
+// Starts panning.
+function on_mousedown(e)
+{
+    e.preventDefault();
+    event_location = get_event_location(e);
+    updateAreaInfo(event_location);
+
+    start = { x: event_location.x - position.x,
+              y: event_location.y - position.y};
+    is_panning = true;
+}
+
+// Stops panning.
+function on_mouseup(e)
+{
+    is_panning = false;
+    initial_pinch_distance = null;
+    zoom_last = zoom;
+    document.body.style.cursor='auto';
+}
 
 // Panning.
 function on_mousemove(e)
@@ -510,12 +560,6 @@ function on_mousescroll(e, pinch)
 }
 
 
-function getSS14Position(event_location)
-{
-    return {x: Math.floor((event_location.x - position.x) / zoom / 32),
-            y: Math.floor((event_location.y - position.y) / zoom / 32)};
-}
-
 // Updates Query params with clicked location.
 function on_doubleclick(e)
 {
@@ -530,10 +574,13 @@ function on_doubleclick(e)
 }
 
 
+// 
 // Button logic
-function toggle_labels()
+//
+
+function toggle_setting(setting)
 {
-    show_labels = !show_labels;
+    settings[setting] = !settings[setting];
     requestAnimationFrame(draw);
 }
 

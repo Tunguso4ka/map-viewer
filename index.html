@@ -33,26 +33,26 @@
     <div id="toolbar">
       <div id="buttons">
         <button
-          title="Show/Hide Maps"
+          title="Toggle Map list"
           onclick="toggle_hidden('maplist')"
-          >#M</button>
+          >#</button>
         <button
           id="button_labels"
-          title="Labels"
-          onclick="toggle_labels()"
+          title="Toggle labels"
+          onclick="toggle_setting('show_labels')"
           hidden=""
           >_A</button>
+        <button
+          id="button_borders"
+          title="Toggle Area Borders"
+          onclick="toggle_setting('show_area_borders')"
+          hidden=""
+          >[]</button>
         <button
           id="button_areas"
           title="Area Info"
           onclick="toggle_hidden('area_info_label')"
           >i?</button>
-        <button
-          id="button_inserts"
-          title="Show Insert Buttons"
-          onclick="toggle_hidden('map_insert_buttons')"
-          hidden=""
-          >N!</button>
       </div>
       <ul id="maplist" hidden></ul>
     </div>
