@@ -296,7 +296,7 @@ function draw_inserts()
         // shitcode!!
         if ("image" in value)
         {
-            draw_insert(value.image, value.position);
+            draw_insert(value);
         }
         else
         {
@@ -306,18 +306,21 @@ function draw_inserts()
             inserts[iter].image.onload = function()
             {
                 console.log(`Loaded Nightmare Insert ${inserts[iter].name} from ${inserts[iter].url}`);
-                draw_insert(inserts[iter].image, inserts[iter].position);
+                draw_insert(inserts[iter]);
             }
         }
     }
 }
 
-function draw_insert(_image, _position)
+function draw_insert(_insert)
 {
+    if (!_insert.offset)
+        _insert.offset = {x: 0, y: 0};
+
     ctx.drawImage(
-        _image,
-        _position.x * 32,
-        (_position.y + 1) * 32 - _image.height);
+        _insert.image,
+        _insert.position.x * 32 + _insert.offset.x * 32,
+        (_insert.position.y + 1) * 32 + _insert.offset.y * 32 - _insert.image.height);
 }
 
 function draw_area_borders()
@@ -593,8 +596,6 @@ function on_doubleclick(e)
 
 function on_keydown(e)
 {
-    console.log(e);
-
     switch (e.key)
     {
         // Zoom Out

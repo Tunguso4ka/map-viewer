@@ -111,6 +111,16 @@
           "name": "Vault (25%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Solaris/vault_v2-0.webp?raw=true",
           "position": {"x": 190, "y": 62}
+        },
+        {
+          "name": "CLF Mining (10%)",
+          "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Solaris/clfmining-0.webp?raw=true",
+          "position": {"x": 15, "y": 200}
+        },
+        {
+          "name": "Crashlanding Offices (20%)",
+          "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Solaris/crashlanding-offices-0.webp?raw=true",
+          "position": {"x": 111, "y": 112}
         }
       ]
      },
@@ -151,6 +161,11 @@
           "name": "LZ2 South Caves (30%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Shiva/builtup_lz2-south-caves-0.webp?raw=true",
           "position": {"x": 3, "y": 49}
+        },
+        {
+          "name": "Panic Room Hold (50%)",
+          "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Shiva/panic_room_hold-0.webp?raw=true",
+          "position": {"x": 95, "y": 96}
         }
       ]
     },
@@ -183,6 +198,13 @@
         { "name": "Souto Promo", "size": 8, "x": 2625, "y": 5550 },
         { "name": "Armory", "size": 8, "x": 4475, "y": 4950 },
         { "name": "Garden", "size": 8, "x": 4475, "y": 3250 }
+      ],
+      "inserts": [
+        {
+          "name": "Pod holder (10%)",
+          "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Fiorina/podholder-0.webp?raw=true",
+          "position": {"x": 113, "y": 67}
+        }
       ]
     },
 
@@ -334,6 +356,18 @@
           "name": "Ship Gone (15%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Trijent/ship_gone-0.webp?raw=true",
           "position": {"x": 21, "y": 68}
+        },
+        {
+          "name": "CLF Pods (10%)",
+          "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Trijent/clfpods-0.webp?raw=true",
+          "position": {"x": 116, "y": 119},
+          "offset": {"x": 0, "y": 29}
+        },
+        {
+          "name": "Crashlanding Bar (20%)",
+          "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Trijent/crashlanding-spp-bar-0.webp?raw=true",
+          "position": {"x": 69, "y": 120},
+          "offset": {"x": 0, "y": 35}
         }
       ]
     },
@@ -540,6 +574,13 @@
           { "name": "Core Monitoring", "size": 6, "x": 6300, "y": 4000 },
           { "name": "Thermal Springs", "size": 4, "x": 7500, "y": 2700 },
           { "name": "Deep Security", "size": 6, "x": 7000, "y": 1300 }
+      ],
+      "inserts": [
+        {
+          "name": "CLF Camp (10%)",
+          "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Sorokyne/clfcamp-0.webp?raw=true",
+          "position": {"x": 146, "y": 31}
+        }
       ]
     },
 
