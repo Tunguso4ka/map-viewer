@@ -32,6 +32,8 @@ var area_info = {};
 // assign elements, events and load json
 document.addEventListener('DOMContentLoaded', function()
 {
+    document.addEventListener("keydown", on_keydown);
+
     zoomable = document.getElementById("map_zoomable");
 
     zoomable.addEventListener('mousedown', on_mousedown);
@@ -434,12 +436,34 @@ function updateAreaInfo(event_location)
     area_info_label.textContent += `\n Weedkiller: ${_weed}`
 }
 
+
 function getSS14Position(event_location)
 {
     return {x: Math.floor((event_location.x - position.x) / zoom / 32),
             y: Math.floor((event_location.y - position.y) / zoom / 32)};
 }
 
+
+function handle_zoom(zoom_pos, e_pos, flat)
+{
+    if (!zoom_pos)
+        zoom_pos = { x: Math.round((document.body.clientWidth / 2 - position.x) / zoom),
+                     y: Math.round((document.body.clientHeight / 2 - position.y) / zoom)};
+    if (!e_pos)
+        e_pos = { x: document.body.clientWidth / 2,
+                  y: document.body.clientHeight / 2}
+    if (flat)
+        zoom *= flat;
+
+    zoom = zoom.toFixed(2);
+    zoom = zoom > zoom_limit.max ? zoom_limit.max : zoom; // Zoom In
+    zoom = zoom < zoom_limit.min ? zoom_limit.min : zoom; // Zoom Out
+
+    position = { x: Math.round(e_pos.x - zoom_pos.x * zoom),
+                 y: Math.round(e_pos.y - zoom_pos.y * zoom)};
+
+    update_transform();
+}
 //
 // Events
 //
@@ -542,21 +566,14 @@ function on_mousescroll(e, pinch)
     else
     {
         var delta = (e.wheelDelta ? e.wheelDelta : -e.deltaY);
-        (delta > 0) ? (zoom *= 1.2) : (zoom /= 1.2);
+        (delta > 0) ? (zoom *= 1.2) : (zoom *= 0.8);
         if (delta > 0)
             document.body.style.cursor='zoom-in';
         else
             document.body.style.cursor='zoom-out';
     }
 
-    zoom = zoom.toFixed(2);
-    zoom = zoom > zoom_limit.max ? zoom_limit.max : zoom; // Zoom In
-    zoom = zoom < zoom_limit.min ? zoom_limit.min : zoom; // Zoom Out
-
-    position = { x: Math.round(event_location.x - zoom_position.x * zoom),
-                 y: Math.round(event_location.y - zoom_position.y * zoom)};
-
-    update_transform();
+    handle_zoom(zoom_position, event_location);
 }
 
 
@@ -573,6 +590,85 @@ function on_doubleclick(e)
     update_params();
 }
 
+
+function on_keydown(e)
+{
+    console.log(e);
+
+    switch (e.key)
+    {
+        // Zoom Out
+        case '-':
+        case '_':
+            handle_zoom(null, null, 0.6);
+            break;
+        // Zoom In
+        case '=':
+        case '+':
+            handle_zoom(null, null, 1.4);
+            break;
+
+        // Move Left
+        case 'h':
+        case 'a':
+        case 'ArrowLeft':
+            position.x = position.x + 75 * zoom;
+            update_transform();
+            break;
+        // Move Up
+        case 'j':
+        case 'w':
+        case 'ArrowUp':
+            position.y = position.y + 75 * zoom;
+            update_transform();
+            break;
+        // Move Down
+        case 'k':
+        case 's':
+        case 'ArrowDown':
+            position.y = position.y - 75 * zoom;
+            update_transform();
+            break;
+        // Move Left
+        case 'l':
+        case 'd':
+        case 'ArrowRight':
+            position.x = position.x - 75 * zoom;
+            update_transform();
+            break;
+
+        // Move Left
+        case 'H':
+        case 'A':
+        case 'ArrowLeft':
+            position.x = position.x + 150 * zoom;
+            update_transform();
+            break;
+        // Move Up
+        case 'J':
+        case 'W':
+            position.y = position.y + 150 * zoom;
+            update_transform();
+            break;
+        // Move Down
+        case 'K':
+        case 'S':
+            position.y = position.y - 150 * zoom;
+            update_transform();
+            break;
+        // Move Left
+        case 'L':
+        case 'D':
+            position.x = position.x - 150 * zoom;
+            update_transform();
+            break;
+
+        default:
+            return;
+    }
+
+    e.preventDefault();
+}
 
 // 
 // Button logic

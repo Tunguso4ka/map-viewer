@@ -29,6 +29,12 @@
   margin: 1px;
 }
 
+#buttons span button {
+  min-height: 24px;
+  height: 24px;
+  padding: 2px;
+}
+
 #buttons button:hover, #maplist button:hover {
   background-color: var(--dark);
   color: var(--light);

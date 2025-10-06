@@ -53,6 +53,16 @@
           title="Area Info"
           onclick="toggle_hidden('area_info_label')"
           >i?</button>
+        <span style="display: flex; flex-direction: column;">
+            <button
+                onclick="handle_zoom(null, null, 1.4)"
+                title="Zoom In"
+                >+</button>
+            <button
+                onclick="handle_zoom(null, null, 0.6)"
+                title="Zoom out"
+                >-</button>
+        <span>
       </div>
       <ul id="maplist" hidden></ul>
     </div>
