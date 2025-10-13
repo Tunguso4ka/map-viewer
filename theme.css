@@ -105,6 +105,11 @@ html, body {
 #buttons {
   display: flex;
   z-index: 3;
+  flex-direction: row;
+}
+
+#toolbar:has(#maplist[hidden]) #buttons {
+  flex-direction: column;
 }
 
 #toolbar {
