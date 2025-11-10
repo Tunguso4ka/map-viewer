@@ -17,6 +17,7 @@ or
     "map id": "map id for url query",
     {
       "name": "map name",
+      "path": "path to image.json, alternative to url",
       "url": "map image url",
 
       "areas": "areas json url",
@@ -36,5 +37,25 @@ or
     }
   }
   "main": "id of main map"
+}
+```
+
+## image.json
+```
+{
+  "size": {
+    "x": "image size",
+    "y": "image size"
+  },
+  "tile_size": {
+    "x": "tile size",
+    "y": "tile size"
+  },
+  "dimensions": {
+    "x": "number of tiles",
+    "y": "number of tiles"
+  },
+  "format": "png/webp",
+  "url": "left side of url"
 }
 ```

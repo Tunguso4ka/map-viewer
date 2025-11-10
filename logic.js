@@ -1,10 +1,8 @@
 let params = new URLSearchParams(document.location.search);
 let maps;
-let map_current;
 
 var labels = [];
 var inserts = [];
-
 var settings = { // cookies in future
     "show_labels": true,
     "show_inserts": true,
@@ -19,7 +17,12 @@ var zoom_limit = { min: 0.1, max: 5 };
 var initial_pinch_distance = null;
 var is_panning;
 
-var image = new Image();
+var image = {
+    "size": {"x": 0, "y": 0},
+    "tile_size": {"x": 0, "y": 0},
+    "dimensions": {"x": 1, "y": 1},
+    "tiles": []
+}
 
 var zoomable;
 var canvas;
@@ -28,6 +31,7 @@ var insert_button_list;
 
 var area_info_label;
 var area_info = {};
+
 
 // assign elements, events and load json
 document.addEventListener('DOMContentLoaded', function()
@@ -59,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function()
 
     load_maps_json("maps.json");
 }, false);
+
 
 // Loads map.json
 async function load_maps_json(url)
@@ -92,75 +97,146 @@ async function load_maps_json(url)
             params.set('map', key);
             params.delete('pos');
             update_params();
-            load_map();
+            load_map(key);
         };
 
         maplist.appendChild(new_button);
     }
 
-    load_map();
+    if (params.has('map'))
+        load_map(params.get('map'));
+    else
+        load_map(maps.main)
 }
 
-// Updates map image and labels.
-async function load_map()
+
+// Load map image/images
+function load_map(_map = null)
 {
-    update_transform(true); // restore position and zoom
-    document.body.style.cursor = "wait";
-
-    // grab a map name from url
-    if (params.has('map'))
-        map_current = params.get('map');
-
-    if (!map_current)
-        map_current = maps.main;
-
-    if (!(map_current in maps.maps))
+    console.log(`Loading ${_map}.`);
+    if (!maps.maps)
     {
-        console.log(`Map with ID ${map_current} does not exist.`)
-        document.body.style.cursor = "not-allowed";
+        console.error(`Can't load map ${_map}: No maps.json loaded.`);
         return;
     }
 
-    if ("labels" in maps.maps[map_current])
-    {
-        labels = maps.maps[map_current].labels;
-        console.log(`Loaded ${labels.length} labels.`)
-    }
-    else
-        labels = []
+    if (!_map)
+        _map = maps.maps.main;
 
+    if (!(_map in maps.maps))
+    {
+        console.error(`Can't load map ${_map}: It doesn't exist.`);
+        return;
+    }
+
+    // restore position and zoom
+    update_transform(true);
+    document.body.style.cursor = "wait";
+
+    // Check and load Labels
+    labels = []
+    if ("labels" in maps.maps[_map] && settings.show_labels)
+        labels = maps.maps[_map].labels;
     toggle_hidden('button_labels', !labels.length)
+    console.log(`Loaded ${labels.length} labels.`)
 
+    // Check and load Nightmare Inserts
+    inserts = []
     insert_button_list.innerHTML = "";
-    if ("inserts" in maps.maps[map_current])
-    {
-        inserts = maps.maps[map_current].inserts;
-        console.log(`Loaded ${inserts.length} nightmare inserts.`)
-    }
+    if ("inserts" in maps.maps[_map] && settings.show_inserts)
+        inserts = maps.maps[_map].inserts;
+    console.log(`Loaded ${inserts.length} inserts.`)
+
+    // Check and load areas
+    area_info = {}
+    if ("areas" in maps.maps[_map])
+        load_areas(_map)
+
+    //
+    if ('path' in maps.maps[_map])
+        load_image_tiled(maps.maps[_map].path)
+    else if ('url' in maps.maps[_map])
+        load_image_lone(maps.maps[_map].url)
     else
-        inserts = []
-
-    image.src = maps.maps[map_current].url;
-
-    console.log(`Loaded map ${map_current} from ${maps.maps[map_current].url}.`);
-    update_transform();
-
-    image.onload = function()
     {
+        console.error(`Can't load map ${_map}: It doesn't have path or url specified. Please, contact map viewer creator.`)
+        return;
+    }
+}
+
+
+//
+function load_image_lone(_url = null)
+{
+    if (!_url)
+    {
+        console.error("Can't load image: URL is null.")
+        return;
+    }
+
+    _image = new Image();
+    _image.src = _url;
+
+    image.dimensions = { "x": 1, "y": 1 };
+    image.tile_size = { "x": 0, "y": 0}
+    image.tiles = [_image];
+
+    _image.onload = function()
+    {
+        image.size = { "x": _image.naturalWidth,
+                       "y": _image.naturalHeight};
+
         requestAnimationFrame(draw);
         load_insert_buttons();
         get_param_position();
         document.body.style.cursor = "auto";
     }
-    
-    area_info = {}
-    toggle_hidden('button_borders', !("areas" in maps.maps[map_current]))
-    if (!("areas" in maps.maps[map_current]))
+}
+
+
+async function load_image_tiled(_path = null)
+{
+    if (!_path)
+    {
+        console.error("Can't load image: path is null.")
         return;
+    }
 
-    var response = await fetch(maps.maps[map_current].areas);
+    var response = await fetch(_path);
+    var image_json = await response.json();
 
+    image.size = image_json.size;
+    image.tile_size = image_json.tile_size;
+    image.dimensions = image_json.dimensions;
+
+    for (let _y = 0; _y < image.dimensions.y; _y++)
+    {
+        for (let _x = 0; _x < image.dimensions.x; _x++)
+        {
+            var num = _y * image.dimensions.x + _x
+            if (num <= image.tiles.length)
+                image.tiles.push(new Image());
+
+            image.tiles[num].src = image_json.url + `/tile-${num}.${image_json.format}?raw=true`
+            image.tiles[num].onload = function()
+            {
+                requestAnimationFrame(draw);
+            }
+        }
+    }
+
+    requestAnimationFrame(draw);
+    load_insert_buttons();
+    get_param_position();
+    document.body.style.cursor = "auto";
+}
+
+
+async function load_areas(_map)
+{
+    var response = await fetch(maps.maps[_map].areas);
     area_info = await response.json();
+    toggle_hidden('button_borders', !area_info)
 }
 
 
@@ -216,8 +292,8 @@ function get_param_position()
     else
     {
         // Center image.
-        position.x = -(image.naturalWidth / 2);
-        position.y = -(image.naturalHeight / 2);
+        position.x = -(image.size.x / 2);
+        position.y = -(image.size.y / 2);
         zoom = 0.2;
     }
 
@@ -233,11 +309,21 @@ function draw()
 {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    canvas.width = image.naturalWidth;
-    canvas.height = image.naturalHeight;
+    canvas.width = image.size.x;
+    canvas.height = image.size.y;
 
     ctx.imageSmoothingEnabled = false;
-    ctx.drawImage(image, 0, 0);
+
+    for (let _y = 0; _y < image.dimensions.y; _y++)
+    {
+        for (let _x = 0; _x < image.dimensions.x; _x++)
+        {
+            var num = _y * image.dimensions.x + _x
+            ctx.drawImage(image.tiles[num],
+                          _x * image.tile_size.x,
+                          _y * image.tile_size.y);
+        }
+    }
 
     draw_area_borders();
     draw_inserts();
@@ -436,6 +522,7 @@ function updateAreaInfo(event_location)
 
     if (!_weed)
         return;
+
     area_info_label.textContent += `\n Weedkiller: ${_weed}`
 }
 
@@ -686,7 +773,10 @@ function toggle_hidden(eid, bool)
     element = document.getElementById(eid);
 
     if (!element)
+    {
+        console.error(`Element with id ${eid} doesn't exist.`);
         return;
+    }
 
     if (bool != null)
         element.hidden = bool;

@@ -3,7 +3,7 @@
     "Distress Signal": "",
     "Solaris": {
       "name": "Solaris Ridge",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Solaris-0.webp?raw=true",
+      "path": "Maps/Solaris.json",
       "areas": "Areas/solaris.json",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 700, "y": 750 },
@@ -127,7 +127,7 @@
 
     "Shiva": {
       "name": "Shivas Snowball",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Shiva-0.webp?raw=true",
+      "path": "Maps/Shiva.json",
       "areas": "Areas/shiva.json",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 600, "y": 4200 },
@@ -172,7 +172,7 @@
 
     "Fiorina": {
       "name": "Fiorina Science Annex",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Prison-0.webp?raw=true",
+      "path": "Maps/Fiorina.json",
       "areas": "Areas/fiorina.json",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 7400, "y": 3000 },
@@ -210,7 +210,7 @@
 
     "LV624": {
       "name": "LV-624",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Lv624-0.webp?raw=true",
+      "path": "Maps/LV624.json",
       "areas": "Areas/LV624.json",
       "labels": [
         { "name": "Undeground Lake", "size": 12, "x": 2125, "y": 700 },
@@ -301,7 +301,7 @@
 
     "Trijent": {
       "name": "Trijent Dam",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Trijent-0.webp?raw=true",
+      "path": "Maps/Trijent.json",
       "areas": "Areas/trijent.json",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 950, "y": 900 },
@@ -374,7 +374,7 @@
 
     "Varadero": {
       "name": "New Varadero",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Varadero-0.webp?raw=true",
+      "path": "Maps/Varadero.json",
       "areas": "Areas/varadero.json",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 2100, "y": 1250 },
@@ -406,7 +406,7 @@
 
     "Chances": {
       "name": "Chances Claim",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Chances-0.webp?raw=true",
+      "path": "Maps/Chances.json",
       "areas": "Areas/chances.json",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 400, "y": 5475 },
@@ -437,7 +437,7 @@
 
     "Kutjevo": {
       "name": "Kutjevo Refinery",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Kutjevo-0.webp?raw=true",
+      "path": "Maps/Kutjevo.json",
       "areas": "Areas/kutjevo.json",
       "labels": [
         { "name": "LZ Auxilary", "size": 8, "x": 425, "y": 1050 },
@@ -487,7 +487,7 @@
 
     "Hybrisa": {
       "name": "Hybrisa Prospera",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Hybrisa-0.webp?raw=true",
+      "path": "Maps/Hybrisa.json",
       "areas": "Areas/hybrisa.json",
       "labels": [
         { "name": "LZ1", "size": 12, "x": 6625, "y": 625 },
@@ -531,7 +531,7 @@
 
     "Sorokyne": {
       "name": "Sorokyne Strata",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Sorokyne-0.webp?raw=true",
+      "path": "Maps/Sorokyne.json",
       "areas": "Areas/strata.json",
       "labels": [
           { "name": "LZ1", "size": 12, "x": 150, "y": 2100 },
