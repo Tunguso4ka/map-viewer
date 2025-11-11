@@ -12,5 +12,201 @@
     "y": "4"
   },
   "format": "webp",
-  "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Maps/Kutjevo"
+  "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Maps/Kutjevo",
+  "labels": [
+    {
+      "name": "LZ Auxilary",
+      "size": 8,
+      "position": {
+        "x": 13,
+        "y": 32
+      }
+    },
+    {
+      "name": "LZ Dunes",
+      "size": 8,
+      "position": {
+        "x": 8,
+        "y": 129
+      }
+    },
+    {
+      "name": "Hydroelectric Dam",
+      "size": 6,
+      "position": {
+        "x": 35,
+        "y": 151
+      }
+    },
+    {
+      "name": "Scrubland",
+      "size": 6,
+      "position": {
+        "x": 57,
+        "y": 82
+      }
+    },
+    {
+      "name": "Medical Bay",
+      "size": 6,
+      "position": {
+        "x": 88,
+        "y": 57
+      }
+    },
+    {
+      "name": "Medical Stormlocks",
+      "size": 4,
+      "position": {
+        "x": 94,
+        "y": 70
+      }
+    },
+    {
+      "name": "Botany Stormlocks",
+      "size": 4,
+      "position": {
+        "x": 94,
+        "y": 82
+      }
+    },
+    {
+      "name": "Botany Bay",
+      "size": 6,
+      "position": {
+        "x": 94,
+        "y": 101
+      }
+    },
+    {
+      "name": "Botany Bridge",
+      "size": 4,
+      "position": {
+        "x": 72,
+        "y": 106
+      }
+    },
+    {
+      "name": "Stony Fields",
+      "size": 6,
+      "position": {
+        "x": 88,
+        "y": 132
+      }
+    },
+    {
+      "name": "Northern Construction",
+      "size": 6,
+      "position": {
+        "x": 113,
+        "y": 39
+      }
+    },
+    {
+      "name": "Bar",
+      "size": 6,
+      "position": {
+        "x": 128,
+        "y": 51
+      }
+    },
+    {
+      "name": "Construction",
+      "size": 6,
+      "position": {
+        "x": 125,
+        "y": 76
+      }
+    },
+    {
+      "name": "Powerplant",
+      "size": 6,
+      "position": {
+        "x": 116,
+        "y": 92
+      }
+    },
+    {
+      "name": "Bioplant Refinery",
+      "size": 6,
+      "position": {
+        "x": 138,
+        "y": 95
+      }
+    },
+    {
+      "name": "North Caves",
+      "size": 6,
+      "position": {
+        "x": 163,
+        "y": 20
+      }
+    },
+    {
+      "name": "Central Caves",
+      "size": 6,
+      "position": {
+        "x": 160,
+        "y": 76
+      }
+    },
+    {
+      "name": "South Caves",
+      "size": 6,
+      "position": {
+        "x": 166,
+        "y": 120
+      }
+    },
+    {
+      "name": "North East Caves",
+      "size": 6,
+      "position": {
+        "x": 197,
+        "y": 48
+      }
+    },
+    {
+      "name": "South East Caves",
+      "size": 6,
+      "position": {
+        "x": 203,
+        "y": 95
+      }
+    }
+  ],
+  "inserts": [
+    {
+      "name": "SE Checkpoint (35%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Kutjevo/communications-0.webp",
+      "position": {
+        "x": 132,
+        "y": 78
+      }
+    },
+    {
+      "name": "Cleaning Botany (25%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Kutjevo/cleaningprog_botany-0.webp",
+      "position": {
+        "x": 108,
+        "y": 107
+      }
+    },
+    {
+      "name": "Trapped Clown (5%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Kutjevo/trappedmonke_andclown-0.webp",
+      "position": {
+        "x": 68,
+        "y": 100
+      }
+    },
+    {
+      "name": "Plinking Spot (25%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Kutjevo/plinkingspot_northlz-0.webp",
+      "position": {
+        "x": 63,
+        "y": 68
+      }
+    }
+  ]
 }

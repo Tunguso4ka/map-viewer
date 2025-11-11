@@ -12,5 +12,273 @@
     "y": "4"
   },
   "format": "webp",
-  "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Maps/Sorokyne"
+  "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Maps/Sorokyne",
+  "labels": [
+    {
+      "name": "LZ1",
+      "size": 12,
+      "position": {
+        "x": 5,
+        "y": 65
+      }
+    },
+    {
+      "name": "LZ2",
+      "size": 12,
+      "position": {
+        "x": 41,
+        "y": 156
+      }
+    },
+    {
+      "name": "Lifeboat",
+      "size": 4,
+      "position": {
+        "x": 10,
+        "y": 112
+      }
+    },
+    {
+      "name": "Mining Bar",
+      "size": 4,
+      "position": {
+        "x": 23,
+        "y": 68
+      }
+    },
+    {
+      "name": "Mining Canteen",
+      "size": 4,
+      "position": {
+        "x": 31,
+        "y": 48
+      }
+    },
+    {
+      "name": "Cryo-Thermal Marshes",
+      "size": 4,
+      "position": {
+        "x": 31,
+        "y": 125
+      }
+    },
+    {
+      "name": "LZ Checkpoint",
+      "size": 4,
+      "position": {
+        "x": 43,
+        "y": 100
+      }
+    },
+    {
+      "name": "Flight Control",
+      "size": 4,
+      "position": {
+        "x": 56,
+        "y": 87
+      }
+    },
+    {
+      "name": "Van Yard",
+      "size": 4,
+      "position": {
+        "x": 62,
+        "y": 109
+      }
+    },
+    {
+      "name": "North Deck",
+      "size": 6,
+      "position": {
+        "x": 78,
+        "y": 62
+      }
+    },
+    {
+      "name": "Telecomms",
+      "size": 6,
+      "position": {
+        "x": 68,
+        "y": 140
+      }
+    },
+    {
+      "name": "Engineering",
+      "size": 4,
+      "position": {
+        "x": 93,
+        "y": 71
+      }
+    },
+    {
+      "name": "Colony Power",
+      "size": 4,
+      "position": {
+        "x": 103,
+        "y": 62
+      }
+    },
+    {
+      "name": "B-Ball",
+      "size": 4,
+      "position": {
+        "x": 115,
+        "y": 34
+      }
+    },
+    {
+      "name": "B-Ball Caves",
+      "size": 4,
+      "position": {
+        "x": 109,
+        "y": 15
+      }
+    },
+    {
+      "name": "North Passage",
+      "size": 4,
+      "position": {
+        "x": 125,
+        "y": 46
+      }
+    },
+    {
+      "name": "Deck Pipes",
+      "size": 4,
+      "position": {
+        "x": 87,
+        "y": 96
+      }
+    },
+    {
+      "name": "Quarantine",
+      "size": 4,
+      "position": {
+        "x": 93,
+        "y": 115
+      }
+    },
+    {
+      "name": "South Deck",
+      "size": 6,
+      "position": {
+        "x": 100,
+        "y": 106
+      }
+    },
+    {
+      "name": "Medical",
+      "size": 6,
+      "position": {
+        "x": 109,
+        "y": 93
+      }
+    },
+    {
+      "name": "Morgue",
+      "size": 4,
+      "position": {
+        "x": 125,
+        "y": 106
+      }
+    },
+    {
+      "name": "Security",
+      "size": 6,
+      "position": {
+        "x": 125,
+        "y": 62
+      }
+    },
+    {
+      "name": "Administration",
+      "size": 4,
+      "position": {
+        "x": 118,
+        "y": 75
+      }
+    },
+    {
+      "name": "Aerodrom",
+      "size": 6,
+      "position": {
+        "x": 134,
+        "y": 100
+      }
+    },
+    {
+      "name": "Canteen",
+      "size": 6,
+      "position": {
+        "x": 146,
+        "y": 68
+      }
+    },
+    {
+      "name": "Wooden Hospital",
+      "size": 4,
+      "position": {
+        "x": 146,
+        "y": 21
+      }
+    },
+    {
+      "name": "Minehead",
+      "size": 4,
+      "position": {
+        "x": 184,
+        "y": 37
+      }
+    },
+    {
+      "name": "Jungle Deck",
+      "size": 6,
+      "position": {
+        "x": 143,
+        "y": 128
+      }
+    },
+    {
+      "name": "Carp Lake",
+      "size": 6,
+      "position": {
+        "x": 187,
+        "y": 96
+      }
+    },
+    {
+      "name": "Core Monitoring",
+      "size": 6,
+      "position": {
+        "x": 196,
+        "y": 125
+      }
+    },
+    {
+      "name": "Thermal Springs",
+      "size": 4,
+      "position": {
+        "x": 234,
+        "y": 84
+      }
+    },
+    {
+      "name": "Deep Security",
+      "size": 6,
+      "position": {
+        "x": 218,
+        "y": 40
+      }
+    }
+  ],
+  "inserts": [
+    {
+      "name": "CLF Camp (10%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Sorokyne/clfcamp-0.webp",
+      "position": {
+        "x": 146,
+        "y": 31
+      }
+    }
+  ]
 }

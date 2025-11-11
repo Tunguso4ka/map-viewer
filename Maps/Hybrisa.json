@@ -12,5 +12,255 @@
     "y": "8"
   },
   "format": "webp",
-  "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Maps/Hybrisa"
+  "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Maps/Hybrisa",
+  "labels": [
+    {
+      "name": "LZ1",
+      "size": 12,
+      "position": {
+        "x": 207,
+        "y": 19
+      }
+    },
+    {
+      "name": "LZ2",
+      "size": 12,
+      "position": {
+        "x": 203,
+        "y": 150
+      }
+    },
+    {
+      "name": "Waste Disposals",
+      "size": 6,
+      "position": {
+        "x": 187,
+        "y": 75
+      }
+    },
+    {
+      "name": "KMCC Freight Hub",
+      "size": 8,
+      "position": {
+        "x": 187,
+        "y": 110
+      }
+    },
+    {
+      "name": "KMCC Departures",
+      "size": 6,
+      "position": {
+        "x": 178,
+        "y": 162
+      }
+    },
+    {
+      "name": "KMCC Mining South",
+      "size": 6,
+      "position": {
+        "x": 190,
+        "y": 181
+      }
+    },
+    {
+      "name": "KMCC Mining SE",
+      "size": 6,
+      "position": {
+        "x": 200,
+        "y": 208
+      }
+    },
+    {
+      "name": "Derelict Ship",
+      "size": 12,
+      "position": {
+        "x": 125,
+        "y": 218
+      }
+    },
+    {
+      "name": "Caverns South",
+      "size": 6,
+      "position": {
+        "x": 154,
+        "y": 237
+      }
+    },
+    {
+      "name": "Caverns Southeast",
+      "size": 6,
+      "position": {
+        "x": 175,
+        "y": 218
+      }
+    },
+    {
+      "name": "Caverns East",
+      "size": 6,
+      "position": {
+        "x": 154,
+        "y": 171
+      }
+    },
+    {
+      "name": "Caverns Plateau",
+      "size": 6,
+      "position": {
+        "x": 106,
+        "y": 193
+      }
+    },
+    {
+      "name": "Caverns Central",
+      "size": 6,
+      "position": {
+        "x": 85,
+        "y": 148
+      }
+    },
+    {
+      "name": "Caverns West",
+      "size": 6,
+      "position": {
+        "x": 50,
+        "y": 193
+      }
+    },
+    {
+      "name": "Caverns Southwest",
+      "size": 6,
+      "position": {
+        "x": 14,
+        "y": 225
+      }
+    },
+    {
+      "name": "Caverns Northwest",
+      "size": 6,
+      "position": {
+        "x": 12,
+        "y": 107
+      }
+    },
+    {
+      "name": "Caverns North",
+      "size": 6,
+      "position": {
+        "x": 96,
+        "y": 6
+      }
+    },
+    {
+      "name": "WeYa Bio-Genomic Lab",
+      "size": 8,
+      "position": {
+        "x": 4,
+        "y": 178
+      }
+    },
+    {
+      "name": "Sentinel Outpost",
+      "size": 6,
+      "position": {
+        "x": 140,
+        "y": 123
+      }
+    },
+    {
+      "name": "Meridian",
+      "size": 6,
+      "position": {
+        "x": 106,
+        "y": 101
+      }
+    },
+    {
+      "name": "WeYaMart",
+      "size": 6,
+      "position": {
+        "x": 65,
+        "y": 103
+      }
+    },
+    {
+      "name": "Casino",
+      "size": 6,
+      "position": {
+        "x": 45,
+        "y": 76
+      }
+    },
+    {
+      "name": "Westhaven Apartments",
+      "size": 8,
+      "position": {
+        "x": 64,
+        "y": 70
+      }
+    },
+    {
+      "name": "WeYa Offices",
+      "size": 6,
+      "position": {
+        "x": 68,
+        "y": 46
+      }
+    },
+    {
+      "name": "Pizza",
+      "size": 6,
+      "position": {
+        "x": 96,
+        "y": 37
+      }
+    },
+    {
+      "name": "Garage",
+      "size": 6,
+      "position": {
+        "x": 68,
+        "y": 17
+      }
+    },
+    {
+      "name": "WeYa Celestia Gateway",
+      "size": 8,
+      "position": {
+        "x": 1,
+        "y": 37
+      }
+    },
+    {
+      "name": "Dynagrid",
+      "size": 6,
+      "position": {
+        "x": 131,
+        "y": 81
+      }
+    },
+    {
+      "name": "TComms",
+      "size": 4,
+      "position": {
+        "x": 164,
+        "y": 75
+      }
+    },
+    {
+      "name": "Bar",
+      "size": 6,
+      "position": {
+        "x": 120,
+        "y": 40
+      }
+    },
+    {
+      "name": "Nova Medica",
+      "size": 8,
+      "position": {
+        "x": 162,
+        "y": 40
+      }
+    }
+  ]
 }

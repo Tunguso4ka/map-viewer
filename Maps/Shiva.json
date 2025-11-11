@@ -12,5 +12,225 @@
     "y": "4"
   },
   "format": "webp",
-  "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Maps/Shiva"
+  "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Maps/Shiva",
+  "labels": [
+    {
+      "name": "LZ1",
+      "size": 12,
+      "position": {
+        "x": 18,
+        "y": 131
+      }
+    },
+    {
+      "name": "LZ2",
+      "size": 12,
+      "position": {
+        "x": 17,
+        "y": 25
+      }
+    },
+    {
+      "name": "Warehouse",
+      "size": 8,
+      "position": {
+        "x": 44,
+        "y": 143
+      }
+    },
+    {
+      "name": "North Aerodrom Hangar",
+      "size": 8,
+      "position": {
+        "x": 36,
+        "y": 115
+      }
+    },
+    {
+      "name": "Junk Yard",
+      "size": 6,
+      "position": {
+        "x": 97,
+        "y": 146
+      }
+    },
+    {
+      "name": "Junk Yard",
+      "size": 6,
+      "position": {
+        "x": 114,
+        "y": 125
+      }
+    },
+    {
+      "name": "Anti-Freeze Bar",
+      "size": 8,
+      "position": {
+        "x": 103,
+        "y": 109
+      }
+    },
+    {
+      "name": "Fort Biceps",
+      "size": 4,
+      "position": {
+        "x": 124,
+        "y": 143
+      }
+    },
+    {
+      "name": "Research Habitation",
+      "size": 12,
+      "position": {
+        "x": 160,
+        "y": 121
+      }
+    },
+    {
+      "name": "Research Hab Interior",
+      "size": 6,
+      "position": {
+        "x": 188,
+        "y": 146
+      }
+    },
+    {
+      "name": "Colony Garage",
+      "size": 8,
+      "position": {
+        "x": 135,
+        "y": 79
+      }
+    },
+    {
+      "name": "Disposals",
+      "size": 6,
+      "position": {
+        "x": 191,
+        "y": 71
+      }
+    },
+    {
+      "name": "Botany",
+      "size": 8,
+      "position": {
+        "x": 100,
+        "y": 65
+      }
+    },
+    {
+      "name": "Colony Administration",
+      "size": 4,
+      "position": {
+        "x": 100,
+        "y": 82
+      }
+    },
+    {
+      "name": "Panic room",
+      "size": 6,
+      "position": {
+        "x": 100,
+        "y": 92
+      }
+    },
+    {
+      "name": "Cave Camp",
+      "size": 6,
+      "position": {
+        "x": 60,
+        "y": 73
+      }
+    },
+    {
+      "name": "Command Centre",
+      "size": 4,
+      "position": {
+        "x": 108,
+        "y": 42
+      }
+    },
+    {
+      "name": "Argentinian Research HQ",
+      "size": 4,
+      "position": {
+        "x": 46,
+        "y": 12
+      }
+    },
+    {
+      "name": "Church",
+      "size": 4,
+      "position": {
+        "x": 113,
+        "y": 28
+      }
+    },
+    {
+      "name": "Morgue",
+      "size": 4,
+      "position": {
+        "x": 124,
+        "y": 28
+      }
+    },
+    {
+      "name": "Canteen",
+      "size": 4,
+      "position": {
+        "x": 135,
+        "y": 23
+      }
+    },
+    {
+      "name": "B-Ball Court",
+      "size": 4,
+      "position": {
+        "x": 130,
+        "y": 13
+      }
+    },
+    {
+      "name": "Security",
+      "size": 6,
+      "position": {
+        "x": 150,
+        "y": 28
+      }
+    },
+    {
+      "name": "Power Substation",
+      "size": 6,
+      "position": {
+        "x": 167,
+        "y": 25
+      }
+    },
+    {
+      "name": "Aurora Medical Clinic",
+      "size": 6,
+      "position": {
+        "x": 188,
+        "y": 10
+      }
+    }
+  ],
+  "inserts": [
+    {
+      "name": "LZ2 South Caves (30%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Shiva/builtup_lz2-south-caves-0.webp",
+      "position": {
+        "x": 3,
+        "y": 49
+      }
+    },
+    {
+      "name": "Panic Room Hold (50%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Shiva/panic_room_hold-0.webp",
+      "position": {
+        "x": 95,
+        "y": 96
+      }
+    }
+  ]
 }

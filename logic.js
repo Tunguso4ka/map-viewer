@@ -1,8 +1,6 @@
 let params = new URLSearchParams(document.location.search);
 let maps;
 
-var labels = [];
-var inserts = [];
 var settings = { // cookies in future
     "show_labels": true,
     "show_inserts": true,
@@ -21,7 +19,9 @@ var image = {
     "size": {"x": 0, "y": 0},
     "tile_size": {"x": 0, "y": 0},
     "dimensions": {"x": 1, "y": 1},
-    "tiles": []
+    "tiles": [],
+    "labels": [],
+    "inserts": []
 }
 
 var zoomable;
@@ -31,7 +31,6 @@ var insert_button_list;
 
 var area_info_label;
 var area_info = {};
-
 
 // assign elements, events and load json
 document.addEventListener('DOMContentLoaded', function()
@@ -63,7 +62,6 @@ document.addEventListener('DOMContentLoaded', function()
 
     load_maps_json("maps.json");
 }, false);
-
 
 // Loads map.json
 async function load_maps_json(url)
@@ -109,9 +107,8 @@ async function load_maps_json(url)
         load_map(maps.main)
 }
 
-
 // Load map image/images
-function load_map(_map = null)
+async function load_map(_map = null)
 {
     console.log(`Loading ${_map}.`);
     if (!maps.maps)
@@ -133,26 +130,11 @@ function load_map(_map = null)
     update_transform(true);
     document.body.style.cursor = "wait";
 
-    // Check and load Labels
-    labels = []
-    if ("labels" in maps.maps[_map] && settings.show_labels)
-        labels = maps.maps[_map].labels;
-    toggle_hidden('button_labels', !labels.length)
-    console.log(`Loaded ${labels.length} labels.`)
-
-    // Check and load Nightmare Inserts
-    inserts = []
-    insert_button_list.innerHTML = "";
-    if ("inserts" in maps.maps[_map] && settings.show_inserts)
-        inserts = maps.maps[_map].inserts;
-    console.log(`Loaded ${inserts.length} inserts.`)
-
     // Check and load areas
     area_info = {}
     if ("areas" in maps.maps[_map])
         load_areas(_map)
 
-    //
     if ('path' in maps.maps[_map])
         load_image_tiled(maps.maps[_map].path)
     else if ('url' in maps.maps[_map])
@@ -174,7 +156,7 @@ function load_image_lone(_url = null)
         return;
     }
 
-    _image = new Image();
+    let _image = new Image();
     _image.src = _url;
 
     image.dimensions = { "x": 1, "y": 1 };
@@ -198,11 +180,10 @@ async function load_image_tiled(_path = null)
 {
     if (!_path)
     {
-        console.error("Can't load image: path is null.")
+        console.error("Can't load image: path to image.json is null.")
         return;
     }
 
-    // Change image to loading.
     image.tiles.forEach((_image) => {
         _image.src = "res/loading.webp";
     });
@@ -213,6 +194,20 @@ async function load_image_tiled(_path = null)
     image.size = image_json.size;
     image.tile_size = image_json.tile_size;
     image.dimensions = image_json.dimensions;
+
+    // Check and load Labels
+    image.labels = []
+    if ("labels" in image_json && settings.show_labels)
+        image.labels = image_json.labels;
+    toggle_hidden('button_labels', !image.labels.length)
+    console.log(`Loaded ${image.labels.length} labels.`)
+
+    // Check and load Nightmare Inserts
+    image.inserts = []
+    insert_button_list.innerHTML = "";
+    if ("inserts" in image_json && settings.show_inserts)
+        image.inserts = image_json.inserts;
+    console.log(`Loaded ${image.inserts.length} inserts.`)
 
     for (let _y = 0; _y < image.dimensions.y; _y++)
     {
@@ -247,33 +242,30 @@ async function load_areas(_map)
 
 function load_insert_buttons()
 {
-    if (!inserts)
+    if (!image.inserts)
         return;
 
-    for (const iter in inserts)
-    {
-        value = inserts[iter];
-
+    image.inserts.forEach((insert) => {
         var new_button = document.createElement("button");
 
-        if (value.name)
-            new_button.title = value.name;
+        if (insert.name)
+            new_button.title = insert.name;
 
-        if (value.position)
-            new_button.style = `left: ${value.position.x * 32}px; top: ${value.position.y * 32}px;`;
+        if (insert.position)
+            new_button.style = `left: ${insert.position.x * 32}px; top: ${insert.position.y * 32}px;`;
         else
             console.error("No position in Nightmare Insert button!");
 
-        inserts[iter].show = false;
+        insert.show = false;
 
         new_button.onclick = function ()
         {
-            inserts[iter].show = ! inserts[iter].show;
+            insert.show = ! insert.show;
             requestAnimationFrame(draw);
         };
 
         insert_button_list.appendChild(new_button);
-    }
+    });
 }
 
 
@@ -338,7 +330,7 @@ function draw()
 
 function draw_labels()
 {
-    if ( !settings.show_labels || !labels)
+    if ( !settings.show_labels || !image.labels)
         return;
 
     ctx.fillStyle = "white";
@@ -350,57 +342,56 @@ function draw_labels()
     ctx.shadowOffsetY = 2;
     //ctx.shadowBlur = 10;
 
-    for (const iter in labels)
-    {
-        value = labels[iter];
-        draw_text(ctx, value.name, value.position.x * 32, value.position.y * 32, value.size);
-    }
+    image.labels.forEach((label) => {
+        if (!('position' in label))
+        {
+            console.error(`No position in label {label.name}`);
+            return;
+        }
+        draw_text(label.name, label.position.x * 32, label.position.y * 32, label.size);
+    });
 
     ctx.shadowOffsetX = 0;
     ctx.shadowOffsetY = 0;
 }
 
 
-function draw_text(context, text, x, y, font_size=12, font="Sans-serif")
+function draw_text(text, x, y, font_size=12, font="Sans-serif")
 {
-    context.font = `${font_size}em ${font}`;
-    context.strokeText(text, x, y);
-    context.fillText(text, x, y);
+    ctx.font = `${font_size}em ${font}`;
+    ctx.strokeText(text, x, y);
+    ctx.fillText(text, x, y);
 }
 
 
 function draw_inserts()
 {
-    if (!settings.show_inserts || !inserts)
+    if (!settings.show_inserts || !image.inserts)
         return;
 
-    for (const iter in inserts)
-    {
-        value = inserts[iter];
+    image.inserts.forEach((insert) => {
+        if (!("show" in insert))
+            return;
 
-        if (!("show" in value))
-            continue;
+        if (!insert.show)
+            return;
 
-        if (!value.show)
-            continue;
-
-        // shitcode!!
-        if ("image" in value)
+        if ("image" in insert)
         {
-            draw_insert(value);
+            draw_insert(insert);
         }
         else
         {
-            inserts[iter].image = new Image();
-            inserts[iter].image.src = value.url;
+            insert.image = new Image();
+            insert.image.src = insert.url;
 
-            inserts[iter].image.onload = function()
+            insert.image.onload = function()
             {
-                console.log(`Loaded Nightmare Insert ${inserts[iter].name} from ${inserts[iter].url}`);
-                draw_insert(inserts[iter]);
+                console.log(`Loaded Nightmare Insert ${insert.name} from ${insert.url}`);
+                draw_insert(insert);
             }
         }
-    }
+    });
 }
 
 function draw_insert(_insert)
@@ -496,7 +487,7 @@ function updateAreaInfo(event_location)
     area_info_label.style.left = `${event_location.x+24}px`;
     area_info_label.style.top = `${event_location.y+24}px`;
 
-    share_position = getSS14Position(event_location);
+    let share_position = getSS14Position(event_location);
 
     //Check if we have areas
     if (!("points" in area_info))
@@ -600,7 +591,7 @@ function handle_pinch(e)
 function on_mousedown(e)
 {
     e.preventDefault();
-    event_location = get_event_location(e);
+    let event_location = get_event_location(e);
     updateAreaInfo(event_location);
 
     start = { x: event_location.x - position.x,
@@ -609,7 +600,7 @@ function on_mousedown(e)
 }
 
 // Stops panning.
-function on_mouseup(e)
+function on_mouseup()
 {
     is_panning = false;
     initial_pinch_distance = null;
@@ -625,7 +616,7 @@ function on_mousemove(e)
 
     e.preventDefault();
 
-    event_location = get_event_location(e);
+    let event_location = get_event_location(e);
 
     if (area_info_label && !area_info_label.hidden)
         updateAreaInfo(event_location);
@@ -650,8 +641,8 @@ function on_mousescroll(e, pinch)
 
     e.preventDefault();
 
-    event_location = get_event_location(e);
-    var zoom_position = { x: Math.round((event_location.x - position.x) / zoom),
+    let event_location = get_event_location(e);
+    let zoom_position = { x: Math.round((event_location.x - position.x) / zoom),
                           y: Math.round((event_location.y - position.y) / zoom)};
 
     if (pinch)
@@ -675,10 +666,10 @@ function on_mousescroll(e, pinch)
 // Updates Query params with clicked location.
 function on_doubleclick(e)
 {
-    event_location = get_event_location(e);
+    let event_location = get_event_location(e);
 
     // Get tile position.
-    var share_position = getSS14Position(event_location);
+    let share_position = getSS14Position(event_location);
 
     console.log(share_position)
     params.set("pos", `${share_position.x}x${share_position.y}`)
@@ -698,7 +689,7 @@ function on_keydown(e)
         // Zoom In
         case '=':
         case '+':
-            handle_zoom(null, null, 1.4);
+            handle_zoom(null, null, 1.5);
             break;
 
         // Move Left
@@ -730,26 +721,25 @@ function on_keydown(e)
             update_transform();
             break;
 
-        // Move Left
+        // Fast Move Left
         case 'H':
         case 'A':
-        case 'ArrowLeft':
             position.x = position.x + 150 * zoom;
             update_transform();
             break;
-        // Move Up
+        // Fast Move Up
         case 'J':
         case 'W':
             position.y = position.y + 150 * zoom;
             update_transform();
             break;
-        // Move Down
+        // Fast Move Down
         case 'K':
         case 'S':
             position.y = position.y - 150 * zoom;
             update_transform();
             break;
-        // Move Left
+        // Fast Move Left
         case 'L':
         case 'D':
             position.x = position.x - 150 * zoom;
@@ -767,15 +757,17 @@ function on_keydown(e)
 // Button logic
 //
 
+/*
 function toggle_setting(setting)
 {
     settings[setting] = !settings[setting];
     requestAnimationFrame(draw);
 }
+*/
 
 function toggle_hidden(eid, bool)
 {
-    element = document.getElementById(eid);
+    let element = document.getElementById(eid);
 
     if (!element)
     {

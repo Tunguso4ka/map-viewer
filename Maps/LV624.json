@@ -12,5 +12,273 @@
     "y": "6"
   },
   "format": "webp",
-  "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Maps/LV-624"
+  "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Maps/LV-624",
+  "labels": [
+    {
+      "name": "Undeground Lake",
+      "size": 12,
+      "position": {
+        "x": 66,
+        "y": 21
+      }
+    },
+    {
+      "name": "Western Caves",
+      "size": 12,
+      "position": {
+        "x": 16,
+        "y": 62
+      }
+    },
+    {
+      "name": "Central Caves",
+      "size": 12,
+      "position": {
+        "x": 69,
+        "y": 62
+      }
+    },
+    {
+      "name": "Eastern Caves",
+      "size": 12,
+      "position": {
+        "x": 133,
+        "y": 62
+      }
+    },
+    {
+      "name": "Western Barrens",
+      "size": 12,
+      "position": {
+        "x": 16,
+        "y": 131
+      }
+    },
+    {
+      "name": "Cargo Containers",
+      "size": 6,
+      "position": {
+        "x": 100,
+        "y": 103
+      }
+    },
+    {
+      "name": "Sand Temple",
+      "size": 8,
+      "position": {
+        "x": 138,
+        "y": 101
+      }
+    },
+    {
+      "name": "LZ1",
+      "size": 12,
+      "position": {
+        "x": 148,
+        "y": 191
+      }
+    },
+    {
+      "name": "LZ2",
+      "size": 12,
+      "position": {
+        "x": 30,
+        "y": 185
+      }
+    },
+    {
+      "name": "Medbay",
+      "size": 6,
+      "position": {
+        "x": 75,
+        "y": 150
+      }
+    },
+    {
+      "name": "Hydro",
+      "size": 6,
+      "position": {
+        "x": 94,
+        "y": 150
+      }
+    },
+    {
+      "name": "Fitness",
+      "size": 6,
+      "position": {
+        "x": 89,
+        "y": 166
+      }
+    },
+    {
+      "name": "Research",
+      "size": 6,
+      "position": {
+        "x": 71,
+        "y": 166
+      }
+    },
+    {
+      "name": "Cargo Storage",
+      "size": 6,
+      "position": {
+        "x": 128,
+        "y": 168
+      }
+    },
+    {
+      "name": "Nexus",
+      "size": 8,
+      "position": {
+        "x": 114,
+        "y": 191
+      }
+    },
+    {
+      "name": "Robotics",
+      "size": 6,
+      "position": {
+        "x": 49,
+        "y": 173
+      }
+    },
+    {
+      "name": "Corporate Dome",
+      "size": 6,
+      "position": {
+        "x": 46,
+        "y": 196
+      }
+    },
+    {
+      "name": "Atmos",
+      "size": 6,
+      "position": {
+        "x": 83,
+        "y": 196
+      }
+    },
+    {
+      "name": "Comms Relay",
+      "size": 6,
+      "position": {
+        "x": 66,
+        "y": 206
+      }
+    },
+    {
+      "name": "Power Plant",
+      "size": 6,
+      "position": {
+        "x": 83,
+        "y": 209
+      }
+    },
+    {
+      "name": "Secure Storage",
+      "size": 6,
+      "position": {
+        "x": 25,
+        "y": 210
+      }
+    }
+  ],
+  "inserts": [
+    {
+      "name": "Armory (10%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/LV624/armory_extra-0.webp",
+      "position": {
+        "x": 99,
+        "y": 199
+      }
+    },
+    {
+      "name": "Corporate Dome (10%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/LV624/corporate_dome-0.webp",
+      "position": {
+        "x": 46,
+        "y": 202
+      }
+    },
+    {
+      "name": "Gym (30%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/LV624/gym_alternate-0.webp",
+      "position": {
+        "x": 86,
+        "y": 173
+      }
+    },
+    {
+      "name": "Nexus Barricaded (30%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/LV624/nexuscenter_barricaded-0.webp",
+      "position": {
+        "x": 110,
+        "y": 197
+      }
+    },
+    {
+      "name": "Sandtemple LZ1 (25%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/LV624/sandtemple-se-0.webp",
+      "position": {
+        "x": 158,
+        "y": 218
+      }
+    },
+    {
+      "name": "Sandtemple Jungle (25%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/LV624/sandtemple-jungle-0.webp",
+      "position": {
+        "x": 2,
+        "y": 218
+      }
+    },
+    {
+      "name": "Cargo Special Mines (10%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/LV624/cargospecial_mines-0.webp",
+      "position": {
+        "x": 153,
+        "y": 158
+      }
+    },
+    {
+      "name": "Cargo Special Weapons (10%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/LV624/cargospecial_weapons-0.webp",
+      "position": {
+        "x": 146,
+        "y": 158
+      }
+    },
+    {
+      "name": "Cargo Special Gear (10%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/LV624/cargospecial_gear-0.webp",
+      "position": {
+        "x": 148,
+        "y": 163
+      }
+    },
+    {
+      "name": "Hydro Destroyed (30%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/LV624/hydro_destroyed-0.webp",
+      "position": {
+        "x": 89,
+        "y": 155
+      }
+    },
+    {
+      "name": "Cental Caves (10%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/LV624/centralcaves_T-0.webp",
+      "position": {
+        "x": 73,
+        "y": 96
+      }
+    },
+    {
+      "name": "Medbay (10%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/LV624/medbay_destroyed-0.webp",
+      "position": {
+        "x": 73,
+        "y": 155
+      }
+    }
+  ]
 }

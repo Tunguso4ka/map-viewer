@@ -21,23 +21,7 @@ or
       "url": "map image url, unneded if you use path",
 
       "areas": "areas json url",
-      "hidden": false,
-      "labels":
-      [
-        {
-          "name": "label name",
-          "size": 12,
-          "position": {"x": 0, "y": 0}
-        }
-      ],
-      "inserts":
-      [
-        {
-          "name": "Insert name",
-          "url": "Insert image url",
-          "position": {"x": 0, "y": 0},
-        }
-      ]
+      "hidden": false
     }
   }
   "main": "id of main map"
@@ -60,6 +44,22 @@ or
     "y": "number of tiles"
   },
   "format": "png/webp",
-  "url": "left side of url"
+  "url": "left side of url",
+  "labels":
+  [
+    {
+      "name": "label name",
+      "size": 12,
+      "position": {"x": 0, "y": 0}
+    }
+  ],
+  "inserts":
+  [
+    {
+      "name": "Insert name",
+      "url": "Insert image url",
+      "position": {"x": 0, "y": 0},
+    }
+  ]
 }
 ```

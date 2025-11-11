@@ -1,0 +1,186 @@
+{
+  "size": {
+    "x": "9600",
+    "y": "6432"
+  },
+  "tile_size": {
+    "x": "1600",
+    "y": "1608"
+  },
+  "dimensions": {
+    "x": "6",
+    "y": "4"
+  },
+  "format": "webp",
+  "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Maps/Almayer",
+  "labels": [
+    {
+      "name": "This is render of cm-ss13 Almayer.",
+      "size": 6,
+      "position": {
+        "x": 0,
+        "y": 200
+      }
+    },
+    {
+      "name": "AI Core",
+      "size": 8,
+      "position": {
+        "x": 277,
+        "y": 101
+      }
+    },
+    {
+      "name": "Lower Deck",
+      "size": 12,
+      "position": {
+        "x": -1,
+        "y": 151
+      }
+    },
+    {
+      "name": "Astronavigation",
+      "size": 4,
+      "position": {
+        "x": 49,
+        "y": 150
+      }
+    },
+    {
+      "name": "ASO",
+      "size": 4,
+      "position": {
+        "x": 64,
+        "y": 142
+      }
+    },
+    {
+      "name": "Vehicle Bay",
+      "size": 4,
+      "position": {
+        "x": 61,
+        "y": 159
+      }
+    },
+    {
+      "name": "Hangar",
+      "size": 6,
+      "position": {
+        "x": 95,
+        "y": 150
+      }
+    },
+    {
+      "name": "Lower Medbay",
+      "size": 6,
+      "position": {
+        "x": 130,
+        "y": 150
+      }
+    },
+    {
+      "name": "Chem Lab",
+      "size": 4,
+      "position": {
+        "x": 119,
+        "y": 143
+      }
+    },
+    {
+      "name": "Briefing",
+      "size": 6,
+      "position": {
+        "x": 169,
+        "y": 150
+      }
+    },
+    {
+      "name": "Requisitions",
+      "size": 6,
+      "position": {
+        "x": 197,
+        "y": 150
+      }
+    },
+    {
+      "name": "SEA",
+      "size": 4,
+      "position": {
+        "x": 221,
+        "y": 150
+      }
+    },
+    {
+      "name": "Lower Enginerring",
+      "size": 4,
+      "position": {
+        "x": 255,
+        "y": 150
+      }
+    },
+    {
+      "name": "Conference room",
+      "size": 4,
+      "position": {
+        "x": 148,
+        "y": 131
+      }
+    },
+    {
+      "name": "Upper Deck",
+      "size": 12,
+      "position": {
+        "x": -1,
+        "y": 51
+      }
+    },
+    {
+      "name": "Brig Armory",
+      "size": 4,
+      "position": {
+        "x": 50,
+        "y": 36
+      }
+    },
+    {
+      "name": "Brig",
+      "size": 4,
+      "position": {
+        "x": 55,
+        "y": 51
+      }
+    },
+    {
+      "name": "Cells",
+      "size": 4,
+      "position": {
+        "x": 55,
+        "y": 60
+      }
+    },
+    {
+      "name": "Conference",
+      "size": 4,
+      "position": {
+        "x": 72,
+        "y": 49
+      }
+    },
+    {
+      "name": "CIC",
+      "size": 4,
+      "position": {
+        "x": 96,
+        "y": 49
+      }
+    },
+    {
+      "name": "Upper Medbay",
+      "size": 6,
+      "position": {
+        "x": 139,
+        "y": 49
+      }
+    }
+  ]
+}

@@ -12,5 +12,281 @@
     "y": "4"
   },
   "format": "webp",
-  "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Maps/Trijent"
+  "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Maps/Trijent",
+  "labels": [
+    {
+      "name": "LZ1",
+      "size": 12,
+      "position": {
+        "x": 29,
+        "y": 28
+      }
+    },
+    {
+      "name": "LZ2",
+      "size": 12,
+      "position": {
+        "x": 16,
+        "y": 209
+      }
+    },
+    {
+      "name": "Administration",
+      "size": 8,
+      "position": {
+        "x": 50,
+        "y": 25
+      }
+    },
+    {
+      "name": "Hangar",
+      "size": 8,
+      "position": {
+        "x": 25,
+        "y": 59
+      }
+    },
+    {
+      "name": "Tech/Tool Storage",
+      "size": 6,
+      "position": {
+        "x": 44,
+        "y": 71
+      }
+    },
+    {
+      "name": "Cargo",
+      "size": 6,
+      "position": {
+        "x": 21,
+        "y": 81
+      }
+    },
+    {
+      "name": "Workshop",
+      "size": 6,
+      "position": {
+        "x": 19,
+        "y": 93
+      }
+    },
+    {
+      "name": "Disposals",
+      "size": 6,
+      "position": {
+        "x": 22,
+        "y": 107
+      }
+    },
+    {
+      "name": "Breakroom",
+      "size": 6,
+      "position": {
+        "x": 57,
+        "y": 107
+      }
+    },
+    {
+      "name": "Engineer Central",
+      "size": 6,
+      "position": {
+        "x": 66,
+        "y": 87
+      }
+    },
+    {
+      "name": "Hydro Dam",
+      "size": 8,
+      "position": {
+        "x": 113,
+        "y": 78
+      }
+    },
+    {
+      "name": "Marshal Office",
+      "size": 8,
+      "position": {
+        "x": 25,
+        "y": 140
+      }
+    },
+    {
+      "name": "Bar",
+      "size": 6,
+      "position": {
+        "x": 75,
+        "y": 129
+      }
+    },
+    {
+      "name": "T-Comms",
+      "size": 6,
+      "position": {
+        "x": 13,
+        "y": 171
+      }
+    },
+    {
+      "name": "Graveyard",
+      "size": 6,
+      "position": {
+        "x": 63,
+        "y": 162
+      }
+    },
+    {
+      "name": "Chapel",
+      "size": 6,
+      "position": {
+        "x": 46,
+        "y": 182
+      }
+    },
+    {
+      "name": "Hydroponics",
+      "size": 6,
+      "position": {
+        "x": 100,
+        "y": 179
+      }
+    },
+    {
+      "name": "Water Treatment",
+      "size": 8,
+      "position": {
+        "x": 103,
+        "y": 200
+      }
+    },
+    {
+      "name": "Loading bay",
+      "size": 8,
+      "position": {
+        "x": 41,
+        "y": 212
+      }
+    },
+    {
+      "name": "Eastern Laboratory",
+      "size": 8,
+      "position": {
+        "x": 166,
+        "y": 15
+      }
+    },
+    {
+      "name": "Excavation",
+      "size": 8,
+      "position": {
+        "x": 175,
+        "y": 78
+      }
+    },
+    {
+      "name": "Hospital",
+      "size": 12,
+      "position": {
+        "x": 144,
+        "y": 134
+      }
+    },
+    {
+      "name": "Eastern Filtration",
+      "size": 6,
+      "position": {
+        "x": 197,
+        "y": 134
+      }
+    },
+    {
+      "name": "Mess Hall",
+      "size": 8,
+      "position": {
+        "x": 185,
+        "y": 184
+      }
+    },
+    {
+      "name": "Dormitories",
+      "size": 6,
+      "position": {
+        "x": 182,
+        "y": 212
+      }
+    },
+    {
+      "name": "Workshop",
+      "size": 6,
+      "position": {
+        "x": 216,
+        "y": 206
+      }
+    }
+  ],
+  "inserts": [
+    {
+      "name": "Green River New Bridge (10%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Trijent/green_river_new_bridge-0.webp",
+      "position": {
+        "x": 183,
+        "y": 110
+      }
+    },
+    {
+      "name": "Purple River New Bridge (10%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Trijent/purple_river_new_bridge-0.webp",
+      "position": {
+        "x": 131,
+        "y": 170
+      }
+    },
+    {
+      "name": "Cave in Engineering (10%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Trijent/cave_in_engineering-0.webp",
+      "position": {
+        "x": 86,
+        "y": 118
+      }
+    },
+    {
+      "name": "Temple Intact (10%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Trijent/temple_intact-0.webp",
+      "position": {
+        "x": 217,
+        "y": 94
+      }
+    },
+    {
+      "name": "Ship Gone (15%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Trijent/ship_gone-0.webp",
+      "position": {
+        "x": 21,
+        "y": 68
+      }
+    },
+    {
+      "name": "CLF Pods (10%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Trijent/clfpods-0.webp",
+      "position": {
+        "x": 116,
+        "y": 119
+      },
+      "offset": {
+        "x": 0,
+        "y": 29
+      }
+    },
+    {
+      "name": "Crashlanding Bar (20%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Trijent/crashlanding-spp-bar-0.webp",
+      "position": {
+        "x": 69,
+        "y": 120
+      },
+      "offset": {
+        "x": 0,
+        "y": 35
+      }
+    }
+  ]
 }

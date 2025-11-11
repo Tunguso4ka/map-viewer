@@ -12,5 +12,191 @@
     "y": "4"
   },
   "format": "webp",
-  "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Maps/Chances"
+  "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Maps/Chances",
+  "labels": [
+    {
+      "name": "LZ1",
+      "size": 12,
+      "position": {
+        "x": 12,
+        "y": 171
+      }
+    },
+    {
+      "name": "LZ2",
+      "size": 12,
+      "position": {
+        "x": 154,
+        "y": 186
+      }
+    },
+    {
+      "name": "West Reactor",
+      "size": 8,
+      "position": {
+        "x": 21,
+        "y": 24
+      }
+    },
+    {
+      "name": "East Reactor",
+      "size": 8,
+      "position": {
+        "x": 112,
+        "y": 24
+      }
+    },
+    {
+      "name": "LZ1 Tunnels",
+      "size": 8,
+      "position": {
+        "x": 18,
+        "y": 194
+      }
+    },
+    {
+      "name": "Mining",
+      "size": 8,
+      "position": {
+        "x": 103,
+        "y": 186
+      }
+    },
+    {
+      "name": "Engineering",
+      "size": 4,
+      "position": {
+        "x": 20,
+        "y": 142
+      }
+    },
+    {
+      "name": "Grill",
+      "size": 4,
+      "position": {
+        "x": 40,
+        "y": 142
+      }
+    },
+    {
+      "name": "Bar",
+      "size": 6,
+      "position": {
+        "x": 50,
+        "y": 139
+      }
+    },
+    {
+      "name": "Hydro North",
+      "size": 4,
+      "position": {
+        "x": 65,
+        "y": 142
+      }
+    },
+    {
+      "name": "Hydro South",
+      "size": 4,
+      "position": {
+        "x": 65,
+        "y": 192
+      }
+    },
+    {
+      "name": "Cargo",
+      "size": 8,
+      "position": {
+        "x": 96,
+        "y": 146
+      }
+    },
+    {
+      "name": "Casino",
+      "size": 4,
+      "position": {
+        "x": 123,
+        "y": 133
+      }
+    },
+    {
+      "name": "Garage",
+      "size": 4,
+      "position": {
+        "x": 154,
+        "y": 133
+      }
+    },
+    {
+      "name": "A-Block",
+      "size": 8,
+      "position": {
+        "x": 43,
+        "y": 105
+      }
+    },
+    {
+      "name": "Security",
+      "size": 8,
+      "position": {
+        "x": 90,
+        "y": 99
+      }
+    },
+    {
+      "name": "Corporate Office",
+      "size": 6,
+      "position": {
+        "x": 84,
+        "y": 71
+      }
+    },
+    {
+      "name": "Kitchen",
+      "size": 4,
+      "position": {
+        "x": 106,
+        "y": 114
+      }
+    },
+    {
+      "name": "Administration",
+      "size": 8,
+      "position": {
+        "x": 131,
+        "y": 105
+      }
+    },
+    {
+      "name": "Medical",
+      "size": 4,
+      "position": {
+        "x": 140,
+        "y": 114
+      }
+    },
+    {
+      "name": "Typhoon Dropship",
+      "size": 4,
+      "position": {
+        "x": 9,
+        "y": 67
+      }
+    },
+    {
+      "name": "Tornado Dropship",
+      "size": 4,
+      "position": {
+        "x": 168,
+        "y": 83
+      }
+    },
+    {
+      "name": "Fitness",
+      "size": 4,
+      "position": {
+        "x": 59,
+        "y": 71
+      }
+    }
+  ]
 }

@@ -12,5 +12,199 @@
     "y": "4"
   },
   "format": "webp",
-  "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Maps/Varadero"
+  "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Maps/Varadero",
+  "labels": [
+    {
+      "name": "LZ1",
+      "size": 12,
+      "position": {
+        "x": 65,
+        "y": 39
+      }
+    },
+    {
+      "name": "LZ2",
+      "size": 12,
+      "position": {
+        "x": 139,
+        "y": 33
+      }
+    },
+    {
+      "name": "Bar",
+      "size": 4,
+      "position": {
+        "x": 101,
+        "y": 31
+      }
+    },
+    {
+      "name": "Rockabilly Beach",
+      "size": 4,
+      "position": {
+        "x": 92,
+        "y": 50
+      }
+    },
+    {
+      "name": "East Beach",
+      "size": 6,
+      "position": {
+        "x": 128,
+        "y": 59
+      }
+    },
+    {
+      "name": "Cargo",
+      "size": 6,
+      "position": {
+        "x": 37,
+        "y": 48
+      }
+    },
+    {
+      "name": "Northern Maint",
+      "size": 4,
+      "position": {
+        "x": 50,
+        "y": 62
+      }
+    },
+    {
+      "name": "Engineering",
+      "size": 6,
+      "position": {
+        "x": 113,
+        "y": 76
+      }
+    },
+    {
+      "name": "Security Offices",
+      "size": 4,
+      "position": {
+        "x": 104,
+        "y": 103
+      }
+    },
+    {
+      "name": "Sec. Maint",
+      "size": 4,
+      "position": {
+        "x": 125,
+        "y": 103
+      }
+    },
+    {
+      "name": "Dorms",
+      "size": 4,
+      "position": {
+        "x": 90,
+        "y": 106
+      }
+    },
+    {
+      "name": "Bathroom",
+      "size": 4,
+      "position": {
+        "x": 118,
+        "y": 140
+      }
+    },
+    {
+      "name": "Admin",
+      "size": 4,
+      "position": {
+        "x": 64,
+        "y": 104
+      }
+    },
+    {
+      "name": "Medical",
+      "size": 4,
+      "position": {
+        "x": 56,
+        "y": 84
+      }
+    },
+    {
+      "name": "Library",
+      "size": 4,
+      "position": {
+        "x": 86,
+        "y": 70
+      }
+    },
+    {
+      "name": "B-Ball",
+      "size": 4,
+      "position": {
+        "x": 89,
+        "y": 84
+      }
+    },
+    {
+      "name": "Research",
+      "size": 6,
+      "position": {
+        "x": 14,
+        "y": 106
+      }
+    },
+    {
+      "name": "North Research Caves",
+      "size": 4,
+      "position": {
+        "x": 18,
+        "y": 78
+      }
+    },
+    {
+      "name": "South Research Caves",
+      "size": 4,
+      "position": {
+        "x": 35,
+        "y": 129
+      }
+    },
+    {
+      "name": "Southern Maintenance",
+      "size": 4,
+      "position": {
+        "x": 71,
+        "y": 140
+      }
+    },
+    {
+      "name": "South West Caves",
+      "size": 6,
+      "position": {
+        "x": 7,
+        "y": 164
+      }
+    },
+    {
+      "name": "Monsoon",
+      "size": 6,
+      "position": {
+        "x": 153,
+        "y": 109
+      }
+    },
+    {
+      "name": "Grass Caves",
+      "size": 6,
+      "position": {
+        "x": 89,
+        "y": 162
+      }
+    },
+    {
+      "name": "Unknown Vessel",
+      "size": 8,
+      "position": {
+        "x": 167,
+        "y": 159
+      }
+    }
+  ]
 }
