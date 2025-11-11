@@ -202,6 +202,11 @@ async function load_image_tiled(_path = null)
         return;
     }
 
+    // Change image to loading.
+    image.tiles.forEach((_image) => {
+        _image.src = "res/loading.webp";
+    });
+
     var response = await fetch(_path);
     var image_json = await response.json();
 
@@ -304,7 +309,7 @@ function get_param_position()
 }
 
 
-// Draws map and labels.
+// Draws map
 function draw()
 {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -348,7 +353,7 @@ function draw_labels()
     for (const iter in labels)
     {
         value = labels[iter];
-        draw_text(ctx, value.name, value.x, value.y, value.size);
+        draw_text(ctx, value.name, value.position.x * 32, value.position.y * 32, value.size);
     }
 
     ctx.shadowOffsetX = 0;

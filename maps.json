@@ -6,588 +6,2449 @@
       "path": "Maps/Solaris.json",
       "areas": "Areas/solaris.json",
       "labels": [
-        { "name": "LZ1", "size": 12, "x": 700, "y": 750 },
-        { "name": "LZ2", "size": 12, "x": 875, "y": 3950 },
-        { "name": "Office Complex", "size": 8, "x": 3575, "y": 3300 },
-        { "name": "Administration", "size": 8, "x": 2425, "y": 3000 },
-        { "name": "Filtration", "size": 8, "x": 3125, "y": 3850 },
-        { "name": "Engineering", "size": 8, "x": 2050, "y": 4250 },
-        { "name": "Cargo", "size": 8, "x": 1775, "y": 3500 },
-        { "name": "Store", "size": 8, "x": 1575, "y": 2750 },
-        { "name": "Virology", "size": 8, "x": 500, "y": 2800 },
-        { "name": "Hospital", "size": 8, "x": 2075, "y": 2000 },
-        { "name": "Dorms", "size": 8, "x": 3175, "y": 2000 },
-        { "name": "Marshal Office", "size": 8, "x": 2375, "y": 1400 },
-        { "name": "Chapel", "size": 8, "x": 4825, "y": 3150 },
-        { "name": "EVA", "size": 8, "x": 4275, "y": 1700 },
-        { "name": "Lambda Lab", "size": 8, "x": 5375, "y": 1700 },
-        { "name": "Bar", "size": 8, "x": 3675, "y": 2600 },
-        { "name": "Mess", "size": 8, "x": 4275, "y": 2600 },
-        { "name": "Hydro", "size": 8, "x": 4275, "y": 2300 },
-        { "name": "Mining Facility", "size": 8, "x": 775, "y": 5800 },
-        { "name": "South Eastern Caves", "size": 8, "x": 5575, "y": 5800 },
-        { "name": "ETA Research", "size": 8, "x": 3025, "y": 5700 },
-        { "name": "T-comms", "size": 6, "x": 175, "y": 1050 },
-        { "name": "Garage", "size": 6, "x": 625, "y": 1500 },
-        { "name": "Storage", "size": 6, "x": 2475, "y": 3600 }
+        {
+          "name": "LZ1",
+          "size": 12,
+          "position": {
+            "x": 21,
+            "y": 23
+          }
+        },
+        {
+          "name": "LZ2",
+          "size": 12,
+          "position": {
+            "x": 27,
+            "y": 123
+          }
+        },
+        {
+          "name": "Office Complex",
+          "size": 8,
+          "position": {
+            "x": 111,
+            "y": 103
+          }
+        },
+        {
+          "name": "Administration",
+          "size": 8,
+          "position": {
+            "x": 75,
+            "y": 93
+          }
+        },
+        {
+          "name": "Filtration",
+          "size": 8,
+          "position": {
+            "x": 97,
+            "y": 120
+          }
+        },
+        {
+          "name": "Engineering",
+          "size": 8,
+          "position": {
+            "x": 64,
+            "y": 132
+          }
+        },
+        {
+          "name": "Cargo",
+          "size": 8,
+          "position": {
+            "x": 55,
+            "y": 109
+          }
+        },
+        {
+          "name": "Store",
+          "size": 8,
+          "position": {
+            "x": 49,
+            "y": 85
+          }
+        },
+        {
+          "name": "Virology",
+          "size": 8,
+          "position": {
+            "x": 15,
+            "y": 87
+          }
+        },
+        {
+          "name": "Hospital",
+          "size": 8,
+          "position": {
+            "x": 64,
+            "y": 62
+          }
+        },
+        {
+          "name": "Dorms",
+          "size": 8,
+          "position": {
+            "x": 99,
+            "y": 62
+          }
+        },
+        {
+          "name": "Marshal Office",
+          "size": 8,
+          "position": {
+            "x": 74,
+            "y": 43
+          }
+        },
+        {
+          "name": "Chapel",
+          "size": 8,
+          "position": {
+            "x": 150,
+            "y": 98
+          }
+        },
+        {
+          "name": "EVA",
+          "size": 8,
+          "position": {
+            "x": 133,
+            "y": 53
+          }
+        },
+        {
+          "name": "Lambda Lab",
+          "size": 8,
+          "position": {
+            "x": 167,
+            "y": 53
+          }
+        },
+        {
+          "name": "Bar",
+          "size": 8,
+          "position": {
+            "x": 114,
+            "y": 81
+          }
+        },
+        {
+          "name": "Mess",
+          "size": 8,
+          "position": {
+            "x": 133,
+            "y": 81
+          }
+        },
+        {
+          "name": "Hydro",
+          "size": 8,
+          "position": {
+            "x": 133,
+            "y": 71
+          }
+        },
+        {
+          "name": "Mining Facility",
+          "size": 8,
+          "position": {
+            "x": 24,
+            "y": 181
+          }
+        },
+        {
+          "name": "South Eastern Caves",
+          "size": 8,
+          "position": {
+            "x": 174,
+            "y": 181
+          }
+        },
+        {
+          "name": "ETA Research",
+          "size": 8,
+          "position": {
+            "x": 94,
+            "y": 178
+          }
+        },
+        {
+          "name": "T-comms",
+          "size": 6,
+          "position": {
+            "x": 5,
+            "y": 32
+          }
+        },
+        {
+          "name": "Garage",
+          "size": 6,
+          "position": {
+            "x": 19,
+            "y": 46
+          }
+        },
+        {
+          "name": "Storage",
+          "size": 6,
+          "position": {
+            "x": 77,
+            "y": 112
+          }
+        }
       ],
       "inserts": [
         {
           "name": "Medbay (50%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Solaris/medbay-v3-0.webp?raw=true",
-          "position": {"x": 55, "y": 74}
+          "position": {
+            "x": 55,
+            "y": 74
+          }
         },
         {
           "name": "Medbay Passage (50%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Solaris/medbay-passage-0.webp?raw=true",
-          "position": {"x": 76, "y": 78}
+          "position": {
+            "x": 76,
+            "y": 78
+          }
         },
         {
           "name": "Lambda Cave Extratunnel (50%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Solaris/lambda-cave_extratunnel-0.webp?raw=true",
-          "position": {"x": 182, "y": 89}
+          "position": {
+            "x": 182,
+            "y": 89
+          }
         },
         {
           "name": "SE Checkpoint (70%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Solaris/se-checkpoint-0.webp?raw=true",
-          "position": {"x": 134, "y": 130}
+          "position": {
+            "x": 134,
+            "y": 130
+          }
         },
         {
           "name": "TComms Open (10%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Solaris/tcomms_open-0.webp?raw=true",
-          "position": {"x": 8, "y": 49}
+          "position": {
+            "x": 8,
+            "y": 49
+          }
         },
         {
           "name": "ETA Tunnel Open (20%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Solaris/etatunnel_open-0.webp?raw=true",
-          "position": {"x": 45, "y": 171}
+          "position": {
+            "x": 45,
+            "y": 171
+          }
         },
         {
           "name": "Virology Open (40%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Solaris/viro_open-0.webp?raw=true",
-          "position": {"x": 14, "y": 78}
+          "position": {
+            "x": 14,
+            "y": 78
+          }
         },
         {
           "name": "Virology Rocks Open (30%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Solaris/viro-rock_open-0.webp?raw=true",
-          "position": {"x": 32, "y": 86}
+          "position": {
+            "x": 32,
+            "y": 86
+          }
         },
         {
           "name": "LZ1 Cave Flank (25%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Solaris/lz1cave_flank-0.webp?raw=true",
-          "position": {"x": 51, "y": 26}
+          "position": {
+            "x": 51,
+            "y": 26
+          }
         },
         {
           "name": "LZ1 Entrance (20%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Solaris/lz1entrance_v2-0.webp?raw=true",
-          "position": {"x": 32, "y": 48}
+          "position": {
+            "x": 32,
+            "y": 48
+          }
         },
         {
           "name": "LZ1 North Mining (20%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Solaris/lz1north_mining-0.webp?raw=true",
-          "position": {"x": 38, "y": 10}
+          "position": {
+            "x": 38,
+            "y": 10
+          }
         },
         {
           "name": "Lambda Graveyard (50%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Solaris/lambda_graveyard-0.webp?raw=true",
-          "position": {"x": 148, "y": 110}
+          "position": {
+            "x": 148,
+            "y": 110
+          }
         },
         {
           "name": "Dorms Party (40%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Solaris/dorms_party-0.webp?raw=true",
-          "position": {"x": 97, "y": 63}
+          "position": {
+            "x": 97,
+            "y": 63
+          }
         },
         {
           "name": "Admin PMC (40%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Solaris/admin_pmc-0.webp?raw=true",
-          "position": {"x": 74, "y": 100}
+          "position": {
+            "x": 74,
+            "y": 100
+          }
         },
         {
           "name": "Filtration Restored (35%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Solaris/filtration_restored-0.webp?raw=true",
-          "position": {"x": 109, "y": 143}
+          "position": {
+            "x": 109,
+            "y": 143
+          }
         },
         {
           "name": "Vault (25%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Solaris/vault_v2-0.webp?raw=true",
-          "position": {"x": 190, "y": 62}
+          "position": {
+            "x": 190,
+            "y": 62
+          }
         },
         {
           "name": "CLF Mining (10%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Solaris/clfmining-0.webp?raw=true",
-          "position": {"x": 15, "y": 200}
+          "position": {
+            "x": 15,
+            "y": 200
+          }
         },
         {
           "name": "Crashlanding Offices (20%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Solaris/crashlanding-offices-0.webp?raw=true",
-          "position": {"x": 111, "y": 112}
+          "position": {
+            "x": 111,
+            "y": 112
+          }
         }
       ]
-     },
-
+    },
     "Shiva": {
       "name": "Shivas Snowball",
       "path": "Maps/Shiva.json",
       "areas": "Areas/shiva.json",
       "labels": [
-        { "name": "LZ1", "size": 12, "x": 600, "y": 4200 },
-        { "name": "LZ2", "size": 12, "x": 550, "y": 800 },
-        { "name": "Warehouse", "size": 8, "x": 1425, "y": 4600 },
-        { "name": "North Aerodrom Hangar", "size": 8, "x": 1175, "y": 3700 },
-        { "name": "Junk Yard", "size": 6, "x": 3125, "y": 4700 },
-        { "name": "Junk Yard", "size": 6, "x": 3675, "y": 4000 },
-        { "name": "Anti-Freeze Bar", "size": 8, "x": 3325, "y": 3500 },
-        { "name": "Fort Biceps", "size": 4, "x": 3975, "y": 4600 },
-        { "name": "Research Habitation", "size": 12, "x": 5125, "y": 3900 },
-        { "name": "Research Hab Interior", "size": 6, "x": 6025, "y": 4700 },
-        { "name": "Colony Garage", "size": 8, "x": 4325, "y": 2550 },
-        { "name": "Disposals", "size": 6, "x": 6125, "y": 2300 },
-        { "name": "Botany", "size": 8, "x": 3225, "y": 2100 },
-        { "name": "Colony Administration", "size": 4, "x": 3225, "y": 2650 },
-        { "name": "Panic room", "size": 6, "x": 3225, "y": 2950 },
-        { "name": "Cave Camp", "size": 6, "x": 1925, "y": 2350 },
-        { "name": "Command Centre", "size": 4, "x": 3475, "y": 1350 },
-        { "name": "Argentinian Research HQ", "size": 4, "x": 1475, "y": 400 },
-        { "name": "Church", "size": 4, "x": 3625, "y": 900 },
-        { "name": "Morgue", "size": 4, "x": 3975, "y": 900 },
-        { "name": "Canteen", "size": 4, "x": 4325, "y": 750 },
-        { "name": "B-Ball Court", "size": 4, "x": 4175, "y": 425 },
-        { "name": "Security", "size": 6, "x": 4825, "y": 900 },
-        { "name": "Power Substation", "size": 6, "x": 5375, "y": 800 },
-        { "name": "Aurora Medical Clinic", "size": 6, "x": 6025, "y": 350 }
+        {
+          "name": "LZ1",
+          "size": 12,
+          "position": {
+            "x": 18,
+            "y": 131
+          }
+        },
+        {
+          "name": "LZ2",
+          "size": 12,
+          "position": {
+            "x": 17,
+            "y": 25
+          }
+        },
+        {
+          "name": "Warehouse",
+          "size": 8,
+          "position": {
+            "x": 44,
+            "y": 143
+          }
+        },
+        {
+          "name": "North Aerodrom Hangar",
+          "size": 8,
+          "position": {
+            "x": 36,
+            "y": 115
+          }
+        },
+        {
+          "name": "Junk Yard",
+          "size": 6,
+          "position": {
+            "x": 97,
+            "y": 146
+          }
+        },
+        {
+          "name": "Junk Yard",
+          "size": 6,
+          "position": {
+            "x": 114,
+            "y": 125
+          }
+        },
+        {
+          "name": "Anti-Freeze Bar",
+          "size": 8,
+          "position": {
+            "x": 103,
+            "y": 109
+          }
+        },
+        {
+          "name": "Fort Biceps",
+          "size": 4,
+          "position": {
+            "x": 124,
+            "y": 143
+          }
+        },
+        {
+          "name": "Research Habitation",
+          "size": 12,
+          "position": {
+            "x": 160,
+            "y": 121
+          }
+        },
+        {
+          "name": "Research Hab Interior",
+          "size": 6,
+          "position": {
+            "x": 188,
+            "y": 146
+          }
+        },
+        {
+          "name": "Colony Garage",
+          "size": 8,
+          "position": {
+            "x": 135,
+            "y": 79
+          }
+        },
+        {
+          "name": "Disposals",
+          "size": 6,
+          "position": {
+            "x": 191,
+            "y": 71
+          }
+        },
+        {
+          "name": "Botany",
+          "size": 8,
+          "position": {
+            "x": 100,
+            "y": 65
+          }
+        },
+        {
+          "name": "Colony Administration",
+          "size": 4,
+          "position": {
+            "x": 100,
+            "y": 82
+          }
+        },
+        {
+          "name": "Panic room",
+          "size": 6,
+          "position": {
+            "x": 100,
+            "y": 92
+          }
+        },
+        {
+          "name": "Cave Camp",
+          "size": 6,
+          "position": {
+            "x": 60,
+            "y": 73
+          }
+        },
+        {
+          "name": "Command Centre",
+          "size": 4,
+          "position": {
+            "x": 108,
+            "y": 42
+          }
+        },
+        {
+          "name": "Argentinian Research HQ",
+          "size": 4,
+          "position": {
+            "x": 46,
+            "y": 12
+          }
+        },
+        {
+          "name": "Church",
+          "size": 4,
+          "position": {
+            "x": 113,
+            "y": 28
+          }
+        },
+        {
+          "name": "Morgue",
+          "size": 4,
+          "position": {
+            "x": 124,
+            "y": 28
+          }
+        },
+        {
+          "name": "Canteen",
+          "size": 4,
+          "position": {
+            "x": 135,
+            "y": 23
+          }
+        },
+        {
+          "name": "B-Ball Court",
+          "size": 4,
+          "position": {
+            "x": 130,
+            "y": 13
+          }
+        },
+        {
+          "name": "Security",
+          "size": 6,
+          "position": {
+            "x": 150,
+            "y": 28
+          }
+        },
+        {
+          "name": "Power Substation",
+          "size": 6,
+          "position": {
+            "x": 167,
+            "y": 25
+          }
+        },
+        {
+          "name": "Aurora Medical Clinic",
+          "size": 6,
+          "position": {
+            "x": 188,
+            "y": 10
+          }
+        }
       ],
       "inserts": [
         {
           "name": "LZ2 South Caves (30%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Shiva/builtup_lz2-south-caves-0.webp?raw=true",
-          "position": {"x": 3, "y": 49}
+          "position": {
+            "x": 3,
+            "y": 49
+          }
         },
         {
           "name": "Panic Room Hold (50%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Shiva/panic_room_hold-0.webp?raw=true",
-          "position": {"x": 95, "y": 96}
+          "position": {
+            "x": 95,
+            "y": 96
+          }
         }
       ]
     },
-
     "Fiorina": {
       "name": "Fiorina Science Annex",
       "path": "Maps/Fiorina.json",
       "areas": "Areas/fiorina.json",
       "labels": [
-        { "name": "LZ1", "size": 12, "x": 7400, "y": 3000 },
-        { "name": "LZ2", "size": 12, "x": 5000, "y": 5700 },
-        { "name": "Disco", "size": 8, "x": 6275, "y": 3400 },
-        { "name": "Survivor Camp", "size": 8, "x": 6175, "y": 2900 },
-        { "name": "Engineering Ring", "size": 8, "x": 6075, "y": 4550 },
-        { "name": "Lowsec Cellblock", "size": 8, "x": 4975, "y": 3900 },
-        { "name": "Research Cellblock", "size": 8, "x": 5275, "y": 2050 },
-        { "name": "Medbay", "size": 8, "x": 4025, "y": 2425 },
-        { "name": "Medbay Admin", "size": 8, "x": 3825, "y": 1900 },
-        { "name": "Cryo Lab", "size": 8, "x": 4025, "y": 1350 },
-        { "name": "Servers", "size": 8, "x": 2375, "y": 1350 },
-        { "name": "Blue Dorms", "size": 8, "x": 2575, "y": 2750 },
-        { "name": "Chapel", "size": 8, "x": 3375, "y": 3250 },
-        { "name": "Green Dorms", "size": 8, "x": 1075, "y": 2750 },
-        { "name": "Transit Hub", "size": 8, "x": 2775, "y": 3900 },
-        { "name": "Elevators", "size": 8, "x": 1325, "y": 3800 },
-        { "name": "Firebush", "size": 8, "x": 375, "y": 3800 },
-        { "name": "Scavenger Ship", "size": 8, "x": -125, "y": 4500 },
-        { "name": "Botany", "size": 8, "x": 3125, "y": 4550 },
-        { "name": "Park", "size": 8, "x": 2025, "y": 5550 },
-        { "name": "Souto Promo", "size": 8, "x": 2625, "y": 5550 },
-        { "name": "Armory", "size": 8, "x": 4475, "y": 4950 },
-        { "name": "Garden", "size": 8, "x": 4475, "y": 3250 }
+        {
+          "name": "LZ1",
+          "size": 12,
+          "position": {
+            "x": 231,
+            "y": 93
+          }
+        },
+        {
+          "name": "LZ2",
+          "size": 12,
+          "position": {
+            "x": 156,
+            "y": 178
+          }
+        },
+        {
+          "name": "Disco",
+          "size": 8,
+          "position": {
+            "x": 196,
+            "y": 106
+          }
+        },
+        {
+          "name": "Survivor Camp",
+          "size": 8,
+          "position": {
+            "x": 192,
+            "y": 90
+          }
+        },
+        {
+          "name": "Engineering Ring",
+          "size": 8,
+          "position": {
+            "x": 189,
+            "y": 142
+          }
+        },
+        {
+          "name": "Lowsec Cellblock",
+          "size": 8,
+          "position": {
+            "x": 155,
+            "y": 121
+          }
+        },
+        {
+          "name": "Research Cellblock",
+          "size": 8,
+          "position": {
+            "x": 164,
+            "y": 64
+          }
+        },
+        {
+          "name": "Medbay",
+          "size": 8,
+          "position": {
+            "x": 125,
+            "y": 75
+          }
+        },
+        {
+          "name": "Medbay Admin",
+          "size": 8,
+          "position": {
+            "x": 119,
+            "y": 59
+          }
+        },
+        {
+          "name": "Cryo Lab",
+          "size": 8,
+          "position": {
+            "x": 125,
+            "y": 42
+          }
+        },
+        {
+          "name": "Servers",
+          "size": 8,
+          "position": {
+            "x": 74,
+            "y": 42
+          }
+        },
+        {
+          "name": "Blue Dorms",
+          "size": 8,
+          "position": {
+            "x": 80,
+            "y": 85
+          }
+        },
+        {
+          "name": "Chapel",
+          "size": 8,
+          "position": {
+            "x": 105,
+            "y": 101
+          }
+        },
+        {
+          "name": "Green Dorms",
+          "size": 8,
+          "position": {
+            "x": 33,
+            "y": 85
+          }
+        },
+        {
+          "name": "Transit Hub",
+          "size": 8,
+          "position": {
+            "x": 86,
+            "y": 121
+          }
+        },
+        {
+          "name": "Elevators",
+          "size": 8,
+          "position": {
+            "x": 41,
+            "y": 118
+          }
+        },
+        {
+          "name": "Firebush",
+          "size": 8,
+          "position": {
+            "x": 11,
+            "y": 118
+          }
+        },
+        {
+          "name": "Scavenger Ship",
+          "size": 8,
+          "position": {
+            "x": -4,
+            "y": 140
+          }
+        },
+        {
+          "name": "Botany",
+          "size": 8,
+          "position": {
+            "x": 97,
+            "y": 142
+          }
+        },
+        {
+          "name": "Park",
+          "size": 8,
+          "position": {
+            "x": 63,
+            "y": 173
+          }
+        },
+        {
+          "name": "Souto Promo",
+          "size": 8,
+          "position": {
+            "x": 82,
+            "y": 173
+          }
+        },
+        {
+          "name": "Armory",
+          "size": 8,
+          "position": {
+            "x": 139,
+            "y": 154
+          }
+        },
+        {
+          "name": "Garden",
+          "size": 8,
+          "position": {
+            "x": 139,
+            "y": 101
+          }
+        }
       ],
       "inserts": [
         {
           "name": "Pod holder (10%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Fiorina/podholder-0.webp?raw=true",
-          "position": {"x": 113, "y": 67}
+          "position": {
+            "x": 113,
+            "y": 67
+          }
         }
       ]
     },
-
     "LV624": {
       "name": "LV-624",
       "path": "Maps/LV624.json",
       "areas": "Areas/LV624.json",
       "labels": [
-        { "name": "Undeground Lake", "size": 12, "x": 2125, "y": 700 },
-        { "name": "Western Caves", "size": 12, "x": 525, "y": 2000 },
-        { "name": "Central Caves", "size": 12, "x": 2225, "y": 2000 },
-        { "name": "Eastern Caves", "size": 12, "x": 4275, "y": 2000 },
-        { "name": "Western Barrens", "size": 12, "x": 525, "y": 4200 },
-        { "name": "Cargo Containers", "size": 6, "x": 3200, "y": 3300 },
-        { "name": "Sand Temple", "size": 8, "x": 4425, "y": 3250 },
-        { "name": "LZ1", "size": 12, "x": 4750, "y": 6125 },
-        { "name": "LZ2", "size": 12, "x": 975, "y": 5925 },
-        { "name": "Medbay", "size": 6, "x": 2400, "y": 4800 },
-        { "name": "Hydro", "size": 6, "x": 3025, "y": 4800 },
-        { "name": "Fitness", "size": 6, "x": 2875, "y": 5325 },
-        { "name": "Research", "size": 6, "x": 2275, "y": 5325 },
-        { "name": "Cargo Storage", "size": 6, "x": 4125, "y": 5400 },
-        { "name": "Nexus", "size": 8, "x": 3650, "y": 6125 },
-        { "name": "Robotics", "size": 6, "x": 1575, "y": 5550 },
-        { "name": "Corporate Dome", "size": 6, "x": 1475, "y": 6300 },
-        { "name": "Atmos", "size": 6, "x": 2675, "y": 6300 },
-        { "name": "Comms Relay", "size": 6, "x": 2125, "y": 6600 },
-        { "name": "Power Plant", "size": 6, "x": 2675, "y": 6700 },
-        { "name": "Secure Storage", "size": 6, "x": 825, "y": 6750 }
+        {
+          "name": "Undeground Lake",
+          "size": 12,
+          "position": {
+            "x": 66,
+            "y": 21
+          }
+        },
+        {
+          "name": "Western Caves",
+          "size": 12,
+          "position": {
+            "x": 16,
+            "y": 62
+          }
+        },
+        {
+          "name": "Central Caves",
+          "size": 12,
+          "position": {
+            "x": 69,
+            "y": 62
+          }
+        },
+        {
+          "name": "Eastern Caves",
+          "size": 12,
+          "position": {
+            "x": 133,
+            "y": 62
+          }
+        },
+        {
+          "name": "Western Barrens",
+          "size": 12,
+          "position": {
+            "x": 16,
+            "y": 131
+          }
+        },
+        {
+          "name": "Cargo Containers",
+          "size": 6,
+          "position": {
+            "x": 100,
+            "y": 103
+          }
+        },
+        {
+          "name": "Sand Temple",
+          "size": 8,
+          "position": {
+            "x": 138,
+            "y": 101
+          }
+        },
+        {
+          "name": "LZ1",
+          "size": 12,
+          "position": {
+            "x": 148,
+            "y": 191
+          }
+        },
+        {
+          "name": "LZ2",
+          "size": 12,
+          "position": {
+            "x": 30,
+            "y": 185
+          }
+        },
+        {
+          "name": "Medbay",
+          "size": 6,
+          "position": {
+            "x": 75,
+            "y": 150
+          }
+        },
+        {
+          "name": "Hydro",
+          "size": 6,
+          "position": {
+            "x": 94,
+            "y": 150
+          }
+        },
+        {
+          "name": "Fitness",
+          "size": 6,
+          "position": {
+            "x": 89,
+            "y": 166
+          }
+        },
+        {
+          "name": "Research",
+          "size": 6,
+          "position": {
+            "x": 71,
+            "y": 166
+          }
+        },
+        {
+          "name": "Cargo Storage",
+          "size": 6,
+          "position": {
+            "x": 128,
+            "y": 168
+          }
+        },
+        {
+          "name": "Nexus",
+          "size": 8,
+          "position": {
+            "x": 114,
+            "y": 191
+          }
+        },
+        {
+          "name": "Robotics",
+          "size": 6,
+          "position": {
+            "x": 49,
+            "y": 173
+          }
+        },
+        {
+          "name": "Corporate Dome",
+          "size": 6,
+          "position": {
+            "x": 46,
+            "y": 196
+          }
+        },
+        {
+          "name": "Atmos",
+          "size": 6,
+          "position": {
+            "x": 83,
+            "y": 196
+          }
+        },
+        {
+          "name": "Comms Relay",
+          "size": 6,
+          "position": {
+            "x": 66,
+            "y": 206
+          }
+        },
+        {
+          "name": "Power Plant",
+          "size": 6,
+          "position": {
+            "x": 83,
+            "y": 209
+          }
+        },
+        {
+          "name": "Secure Storage",
+          "size": 6,
+          "position": {
+            "x": 25,
+            "y": 210
+          }
+        }
       ],
       "inserts": [
         {
           "name": "Armory (10%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/LV624/armory_extra-0.webp?raw=true",
-          "position": {"x": 99, "y": 199}
+          "position": {
+            "x": 99,
+            "y": 199
+          }
         },
         {
           "name": "Corporate Dome (10%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/LV624/corporate_dome-0.webp?raw=true",
-          "position": {"x": 46, "y": 202}
+          "position": {
+            "x": 46,
+            "y": 202
+          }
         },
         {
           "name": "Gym (30%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/LV624/gym_alternate-0.webp?raw=true",
-          "position": {"x": 86, "y": 173}
+          "position": {
+            "x": 86,
+            "y": 173
+          }
         },
         {
           "name": "Nexus Barricaded (30%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/LV624/nexuscenter_barricaded-0.webp?raw=true",
-          "position": {"x": 110, "y": 197}
+          "position": {
+            "x": 110,
+            "y": 197
+          }
         },
         {
           "name": "Sandtemple LZ1 (25%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/LV624/sandtemple-se-0.webp?raw=true",
-          "position": {"x": 158, "y": 218}
+          "position": {
+            "x": 158,
+            "y": 218
+          }
         },
         {
           "name": "Sandtemple Jungle (25%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/LV624/sandtemple-jungle-0.webp?raw=true",
-          "position": {"x": 2, "y": 218}
+          "position": {
+            "x": 2,
+            "y": 218
+          }
         },
         {
           "name": "Cargo Special Mines (10%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/LV624/cargospecial_mines-0.webp?raw=true",
-          "position": {"x": 153, "y": 158}
+          "position": {
+            "x": 153,
+            "y": 158
+          }
         },
         {
           "name": "Cargo Special Weapons (10%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/LV624/cargospecial_weapons-0.webp?raw=true",
-          "position": {"x": 146, "y": 158}
+          "position": {
+            "x": 146,
+            "y": 158
+          }
         },
         {
           "name": "Cargo Special Gear (10%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/LV624/cargospecial_gear-0.webp?raw=true",
-          "position": {"x": 148, "y": 163}
+          "position": {
+            "x": 148,
+            "y": 163
+          }
         },
         {
           "name": "Hydro Destroyed (30%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/LV624/hydro_destroyed-0.webp?raw=true",
-          "position": {"x": 89, "y": 155}
+          "position": {
+            "x": 89,
+            "y": 155
+          }
         },
         {
           "name": "Cental Caves (10%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/LV624/centralcaves_T-0.webp?raw=true",
-          "position": {"x": 73, "y": 96}
+          "position": {
+            "x": 73,
+            "y": 96
+          }
         },
         {
           "name": "Medbay (10%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/LV624/medbay_destroyed-0.webp?raw=true",
-          "position": {"x": 73, "y": 155}
+          "position": {
+            "x": 73,
+            "y": 155
+          }
         }
       ]
     },
-
     "Trijent": {
       "name": "Trijent Dam",
       "path": "Maps/Trijent.json",
       "areas": "Areas/trijent.json",
       "labels": [
-        { "name": "LZ1", "size": 12, "x": 950, "y": 900 },
-        { "name": "LZ2", "size": 12, "x": 525, "y": 6700 },
-        { "name": "Administration", "size": 8, "x": 1625, "y": 800 },
-        { "name": "Hangar", "size": 8, "x": 825, "y": 1900 },
-        { "name": "Tech/Tool Storage", "size": 6, "x": 1425, "y": 2300 },
-        { "name": "Cargo", "size": 6, "x": 675, "y": 2600 },
-        { "name": "Workshop", "size": 6, "x": 625, "y": 3000 },
-        { "name": "Disposals", "size": 6, "x": 725, "y": 3425 },
-        { "name": "Breakroom", "size": 6, "x": 1825, "y": 3425 },
-        { "name": "Engineer Central", "size": 6, "x": 2125, "y": 2800 },
-        { "name": "Hydro Dam", "size": 8, "x": 3625, "y": 2500 },
-        { "name": "Marshal Office", "size": 8, "x": 825, "y": 4500 },
-        { "name": "Bar", "size": 6, "x": 2425, "y": 4150 },
-        { "name": "T-Comms", "size": 6, "x": 425, "y": 5500 },
-        { "name": "Graveyard", "size": 6, "x": 2025, "y": 5200 },
-        { "name": "Chapel", "size": 6, "x": 1475, "y": 5850 },
-        { "name": "Hydroponics", "size": 6, "x": 3225, "y": 5750 },
-        { "name": "Water Treatment", "size": 8, "x": 3325, "y": 6400 },
-        { "name": "Loading bay", "size": 8, "x": 1325, "y": 6800 },
-        { "name": "Eastern Laboratory", "size": 8, "x": 5325, "y": 500 },
-        { "name": "Excavation", "size": 8, "x": 5625, "y": 2500 },
-        { "name": "Hospital", "size": 12, "x": 4625, "y": 4300 },
-        { "name": "Eastern Filtration", "size": 6, "x": 6325, "y": 4300 },
-        { "name": "Mess Hall", "size": 8, "x": 5925, "y": 5900 },
-        { "name": "Dormitories", "size": 6, "x": 5825, "y": 6800 },
-        { "name": "Workshop", "size": 6, "x": 6925, "y": 6600 }
+        {
+          "name": "LZ1",
+          "size": 12,
+          "position": {
+            "x": 29,
+            "y": 28
+          }
+        },
+        {
+          "name": "LZ2",
+          "size": 12,
+          "position": {
+            "x": 16,
+            "y": 209
+          }
+        },
+        {
+          "name": "Administration",
+          "size": 8,
+          "position": {
+            "x": 50,
+            "y": 25
+          }
+        },
+        {
+          "name": "Hangar",
+          "size": 8,
+          "position": {
+            "x": 25,
+            "y": 59
+          }
+        },
+        {
+          "name": "Tech/Tool Storage",
+          "size": 6,
+          "position": {
+            "x": 44,
+            "y": 71
+          }
+        },
+        {
+          "name": "Cargo",
+          "size": 6,
+          "position": {
+            "x": 21,
+            "y": 81
+          }
+        },
+        {
+          "name": "Workshop",
+          "size": 6,
+          "position": {
+            "x": 19,
+            "y": 93
+          }
+        },
+        {
+          "name": "Disposals",
+          "size": 6,
+          "position": {
+            "x": 22,
+            "y": 107
+          }
+        },
+        {
+          "name": "Breakroom",
+          "size": 6,
+          "position": {
+            "x": 57,
+            "y": 107
+          }
+        },
+        {
+          "name": "Engineer Central",
+          "size": 6,
+          "position": {
+            "x": 66,
+            "y": 87
+          }
+        },
+        {
+          "name": "Hydro Dam",
+          "size": 8,
+          "position": {
+            "x": 113,
+            "y": 78
+          }
+        },
+        {
+          "name": "Marshal Office",
+          "size": 8,
+          "position": {
+            "x": 25,
+            "y": 140
+          }
+        },
+        {
+          "name": "Bar",
+          "size": 6,
+          "position": {
+            "x": 75,
+            "y": 129
+          }
+        },
+        {
+          "name": "T-Comms",
+          "size": 6,
+          "position": {
+            "x": 13,
+            "y": 171
+          }
+        },
+        {
+          "name": "Graveyard",
+          "size": 6,
+          "position": {
+            "x": 63,
+            "y": 162
+          }
+        },
+        {
+          "name": "Chapel",
+          "size": 6,
+          "position": {
+            "x": 46,
+            "y": 182
+          }
+        },
+        {
+          "name": "Hydroponics",
+          "size": 6,
+          "position": {
+            "x": 100,
+            "y": 179
+          }
+        },
+        {
+          "name": "Water Treatment",
+          "size": 8,
+          "position": {
+            "x": 103,
+            "y": 200
+          }
+        },
+        {
+          "name": "Loading bay",
+          "size": 8,
+          "position": {
+            "x": 41,
+            "y": 212
+          }
+        },
+        {
+          "name": "Eastern Laboratory",
+          "size": 8,
+          "position": {
+            "x": 166,
+            "y": 15
+          }
+        },
+        {
+          "name": "Excavation",
+          "size": 8,
+          "position": {
+            "x": 175,
+            "y": 78
+          }
+        },
+        {
+          "name": "Hospital",
+          "size": 12,
+          "position": {
+            "x": 144,
+            "y": 134
+          }
+        },
+        {
+          "name": "Eastern Filtration",
+          "size": 6,
+          "position": {
+            "x": 197,
+            "y": 134
+          }
+        },
+        {
+          "name": "Mess Hall",
+          "size": 8,
+          "position": {
+            "x": 185,
+            "y": 184
+          }
+        },
+        {
+          "name": "Dormitories",
+          "size": 6,
+          "position": {
+            "x": 182,
+            "y": 212
+          }
+        },
+        {
+          "name": "Workshop",
+          "size": 6,
+          "position": {
+            "x": 216,
+            "y": 206
+          }
+        }
       ],
       "inserts": [
         {
           "name": "Green River New Bridge (10%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Trijent/green_river_new_bridge-0.webp?raw=true",
-          "position": {"x": 183, "y": 110}
+          "position": {
+            "x": 183,
+            "y": 110
+          }
         },
         {
           "name": "Purple River New Bridge (10%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Trijent/purple_river_new_bridge-0.webp?raw=true",
-          "position": {"x": 131, "y": 170}
+          "position": {
+            "x": 131,
+            "y": 170
+          }
         },
         {
           "name": "Cave in Engineering (10%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Trijent/cave_in_engineering-0.webp?raw=true",
-          "position": {"x": 86, "y": 118}
+          "position": {
+            "x": 86,
+            "y": 118
+          }
         },
         {
           "name": "Temple Intact (10%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Trijent/temple_intact-0.webp?raw=true",
-          "position": {"x": 217, "y": 94}
+          "position": {
+            "x": 217,
+            "y": 94
+          }
         },
         {
           "name": "Ship Gone (15%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Trijent/ship_gone-0.webp?raw=true",
-          "position": {"x": 21, "y": 68}
+          "position": {
+            "x": 21,
+            "y": 68
+          }
         },
         {
           "name": "CLF Pods (10%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Trijent/clfpods-0.webp?raw=true",
-          "position": {"x": 116, "y": 119},
-          "offset": {"x": 0, "y": 29}
+          "position": {
+            "x": 116,
+            "y": 119
+          },
+          "offset": {
+            "x": 0,
+            "y": 29
+          }
         },
         {
           "name": "Crashlanding Bar (20%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Trijent/crashlanding-spp-bar-0.webp?raw=true",
-          "position": {"x": 69, "y": 120},
-          "offset": {"x": 0, "y": 35}
+          "position": {
+            "x": 69,
+            "y": 120
+          },
+          "offset": {
+            "x": 0,
+            "y": 35
+          }
         }
       ]
     },
-
     "Varadero": {
       "name": "New Varadero",
       "path": "Maps/Varadero.json",
       "areas": "Areas/varadero.json",
       "labels": [
-        { "name": "LZ1", "size": 12, "x": 2100, "y": 1250 },
-        { "name": "LZ2", "size": 12, "x": 4450, "y": 1075 },
-        { "name": "Bar", "size": 4, "x": 3250, "y": 1000 },
-        { "name": "Rockabilly Beach", "size": 4, "x": 2950, "y": 1600 },
-        { "name": "East Beach", "size": 6, "x": 4100, "y": 1900 },
-        { "name": "Cargo", "size": 6, "x": 1200, "y": 1550 },
-        { "name": "Northern Maint", "size": 4, "x": 1600, "y": 2000 },
-        { "name": "Engineering", "size": 6, "x": 3625, "y": 2450 },
-        { "name": "Security Offices", "size": 4, "x": 3350, "y": 3300 },
-        { "name": "Sec. Maint", "size": 4, "x": 4000, "y": 3300 },
-        { "name": "Dorms", "size": 4, "x": 2900, "y": 3400 },
-        { "name": "Bathroom", "size": 4, "x": 3800, "y": 4500 },
-        { "name": "Admin", "size": 4, "x": 2050, "y": 3350 },
-        { "name": "Medical", "size": 4, "x": 1800, "y": 2700 },
-        { "name": "Library", "size": 4, "x": 2775, "y": 2250 },
-        { "name": "B-Ball", "size": 4, "x": 2850, "y": 2700 },
-        { "name": "Research", "size": 6, "x": 475, "y": 3400 },
-        { "name": "North Research Caves", "size": 4, "x": 600, "y": 2500 },
-        { "name": "South Research Caves", "size": 4, "x": 1150, "y": 4150 },
-        { "name": "Southern Maintenance", "size": 4, "x": 2300, "y": 4500 },
-        { "name": "South West Caves", "size": 6, "x": 250, "y": 5250 },
-        { "name": "Monsoon", "size": 6, "x": 4900, "y": 3500 },
-        { "name": "Grass Caves", "size": 6, "x": 2850, "y": 5200 },
-        { "name": "Unknown Vessel", "size": 8, "x": 5350, "y": 5100 }
+        {
+          "name": "LZ1",
+          "size": 12,
+          "position": {
+            "x": 65,
+            "y": 39
+          }
+        },
+        {
+          "name": "LZ2",
+          "size": 12,
+          "position": {
+            "x": 139,
+            "y": 33
+          }
+        },
+        {
+          "name": "Bar",
+          "size": 4,
+          "position": {
+            "x": 101,
+            "y": 31
+          }
+        },
+        {
+          "name": "Rockabilly Beach",
+          "size": 4,
+          "position": {
+            "x": 92,
+            "y": 50
+          }
+        },
+        {
+          "name": "East Beach",
+          "size": 6,
+          "position": {
+            "x": 128,
+            "y": 59
+          }
+        },
+        {
+          "name": "Cargo",
+          "size": 6,
+          "position": {
+            "x": 37,
+            "y": 48
+          }
+        },
+        {
+          "name": "Northern Maint",
+          "size": 4,
+          "position": {
+            "x": 50,
+            "y": 62
+          }
+        },
+        {
+          "name": "Engineering",
+          "size": 6,
+          "position": {
+            "x": 113,
+            "y": 76
+          }
+        },
+        {
+          "name": "Security Offices",
+          "size": 4,
+          "position": {
+            "x": 104,
+            "y": 103
+          }
+        },
+        {
+          "name": "Sec. Maint",
+          "size": 4,
+          "position": {
+            "x": 125,
+            "y": 103
+          }
+        },
+        {
+          "name": "Dorms",
+          "size": 4,
+          "position": {
+            "x": 90,
+            "y": 106
+          }
+        },
+        {
+          "name": "Bathroom",
+          "size": 4,
+          "position": {
+            "x": 118,
+            "y": 140
+          }
+        },
+        {
+          "name": "Admin",
+          "size": 4,
+          "position": {
+            "x": 64,
+            "y": 104
+          }
+        },
+        {
+          "name": "Medical",
+          "size": 4,
+          "position": {
+            "x": 56,
+            "y": 84
+          }
+        },
+        {
+          "name": "Library",
+          "size": 4,
+          "position": {
+            "x": 86,
+            "y": 70
+          }
+        },
+        {
+          "name": "B-Ball",
+          "size": 4,
+          "position": {
+            "x": 89,
+            "y": 84
+          }
+        },
+        {
+          "name": "Research",
+          "size": 6,
+          "position": {
+            "x": 14,
+            "y": 106
+          }
+        },
+        {
+          "name": "North Research Caves",
+          "size": 4,
+          "position": {
+            "x": 18,
+            "y": 78
+          }
+        },
+        {
+          "name": "South Research Caves",
+          "size": 4,
+          "position": {
+            "x": 35,
+            "y": 129
+          }
+        },
+        {
+          "name": "Southern Maintenance",
+          "size": 4,
+          "position": {
+            "x": 71,
+            "y": 140
+          }
+        },
+        {
+          "name": "South West Caves",
+          "size": 6,
+          "position": {
+            "x": 7,
+            "y": 164
+          }
+        },
+        {
+          "name": "Monsoon",
+          "size": 6,
+          "position": {
+            "x": 153,
+            "y": 109
+          }
+        },
+        {
+          "name": "Grass Caves",
+          "size": 6,
+          "position": {
+            "x": 89,
+            "y": 162
+          }
+        },
+        {
+          "name": "Unknown Vessel",
+          "size": 8,
+          "position": {
+            "x": 167,
+            "y": 159
+          }
+        }
       ]
     },
-
     "Chances": {
       "name": "Chances Claim",
       "path": "Maps/Chances.json",
       "areas": "Areas/chances.json",
       "labels": [
-        { "name": "LZ1", "size": 12, "x": 400, "y": 5475 },
-        { "name": "LZ2", "size": 12, "x": 4950, "y": 5975 },
-        { "name": "West Reactor", "size": 8, "x": 700, "y": 775 },
-        { "name": "East Reactor", "size": 8, "x": 3600, "y": 775 },
-        { "name": "LZ1 Tunnels", "size": 8, "x": 600, "y": 6225 },
-        { "name": "Mining", "size": 8, "x": 3300, "y": 5975 },
-        { "name": "Engineering", "size": 4, "x": 650, "y": 4575 },
-        { "name": "Grill", "size": 4, "x": 1300, "y": 4575 },
-        { "name": "Bar", "size": 6, "x": 1600, "y": 4475 },
-        { "name": "Hydro North", "size": 4, "x": 2100, "y": 4575 },
-        { "name": "Hydro South", "size": 4, "x": 2100, "y": 6175 },
-        { "name": "Cargo", "size": 8, "x": 3100, "y": 4675 },
-        { "name": "Casino", "size": 4, "x": 3950, "y": 4275 },
-        { "name": "Garage", "size": 4, "x": 4950, "y": 4275 },
-        { "name": "A-Block", "size": 8, "x": 1400, "y": 3375 },
-        { "name": "Security", "size": 8, "x": 2900, "y": 3175 },
-        { "name": "Corporate Office", "size": 6, "x": 2700, "y": 2275 },
-        { "name": "Kitchen", "size": 4, "x": 3400, "y": 3675 },
-        { "name": "Administration", "size": 8, "x": 4200, "y": 3375 },
-        { "name": "Medical", "size": 4, "x": 4500, "y": 3675 },
-        { "name": "Typhoon Dropship", "size": 4, "x": 300, "y": 2175 },
-        { "name": "Tornado Dropship", "size": 4, "x": 5400, "y": 2675 },
-        { "name": "Fitness", "size": 4, "x": 1900, "y": 2275 }
+        {
+          "name": "LZ1",
+          "size": 12,
+          "position": {
+            "x": 12,
+            "y": 171
+          }
+        },
+        {
+          "name": "LZ2",
+          "size": 12,
+          "position": {
+            "x": 154,
+            "y": 186
+          }
+        },
+        {
+          "name": "West Reactor",
+          "size": 8,
+          "position": {
+            "x": 21,
+            "y": 24
+          }
+        },
+        {
+          "name": "East Reactor",
+          "size": 8,
+          "position": {
+            "x": 112,
+            "y": 24
+          }
+        },
+        {
+          "name": "LZ1 Tunnels",
+          "size": 8,
+          "position": {
+            "x": 18,
+            "y": 194
+          }
+        },
+        {
+          "name": "Mining",
+          "size": 8,
+          "position": {
+            "x": 103,
+            "y": 186
+          }
+        },
+        {
+          "name": "Engineering",
+          "size": 4,
+          "position": {
+            "x": 20,
+            "y": 142
+          }
+        },
+        {
+          "name": "Grill",
+          "size": 4,
+          "position": {
+            "x": 40,
+            "y": 142
+          }
+        },
+        {
+          "name": "Bar",
+          "size": 6,
+          "position": {
+            "x": 50,
+            "y": 139
+          }
+        },
+        {
+          "name": "Hydro North",
+          "size": 4,
+          "position": {
+            "x": 65,
+            "y": 142
+          }
+        },
+        {
+          "name": "Hydro South",
+          "size": 4,
+          "position": {
+            "x": 65,
+            "y": 192
+          }
+        },
+        {
+          "name": "Cargo",
+          "size": 8,
+          "position": {
+            "x": 96,
+            "y": 146
+          }
+        },
+        {
+          "name": "Casino",
+          "size": 4,
+          "position": {
+            "x": 123,
+            "y": 133
+          }
+        },
+        {
+          "name": "Garage",
+          "size": 4,
+          "position": {
+            "x": 154,
+            "y": 133
+          }
+        },
+        {
+          "name": "A-Block",
+          "size": 8,
+          "position": {
+            "x": 43,
+            "y": 105
+          }
+        },
+        {
+          "name": "Security",
+          "size": 8,
+          "position": {
+            "x": 90,
+            "y": 99
+          }
+        },
+        {
+          "name": "Corporate Office",
+          "size": 6,
+          "position": {
+            "x": 84,
+            "y": 71
+          }
+        },
+        {
+          "name": "Kitchen",
+          "size": 4,
+          "position": {
+            "x": 106,
+            "y": 114
+          }
+        },
+        {
+          "name": "Administration",
+          "size": 8,
+          "position": {
+            "x": 131,
+            "y": 105
+          }
+        },
+        {
+          "name": "Medical",
+          "size": 4,
+          "position": {
+            "x": 140,
+            "y": 114
+          }
+        },
+        {
+          "name": "Typhoon Dropship",
+          "size": 4,
+          "position": {
+            "x": 9,
+            "y": 67
+          }
+        },
+        {
+          "name": "Tornado Dropship",
+          "size": 4,
+          "position": {
+            "x": 168,
+            "y": 83
+          }
+        },
+        {
+          "name": "Fitness",
+          "size": 4,
+          "position": {
+            "x": 59,
+            "y": 71
+          }
+        }
       ]
     },
-
     "Kutjevo": {
       "name": "Kutjevo Refinery",
       "path": "Maps/Kutjevo.json",
       "areas": "Areas/kutjevo.json",
       "labels": [
-        { "name": "LZ Auxilary", "size": 8, "x": 425, "y": 1050 },
-        { "name": "LZ Dunes", "size": 8, "x": 275, "y": 4150 },
-        { "name": "Hydroelectric Dam", "size": 6, "x": 1125, "y": 4850 },
-        { "name": "Scrubland", "size": 6, "x": 1825, "y": 2650 },
-        { "name": "Medical Bay", "size": 6, "x": 2825, "y": 1850 },
-        { "name": "Medical Stormlocks", "size": 4, "x": 3025, "y": 2250 },
-        { "name": "Botany Stormlocks", "size": 4, "x": 3025, "y": 2650 },
-        { "name": "Botany Bay", "size": 6, "x": 3025, "y": 3250 },
-        { "name": "Botany Bridge", "size": 4, "x": 2325, "y": 3400 },
-        { "name": "Stony Fields", "size": 6, "x": 2825, "y": 4250 },
-        { "name": "Northern Construction", "size": 6, "x": 3625, "y": 1250 },
-        { "name": "Bar", "size": 6, "x": 4125, "y": 1650 },
-        { "name": "Construction", "size": 6, "x": 4025, "y": 2450 },
-        { "name": "Powerplant", "size": 6, "x": 3725, "y": 2950 },
-        { "name": "Bioplant Refinery", "size": 6, "x": 4425, "y": 3050 },
-        { "name": "North Caves", "size": 6, "x": 5225, "y": 650 },
-        { "name": "Central Caves", "size": 6, "x": 5125, "y": 2450 },
-        { "name": "South Caves", "size": 6, "x": 5325, "y": 3850 },
-        { "name": "North East Caves", "size": 6, "x": 6325, "y": 1550 },
-        { "name": "South East Caves", "size": 6, "x": 6525, "y": 3050 }
+        {
+          "name": "LZ Auxilary",
+          "size": 8,
+          "position": {
+            "x": 13,
+            "y": 32
+          }
+        },
+        {
+          "name": "LZ Dunes",
+          "size": 8,
+          "position": {
+            "x": 8,
+            "y": 129
+          }
+        },
+        {
+          "name": "Hydroelectric Dam",
+          "size": 6,
+          "position": {
+            "x": 35,
+            "y": 151
+          }
+        },
+        {
+          "name": "Scrubland",
+          "size": 6,
+          "position": {
+            "x": 57,
+            "y": 82
+          }
+        },
+        {
+          "name": "Medical Bay",
+          "size": 6,
+          "position": {
+            "x": 88,
+            "y": 57
+          }
+        },
+        {
+          "name": "Medical Stormlocks",
+          "size": 4,
+          "position": {
+            "x": 94,
+            "y": 70
+          }
+        },
+        {
+          "name": "Botany Stormlocks",
+          "size": 4,
+          "position": {
+            "x": 94,
+            "y": 82
+          }
+        },
+        {
+          "name": "Botany Bay",
+          "size": 6,
+          "position": {
+            "x": 94,
+            "y": 101
+          }
+        },
+        {
+          "name": "Botany Bridge",
+          "size": 4,
+          "position": {
+            "x": 72,
+            "y": 106
+          }
+        },
+        {
+          "name": "Stony Fields",
+          "size": 6,
+          "position": {
+            "x": 88,
+            "y": 132
+          }
+        },
+        {
+          "name": "Northern Construction",
+          "size": 6,
+          "position": {
+            "x": 113,
+            "y": 39
+          }
+        },
+        {
+          "name": "Bar",
+          "size": 6,
+          "position": {
+            "x": 128,
+            "y": 51
+          }
+        },
+        {
+          "name": "Construction",
+          "size": 6,
+          "position": {
+            "x": 125,
+            "y": 76
+          }
+        },
+        {
+          "name": "Powerplant",
+          "size": 6,
+          "position": {
+            "x": 116,
+            "y": 92
+          }
+        },
+        {
+          "name": "Bioplant Refinery",
+          "size": 6,
+          "position": {
+            "x": 138,
+            "y": 95
+          }
+        },
+        {
+          "name": "North Caves",
+          "size": 6,
+          "position": {
+            "x": 163,
+            "y": 20
+          }
+        },
+        {
+          "name": "Central Caves",
+          "size": 6,
+          "position": {
+            "x": 160,
+            "y": 76
+          }
+        },
+        {
+          "name": "South Caves",
+          "size": 6,
+          "position": {
+            "x": 166,
+            "y": 120
+          }
+        },
+        {
+          "name": "North East Caves",
+          "size": 6,
+          "position": {
+            "x": 197,
+            "y": 48
+          }
+        },
+        {
+          "name": "South East Caves",
+          "size": 6,
+          "position": {
+            "x": 203,
+            "y": 95
+          }
+        }
       ],
       "inserts": [
         {
           "name": "SE Checkpoint (35%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Kutjevo/communications-0.webp?raw=true",
-          "position": {"x": 132, "y": 78}
+          "position": {
+            "x": 132,
+            "y": 78
+          }
         },
         {
           "name": "Cleaning Botany (25%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Kutjevo/cleaningprog_botany-0.webp?raw=true",
-          "position": {"x": 108, "y": 107}
+          "position": {
+            "x": 108,
+            "y": 107
+          }
         },
         {
           "name": "Trapped Clown (5%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Kutjevo/trappedmonke_andclown-0.webp?raw=true",
-          "position": {"x": 68, "y": 100}
+          "position": {
+            "x": 68,
+            "y": 100
+          }
         },
         {
           "name": "Plinking Spot (25%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Kutjevo/plinkingspot_northlz-0.webp?raw=true",
-          "position": {"x": 63, "y": 68}
+          "position": {
+            "x": 63,
+            "y": 68
+          }
         }
       ]
     },
-
     "Hybrisa": {
       "name": "Hybrisa Prospera",
       "path": "Maps/Hybrisa.json",
       "areas": "Areas/hybrisa.json",
       "labels": [
-        { "name": "LZ1", "size": 12, "x": 6625, "y": 625 },
-        { "name": "LZ2", "size": 12, "x": 6500, "y": 4800 },
-
-        { "name": "Waste Disposals", "size": 6, "x": 6000, "y": 2400 },
-        { "name": "KMCC Freight Hub", "size": 8, "x": 6000, "y": 3550 },
-        { "name": "KMCC Departures", "size": 6, "x": 5700, "y": 5200 },
-        { "name": "KMCC Mining South", "size": 6, "x": 6100, "y": 5800 },
-        { "name": "KMCC Mining SE", "size": 6, "x": 6400, "y": 6675 },
-
-        { "name": "Derelict Ship", "size": 12, "x": 4000, "y": 7000 },
-
-        { "name": "Caverns South", "size": 6, "x": 4950, "y": 7600 },
-        { "name": "Caverns Southeast", "size": 6, "x": 5600, "y": 7000 },
-        { "name": "Caverns East", "size": 6, "x": 4950, "y": 5500 },
-        { "name": "Caverns Plateau", "size": 6, "x": 3400, "y": 6200 },
-        { "name": "Caverns Central", "size": 6, "x": 2750, "y": 4750 },
-        { "name": "Caverns West", "size": 6, "x": 1600, "y": 6200 },
-        { "name": "Caverns Southwest", "size": 6, "x": 450, "y": 7200 },
-        { "name": "Caverns Northwest", "size": 6, "x": 400, "y": 3450 },
-        { "name": "Caverns North", "size": 6, "x": 3100, "y": 200 }, 
-
-        { "name": "WeYa Bio-Genomic Lab", "size": 8, "x": 150, "y": 5700 },
-
-        { "name": "Sentinel Outpost", "size": 6, "x": 4500, "y": 3950 },
-        { "name": "Meridian", "size": 6, "x": 3400, "y": 3250 },
-        { "name": "WeYaMart", "size": 6, "x": 2100, "y": 3300 },
-        { "name": "Casino", "size": 6, "x": 1450, "y": 2450 },
-        { "name": "Westhaven Apartments", "size": 8, "x": 2050, "y": 2250 },
-        { "name": "WeYa Offices", "size": 6, "x": 2200, "y": 1500 },
-        { "name": "Pizza", "size": 6, "x": 3100, "y": 1200 },
-        { "name": "Garage", "size": 6, "x": 2200, "y": 550 },
-        { "name": "WeYa Celestia Gateway", "size": 8, "x": 50, "y": 1200 },
-        { "name": "Dynagrid", "size": 6, "x": 4200, "y": 2600 },
-        { "name": "TComms", "size": 4, "x": 5250, "y": 2400 },
-        { "name": "Bar", "size": 6, "x": 3850, "y": 1300 },
-        { "name": "Nova Medica", "size": 8, "x": 5200, "y": 1300 }
+        {
+          "name": "LZ1",
+          "size": 12,
+          "position": {
+            "x": 207,
+            "y": 19
+          }
+        },
+        {
+          "name": "LZ2",
+          "size": 12,
+          "position": {
+            "x": 203,
+            "y": 150
+          }
+        },
+        {
+          "name": "Waste Disposals",
+          "size": 6,
+          "position": {
+            "x": 187,
+            "y": 75
+          }
+        },
+        {
+          "name": "KMCC Freight Hub",
+          "size": 8,
+          "position": {
+            "x": 187,
+            "y": 110
+          }
+        },
+        {
+          "name": "KMCC Departures",
+          "size": 6,
+          "position": {
+            "x": 178,
+            "y": 162
+          }
+        },
+        {
+          "name": "KMCC Mining South",
+          "size": 6,
+          "position": {
+            "x": 190,
+            "y": 181
+          }
+        },
+        {
+          "name": "KMCC Mining SE",
+          "size": 6,
+          "position": {
+            "x": 200,
+            "y": 208
+          }
+        },
+        {
+          "name": "Derelict Ship",
+          "size": 12,
+          "position": {
+            "x": 125,
+            "y": 218
+          }
+        },
+        {
+          "name": "Caverns South",
+          "size": 6,
+          "position": {
+            "x": 154,
+            "y": 237
+          }
+        },
+        {
+          "name": "Caverns Southeast",
+          "size": 6,
+          "position": {
+            "x": 175,
+            "y": 218
+          }
+        },
+        {
+          "name": "Caverns East",
+          "size": 6,
+          "position": {
+            "x": 154,
+            "y": 171
+          }
+        },
+        {
+          "name": "Caverns Plateau",
+          "size": 6,
+          "position": {
+            "x": 106,
+            "y": 193
+          }
+        },
+        {
+          "name": "Caverns Central",
+          "size": 6,
+          "position": {
+            "x": 85,
+            "y": 148
+          }
+        },
+        {
+          "name": "Caverns West",
+          "size": 6,
+          "position": {
+            "x": 50,
+            "y": 193
+          }
+        },
+        {
+          "name": "Caverns Southwest",
+          "size": 6,
+          "position": {
+            "x": 14,
+            "y": 225
+          }
+        },
+        {
+          "name": "Caverns Northwest",
+          "size": 6,
+          "position": {
+            "x": 12,
+            "y": 107
+          }
+        },
+        {
+          "name": "Caverns North",
+          "size": 6,
+          "position": {
+            "x": 96,
+            "y": 6
+          }
+        },
+        {
+          "name": "WeYa Bio-Genomic Lab",
+          "size": 8,
+          "position": {
+            "x": 4,
+            "y": 178
+          }
+        },
+        {
+          "name": "Sentinel Outpost",
+          "size": 6,
+          "position": {
+            "x": 140,
+            "y": 123
+          }
+        },
+        {
+          "name": "Meridian",
+          "size": 6,
+          "position": {
+            "x": 106,
+            "y": 101
+          }
+        },
+        {
+          "name": "WeYaMart",
+          "size": 6,
+          "position": {
+            "x": 65,
+            "y": 103
+          }
+        },
+        {
+          "name": "Casino",
+          "size": 6,
+          "position": {
+            "x": 45,
+            "y": 76
+          }
+        },
+        {
+          "name": "Westhaven Apartments",
+          "size": 8,
+          "position": {
+            "x": 64,
+            "y": 70
+          }
+        },
+        {
+          "name": "WeYa Offices",
+          "size": 6,
+          "position": {
+            "x": 68,
+            "y": 46
+          }
+        },
+        {
+          "name": "Pizza",
+          "size": 6,
+          "position": {
+            "x": 96,
+            "y": 37
+          }
+        },
+        {
+          "name": "Garage",
+          "size": 6,
+          "position": {
+            "x": 68,
+            "y": 17
+          }
+        },
+        {
+          "name": "WeYa Celestia Gateway",
+          "size": 8,
+          "position": {
+            "x": 1,
+            "y": 37
+          }
+        },
+        {
+          "name": "Dynagrid",
+          "size": 6,
+          "position": {
+            "x": 131,
+            "y": 81
+          }
+        },
+        {
+          "name": "TComms",
+          "size": 4,
+          "position": {
+            "x": 164,
+            "y": 75
+          }
+        },
+        {
+          "name": "Bar",
+          "size": 6,
+          "position": {
+            "x": 120,
+            "y": 40
+          }
+        },
+        {
+          "name": "Nova Medica",
+          "size": 8,
+          "position": {
+            "x": 162,
+            "y": 40
+          }
+        }
       ]
     },
-
     "Sorokyne": {
       "name": "Sorokyne Strata",
       "path": "Maps/Sorokyne.json",
       "areas": "Areas/strata.json",
       "labels": [
-          { "name": "LZ1", "size": 12, "x": 150, "y": 2100 },
-          { "name": "LZ2", "size": 12, "x": 1300, "y": 5000 },
-
-          { "name": "Lifeboat", "size": 4, "x": 350, "y": 3600 },
-
-          { "name": "Mining Bar", "size": 4, "x": 750, "y": 2200 },
-          { "name": "Mining Canteen", "size": 4, "x": 1000, "y": 1550 },
-
-          { "name": "Cryo-Thermal Marshes", "size": 4, "x": 1000, "y": 4000 },
-          { "name": "LZ Checkpoint", "size": 4, "x": 1400, "y": 3200 },
-          { "name": "Flight Control", "size": 4, "x": 1800, "y": 2800 },
-          { "name": "Van Yard", "size": 4, "x": 2000, "y": 3500 },
-
-          { "name": "North Deck", "size": 6, "x": 2500, "y": 2000 },
-          { "name": "Telecomms", "size": 6, "x": 2200, "y": 4500 },
-          { "name": "Engineering", "size": 4, "x": 3000, "y": 2300 },
-          { "name": "Colony Power", "size": 4, "x": 3300, "y": 2000 },
-          { "name": "B-Ball", "size": 4, "x": 3700, "y": 1100 },
-          { "name": "B-Ball Caves", "size": 4, "x": 3500, "y": 500 },
-          { "name": "North Passage", "size": 4, "x": 4000, "y": 1500 },
-
-          { "name": "Deck Pipes", "size": 4, "x": 2800, "y": 3100 },
-          { "name": "Quarantine", "size": 4, "x": 3000, "y": 3700 },
-          { "name": "South Deck", "size": 6, "x": 3200, "y": 3400 },
-
-          { "name": "Medical", "size": 6, "x": 3500, "y": 3000 },
-          { "name": "Morgue", "size": 4, "x": 4000, "y": 3400 },
-
-          { "name": "Security", "size": 6, "x": 4000, "y": 2000 },
-          { "name": "Administration", "size": 4, "x": 3800, "y": 2400 },
-          { "name": "Aerodrom", "size": 6, "x": 4300, "y": 3200 },
-          { "name": "Canteen", "size": 6, "x": 4700, "y": 2200 },
-
-          { "name": "Wooden Hospital", "size": 4, "x": 4700, "y": 700 },
-          { "name": "Minehead", "size": 4, "x": 5900, "y": 1200 },
-          { "name": "Jungle Deck", "size": 6, "x": 4600, "y": 4100 },
-          { "name": "Carp Lake", "size": 6, "x": 6000, "y": 3100 },
-          { "name": "Core Monitoring", "size": 6, "x": 6300, "y": 4000 },
-          { "name": "Thermal Springs", "size": 4, "x": 7500, "y": 2700 },
-          { "name": "Deep Security", "size": 6, "x": 7000, "y": 1300 }
+        {
+          "name": "LZ1",
+          "size": 12,
+          "position": {
+            "x": 5,
+            "y": 65
+          }
+        },
+        {
+          "name": "LZ2",
+          "size": 12,
+          "position": {
+            "x": 41,
+            "y": 156
+          }
+        },
+        {
+          "name": "Lifeboat",
+          "size": 4,
+          "position": {
+            "x": 10,
+            "y": 112
+          }
+        },
+        {
+          "name": "Mining Bar",
+          "size": 4,
+          "position": {
+            "x": 23,
+            "y": 68
+          }
+        },
+        {
+          "name": "Mining Canteen",
+          "size": 4,
+          "position": {
+            "x": 31,
+            "y": 48
+          }
+        },
+        {
+          "name": "Cryo-Thermal Marshes",
+          "size": 4,
+          "position": {
+            "x": 31,
+            "y": 125
+          }
+        },
+        {
+          "name": "LZ Checkpoint",
+          "size": 4,
+          "position": {
+            "x": 43,
+            "y": 100
+          }
+        },
+        {
+          "name": "Flight Control",
+          "size": 4,
+          "position": {
+            "x": 56,
+            "y": 87
+          }
+        },
+        {
+          "name": "Van Yard",
+          "size": 4,
+          "position": {
+            "x": 62,
+            "y": 109
+          }
+        },
+        {
+          "name": "North Deck",
+          "size": 6,
+          "position": {
+            "x": 78,
+            "y": 62
+          }
+        },
+        {
+          "name": "Telecomms",
+          "size": 6,
+          "position": {
+            "x": 68,
+            "y": 140
+          }
+        },
+        {
+          "name": "Engineering",
+          "size": 4,
+          "position": {
+            "x": 93,
+            "y": 71
+          }
+        },
+        {
+          "name": "Colony Power",
+          "size": 4,
+          "position": {
+            "x": 103,
+            "y": 62
+          }
+        },
+        {
+          "name": "B-Ball",
+          "size": 4,
+          "position": {
+            "x": 115,
+            "y": 34
+          }
+        },
+        {
+          "name": "B-Ball Caves",
+          "size": 4,
+          "position": {
+            "x": 109,
+            "y": 15
+          }
+        },
+        {
+          "name": "North Passage",
+          "size": 4,
+          "position": {
+            "x": 125,
+            "y": 46
+          }
+        },
+        {
+          "name": "Deck Pipes",
+          "size": 4,
+          "position": {
+            "x": 87,
+            "y": 96
+          }
+        },
+        {
+          "name": "Quarantine",
+          "size": 4,
+          "position": {
+            "x": 93,
+            "y": 115
+          }
+        },
+        {
+          "name": "South Deck",
+          "size": 6,
+          "position": {
+            "x": 100,
+            "y": 106
+          }
+        },
+        {
+          "name": "Medical",
+          "size": 6,
+          "position": {
+            "x": 109,
+            "y": 93
+          }
+        },
+        {
+          "name": "Morgue",
+          "size": 4,
+          "position": {
+            "x": 125,
+            "y": 106
+          }
+        },
+        {
+          "name": "Security",
+          "size": 6,
+          "position": {
+            "x": 125,
+            "y": 62
+          }
+        },
+        {
+          "name": "Administration",
+          "size": 4,
+          "position": {
+            "x": 118,
+            "y": 75
+          }
+        },
+        {
+          "name": "Aerodrom",
+          "size": 6,
+          "position": {
+            "x": 134,
+            "y": 100
+          }
+        },
+        {
+          "name": "Canteen",
+          "size": 6,
+          "position": {
+            "x": 146,
+            "y": 68
+          }
+        },
+        {
+          "name": "Wooden Hospital",
+          "size": 4,
+          "position": {
+            "x": 146,
+            "y": 21
+          }
+        },
+        {
+          "name": "Minehead",
+          "size": 4,
+          "position": {
+            "x": 184,
+            "y": 37
+          }
+        },
+        {
+          "name": "Jungle Deck",
+          "size": 6,
+          "position": {
+            "x": 143,
+            "y": 128
+          }
+        },
+        {
+          "name": "Carp Lake",
+          "size": 6,
+          "position": {
+            "x": 187,
+            "y": 96
+          }
+        },
+        {
+          "name": "Core Monitoring",
+          "size": 6,
+          "position": {
+            "x": 196,
+            "y": 125
+          }
+        },
+        {
+          "name": "Thermal Springs",
+          "size": 4,
+          "position": {
+            "x": 234,
+            "y": 84
+          }
+        },
+        {
+          "name": "Deep Security",
+          "size": 6,
+          "position": {
+            "x": 218,
+            "y": 40
+          }
+        }
       ],
       "inserts": [
         {
           "name": "CLF Camp (10%)",
           "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Inserts/Sorokyne/clfcamp-0.webp?raw=true",
-          "position": {"x": 146, "y": 31}
+          "position": {
+            "x": 146,
+            "y": 31
+          }
         }
       ]
     },
-
     "PVE": "",
     "Corsat": {
       "name": "Corsat",
-      "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Corsat-0.webp?raw=true",
+      "path": "Maps/Corsat.json",
       "areas": "Areas/corsat.json"
     },
     "Whiskey": {
@@ -598,33 +2459,179 @@
       "name": "Arctic Valley",
       "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Arctic_Valley-0.webp?raw=true"
     },
-
     "Ships": "",
     "Almayer": {
       "name": "UNS Almayer",
       "url": "https://github.com/Tunguso4ka/rmc14_maps/blob/master/Almayer-0.webp?raw=true",
       "labels": [
-        { "name": "This is render of cm-ss13 Almayer.", "size": 6, "x": 0, "y": 6400 },
-        { "name": "AI Core", "size": 8, "x": 8875, "y": 3250 },
-        { "name": "Lower Deck", "size": 12, "x": -25, "y": 4850 },
-        { "name": "Astronavigation", "size": 4, "x": 1575, "y": 4825 },
-        { "name": "ASO", "size": 4, "x": 2075, "y": 4575 },
-        { "name": "Vehicle Bay", "size": 4, "x": 1975, "y": 5100 },
-        { "name": "Hangar", "size": 6, "x": 3060, "y": 4825 },
-        { "name": "Lower Medbay", "size": 6, "x": 4175, "y": 4825 },
-        { "name": "Chem Lab", "size": 4, "x": 3825, "y": 4600 },
-        { "name": "Briefing", "size": 6, "x": 5425, "y": 4825 },
-        { "name": "Requisitions", "size": 6, "x": 6325, "y": 4825 },
-        { "name": "SEA", "size": 4, "x": 7080, "y": 4825 },
-        { "name": "Lower Enginerring", "size": 4, "x": 8175, "y": 4825 },
-        { "name": "Conference room", "size": 4, "x": 4750, "y": 4200 },
-        { "name": "Upper Deck", "size": 12, "x": -25, "y": 1650 },
-        { "name": "Brig Armory", "size": 4, "x": 1600, "y": 1175 },
-        { "name": "Brig", "size": 4, "x": 1775, "y": 1650 },
-        { "name": "Cells", "size": 4, "x": 1775, "y": 1950 },
-        { "name": "Conference", "size": 4, "x": 2325, "y": 1585 },
-        { "name": "CIC", "size": 4, "x": 3100, "y": 1575 },
-        { "name": "Upper Medbay", "size": 6, "x": 4475, "y": 1575 }
+        {
+          "name": "This is render of cm-ss13 Almayer.",
+          "size": 6,
+          "position": {
+            "x": 0,
+            "y": 200
+          }
+        },
+        {
+          "name": "AI Core",
+          "size": 8,
+          "position": {
+            "x": 277,
+            "y": 101
+          }
+        },
+        {
+          "name": "Lower Deck",
+          "size": 12,
+          "position": {
+            "x": -1,
+            "y": 151
+          }
+        },
+        {
+          "name": "Astronavigation",
+          "size": 4,
+          "position": {
+            "x": 49,
+            "y": 150
+          }
+        },
+        {
+          "name": "ASO",
+          "size": 4,
+          "position": {
+            "x": 64,
+            "y": 142
+          }
+        },
+        {
+          "name": "Vehicle Bay",
+          "size": 4,
+          "position": {
+            "x": 61,
+            "y": 159
+          }
+        },
+        {
+          "name": "Hangar",
+          "size": 6,
+          "position": {
+            "x": 95,
+            "y": 150
+          }
+        },
+        {
+          "name": "Lower Medbay",
+          "size": 6,
+          "position": {
+            "x": 130,
+            "y": 150
+          }
+        },
+        {
+          "name": "Chem Lab",
+          "size": 4,
+          "position": {
+            "x": 119,
+            "y": 143
+          }
+        },
+        {
+          "name": "Briefing",
+          "size": 6,
+          "position": {
+            "x": 169,
+            "y": 150
+          }
+        },
+        {
+          "name": "Requisitions",
+          "size": 6,
+          "position": {
+            "x": 197,
+            "y": 150
+          }
+        },
+        {
+          "name": "SEA",
+          "size": 4,
+          "position": {
+            "x": 221,
+            "y": 150
+          }
+        },
+        {
+          "name": "Lower Enginerring",
+          "size": 4,
+          "position": {
+            "x": 255,
+            "y": 150
+          }
+        },
+        {
+          "name": "Conference room",
+          "size": 4,
+          "position": {
+            "x": 148,
+            "y": 131
+          }
+        },
+        {
+          "name": "Upper Deck",
+          "size": 12,
+          "position": {
+            "x": -1,
+            "y": 51
+          }
+        },
+        {
+          "name": "Brig Armory",
+          "size": 4,
+          "position": {
+            "x": 50,
+            "y": 36
+          }
+        },
+        {
+          "name": "Brig",
+          "size": 4,
+          "position": {
+            "x": 55,
+            "y": 51
+          }
+        },
+        {
+          "name": "Cells",
+          "size": 4,
+          "position": {
+            "x": 55,
+            "y": 60
+          }
+        },
+        {
+          "name": "Conference",
+          "size": 4,
+          "position": {
+            "x": 72,
+            "y": 49
+          }
+        },
+        {
+          "name": "CIC",
+          "size": 4,
+          "position": {
+            "x": 96,
+            "y": 49
+          }
+        },
+        {
+          "name": "Upper Medbay",
+          "size": 6,
+          "position": {
+            "x": 139,
+            "y": 49
+          }
+        }
       ]
     },
     "GoldenArrow": {

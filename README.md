@@ -17,14 +17,18 @@ or
     "map id": "map id for url query",
     {
       "name": "map name",
-      "path": "path to image.json, alternative to url",
-      "url": "map image url",
+      "path": "path to image.json, alternative to url, supports multi-tiled images",
+      "url": "map image url, unneded if you use path",
 
       "areas": "areas json url",
       "hidden": false,
       "labels":
       [
-        {"name": "label name", "size": 12, "x": 0, "y": 0}
+        {
+          "name": "label name",
+          "size": 12,
+          "position": {"x": 0, "y": 0}
+        }
       ],
       "inserts":
       [
