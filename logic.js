@@ -131,14 +131,16 @@ async function load_map(_map = null)
     document.body.style.cursor = "wait";
 
     // Check and load areas
-    area_info = {}
+    area_info = {};
     if ("areas" in maps.maps[_map])
-        load_areas(_map)
+        load_areas(_map);
+    else
+        toggle_hidden('button_borders', true);
 
     if ('path' in maps.maps[_map])
-        load_image_tiled(maps.maps[_map].path)
+        load_image_tiled(maps.maps[_map].path);
     else if ('url' in maps.maps[_map])
-        load_image_lone(maps.maps[_map].url)
+        load_image_lone(maps.maps[_map].url);
     else
     {
         console.error(`Can't load map ${_map}: It doesn't have path or url specified. Please, contact map viewer creator.`)
@@ -162,6 +164,13 @@ function load_image_lone(_url = null)
     image.dimensions = { "x": 1, "y": 1 };
     image.tile_size = { "x": 0, "y": 0}
     image.tiles = [_image];
+
+    // Labels
+    image.labels = [];
+    toggle_hidden('button_labels', true);
+    // Inserts
+    image.inserts = []
+    insert_button_list.innerHTML = "";
 
     _image.onload = function()
     {
@@ -757,13 +766,11 @@ function on_keydown(e)
 // Button logic
 //
 
-/*
 function toggle_setting(setting)
 {
     settings[setting] = !settings[setting];
     requestAnimationFrame(draw);
 }
-*/
 
 function toggle_hidden(eid, bool)
 {
