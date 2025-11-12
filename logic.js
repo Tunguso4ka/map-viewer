@@ -5,6 +5,7 @@ var settings = { // cookies in future
     "show_labels": true,
     "show_inserts": true,
     "show_area_borders": false,
+    "show_tile_cursor": true
 }
 
 var position = { x: 0, y: 0};
@@ -32,6 +33,8 @@ var insert_button_list;
 var area_info_label;
 var area_info = {};
 
+var tile_cursor;
+
 // assign elements, events and load json
 document.addEventListener('DOMContentLoaded', function()
 {
@@ -54,6 +57,8 @@ document.addEventListener('DOMContentLoaded', function()
     zoomable.addEventListener('dblclick', on_doubleclick);
 
     area_info_label = document.getElementById("area_info_label");
+
+    tile_cursor = document.getElementById("tile");
 
     insert_button_list = document.getElementById("map_insert_buttons");
 
@@ -490,18 +495,28 @@ function get_event_location(e)
                  y: e.clientY };
 }
 
+function updateTileCursor(event_location)
+{
+    if (!settings['show_tile_cursor'])
+        return;
+    let tile_pos = getSS14Position(event_location);
+
+    tile_cursor.style.left = `${tile_pos.x * 32 - 2}px`;
+    tile_cursor.style.top  = `${tile_pos.y * 32 - 2}px`;
+}
+
 // Updates Area Info label with new information.
 function updateAreaInfo(event_location)
 {
-    area_info_label.style.left = `${event_location.x+24}px`;
-    area_info_label.style.top = `${event_location.y+24}px`;
+    area_info_label.style.left = `${event_location.x + 24}px`;
+    area_info_label.style.top  = `${event_location.y + 24}px`;
 
     let share_position = getSS14Position(event_location);
 
     //Check if we have areas
     if (!("points" in area_info))
     {
-        area_info_label.textContent = `${share_position.x},${share_position.y}\n`;
+        area_info_label.textContent = `x: ${share_position.x}, y: ${share_position.y}\n`;
         return;
     }
 
@@ -516,19 +531,19 @@ function updateAreaInfo(event_location)
     if (_id in area_info.points && "weedkiller" in area_info.points[_id])
         _weed = area_info.points[_id].weedkiller;
 
-    area_info_label.textContent = `"${_name}" - ${share_position.x},${share_position.y}\n`;
+    area_info_label.textContent = `"${_name}" - x: ${share_position.x}, y: ${share_position.y}\n`;
 
     if (!_prot)
         return;
 
-    area_info_label.textContent += ` CAS: ${ (_prot[0] == 1) ? "✔️" : "❌"} | Fulton: ${ (_prot[1] == 1) ? "✔️" : "❌"} | Lasing: ${ (_prot[2] == 1) ? "✔️" : "❌"}\n`;
-    area_info_label.textContent += ` MortarPlace: ${ (_prot[3] == 1) ? "✔️" : "❌"} | MortarFire: ${ (_prot[4] == 1) ? "✔️" : "❌"}\n`;
-    area_info_label.textContent += ` Medevac: ${ (_prot[5] == 1) ? "✔️" : "❌"} | OB: ${ (_prot[6] == 1) ? "✔️" : "❌"} | SupplyDrop: ${ (_prot[7] == 1) ? "✔️" : "❌"}`;
+    area_info_label.textContent += `\n CAS: ${ (_prot[0] == 1) ? "✅" : "❌"} | Fulton: ${ (_prot[1] == 1) ? "✅" : "❌"} | Lasing: ${ (_prot[2] == 1) ? "✅" : "❌"}\n`;
+    area_info_label.textContent += ` MortarPlace: ${ (_prot[3] == 1) ? "✅" : "❌"} | MortarFire: ${ (_prot[4] == 1) ? "✅" : "❌"}\n`;
+    area_info_label.textContent += ` Medevac: ${ (_prot[5] == 1) ? "✅" : "❌"} | OB: ${ (_prot[6] == 1) ? "✅" : "❌"} | SupplyDrop: ${ (_prot[7] == 1) ? "✅" : "❌"}`;
 
     if (!_weed)
         return;
 
-    area_info_label.textContent += `\n Weedkiller: ${_weed}`
+    area_info_label.textContent += `\n\n Weedkiller: ${_weed}`
 }
 
 
@@ -601,6 +616,7 @@ function on_mousedown(e)
 {
     e.preventDefault();
     let event_location = get_event_location(e);
+    updateTileCursor(event_location);
     updateAreaInfo(event_location);
 
     start = { x: event_location.x - position.x,
@@ -627,6 +643,7 @@ function on_mousemove(e)
 
     let event_location = get_event_location(e);
 
+    updateTileCursor(event_location);
     if (area_info_label && !area_info_label.hidden)
         updateAreaInfo(event_location);
 
