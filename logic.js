@@ -5,6 +5,7 @@ var settings = { // cookies in future
     "show_labels": true,
     "show_inserts": true,
     "show_area_borders": false,
+    "calc_mortar": true
 }
 
 var position = { x: 0, y: 0};
@@ -496,7 +497,7 @@ function updateAreaInfo(event_location)
     area_info_label.style.left = `${event_location.x+24}px`;
     area_info_label.style.top = `${event_location.y+24}px`;
 
-    let share_position = getSS14Position(event_location);
+    let share_position = getTile32Position(event_location);
 
     //Check if we have areas
     if (!("points" in area_info))
@@ -517,6 +518,8 @@ function updateAreaInfo(event_location)
         _weed = area_info.points[_id].weedkiller;
 
     area_info_label.textContent = `"${_name}" - ${share_position.x},${share_position.y}\n`;
+    if (settings['calc_mortar'])
+        area_info_label.textContent += ` Game Coords: ${getGameCoords(event_location, true)}\n`;
 
     if (!_prot)
         return;
@@ -532,7 +535,28 @@ function updateAreaInfo(event_location)
 }
 
 
-function getSS14Position(event_location)
+function getGameCoords(event_location, format=false)
+{
+    event_location = getTile32Position(event_location);
+    event_location.y = image.size.y / 32 - event_location.y;
+
+    let ref_map = { "x": document.getElementById("mortar_coord_map_x").value,
+                    "y": image.size.y / 32 - document.getElementById("mortar_coord_map_y").value};
+
+    let ref_game = { "x": document.getElementById("mortar_coord_ref_x").value,
+                     "y": document.getElementById("mortar_coord_ref_y").value};
+
+    let dif = { "x": ref_map.x - ref_game.x,
+                "y": ref_map.y - ref_game.y};
+
+    if (format)
+        return `x: ${event_location.x - dif.x}, y: ${event_location.y - dif.y}`;
+    return {'x': event_location.x - dif.x,
+            'y': event_location.y - dif.y}
+}
+
+
+function getTile32Position(event_location)
 {
     return {x: Math.floor((event_location.x - position.x) / zoom / 32),
             y: Math.floor((event_location.y - position.y) / zoom / 32)};
@@ -606,6 +630,13 @@ function on_mousedown(e)
     start = { x: event_location.x - position.x,
               y: event_location.y - position.y};
     is_panning = true;
+
+    if (settings['calc_mortar'])
+    {
+        let mort_coords = getGameCoords(event_location);
+        document.getElementById("mortar_coord_result_x").value = mort_coords.x;
+        document.getElementById("mortar_coord_result_y").value = mort_coords.y;
+    }
 }
 
 // Stops panning.
@@ -678,7 +709,7 @@ function on_doubleclick(e)
     let event_location = get_event_location(e);
 
     // Get tile position.
-    let share_position = getSS14Position(event_location);
+    let share_position = getTile32Position(event_location);
 
     console.log(share_position)
     params.set("pos", `${share_position.x}x${share_position.y}`)
@@ -691,7 +722,6 @@ function on_keydown(e)
     switch (e.key)
     {
         // Zoom Out
-        case '-':
         case '_':
             handle_zoom(null, null, 0.6);
             break;

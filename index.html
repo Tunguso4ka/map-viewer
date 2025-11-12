@@ -66,6 +66,20 @@
     </div>
     <!-- Info box -->
     <p id="area_info_label" hidden="" ></p>
+    <!-- Mortar buddy -->
+    <div class="mortar_calc">
+        <p>Map view. coord.:</p>
+        <input type="number" id="mortar_coord_map_x" placeholder="x"/>
+        <input type="number" id="mortar_coord_map_y" placeholder="y"/>
+        <p>Reference coord.:</p>
+        <input type="number" id="mortar_coord_ref_x" placeholder="x"/>
+        <input type="number" id="mortar_coord_ref_y" placeholder="y"/>
+        <br><br>
+        <p>Last inputed.:</p>
+        <input type="number" readonly id="mortar_coord_result_x" placeholder="x"/>
+        <input type="number" readonly id="mortar_coord_result_y" placeholder="y"/>
+        <button id="mortar_button_close">x</button>
+    </div>
     <!-- Scripts -->
     <script type="text/javascript" src="logic.js"></script>
   </body>
