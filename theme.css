@@ -135,12 +135,14 @@ html, body {
   overflow-x: hidden;
   transition-duration: 0.4s;
   height: calc(100vh - 48px - 12px);
-  margin: 0;
+  margin: 4px 0 0 0;
+  border-radius: 0 6px 6px 6px;
 }
 
 #maplist[hidden] {
   height: 0px;
   width: 0px; /* for when buttons width is less then maplist buttons width */
+  margin: 0;
 }
 
 #area_info_label {
