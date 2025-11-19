@@ -35,10 +35,6 @@ or
     "x": "image size",
     "y": "image size"
   },
-  "tile_size": {
-    "x": "tile size",
-    "y": "tile size"
-  },
   "dimensions": {
     "x": "number of tiles",
     "y": "number of tiles"

@@ -3,10 +3,6 @@
     "x": 8160,
     "y": 6528
   },
-  "tile_size": {
-    "x": 1020,
-    "y": 933
-  },
   "dimensions": {
     "x": 8,
     "y": 7
@@ -151,10 +147,10 @@
       }
     },
     {
-      "name": "Scavenger Ship",
+      "name": "Scav. Ship",
       "size": 8,
       "position": {
-        "x": -4,
+        "x": 0,
         "y": 140
       }
     },

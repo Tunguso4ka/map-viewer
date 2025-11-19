@@ -18,7 +18,6 @@ var is_panning;
 
 var image = {
     "size": {"x": 0, "y": 0},
-    "tile_size": {"x": 0, "y": 0},
     "dimensions": {"x": 1, "y": 1},
     "tiles": [],
     "labels": [],
@@ -167,7 +166,6 @@ function load_image_lone(_url = null)
     _image.src = _url;
 
     image.dimensions = { "x": 1, "y": 1 };
-    image.tile_size = { "x": 0, "y": 0}
     image.tiles = [_image];
 
     // Labels
@@ -198,15 +196,12 @@ async function load_image_tiled(_path = null)
         return;
     }
 
-    image.tiles.forEach((_image) => {
-        _image.src = "res/loading.webp";
-    });
+    image.tiles = []
 
     var response = await fetch(_path);
     var image_json = await response.json();
 
     image.size = image_json.size;
-    image.tile_size = image_json.tile_size;
     image.dimensions = image_json.dimensions;
 
     // Check and load Labels
@@ -237,9 +232,10 @@ async function load_image_tiled(_path = null)
             image.tiles[num].src = image_json.url + `/tile-${num}.${image_json.format}?raw=true`
             image.tiles[num].onload = function()
             {
-                ctx.drawImage(image.tiles[_y * image.dimensions.x + _x],
-                              _x * image.tile_size.x,
-                              _y * image.tile_size.y);
+                num = _y * image.dimensions.x + _x
+                ctx.drawImage(image.tiles[num],
+                              _x * image.tiles[num].width,
+                              _y * image.tiles[num].height);
 
                 img_loaded_num++;
                 if (img_loaded_num == (image.dimensions.y * image.dimensions.x))
@@ -335,15 +331,20 @@ function draw()
     ctx.imageSmoothingEnabled = false;
 
     var time = new Date().getTime() / 1000;
+    var _offset = {'x': 0, 'y': 0}
+
     for (let _y = 0; _y < image.dimensions.y; _y++)
     {
+        _offset.x = 0;
         for (let _x = 0; _x < image.dimensions.x; _x++)
         {
             var num = _y * image.dimensions.x + _x
             ctx.drawImage(image.tiles[num],
-                          _x * image.tile_size.x,
-                          _y * image.tile_size.y);
+                          _offset.x,
+                          _offset.y);
+            _offset.x += image.tiles[num].width;
         }
+        _offset.y += image.tiles[_y * image.dimensions.x].height;
     }
     console.log(`It took ${((new Date().getTime() / 1000) - time).toFixed(2)}s to redraw canvas.`)
 
