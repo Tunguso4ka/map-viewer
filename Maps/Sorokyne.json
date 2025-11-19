@@ -1,15 +1,15 @@
 {
   "size": {
-    "x": "8192",
-    "y": "5536"
+    "x": 8192,
+    "y": 5536
   },
   "tile_size": {
-    "x": "1365",
-    "y": "1384"
+    "x": 1024,
+    "y": 923
   },
   "dimensions": {
-    "x": "6",
-    "y": "4"
+    "x": 8,
+    "y": 6
   },
   "format": "webp",
   "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Maps/Sorokyne",

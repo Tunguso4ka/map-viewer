@@ -1,15 +1,15 @@
 {
   "size": {
-    "x": "7040",
-    "y": "5760"
+    "x": 7040,
+    "y": 5760
   },
   "tile_size": {
-    "x": "1760",
-    "y": "1440"
+    "x": 1006,
+    "y": 960
   },
   "dimensions": {
-    "x": "4",
-    "y": "4"
+    "x": 7,
+    "y": 6
   },
   "format": "webp",
   "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Maps/Varadero",

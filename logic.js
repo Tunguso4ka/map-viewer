@@ -223,6 +223,8 @@ async function load_image_tiled(_path = null)
         image.inserts = image_json.inserts;
     console.log(`Loaded ${image.inserts.length} inserts.`)
 
+    console.log(`Loading ${image.dimensions.x}:${image.dimensions.y} tiles.`)
+
     var img_loaded_num = 0;
     for (let _y = 0; _y < image.dimensions.y; _y++)
     {

@@ -1,15 +1,15 @@
 {
   "size": {
-    "x": "7040",
-    "y": "5120"
+    "x": 7040,
+    "y": 5120
   },
   "tile_size": {
-    "x": "1173",
-    "y": "1280"
+    "x": 1006,
+    "y": 1024
   },
   "dimensions": {
-    "x": "6",
-    "y": "4"
+    "x": 7,
+    "y": 5
   },
   "format": "webp",
   "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Maps/Shiva",

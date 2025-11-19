@@ -1,15 +1,15 @@
 {
   "size": {
-    "x": "8064",
-    "y": "7776"
+    "x": 8064,
+    "y": 7776
   },
   "tile_size": {
-    "x": "2016",
-    "y": "1944"
+    "x": 1008,
+    "y": 972
   },
   "dimensions": {
-    "x": "4",
-    "y": "4"
+    "x": 8,
+    "y": 8
   },
   "format": "webp",
   "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Maps/Corsat"

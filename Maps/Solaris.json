@@ -1,15 +1,15 @@
 {
   "size": {
-    "x": "7136",
-    "y": "6752"
+    "x": 7136,
+    "y": 6752
   },
   "tile_size": {
-    "x": "1784",
-    "y": "1688"
+    "x": 1019,
+    "y": 965
   },
   "dimensions": {
-    "x": "4",
-    "y": "4"
+    "x": 7,
+    "y": 7
   },
   "format": "webp",
   "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Maps/Solaris",

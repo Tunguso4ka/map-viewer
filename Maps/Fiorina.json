@@ -1,15 +1,15 @@
 {
   "size": {
-    "x": "8160",
-    "y": "6528"
+    "x": 8160,
+    "y": 6528
   },
   "tile_size": {
-    "x": "1360",
-    "y": "1632"
+    "x": 1020,
+    "y": 933
   },
   "dimensions": {
-    "x": "6",
-    "y": "4"
+    "x": 8,
+    "y": 7
   },
   "format": "webp",
   "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Maps/Fiorina",
