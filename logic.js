@@ -223,6 +223,7 @@ async function load_image_tiled(_path = null)
         image.inserts = image_json.inserts;
     console.log(`Loaded ${image.inserts.length} inserts.`)
 
+    var img_loaded_num = 0;
     for (let _y = 0; _y < image.dimensions.y; _y++)
     {
         for (let _x = 0; _x < image.dimensions.x; _x++)
@@ -234,7 +235,13 @@ async function load_image_tiled(_path = null)
             image.tiles[num].src = image_json.url + `/tile-${num}.${image_json.format}?raw=true`
             image.tiles[num].onload = function()
             {
-                requestAnimationFrame(draw);
+                ctx.drawImage(image.tiles[_y * image.dimensions.x + _x],
+                              _x * image.tile_size.x,
+                              _y * image.tile_size.y);
+
+                img_loaded_num++;
+                if (img_loaded_num == (image.dimensions.y * image.dimensions.x))
+                    requestAnimationFrame(draw);
             }
         }
     }
@@ -325,6 +332,7 @@ function draw()
 
     ctx.imageSmoothingEnabled = false;
 
+    var time = new Date().getTime() / 1000;
     for (let _y = 0; _y < image.dimensions.y; _y++)
     {
         for (let _x = 0; _x < image.dimensions.x; _x++)
@@ -335,6 +343,7 @@ function draw()
                           _y * image.tile_size.y);
         }
     }
+    console.log(`It took ${((new Date().getTime() / 1000) - time).toFixed(2)}s to redraw canvas.`)
 
     draw_area_borders();
     draw_inserts();

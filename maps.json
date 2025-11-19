@@ -52,6 +52,10 @@
       "areas": "Areas/strata.json"
     },
     "PVE": "",
+    "Bosenmori": {
+      "name": "Bosenmori Basho",
+      "path": "Maps/Bosenmori.json"
+    },
     "Corsat": {
       "name": "Corsat",
       "path": "Maps/Corsat.json",
