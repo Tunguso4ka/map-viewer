@@ -104,6 +104,12 @@ html, body {
   transition: transform 100ms linear;
 }
 
+#map_zoomable ul {
+  margin: 0 0 0 1em;
+  font-size: 2em;
+  color: var(--light);
+}
+
 #buttons {
   display: flex;
   z-index: 3;

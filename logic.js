@@ -738,14 +738,14 @@ function on_keydown(e)
             update_transform();
             break;
         // Move Up
-        case 'j':
+        case 'k':
         case 'w':
         case 'ArrowUp':
             position.y = position.y + 75 * zoom;
             update_transform();
             break;
         // Move Down
-        case 'k':
+        case 'j':
         case 's':
         case 'ArrowDown':
             position.y = position.y - 75 * zoom;
