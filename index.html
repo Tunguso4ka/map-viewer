@@ -23,7 +23,6 @@
       <div id="map_zoomable">
         <div id="tile"></div>
         <div id="map_insert_buttons">
-            <button style="transform: translate(256px, 1604px)"></button>
         </div>
         <canvas id="map_canvas">Your browser doesnt support Canvas (Or you toggled it off).</canvas>
         <ul>
@@ -61,16 +60,16 @@
           >i?</button>
         <span style="display: flex; flex-direction: column;">
             <button
-                onclick="handle_zoom(null, null, 1.4)"
+                onclick="update_zoom(null, null, 1.4)"
                 title="Zoom In"
                 >+</button>
             <button
-                onclick="handle_zoom(null, null, 0.6)"
+                onclick="update_zoom(null, null, 0.6)"
                 title="Zoom out"
                 >-</button>
         </span>
       </div>
-      <ul id="maplist" hidden></ul>
+      <ul id="maplist" hidden=""></ul>
     </div>
     <!-- Info box -->
     <p id="area_info_label" hidden="" ></p>

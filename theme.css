@@ -12,6 +12,23 @@
   outline: 0;
 }
 
+details {
+  background-color: none;
+  color: var(--light);
+  border-radius: 4px;
+}
+
+summary {
+  font-weight: bold;
+  padding: 0.5em;
+  transition-duration: 0.4s;
+}
+
+details[open] summary {
+  border-bottom: 1px solid var(--light);
+  margin-bottom: 0.5em;
+}
+
 #buttons button, #maplist button {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
@@ -127,7 +144,7 @@ html, body {
   display: flex;
   margin: 6px 6px;
   z-index: 2;
-  max-height: 98vh;
+  max-height: 98%;
   flex-direction: column;
   background: var(--dark_trans);
   padding: 4px;
@@ -136,11 +153,9 @@ html, body {
 }
 
 #maplist {
-  overflow: auto;
   overflow-y: auto;
   overflow-x: hidden;
   transition-duration: 0.4s;
-  height: calc(100vh - 48px - 12px);
   margin: 4px 0 0 0;
   border-radius: 0 6px 6px 6px;
 }

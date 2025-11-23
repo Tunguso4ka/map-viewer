@@ -1,99 +1,102 @@
 {
   "maps": {
-    "Distress Signal": "",
-    "Solaris": {
-      "name": "Solaris Ridge",
-      "path": "Maps/Solaris.json",
-      "areas": "Areas/solaris.json"
+    "Distress Signal": {
+      "Solaris": {
+        "name": "Solaris Ridge",
+        "path": "Maps/Solaris.json",
+        "areas": "Areas/solaris.json"
+      },
+      "Shiva": {
+        "name": "Shivas Snowball",
+        "path": "Maps/Shiva.json",
+        "areas": "Areas/shiva.json"
+      },
+      "Fiorina": {
+        "name": "Fiorina Science Annex",
+        "path": "Maps/Fiorina.json",
+        "areas": "Areas/fiorina.json"
+      },
+      "LV624": {
+        "name": "LV-624",
+        "path": "Maps/LV624.json",
+        "areas": "Areas/LV624.json"
+      },
+      "Trijent": {
+        "name": "Trijent Dam",
+        "path": "Maps/Trijent.json",
+        "areas": "Areas/trijent.json"
+      },
+      "Varadero": {
+        "name": "New Varadero",
+        "path": "Maps/Varadero.json",
+        "areas": "Areas/varadero.json"
+      },
+      "Chances": {
+        "name": "Chances Claim",
+        "path": "Maps/Chances.json",
+        "areas": "Areas/chances.json"
+      },
+      "Kutjevo": {
+        "name": "Kutjevo Refinery",
+        "path": "Maps/Kutjevo.json",
+        "areas": "Areas/kutjevo.json"
+      },
+      "Hybrisa": {
+        "name": "Hybrisa Prospera",
+        "path": "Maps/Hybrisa.json",
+        "areas": "Areas/hybrisa.json"
+      },
+      "Sorokyne": {
+        "name": "Sorokyne Strata",
+        "path": "Maps/Sorokyne.json",
+        "areas": "Areas/strata.json"
+      }
     },
-    "Shiva": {
-      "name": "Shivas Snowball",
-      "path": "Maps/Shiva.json",
-      "areas": "Areas/shiva.json"
+    "PVE": {
+      "Bosenmori": {
+        "name": "Bosenmori Basho",
+        "path": "Maps/Bosenmori.json"
+      },
+      "Corsat": {
+        "name": "Corsat",
+        "path": "Maps/Corsat.json",
+        "areas": "Areas/corsat.json"
+      },
+      "Whiskey": {
+        "name": "Whiskey Outpost",
+        "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Whiskey-0.avif"
+      },
+      "ArcticValley": {
+        "name": "Arctic Valley",
+        "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Arctic_Valley-0.webp"
+      }
     },
-    "Fiorina": {
-      "name": "Fiorina Science Annex",
-      "path": "Maps/Fiorina.json",
-      "areas": "Areas/fiorina.json"
-    },
-    "LV624": {
-      "name": "LV-624",
-      "path": "Maps/LV624.json",
-      "areas": "Areas/LV624.json"
-    },
-    "Trijent": {
-      "name": "Trijent Dam",
-      "path": "Maps/Trijent.json",
-      "areas": "Areas/trijent.json"
-    },
-    "Varadero": {
-      "name": "New Varadero",
-      "path": "Maps/Varadero.json",
-      "areas": "Areas/varadero.json"
-    },
-    "Chances": {
-      "name": "Chances Claim",
-      "path": "Maps/Chances.json",
-      "areas": "Areas/chances.json"
-    },
-    "Kutjevo": {
-      "name": "Kutjevo Refinery",
-      "path": "Maps/Kutjevo.json",
-      "areas": "Areas/kutjevo.json"
-    },
-    "Hybrisa": {
-      "name": "Hybrisa Prospera",
-      "path": "Maps/Hybrisa.json",
-      "areas": "Areas/hybrisa.json"
-    },
-    "Sorokyne": {
-      "name": "Sorokyne Strata",
-      "path": "Maps/Sorokyne.json",
-      "areas": "Areas/strata.json"
-    },
-    "PVE": "",
-    "Bosenmori": {
-      "name": "Bosenmori Basho",
-      "path": "Maps/Bosenmori.json"
-    },
-    "Corsat": {
-      "name": "Corsat",
-      "path": "Maps/Corsat.json",
-      "areas": "Areas/corsat.json"
-    },
-    "Whiskey": {
-      "name": "Whiskey Outpost",
-      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Whiskey-0.avif"
-    },
-    "ArcticValley": {
-      "name": "Arctic Valley",
-      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Arctic_Valley-0.webp"
-    },
-    "Ships": "",
-    "Almayer": {
-      "name": "UNS Almayer",
-      "path": "Maps/Almayer.json"
-    },
-    "GoldenArrow": {
-      "name": "Golden Arrow",
-      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Golden_Arrow_Large-0.webp"
-    },
-    "Haurchefant": {
-      "name": "Haurchefant",
-      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Weya_Haurchefant-0.webp"
-    },
-    "Endeavour": {
-      "name": "UNS Endeavour",
-      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/UNS_Endeavour-0.webp"
-    },
-    "Deyneka": {
-      "name": "SSV Deyneka",
-      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/SSV_Deyneka-0.webp"
-    },
-    "Savannah": {
-      "name": "UNS Savannah",
-      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Savannah-0.webp",
-      "areas": "Areas/savannah.json"
+    "Ships": {
+      "Almayer": {
+        "name": "UNS Almayer",
+        "path": "Maps/Almayer.json"
+      },
+      "GoldenArrow": {
+        "name": "Golden Arrow",
+        "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Golden_Arrow_Large-0.webp"
+      },
+      "Haurchefant": {
+        "name": "Haurchefant",
+        "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Weya_Haurchefant-0.webp"
+      },
+      "Endeavour": {
+        "name": "UNS Endeavour",
+        "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/UNS_Endeavour-0.webp"
+      },
+      "Deyneka": {
+        "name": "SSV Deyneka",
+        "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/SSV_Deyneka-0.webp"
+      },
+      "Savannah": {
+        "name": "UNS Savannah",
+        "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Savannah-0.webp",
+        "areas": "Areas/savannah.json"
+      }
     }
   },
   "main": "Solaris"

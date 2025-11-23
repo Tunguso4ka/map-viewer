@@ -3,12 +3,8 @@
     "x": 9600,
     "y": 6432
   },
-  "dimensions": {
-    "x": 10,
-    "y": 6
-  },
   "format": "webp",
-  "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Maps/Almayer",
+  "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Maps-1024/Almayer",
   "labels": [
     {
       "name": "This is render of cm-ss13 Almayer.",

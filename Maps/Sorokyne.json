@@ -3,12 +3,8 @@
     "x": 8192,
     "y": 5536
   },
-  "dimensions": {
-    "x": 8,
-    "y": 6
-  },
   "format": "webp",
-  "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Maps/Sorokyne",
+  "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Maps-1024/Sorokyne",
   "labels": [
     {
       "name": "LZ1",
