@@ -11,7 +11,8 @@ var maps = {};
 
 var image = {
     "size":    {"x": 0, "y": 0},
-    "canvas":  null,
+    "dimensions":   {"x": 1, "y": 1},
+    "tiles":   [],
     "labels":  [],
     "inserts": [],
     "areas":   {}
@@ -26,6 +27,8 @@ var measures = {
     "pinch":      null,
     "panning":    false
 }
+
+var tile_size = 1024;
 
 var zoomable;
 
@@ -194,15 +197,6 @@ function load_insert_buttons()
     });
 }
 
-const load_image = url => {
-  return new Promise((resolve, reject) => {
-    const img = new Image();
-    img.onload = () => resolve(img);
-    img.onerror = () => reject(new Error(`load ${url} fail`));
-    img.src = url;
-  });
-};
-
 function load_image_lone(_url)
 {
     // Labels
@@ -213,22 +207,18 @@ function load_image_lone(_url)
     image.inserts = []
     insert_button_list.innerHTML = "";
 
-    load_image(_url).then(_image => {
-        image.size = { "x": _image.naturalWidth,
-                       "y": _image.naturalHeight};
-
-        image.canvas = document.createElement("canvas");
-        image.canvas.width = image.size.x;
-        image.canvas.height = image.size.y;
-        var _ctx = image.canvas.getContext("2d");
-
-        _ctx.drawImage(_image, 0, 0);
+    image.tiles = [new Image()];
+    image.tiles[0].src = _url;
+    image.tiles[0].onload = function()
+    {
+        image.size = { "x": image.tiles[0].naturalWidth,
+                       "y": image.tiles[0].naturalHeight};
 
         requestAnimationFrame(canvas_draw);
 
         get_param_position();
         document.body.style.cursor = "auto";
-    });
+    }
 }
 
 async function load_image_tiled(_path)
@@ -253,47 +243,44 @@ async function load_image_tiled(_path)
         image.inserts = image_json.inserts;
     console.log(`Loaded ${image.inserts.length} inserts.`)
 
-    image.canvas = document.createElement("canvas");
-
-    image.canvas.width = image.size.x;
-    image.canvas.height = image.size.y;
-
     canvas_clear()
-
-    var _ctx = image.canvas.getContext("2d");
 
     var img_loaded_num = 0;
 
-    var tile_size = 1024;
+    image.dimensions = { x: Math.ceil(image.size.x / tile_size),
+                         y: Math.ceil(image.size.y / tile_size)}
 
-    var _max_x = Math.floor(image.size.x / tile_size) + 1;
-    var _max_y = Math.floor(image.size.y / tile_size) + 1;
+    console.log(`Loading ${image.dimensions.x}:${image.dimensions.y} tiles.`)
 
-    console.log(`Loading ${_max_x}:${_max_y} tiles.`)
-
-    for (let _y = 0; _y < _max_y; _y++)
+    image.tiles = []
+    for (let _y = 0; _y < image.dimensions.y; _y++)
     {
-        for (let _x = 0; _x < _max_x; _x++)
+        for (let _x = 0; _x < image.dimensions.x; _x++)
         {
-            const _url = image_json.url + `/${_x}_${_y}.${image_json.format}`
-            load_image(_url).then(_image => {
-                _ctx.drawImage(_image, _x * tile_size, _y * tile_size);
-                ctx.drawImage(_image, _x * tile_size, _y * tile_size);
+            let num = _y * image.dimensions.x + _x;
+            if (num <= image.tiles.length)
+            {
+                console.log('creating new')
+                image.tiles.push(new Image());
+            }
 
-                _image = null;
+            image.tiles[num].src = image_json.url + `/${_x}_${_y}.${image_json.format}`
+            image.tiles[num].onload = function() {
+                ctx.drawImage(image.tiles[num], _x * tile_size, _y * tile_size);
 
                 img_loaded_num++;
-                if (img_loaded_num == (_max_y * _max_x))
-                    requestAnimationFrame(canvas_draw);
-            });
+
+                if (img_loaded_num == (image.dimensions.y * image.dimensions.x))
+                {
+                    requestAnimationFrame(canvas_draw)
+                    load_insert_buttons();
+                    get_param_position();
+                }
+            }
         }
     }
 
     requestAnimationFrame(canvas_draw);
-
-    load_insert_buttons();
-    get_param_position();
-
     document.body.style.cursor = "auto";
 }
 
@@ -313,7 +300,14 @@ function canvas_draw()
     var time = new Date().getTime() / 1000;
     canvas_clear();
 
-    ctx.drawImage(image.canvas, 0, 0);
+    for (let _y = 0; _y < image.dimensions.y; _y++)
+    {
+        for (let _x = 0; _x < image.dimensions.x; _x++)
+        {
+            let num = _y * image.dimensions.x + _x;
+            ctx.drawImage(image.tiles[num], _x * tile_size, _y * tile_size);
+        }
+    }
 
     canvas_draw_area_borders();
     canvas_draw_inserts();

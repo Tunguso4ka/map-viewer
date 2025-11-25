@@ -77,11 +77,11 @@
         "path": "Maps/Almayer.json"
       },
       "GoldenArrow": {
-        "name": "Golden Arrow",
+        "name": "UNS Golden Arrow",
         "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Golden_Arrow_Large-0.webp"
       },
       "Haurchefant": {
-        "name": "Haurchefant",
+        "name": "UNCSS Haurchefant",
         "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Weya_Haurchefant-0.webp"
       },
       "Endeavour": {
