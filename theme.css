@@ -22,6 +22,11 @@ details[open] summary {
   margin-bottom: 0.5em;
 }
 
+body {
+  width: 100%;
+  height: 100%;
+}
+
 #buttons button, #maplist button {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;

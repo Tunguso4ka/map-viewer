@@ -207,6 +207,7 @@ function load_image_lone(_url)
     image.inserts = []
     insert_button_list.innerHTML = "";
 
+    image.dimensions = {'x': 1, 'y': 1}
     image.tiles = [new Image()];
     image.tiles[0].src = _url;
     image.tiles[0].onload = function()
@@ -471,6 +472,7 @@ function get_event_location(e)
                  y: e.clientY };
 }
 
+// Get SS14 like tile position, X is flipped, Y should be the same.
 function get_tile32_position(event_location)
 {
     return {x: Math.floor((event_location.x - measures.position.x) / measures.zoom / 32),
@@ -479,12 +481,17 @@ function get_tile32_position(event_location)
 
 function update_zoom(zoom_pos, e_pos, flat)
 {
+    // Get zoom_pos if one wasn't supplied.
     if (!zoom_pos)
         zoom_pos = { x: Math.round((document.body.clientWidth  / 2 - measures.position.x) / measures.zoom),
                      y: Math.round((document.body.clientHeight / 2 - measures.position.y) / measures.zoom)};
+
+    // Get event position, if one wasn't supplied. (Center of the screen)
     if (!e_pos)
         e_pos = { x: document.body.clientWidth / 2,
                   y: document.body.clientHeight / 2}
+
+    // Apply flat zoom
     if (flat)
         measures.zoom *= flat;
 
@@ -805,4 +812,40 @@ function toggle_setting(setting)
 {
     settings[setting] = !settings[setting];
     requestAnimationFrame(canvas_draw);
+}
+
+// ----------------
+// Secrets Features
+// ----------------
+
+function help()
+{
+    console.log(`Made by @Tunguso4ka
+-------------------
+Useful commands:
+- mortar_calc(0, 1, 2, 3)             Transform viewer coords to inround coords by using offset.
+- mortar_calc_get_offset(0, 1, 2, 3)  Get offset between viewer and round.
+- load_image_lone("url")              Load your own image.
+- canvas_draw()                        Redraw canvas. May fix some rendering bugs.
+`)
+}
+
+function mortar_calc(viewer_x, viewer_y, offset_x, offset_y)
+{
+    if (viewer_x == null | viewer_y == null | offset_x == null| offset_y == null)
+        throw 'You need to supply Viewer X and Y coordinates, and Offset X and Y coordinates (from mortar_calc_get_offset): "mortar_calc(0, 1, 2, 3)"';
+
+    viewer_x = image.size.x / 32 - viewer_x
+
+    return viewer_x - offset_x, viewer_y - offset_y;
+}
+
+function mortar_calc_get_offset(rmc_x, rmc_y, viewer_x, viewer_y)
+{
+    if (rmc_x == null || rmc_y == null || viewer_x == null || viewer_y == null)
+        throw 'You need to supply RMC14 X and Y coordinates, and Map Viewer X and Y coordinates: "mortar_calc_get_offset(0, 1, 2, 3)"';
+
+    viewer_x = image.size.x / 32 - viewer_x
+
+    return rmc_x - viewer_x, rmc_y - viewer_y;
 }
