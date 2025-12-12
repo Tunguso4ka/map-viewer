@@ -49,7 +49,7 @@
       "Sorokyne": {
         "name": "Sorokyne Strata",
         "path": "Maps/Sorokyne.json",
-        "areas": "Areas/strata.json"
+        "areas": "Areas/sorokyne.json"
       }
     },
     "PVE": {
