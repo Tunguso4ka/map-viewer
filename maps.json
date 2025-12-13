@@ -57,6 +57,10 @@
         "name": "Bosenmori Basho",
         "path": "Maps/Bosenmori.json"
       },
+      "Nereid": {
+        "name": "Port Nereid",
+        "path": "Maps/Nereid.json"
+      },
       "Corsat": {
         "name": "Corsat",
         "path": "Maps/Corsat.json",
@@ -71,7 +75,7 @@
         "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Arctic_Valley-0.webp"
       }
     },
-    "Ships": {
+    "Ships/Stations": {
       "Almayer": {
         "name": "UNS Almayer",
         "path": "Maps/Almayer.json"
@@ -91,6 +95,10 @@
       "Deyneka": {
         "name": "SSV Deyneka",
         "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/SSV_Deyneka-0.webp"
+      },
+      "OCP": {
+          "name": "OCP-583",
+          "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Ocp-583-0.webp"
       },
       "Savannah": {
         "name": "UNS Savannah",
