@@ -255,9 +255,11 @@ function load_image_lone(_url)
     // Labels
     image.labels = [];
     toggle_hidden('button_labels', true);
+    document.getElementById("Labels")?.remove();
 
     // Inserts
     image.inserts = []
+    document.getElementById("Inserts")?.remove();
     insert_button_list.innerHTML = "";
 
     image.dimensions = {'x': 1, 'y': 1}
