@@ -87,16 +87,69 @@ function parse_maps(_maps, _parent = null)
             _parent.appendChild(_button);
             continue;
         }
+        // Clear and remove previous
+        document.getElementById(key)?.remove();
+
         // If list/dictionary of maps
         var _details = document.createElement("details");
-        _details.open = true;
+        // _details.open = true;
         var _title = document.createElement("summary");
         var _content = document.createElement("ul");
+        _details.setAttribute('id', key);
 
         _title.textContent = key;
         _details.appendChild(_title);
 
         parse_maps(value, _content)
+
+        _details.appendChild(_content);
+        _parent.appendChild(_details);
+    }
+}
+
+// Parse dictionary with inserts, areas (from Maps/map.json)
+function add_teleporters(_maps, _parent = null)
+{
+    if (!_maps)
+        return;
+
+    if (!_parent)
+        _parent = document.getElementById("maplist");
+
+    console.log(_maps, _parent);
+
+    // Iterate through _maps
+    for (const [key, value] of Object.entries(_maps))
+    {
+        // If map
+        if ('position' in value)
+        {
+            var _button = document.createElement("button");
+
+            _button.innerText = 'name' in value ? value.name : key;
+
+            _button.onclick = function ()
+            {
+                move_to(value.position);
+            };
+
+            maps[key] = value;
+            _parent.appendChild(_button);
+            continue;
+        }
+        // Clear and remove previous
+        document.getElementById(key)?.remove();
+
+        // If list/dictionary of maps
+        var _details = document.createElement("details");
+        var _title = document.createElement("summary");
+        var _content = document.createElement("ul");
+        _details.setAttribute('id', key);
+
+        _title.textContent = key;
+        _details.appendChild(_title);
+
+        add_teleporters(value, _content)
 
         _details.appendChild(_content);
         _parent.appendChild(_details);
@@ -233,6 +286,8 @@ async function load_image_tiled(_path)
     image.labels = []
     if ("labels" in image_json && settings.show_labels)
         image.labels = image_json.labels;
+    add_teleporters({"Labels": image.labels});
+
 
     toggle_hidden('button_labels', !image.labels.length)
     console.log(`Loaded ${image.labels.length} labels.`)
@@ -243,6 +298,7 @@ async function load_image_tiled(_path)
     if ("inserts" in image_json && settings.show_inserts)
         image.inserts = image_json.inserts;
     console.log(`Loaded ${image.inserts.length} inserts.`)
+    add_teleporters({"Inserts": image.inserts});
 
     canvas_clear()
 
@@ -252,6 +308,7 @@ async function load_image_tiled(_path)
                          y: Math.ceil(image.size.y / tile_size)}
 
     console.log(`Loading ${image.dimensions.x}:${image.dimensions.y} tiles.`)
+    get_param_position();
 
     image.tiles = []
     for (let _y = 0; _y < image.dimensions.y; _y++)
@@ -275,7 +332,6 @@ async function load_image_tiled(_path)
                 {
                     requestAnimationFrame(canvas_draw)
                     load_insert_buttons();
-                    get_param_position();
                 }
             }
         }
@@ -579,6 +635,21 @@ function update_area_info(event_location)
     area_info_label.textContent += `\n\n Weedkiller: ${_weed}`
 }
 
+//
+function move_to(position)
+{
+    if (!position)
+        return;
+
+    measures.zoom = 2;
+    measures.position.x = -(position.x * 32) * measures.zoom + window.innerWidth / 2 - 16;
+    measures.position.y = -(position.y * 32) * measures.zoom + window.innerHeight / 2 - 16;
+
+    console.log(position, measures.position);
+
+    update_transform()
+}
+
 // ------
 // Events
 // ------
@@ -814,9 +885,9 @@ function toggle_setting(setting)
     requestAnimationFrame(canvas_draw);
 }
 
-// ----------------
-// Secrets Features
-// ----------------
+// ---------------
+// Secret Features
+// ---------------
 
 function help()
 {
