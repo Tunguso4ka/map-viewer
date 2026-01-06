@@ -88,14 +88,14 @@ function parse_maps(_maps, _parent = null)
             continue;
         }
         // Clear and remove previous
-        document.getElementById(key)?.remove();
+        document.getElementById(`maplist-${key}`)?.remove();
 
         // If list/dictionary of maps
         var _details = document.createElement("details");
         // _details.open = true;
         var _title = document.createElement("summary");
         var _content = document.createElement("ul");
-        _details.setAttribute('id', key);
+        _details.setAttribute('id', `maplist-${key}`);
 
         _title.textContent = key;
         _details.appendChild(_title);
@@ -138,13 +138,13 @@ function add_teleporters(_maps, _parent = null)
             continue;
         }
         // Clear and remove previous
-        document.getElementById(key)?.remove();
+        document.getElementById(`maplist-${key}`)?.remove();
 
         // If list/dictionary of maps
         var _details = document.createElement("details");
         var _title = document.createElement("summary");
         var _content = document.createElement("ul");
-        _details.setAttribute('id', key);
+        _details.setAttribute('id', `maplist-${key}`);
 
         _title.textContent = key;
         _details.appendChild(_title);
@@ -255,11 +255,11 @@ function load_image_lone(_url)
     // Labels
     image.labels = [];
     toggle_hidden('button_labels', true);
-    document.getElementById("Labels")?.remove();
+    document.getElementById("maplist-Labels")?.remove();
 
     // Inserts
     image.inserts = []
-    document.getElementById("Inserts")?.remove();
+    document.getElementById("maplist-Inserts")?.remove();
     insert_button_list.innerHTML = "";
 
     image.dimensions = {'x': 1, 'y': 1}
@@ -286,10 +286,9 @@ async function load_image_tiled(_path)
 
     // Check and load Labels
     image.labels = []
-    if ("labels" in image_json && settings.show_labels)
+    if ("labels" in image_json)
         image.labels = image_json.labels;
     add_teleporters({"Labels": image.labels});
-
 
     toggle_hidden('button_labels', !image.labels.length)
     console.log(`Loaded ${image.labels.length} labels.`)
