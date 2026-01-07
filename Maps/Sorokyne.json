@@ -271,6 +271,14 @@
         "x": 146,
         "y": 31
       }
+    },
+    {
+      "name": "Flamer Bodypile (60%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Sorokyne/flamer_bodypile-0.webp",
+      "position": {
+        "x": 87,
+        "y": 65
+      }
     }
   ]
 }

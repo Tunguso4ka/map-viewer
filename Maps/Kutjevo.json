@@ -203,6 +203,22 @@
         "x": 63,
         "y": 68
       }
+    },
+    {
+      "name": "CLF Smugglers (10%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Kutjevo/clfsmugglers-0.webp",
+      "position": {
+        "x": 104,
+        "y": 163
+      }
+    },
+    {
+      "name": "LZ1 Alternative (60%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Kutjevo/lz1alternative-0.webp",
+      "position": {
+        "x": 0,
+        "y": 160
+      }
     }
   ]
 }
