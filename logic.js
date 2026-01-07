@@ -18,8 +18,9 @@ var image = {
     "areas":   {}
 }
 
-var measures = {
+var measures = { 
     "position":   { x: 0, y: 0},
+    "offset":     { x: 0, y: 0},
     "start":      { x: 0, y: 0 },
     "zoom":       1,
     "zoom_last":  1,
@@ -606,7 +607,7 @@ function update_area_info(event_location)
     //Check if we have areas
     if (!("points" in image.areas))
     {
-        area_info_label.textContent = `x: ${share_position.x}, y: ${share_position.y}\n`;
+        area_info_label.textContent = `x: ${share_position.x - measures.offset.x}, y: ${share_position.y - measures.offset.y}\n`;
         return;
     }
 
@@ -621,7 +622,7 @@ function update_area_info(event_location)
     if (_id in image.areas.points && "weedkiller" in image.areas.points[_id])
         _weed = image.areas.points[_id].weedkiller;
 
-    area_info_label.textContent = `"${_name}" - x: ${share_position.x}, y: ${share_position.y}\n`;
+    area_info_label.textContent = `"${_name}" - x: ${share_position.x - measures.offset.x}, y: ${share_position.y - measures.offset.y}\n`;
 
     if (!_prot)
         return;
@@ -886,38 +887,31 @@ function toggle_setting(setting)
     requestAnimationFrame(canvas_draw);
 }
 
-// ---------------
-// Secret Features
-// ---------------
+// ----------------
+// Consele Commands
+// ----------------
 
 function help()
 {
     console.log(`Made by @Tunguso4ka
 -------------------
 Useful commands:
-- mortar_calc(0, 1, 2, 3)             Transform viewer coords to inround coords by using offset.
-- mortar_calc_get_offset(0, 1, 2, 3)  Get offset between viewer and round.
-- load_image_lone("url")              Load your own image.
-- canvas_draw()                        Redraw canvas. May fix some rendering bugs.
+- set_round_offset(x, y, x, y)  Set map viewer offset for easier coord calculating.
+- load_image_lone("url")        Load your own image.
+- canvas_draw()                 Redraw canvas. May fix some rendering bugs.
 `)
 }
 
-function mortar_calc(viewer_x, viewer_y, offset_x, offset_y)
+function set_round_offset(map_x, map_y, rmc_x, rmc_y)
 {
-    if (viewer_x == null | viewer_y == null | offset_x == null| offset_y == null)
-        throw 'You need to supply Viewer X and Y coordinates, and Offset X and Y coordinates (from mortar_calc_get_offset): "mortar_calc(0, 1, 2, 3)"';
+    measures.offset = { x: 0, y: 0 }
+    if ((!map_x && map_x != 0) || (!map_y && map_y != 0))
+        return 'You need to supply Map Viewer coordinates of tile you lasered: \nset_round_offset(0, 1) \nOffset was removed.'
+    if ((!rmc_x && rmc_x != 0) || (!rmc_y && rmc_y != 0))
+        return 'You need to supply RMC-14 coordinates of tile you lasered: \nset_round_offset(0, 1, 2, 3) \nOffset was removed.'
 
-    viewer_x = image.size.x / 32 - viewer_x
+    map_x = image.size.x / 32 - map_x
 
-    return viewer_x - offset_x, viewer_y - offset_y;
-}
-
-function mortar_calc_get_offset(rmc_x, rmc_y, viewer_x, viewer_y)
-{
-    if (rmc_x == null || rmc_y == null || viewer_x == null || viewer_y == null)
-        throw 'You need to supply RMC14 X and Y coordinates, and Map Viewer X and Y coordinates: "mortar_calc_get_offset(0, 1, 2, 3)"';
-
-    viewer_x = image.size.x / 32 - viewer_x
-
-    return rmc_x - viewer_x, rmc_y - viewer_y;
+    measures.offset = { x: rmc_x - map_x, y: rmc_y - map_y }
+    console.log(`New offset: ${measures.offset.x}x ${measures.offset.y}y`)
 }
