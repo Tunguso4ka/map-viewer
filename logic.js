@@ -910,7 +910,7 @@ function set_round_offset(map_x, map_y, rmc_x, rmc_y)
     if ((!rmc_x && rmc_x != 0) || (!rmc_y && rmc_y != 0))
         return 'You need to supply RMC-14 coordinates of tile you lasered: \nset_round_offset(0, 1, 2, 3) \nOffset was removed.'
 
-    map_x = image.size.x / 32 - map_x
+    map_y = image.size.y / 32 - map_y;
 
     measures.offset = { x: rmc_x - map_x, y: rmc_y - map_y }
     console.log(`New offset: ${measures.offset.x}x ${measures.offset.y}y`)
