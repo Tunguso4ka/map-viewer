@@ -203,6 +203,14 @@
         "x": 113,
         "y": 67
       }
+    },
+    {
+      "name": "Rocinante",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Fiorina/rocinante-0.webp",
+      "position": {
+        "x": 69,
+        "y": 192
+      }
     }
   ]
 }

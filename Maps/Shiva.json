@@ -227,6 +227,18 @@
         "x": 95,
         "y": 96
       }
+    },
+    {
+      "name": "CLF Raid",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Shiva/clf_raid_shivas-0.webp",
+      "position": {
+        "x": 96,
+        "y": 96
+      },
+      "offset": {
+        "x": -1,
+        "y": 0
+      }
     }
   ]
 }

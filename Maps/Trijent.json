@@ -283,6 +283,14 @@
         "x": 0,
         "y": 35
       }
+    },
+    {
+      "name": "Minievac West Research (20%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Trijent/minievac_westresearch-0.webp",
+      "position": {
+        "x": 124,
+        "y": 37
+      }
     }
   ]
 }

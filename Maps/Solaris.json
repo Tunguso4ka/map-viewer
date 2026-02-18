@@ -343,6 +343,58 @@
         "x": 111,
         "y": 112
       }
+    },
+    {
+      "name": "Chapel Cult (25%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Solaris/chapel_cult-0.webp",
+      "position": {
+        "x": 148,
+        "y": 100
+      }
+    },
+    {
+      "name": "Lambda Cave Mushrooms",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Solaris/lambda-cave_mushroom-0.webp",
+      "position": {
+        "x": 204,
+        "y": 54
+      }
+    },
+    {
+      "name": "Cargo Containers (30%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Solaris/cargo_containers-0.webp",
+      "position": {
+        "x": 47,
+        "y": 118
+      }
+    },
+    {
+      "name": "Reactor Meltdown (15%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Solaris/reactor_meltdown-0.webp",
+      "position": {
+        "x": 59,
+        "y": 152
+      }
+    },
+    {
+      "name": "LZ1 Containers Scramble (25%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Solaris/lz1containers_scramble-0.webp",
+      "position": {
+        "x": 33,
+        "y": 29
+      }
+    },
+    {
+      "name": "Crashlanding Eva (20%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/Solaris/crashlanding-eva-0.webp",
+      "position": {
+        "x": 129,
+        "y": 69
+      },
+      "offset": {
+        "x": -9,
+        "y": -2
+      }
     }
   ]
 }

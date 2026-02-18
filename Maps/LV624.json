@@ -192,17 +192,27 @@
       "name": "Corporate Dome (10%)",
       "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/LV624/corporate_dome-0.webp",
       "position": {
-        "x": 46,
-        "y": 202
+        "x": 44,
+        "y": 205
+      },
+      "offset": {
+        "x": 2,
+        "y": -3
       }
+
     },
     {
       "name": "Gym (30%)",
       "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/LV624/gym_alternate-0.webp",
       "position": {
-        "x": 86,
+        "x": 85,
         "y": 173
+      },
+      "offset": {
+        "x": 1,
+        "y": 0
       }
+
     },
     {
       "name": "Nexus Barricaded (30%)",
@@ -272,8 +282,20 @@
       "name": "Medbay (10%)",
       "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/LV624/medbay_destroyed-0.webp",
       "position": {
-        "x": 73,
-        "y": 155
+        "x": 71,
+        "y": 157
+      },
+      "offset": {
+        "x": 2,
+        "y": -2
+      }
+    },
+    {
+      "name": "Bridge East (10%)",
+      "url": "https://raw.githubusercontent.com/Tunguso4ka/rmc14_maps/refs/heads/master/Inserts/LV624/bridge_east-0.webp",
+      "position": {
+        "x": 77,
+        "y": 138
       }
     }
   ]

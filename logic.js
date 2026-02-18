@@ -80,7 +80,6 @@ function parse_maps(_maps, _parent = null)
                 params.set('map', key);
                 params.delete('pos');
                 history.pushState('', '', '?' + params.toString());
-                console.log(maps)
                 load_map(key);
             };
 
@@ -116,8 +115,6 @@ function add_teleporters(_maps, _parent = null)
 
     if (!_parent)
         _parent = document.getElementById("maplist");
-
-    console.log(_maps, _parent);
 
     // Iterate through _maps
     for (const [key, value] of Object.entries(_maps))
@@ -194,13 +191,14 @@ load_maps_json("maps.json").then(() => {
 
 function load_map(_map)
 {
-    console.log(`Loading ${_map}`);
+    console.log(`Map: ${_map}`);
 
     if (!(_map in maps))
         throw `Can't load ${_map}. It's not in ${maps}`;
 
     update_transform(true);
     document.body.style.cursor = "wait";
+    measures.offset = {x: 0, y: 0};
 
     image.areas = {}
     if ("areas" in maps[_map])
@@ -319,10 +317,7 @@ async function load_image_tiled(_path)
         {
             let num = _y * image.dimensions.x + _x;
             if (num <= image.tiles.length)
-            {
-                console.log('creating new')
                 image.tiles.push(new Image());
-            }
 
             image.tiles[num].src = image_json.url + `/${_x}_${_y}.${image_json.format}`
             image.tiles[num].onload = function() {
@@ -530,7 +525,7 @@ function get_event_location(e)
                  y: e.clientY };
 }
 
-// Get SS14 like tile position, X is flipped, Y should be the same.
+// Get SS14 like tile position, Y is flipped, X should be the same.
 function get_tile32_position(event_location)
 {
     return {x: Math.floor((event_location.x - measures.position.x) / measures.zoom / 32),
@@ -605,25 +600,17 @@ function update_area_info(event_location)
     let share_position = get_tile32_position(event_location);
 
     //Check if we have areas
-    if (!("points" in image.areas))
+    if (!("points" in image.areas) || !(share_position.y in image.areas.map))
     {
-        area_info_label.textContent = `x: ${share_position.x - measures.offset.x}, y: ${share_position.y - measures.offset.y}\n`;
+        area_info_label.textContent = `x: ${share_position.x - measures.offset.x}, y: ${image.size.y / 32 - share_position.y - measures.offset.y - 1}\n`;
         return;
     }
 
     var _id = image.areas.map[share_position.y].slice(share_position.x*2, share_position.x*2+2);
-    var _name = "";
-    if (_id in image.areas.points)
-        _name = image.areas.points[_id].name;
-    var _prot = "";
-    if (_id in image.areas.points)
-        _prot = image.areas.points[_id].protections;
-    var _weed = "";
-    if (_id in image.areas.points && "weedkiller" in image.areas.points[_id])
-        _weed = image.areas.points[_id].weedkiller;
+    var _name = _id in image.areas.points ? image.areas.points[_id].name : "";
+    area_info_label.textContent = `"${_name}" - x: ${share_position.x - measures.offset.x}, y: ${image.size.y / 32 - share_position.y - measures.offset.y - 1}\n`;
 
-    area_info_label.textContent = `"${_name}" - x: ${share_position.x - measures.offset.x}, y: ${share_position.y - measures.offset.y}\n`;
-
+    var _prot = _id in image.areas.points ? image.areas.points[_id].protections : "";
     if (!_prot)
         return;
 
@@ -631,6 +618,7 @@ function update_area_info(event_location)
     area_info_label.textContent += ` MortarPlace: ${ (_prot[3] == 1) ? "✅" : "❌"} | MortarFire: ${ (_prot[4] == 1) ? "✅" : "❌"}\n`;
     area_info_label.textContent += ` Medevac: ${ (_prot[5] == 1) ? "✅" : "❌"} | OB: ${ (_prot[6] == 1) ? "✅" : "❌"} | SupplyDrop: ${ (_prot[7] == 1) ? "✅" : "❌"}`;
 
+    var _weed = _id in image.areas.points && "weedkiller" in image.areas.points[_id] ? image.areas.points[_id].weedkiller : "";
     if (!_weed)
         return;
 
@@ -823,8 +811,8 @@ function on_doubleclick(e)
     // Get tile position.
     let share_position = get_tile32_position(event_location);
 
-    console.log(share_position)
-    params.set("pos", `${share_position.x}x${share_position.y}`)
+    console.log('Map Viewer coords:', share_position);
+    params.set("pos", `${share_position.x}x${share_position.y}`);
 
     history.pushState('', '', '?' + params.toString());
 }
@@ -904,14 +892,15 @@ Useful commands:
 
 function set_round_offset(map_x, map_y, rmc_x, rmc_y)
 {
-    measures.offset = { x: 0, y: 0 }
+    measures.offset = { x: 0, y: 0 };
+
     if ((!map_x && map_x != 0) || (!map_y && map_y != 0))
-        return 'You need to supply Map Viewer coordinates of tile you lasered: \nset_round_offset(0, 1) \nOffset was removed.'
+        return 'You need to supply Map Viewer coordinates of tile you lasered: \nset_round_offset(0, 1) \nOffset was removed.';
     if ((!rmc_x && rmc_x != 0) || (!rmc_y && rmc_y != 0))
-        return 'You need to supply RMC-14 coordinates of tile you lasered: \nset_round_offset(0, 1, 2, 3) \nOffset was removed.'
+        return 'You need to supply RMC-14 coordinates of tile you lasered: \nset_round_offset(0, 1, 2, 3) \nOffset was removed.';
 
-    map_y = image.size.y / 32 - map_y;
+    measures.offset = { x: map_x - rmc_x,
+                        y: map_y - rmc_y};
 
-    measures.offset = { x: rmc_x - map_x, y: rmc_y - map_y }
     console.log(`New offset: ${measures.offset.x}x ${measures.offset.y}y`)
 }
